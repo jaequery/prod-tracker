@@ -1,6 +1,15 @@
 import "dotenv/config";
+import fs from "fs";
+import path from "path";
 import { PrismaPg } from "@prisma/adapter-pg";
 import { PrismaClient } from "../generated/prisma/client";
+
+const LOG_FILE = path.resolve(process.cwd(), "scrape.log");
+
+function log(message: string) {
+  const line = `[${new Date().toISOString()}] ${message}\n`;
+  fs.appendFileSync(LOG_FILE, line);
+}
 
 interface HnHit {
   objectID: string;
@@ -38,55 +47,73 @@ async function fetchPage(page: number, numericFilters: string): Promise<HnRespon
 }
 
 async function main() {
+  // Clear log file at start
+  fs.writeFileSync(LOG_FILE, "");
+
   const adapter = new PrismaPg({ connectionString: process.env.DATABASE_URL! });
   const prisma = new PrismaClient({ adapter });
 
   const days = parseDays();
-  const since = Math.floor(Date.now() / 1000) - days * 86400;
-  const numericFilters = `created_at_i>${since}`;
+  const now = Math.floor(Date.now() / 1000);
 
   console.log(`Scraping Show HN posts from the last ${days} day(s)...`);
+  log(`Starting CLI scrape for ${days} day(s)`);
 
-  let page = 0;
   let totalUpserted = 0;
   const dailyCounts: Record<string, number> = {};
 
-  while (true) {
-    const data = await fetchPage(page, numericFilters);
-    if (data.hits.length === 0) break;
+  // Iterate from oldest day to newest
+  for (let dayIndex = days - 1; dayIndex >= 0; dayIndex--) {
+    const dayStart = now - (dayIndex + 1) * 86400;
+    const dayEnd = now - dayIndex * 86400;
+    const dayLabel = new Date(dayStart * 1000).toISOString().slice(0, 10);
 
-    for (const hit of data.hits) {
-      const postedAt = new Date(hit.created_at);
-      const dayKey = postedAt.toISOString().slice(0, 10);
-      const hnItemUrl = `https://news.ycombinator.com/item?id=${hit.objectID}`;
+    log(`Scraping day ${dayLabel}`);
+    console.log(`Scraping ${dayLabel}...`);
 
-      await prisma.showHnPost.upsert({
-        where: { hnId: hit.objectID },
-        update: {
-          title: hit.title,
-          summary: extractSummary(hit.title),
-          url: hit.url || hnItemUrl,
-          numComments: hit.num_comments ?? 0,
-          upvotes: hit.points ?? 0,
-          postedAt,
-        },
-        create: {
-          hnId: hit.objectID,
-          title: hit.title,
-          summary: extractSummary(hit.title),
-          url: hit.url || hnItemUrl,
-          numComments: hit.num_comments ?? 0,
-          upvotes: hit.points ?? 0,
-          postedAt,
-        },
-      });
+    const numericFilters = `created_at_i>${dayStart},created_at_i<${dayEnd}`;
+    let page = 0;
 
-      dailyCounts[dayKey] = (dailyCounts[dayKey] || 0) + 1;
-      totalUpserted++;
+    while (true) {
+      log(`  Fetching page ${page + 1} for ${dayLabel}`);
+      const data = await fetchPage(page, numericFilters);
+      if (data.hits.length === 0) break;
+
+      for (const hit of data.hits) {
+        const postedAt = new Date(hit.created_at);
+        const dayKey = postedAt.toISOString().slice(0, 10);
+        const hnItemUrl = `https://news.ycombinator.com/item?id=${hit.objectID}`;
+
+        await prisma.showHnPost.upsert({
+          where: { hnId: hit.objectID },
+          update: {
+            title: hit.title,
+            summary: extractSummary(hit.title),
+            url: hit.url || hnItemUrl,
+            numComments: hit.num_comments ?? 0,
+            upvotes: hit.points ?? 0,
+            postedAt,
+          },
+          create: {
+            hnId: hit.objectID,
+            title: hit.title,
+            summary: extractSummary(hit.title),
+            url: hit.url || hnItemUrl,
+            numComments: hit.num_comments ?? 0,
+            upvotes: hit.points ?? 0,
+            postedAt,
+          },
+        });
+
+        dailyCounts[dayKey] = (dailyCounts[dayKey] || 0) + 1;
+        totalUpserted++;
+      }
+
+      page++;
+      if (page >= data.nbPages) break;
     }
 
-    page++;
-    if (page >= data.nbPages) break;
+    log(`  ${dayLabel}: ${dailyCounts[dayLabel] || 0} posts`);
   }
 
   console.log(`\nTotal posts upserted: ${totalUpserted}`);
@@ -95,10 +122,12 @@ async function main() {
     console.log(`  ${day}: ${count} posts`);
   }
 
+  log(`Scrape complete. Total: ${totalUpserted}`);
   await prisma.$disconnect();
 }
 
 main().catch((err) => {
+  log(`Fatal error: ${err.message}`);
   console.error(err);
   process.exit(1);
 });
