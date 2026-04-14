@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start -p 3107",
     "lint": "eslint",
-    "scrape": "npx tsx src/scripts/scrape.ts"
+    "scrape": "npx tsx src/scripts/scrape.ts",
+    "db:migrate": "npx prisma migrate dev"
   },
   "dependencies": {
     "@prisma/adapter-pg": "^7.7.0",
