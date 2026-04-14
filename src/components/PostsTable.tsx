@@ -67,8 +67,8 @@ function formatTime(dateStr: string) {
 }
 
 export default function PostsTable({ posts }: { posts: Post[] }) {
-  const [sortField, setSortField] = useState<SortField>("postedAt");
-  const [sortDir, setSortDir] = useState<SortDir>("default");
+  const [sortField, setSortField] = useState<SortField>("upvotes");
+  const [sortDir, setSortDir] = useState<SortDir>("desc");
   const [expandedDays, setExpandedDays] = useState<Set<string>>(new Set());
 
   function handleSort(field: SortField) {
