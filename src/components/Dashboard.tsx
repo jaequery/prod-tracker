@@ -71,7 +71,7 @@ export default function Dashboard({ posts }: { posts: Post[] }) {
                 <button
                   key={m.key}
                   onClick={() => setSelectedMonth(m.key)}
-                  className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-colors ${
+                  className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-colors cursor-pointer ${
                     m.key === selectedMonth
                       ? "bg-orange-50 dark:bg-orange-950/30 text-orange-700 dark:text-orange-400 font-medium"
                       : "text-zinc-600 dark:text-zinc-400 hover:bg-zinc-50 dark:hover:bg-zinc-800/50"

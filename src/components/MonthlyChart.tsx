@@ -23,12 +23,12 @@ export default function MonthlyChart({
         {sorted.map((m) => {
           const heightPct = (m.count / max) * 100;
           const isSelected = m.key === selectedMonth;
-          const shortLabel = m.key.slice(2); // "YY-MM"
+          const shortLabel = new Date(m.key + "-01").toLocaleDateString("en-US", { month: "short", year: "2-digit", timeZone: "UTC" });
           return (
             <button
               key={m.key}
               onClick={() => onSelectMonth(m.key)}
-              className="flex-1 flex flex-col items-center justify-end h-full min-w-0 group"
+              className="flex-1 flex flex-col items-center justify-end h-full min-w-0 group cursor-pointer"
               title={`${m.label}: ${m.count} posts`}
             >
               <span className="text-[10px] tabular-nums text-zinc-500 dark:text-zinc-400 mb-1 opacity-0 group-hover:opacity-100 transition-opacity">
