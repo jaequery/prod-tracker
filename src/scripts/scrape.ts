@@ -2,9 +2,6 @@ import "dotenv/config";
 import { PrismaPg } from "@prisma/adapter-pg";
 import { PrismaClient } from "../generated/prisma/client";
 
-const adapter = new PrismaPg({ connectionString: process.env.DATABASE_URL! });
-const prisma = new PrismaClient({ adapter });
-
 interface HnHit {
   objectID: string;
   title: string;
@@ -41,6 +38,9 @@ async function fetchPage(page: number, numericFilters: string): Promise<HnRespon
 }
 
 async function main() {
+  const adapter = new PrismaPg({ connectionString: process.env.DATABASE_URL! });
+  const prisma = new PrismaClient({ adapter });
+
   const days = parseDays();
   const since = Math.floor(Date.now() / 1000) - days * 86400;
   const numericFilters = `created_at_i>${since}`;
