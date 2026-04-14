@@ -1,7 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
-import { useRouter } from "next/navigation";
+import { useState } from "react";
 import PostsTable from "./PostsTable";
 import MonthlyChart from "./MonthlyChart";
 
@@ -15,13 +14,6 @@ type Post = {
   upvotes: number;
   postedAt: string;
   createdAt: string;
-};
-
-type ScrapeProgress = {
-  running: boolean;
-  total: number;
-  done: number;
-  message: string;
 };
 
 function getMonthKey(dateStr: string): string {
@@ -51,101 +43,22 @@ function deriveMonths(posts: Post[]): { key: string; label: string; count: numbe
 }
 
 export default function Dashboard({ posts }: { posts: Post[] }) {
-  const router = useRouter();
   const months = deriveMonths(posts);
   const [selectedMonth, setSelectedMonth] = useState<string>(months[0]?.key ?? "");
-  const [scrapeProgress, setScrapeProgress] = useState<ScrapeProgress | null>(null);
-  const [scrapeDays, setScrapeDays] = useState(7);
-  const [scraping, setScraping] = useState(false);
 
   const filteredPosts = posts.filter((p) => getMonthKey(p.postedAt) === selectedMonth);
-
-  const pollProgress = useCallback(() => {
-    const interval = setInterval(async () => {
-      try {
-        const res = await fetch("/api/scrape");
-        const data: ScrapeProgress = await res.json();
-        setScrapeProgress(data);
-        if (!data.running) {
-          clearInterval(interval);
-          setScraping(false);
-          router.refresh();
-        }
-      } catch {
-        clearInterval(interval);
-        setScraping(false);
-      }
-    }, 2000);
-    return interval;
-  }, [router]);
-
-  async function startScrape() {
-    setScraping(true);
-    setScrapeProgress({ running: true, total: 0, done: 0, message: "Starting..." });
-    try {
-      await fetch("/api/scrape", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ days: scrapeDays }),
-      });
-      pollProgress();
-    } catch {
-      setScraping(false);
-      setScrapeProgress(null);
-    }
-  }
-
-  const pct =
-    scrapeProgress && scrapeProgress.total > 0
-      ? Math.round((scrapeProgress.done / scrapeProgress.total) * 100)
-      : 0;
 
   return (
     <div className="min-h-screen bg-white dark:bg-zinc-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <header className="mb-10 flex items-center justify-between flex-wrap gap-4">
-          <div>
-            <h1 className="text-2xl font-bold text-zinc-900 dark:text-zinc-100">
-              Show HN Dashboard
-            </h1>
-            <p className="mt-1 text-sm text-zinc-500 dark:text-zinc-400">
-              {posts.length} posts tracked
-            </p>
-          </div>
-          <div className="flex items-center gap-3">
-            <label className="text-sm text-zinc-500 dark:text-zinc-400">Days:</label>
-            <input
-              type="number"
-              min={1}
-              max={365}
-              value={scrapeDays}
-              onChange={(e) => setScrapeDays(Number(e.target.value))}
-              className="w-16 rounded border border-zinc-300 dark:border-zinc-600 bg-white dark:bg-zinc-800 px-2 py-1 text-sm text-zinc-900 dark:text-zinc-100"
-            />
-            <button
-              onClick={startScrape}
-              disabled={scraping}
-              className="rounded bg-orange-600 px-4 py-1.5 text-sm font-medium text-white hover:bg-orange-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
-            >
-              {scraping ? "Scraping..." : "Scrape"}
-            </button>
-          </div>
+        <header className="mb-10">
+          <h1 className="text-2xl font-bold text-zinc-900 dark:text-zinc-100">
+            Show HN Dashboard
+          </h1>
+          <p className="mt-1 text-sm text-zinc-500 dark:text-zinc-400">
+            {posts.length} posts tracked
+          </p>
         </header>
-
-        {scraping && scrapeProgress && (
-          <div className="mb-6 rounded-lg border border-zinc-200 dark:border-zinc-700 p-4">
-            <div className="flex items-center justify-between text-sm text-zinc-600 dark:text-zinc-400 mb-2">
-              <span>{scrapeProgress.message}</span>
-              <span>{pct}%</span>
-            </div>
-            <div className="h-2 rounded-full bg-zinc-200 dark:bg-zinc-700 overflow-hidden">
-              <div
-                className="h-full rounded-full bg-orange-500 transition-all duration-300"
-                style={{ width: `${pct}%` }}
-              />
-            </div>
-          </div>
-        )}
 
         <div className="flex gap-8">
           {/* Month sidebar */}
