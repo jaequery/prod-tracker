@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { useRouter } from "next/navigation";
 import PostsTable from "./PostsTable";
+import MonthlyChart from "./MonthlyChart";
 
 type Post = {
   id: number;
@@ -182,6 +183,11 @@ export default function Dashboard({ posts }: { posts: Post[] }) {
 
           {/* Main content */}
           <main className="flex-1 min-w-0">
+            <MonthlyChart
+              months={months}
+              selectedMonth={selectedMonth}
+              onSelectMonth={setSelectedMonth}
+            />
             {filteredPosts.length === 0 ? (
               <p className="text-zinc-500 dark:text-zinc-400">No posts for this month.</p>
             ) : (
