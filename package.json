@@ -8,7 +8,8 @@
     "start": "next start -p 3107",
     "lint": "eslint",
     "scrape": "npx tsx src/scripts/scrape.ts",
-    "db:migrate": "npx prisma migrate dev"
+    "db:migrate": "npx prisma migrate dev && npx prisma generate",
+    "postinstall": "npx prisma generate"
   },
   "dependencies": {
     "@prisma/adapter-pg": "^7.7.0",
