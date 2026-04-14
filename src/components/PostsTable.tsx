@@ -172,7 +172,7 @@ export default function PostsTable({ posts }: { posts: Post[] }) {
             {hiddenCount > 0 && (
               <button
                 onClick={toggleDay}
-                className="mt-2 text-sm text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
+                className="mt-2 text-sm text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors cursor-pointer"
               >
                 {isExpanded ? "Show less" : `Show ${hiddenCount} more`}
               </button>
