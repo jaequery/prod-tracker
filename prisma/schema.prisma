@@ -1,0 +1,20 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model ShowHnPost {
+  id          Int      @id @default(autoincrement())
+  hnId        String   @unique
+  title       String
+  summary     String
+  url         String
+  numComments Int
+  upvotes     Int
+  postedAt    DateTime
+  createdAt   DateTime @default(now())
+}
