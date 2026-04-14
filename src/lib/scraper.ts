@@ -38,7 +38,72 @@ async function fetchPage(page: number, numericFilters: string): Promise<HnRespon
   return res.json() as Promise<HnResponse>;
 }
 
+const BATCH_SIZE = 5;
+
 export type ProgressCallback = (done: number, total: number, message: string) => void;
+
+/** Fetch all hits for a single day, then batch-upsert them. */
+async function scrapeDay(
+  prisma: PrismaClient,
+  dayStart: number,
+  dayEnd: number,
+  dayLabel: string,
+): Promise<number> {
+  log(`Scraping day ${dayLabel}`);
+
+  const numericFilters = `created_at_i>${dayStart},created_at_i<${dayEnd}`;
+  let page = 0;
+  const allHits: HnHit[] = [];
+
+  // Collect all hits for this day
+  while (true) {
+    log(`  Fetching page ${page + 1} for ${dayLabel}`);
+    let data: HnResponse;
+    try {
+      data = await fetchPage(page, numericFilters);
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : String(err);
+      log(`  Error fetching page ${page + 1} for ${dayLabel}: ${msg}`);
+      throw err;
+    }
+
+    if (data.hits.length === 0) break;
+    allHits.push(...data.hits);
+
+    page++;
+    if (page >= data.nbPages) break;
+  }
+
+  // Batch upsert all hits for this day
+  for (const hit of allHits) {
+    const postedAt = new Date(hit.created_at);
+    const hnItemUrl = `https://news.ycombinator.com/item?id=${hit.objectID}`;
+
+    await prisma.showHnPost.upsert({
+      where: { hnId: hit.objectID },
+      update: {
+        title: hit.title,
+        summary: extractSummary(hit.title),
+        url: hit.url || hnItemUrl,
+        numComments: hit.num_comments ?? 0,
+        upvotes: hit.points ?? 0,
+        postedAt,
+      },
+      create: {
+        hnId: hit.objectID,
+        title: hit.title,
+        summary: extractSummary(hit.title),
+        url: hit.url || hnItemUrl,
+        numComments: hit.num_comments ?? 0,
+        upvotes: hit.points ?? 0,
+        postedAt,
+      },
+    });
+  }
+
+  log(`  ${dayLabel}: ${allHits.length} posts (${page} page(s))`);
+  return allHits.length;
+}
 
 export async function scrape(
   days: number,
@@ -57,67 +122,34 @@ export async function scrape(
 
     onProgress?.(0, days, "Starting...");
 
-    // Iterate from oldest day to newest
+    // Build list of days (oldest first)
+    const dayEntries: { dayStart: number; dayEnd: number; dayLabel: string }[] = [];
     for (let dayIndex = days - 1; dayIndex >= 0; dayIndex--) {
       const dayStart = now - (dayIndex + 1) * 86400;
       const dayEnd = now - dayIndex * 86400;
       const dayLabel = new Date(dayStart * 1000).toISOString().slice(0, 10);
-      const daysCompleted = days - 1 - dayIndex;
+      dayEntries.push({ dayStart, dayEnd, dayLabel });
+    }
 
-      log(`Scraping day ${dayLabel} (${daysCompleted + 1}/${days})`);
-      onProgress?.(daysCompleted, days, `Scraping ${dayLabel}...`);
+    // Process days in batches of BATCH_SIZE concurrently
+    let daysCompleted = 0;
+    for (let i = 0; i < dayEntries.length; i += BATCH_SIZE) {
+      const batch = dayEntries.slice(i, i + BATCH_SIZE);
+      const batchLabels = batch.map((d) => d.dayLabel).join(", ");
 
-      const numericFilters = `created_at_i>${dayStart},created_at_i<${dayEnd}`;
-      let page = 0;
-      let dayCount = 0;
+      onProgress?.(daysCompleted, days, `Scraping batch: ${batchLabels}...`);
 
-      while (true) {
-        log(`  Fetching page ${page + 1} for ${dayLabel}`);
-        let data: HnResponse;
-        try {
-          data = await fetchPage(page, numericFilters);
-        } catch (err) {
-          const msg = err instanceof Error ? err.message : String(err);
-          log(`  Error fetching page ${page + 1} for ${dayLabel}: ${msg}`);
-          throw err;
-        }
+      const results = await Promise.all(
+        batch.map((entry) =>
+          scrapeDay(prisma, entry.dayStart, entry.dayEnd, entry.dayLabel)
+        )
+      );
 
-        if (data.hits.length === 0) break;
-
-        for (const hit of data.hits) {
-          const postedAt = new Date(hit.created_at);
-          const hnItemUrl = `https://news.ycombinator.com/item?id=${hit.objectID}`;
-
-          await prisma.showHnPost.upsert({
-            where: { hnId: hit.objectID },
-            update: {
-              title: hit.title,
-              summary: extractSummary(hit.title),
-              url: hit.url || hnItemUrl,
-              numComments: hit.num_comments ?? 0,
-              upvotes: hit.points ?? 0,
-              postedAt,
-            },
-            create: {
-              hnId: hit.objectID,
-              title: hit.title,
-              summary: extractSummary(hit.title),
-              url: hit.url || hnItemUrl,
-              numComments: hit.num_comments ?? 0,
-              upvotes: hit.points ?? 0,
-              postedAt,
-            },
-          });
-
-          dayCount++;
-          totalUpserted++;
-        }
-
-        page++;
-        if (page >= data.nbPages) break;
+      for (const count of results) {
+        totalUpserted += count;
       }
 
-      log(`  ${dayLabel}: ${dayCount} posts (${page} page(s))`);
+      daysCompleted += batch.length;
     }
 
     log(`Scrape complete. Total posts upserted: ${totalUpserted}`);
