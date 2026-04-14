@@ -66,6 +66,16 @@ function formatTime(dateStr: string) {
   });
 }
 
+function getHostname(url: string): string | null {
+  try {
+    const hostname = new URL(url).hostname.replace("www.", "");
+    if (hostname.includes("news.ycombinator.com")) return null;
+    return hostname;
+  } catch {
+    return null;
+  }
+}
+
 export default function PostsTable({ posts }: { posts: Post[] }) {
   const [sortField, setSortField] = useState<SortField>("upvotes");
   const [sortDir, setSortDir] = useState<SortDir>("desc");
@@ -81,6 +91,9 @@ export default function PostsTable({ posts }: { posts: Post[] }) {
   }
 
   const groups = groupByDay(posts);
+
+  const sortButtonClass =
+    "px-3 py-1.5 text-xs font-medium rounded-md cursor-pointer select-none transition-colors text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 hover:bg-zinc-100 dark:hover:bg-zinc-800";
 
   return (
     <div className="space-y-8">
@@ -102,73 +115,90 @@ export default function PostsTable({ posts }: { posts: Post[] }) {
 
         return (
           <section key={day}>
-            <div className="flex items-baseline gap-3 mb-3">
-              <h2 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
-                {day}
-              </h2>
-              <span className="text-sm text-zinc-500 dark:text-zinc-400">
-                {dayPosts.length} post{dayPosts.length !== 1 ? "s" : ""}
-              </span>
+            <div className="flex items-baseline justify-between gap-3 mb-3">
+              <div className="flex items-baseline gap-3">
+                <h2 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
+                  {day}
+                </h2>
+                <span className="text-sm text-zinc-500 dark:text-zinc-400">
+                  {dayPosts.length} post{dayPosts.length !== 1 ? "s" : ""}
+                </span>
+              </div>
+              <div className="flex items-center gap-1">
+                <span className="text-xs text-zinc-400 dark:text-zinc-500 mr-1">Sort:</span>
+                <button
+                  onClick={() => handleSort("upvotes")}
+                  className={sortButtonClass}
+                >
+                  Upvotes{sortIndicator("upvotes", sortField, sortDir)}
+                </button>
+                <button
+                  onClick={() => handleSort("numComments")}
+                  className={sortButtonClass}
+                >
+                  Comments{sortIndicator("numComments", sortField, sortDir)}
+                </button>
+                <button
+                  onClick={() => handleSort("postedAt")}
+                  className={sortButtonClass}
+                >
+                  Posted{sortIndicator("postedAt", sortField, sortDir)}
+                </button>
+              </div>
             </div>
-            <div className="overflow-x-auto rounded-lg border border-zinc-200 dark:border-zinc-700">
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="bg-zinc-50 dark:bg-zinc-800/50 text-left text-zinc-500 dark:text-zinc-400">
-                    <th className="px-4 py-2.5 font-medium w-[40%]">Title</th>
-                    <th className="px-4 py-2.5 font-medium w-[30%]">Summary</th>
-                    <th
-                      className="px-4 py-2.5 font-medium cursor-pointer select-none whitespace-nowrap hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
-                      onClick={() => handleSort("postedAt")}
-                    >
-                      Posted{sortIndicator("postedAt", sortField, sortDir)}
-                    </th>
-                    <th
-                      className="px-4 py-2.5 font-medium cursor-pointer select-none whitespace-nowrap hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors text-right"
-                      onClick={() => handleSort("upvotes")}
-                    >
-                      Upvotes{sortIndicator("upvotes", sortField, sortDir)}
-                    </th>
-                    <th
-                      className="px-4 py-2.5 font-medium cursor-pointer select-none whitespace-nowrap hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors text-right"
-                      onClick={() => handleSort("numComments")}
-                    >
-                      Comments{sortIndicator("numComments", sortField, sortDir)}
-                    </th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-zinc-100 dark:divide-zinc-800">
-                  {visiblePosts.map((post) => (
-                    <tr
-                      key={post.id}
-                      className="hover:bg-zinc-50 dark:hover:bg-zinc-800/30 transition-colors"
-                    >
-                      <td className="px-4 py-3">
+
+            <div className="space-y-2">
+              {visiblePosts.map((post) => {
+                const hostname = getHostname(post.url);
+                const hnLink = `https://news.ycombinator.com/item?id=${post.hnId}`;
+
+                return (
+                  <div
+                    key={post.id}
+                    className="group rounded-lg border border-zinc-200 dark:border-zinc-700/60 bg-white dark:bg-zinc-900/50 px-4 py-3 transition-colors hover:border-zinc-300 dark:hover:border-zinc-600"
+                  >
+                    <div className="flex flex-col gap-1.5 sm:flex-row sm:items-start sm:justify-between sm:gap-4">
+                      {/* Left: title, project link, summary */}
+                      <div className="min-w-0 flex-1">
                         <a
-                          href={post.url}
+                          href={hnLink}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-zinc-900 dark:text-zinc-100 font-medium hover:text-orange-600 dark:hover:text-orange-400 transition-colors"
+                          className="text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-orange-600 dark:hover:text-orange-400 transition-colors"
                         >
                           {post.title}
                         </a>
-                      </td>
-                      <td className="px-4 py-3 text-zinc-600 dark:text-zinc-400 line-clamp-2">
-                        {post.summary}
-                      </td>
-                      <td className="px-4 py-3 text-zinc-500 dark:text-zinc-400 whitespace-nowrap">
-                        {formatTime(post.postedAt)}
-                      </td>
-                      <td className="px-4 py-3 text-zinc-500 dark:text-zinc-400 text-right tabular-nums">
-                        {post.upvotes}
-                      </td>
-                      <td className="px-4 py-3 text-zinc-500 dark:text-zinc-400 text-right tabular-nums">
-                        {post.numComments}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+                        {hostname && (
+                          <a
+                            href={post.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="ml-2 text-xs text-zinc-400 dark:text-zinc-500 hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors"
+                          >
+                            ({hostname})
+                          </a>
+                        )}
+                        {post.summary && (
+                          <p className="mt-0.5 text-xs text-zinc-500 dark:text-zinc-400 line-clamp-2">
+                            {post.summary}
+                          </p>
+                        )}
+                      </div>
+
+                      {/* Right: stats */}
+                      <div className="flex items-center gap-3 text-xs tabular-nums text-zinc-500 dark:text-zinc-400 shrink-0">
+                        <span title="Upvotes">▲ {post.upvotes}</span>
+                        <span className="text-zinc-300 dark:text-zinc-600">|</span>
+                        <span title="Comments">💬 {post.numComments}</span>
+                        <span className="text-zinc-300 dark:text-zinc-600">|</span>
+                        <span title="Posted at">{formatTime(post.postedAt)}</span>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
+
             {hiddenCount > 0 && (
               <button
                 onClick={toggleDay}
