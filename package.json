@@ -8,6 +8,7 @@
     "start": "next start -p 3107",
     "lint": "eslint",
     "scrape": "npx tsx src/scripts/scrape.ts",
+    "scrape:year": "npx tsx src/scripts/scrape.ts --days 365",
     "db:migrate": "npx prisma migrate dev && npx prisma generate",
     "postinstall": "npx prisma generate"
   },

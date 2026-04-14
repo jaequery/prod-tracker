@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import { PrismaPg } from "@prisma/adapter-pg";
 import { PrismaClient } from "@/generated/prisma/client";
+import { reviewPost } from "./ai";
 
 const LOG_FILE = path.resolve(process.cwd(), "scrape.log");
 
@@ -153,6 +154,43 @@ export async function scrape(
     }
 
     log(`Scrape complete. Total posts upserted: ${totalUpserted}`);
+
+    // AI review for posts that don't have scores yet
+    const unscored = await prisma.showHnPost.findMany({
+      where: { aiScore: null },
+      orderBy: { postedAt: "desc" },
+      take: 50,
+    });
+
+    if (unscored.length > 0) {
+      log(`Reviewing ${unscored.length} posts with AI...`);
+      onProgress?.(days, days, `Reviewing ${unscored.length} posts with AI...`);
+
+      const AI_BATCH = 10;
+      for (let i = 0; i < unscored.length; i += AI_BATCH) {
+        const batch = unscored.slice(i, i + AI_BATCH);
+        const results = await Promise.all(
+          batch.map(async (post) => {
+            const review = await reviewPost(post.title, post.url);
+            return { post, review };
+          })
+        );
+        for (const { post, review } of results) {
+          if (review) {
+            await prisma.showHnPost.update({
+              where: { id: post.id },
+              data: {
+                aiSummary: review.summary,
+                aiScore: review.score,
+                aiScoreDetails: JSON.parse(JSON.stringify({ targetAudience: review.targetAudience, dimensions: review.dimensions })),
+              },
+            });
+            log(`  Reviewed: ${post.title} → ${review.score}/100`);
+          }
+        }
+      }
+    }
+
     onProgress?.(days, days, `Done. ${totalUpserted} posts upserted.`);
     return totalUpserted;
   } finally {

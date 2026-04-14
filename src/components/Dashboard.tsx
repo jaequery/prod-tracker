@@ -14,6 +14,9 @@ type Post = {
   upvotes: number;
   postedAt: string;
   createdAt: string;
+  aiSummary: string | null;
+  aiScore: number | null;
+  aiScoreDetails: unknown;
 };
 
 function getMonthKey(dateStr: string): string {

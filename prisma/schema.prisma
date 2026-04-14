@@ -8,13 +8,16 @@ datasource db {
 }
 
 model ShowHnPost {
-  id          Int      @id @default(autoincrement())
-  hnId        String   @unique
-  title       String
-  summary     String
-  url         String
-  numComments Int
-  upvotes     Int
-  postedAt    DateTime
-  createdAt   DateTime @default(now())
+  id             Int      @id @default(autoincrement())
+  hnId           String   @unique
+  title          String
+  summary        String
+  url            String
+  numComments    Int
+  upvotes        Int
+  postedAt       DateTime
+  createdAt      DateTime @default(now())
+  aiSummary      String?
+  aiScore        Int?
+  aiScoreDetails Json?
 }

@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Show HN Dashboard
 
-## Getting Started
+A dashboard that tracks and analyzes Show HN posts from Hacker News. Each project is scored by AI across usefulness, competition, and revenue potential with a Rotten Tomatoes-style rating.
 
-First, run the development server:
+## Features
+
+- Scrapes Show HN posts from the Hacker News Algolia API
+- AI-powered project analysis via OpenRouter (Gemini 2.5 Flash Lite):
+  - Overall interest score (0-100)
+  - Target audience identification
+  - Letter grades (A-F) for Usefulness, Competition, and Money potential
+  - AI-generated project summary
+- Monthly filtering with bar chart
+- Sortable by AI score, upvotes, comments, or post time
+- Dark mode support
+
+## Setup
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Environment Variables
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Create a `.env` file:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+DATABASE_URL="postgresql://postgres:postgres@localhost:5407/prod_tracker"
+OPENROUTER_API_KEY="your-openrouter-api-key"
+```
 
-## Learn More
+### Database
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run db:migrate
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Scripts
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Script | Description |
+|---|---|
+| `npm run dev` | Start dev server (port 3107) |
+| `npm run build` | Production build |
+| `npm run scrape` | Scrape last 7 days |
+| `npm run scrape:year` | Scrape last 365 days |
+| `npm run db:migrate` | Run Prisma migrations |
 
-## Deploy on Vercel
+The scraper fetches posts, then reviews unscored posts with AI (10 in parallel). Already-scored posts are skipped on re-runs.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Tech Stack
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Next.js 16 + React 19
+- PostgreSQL + Prisma 7
+- Tailwind CSS 4
+- OpenRouter API (Gemini 2.5 Flash Lite)
