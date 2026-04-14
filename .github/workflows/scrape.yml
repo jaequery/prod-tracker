@@ -1,0 +1,25 @@
+name: Scrape Show HN
+
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
+    inputs:
+      days:
+        description: 'Number of days to scrape'
+        required: false
+        default: '7'
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    env:
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm ci
+      - run: npx prisma generate
+      - run: npm run scrape -- --days ${{ github.event.inputs.days || '7' }}
