@@ -42,6 +42,7 @@ def fetch_show_hn(days: int) -> list[dict]:
             date_str = created[:10] if created else ""
             url = hit.get("url") or f"https://news.ycombinator.com/item?id={hit.get('objectID', '')}"
             num_comments = hit.get("num_comments", 0)
+            upvotes = hit.get("points", 0)
 
             posts.append({
                 "date": date_str,
@@ -49,6 +50,7 @@ def fetch_show_hn(days: int) -> list[dict]:
                 "summary": summary,
                 "url": url,
                 "num_comments": num_comments,
+                "upvotes": upvotes,
             })
 
         if page >= data.get("nbPages", 0) - 1:
@@ -61,7 +63,7 @@ def fetch_show_hn(days: int) -> list[dict]:
 def write_csv(posts: list[dict], filename: str) -> None:
     """Write posts to CSV."""
     with open(filename, "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=["date", "title", "summary", "url", "num_comments"])
+        writer = csv.DictWriter(f, fieldnames=["date", "title", "summary", "url", "num_comments", "upvotes"])
         writer.writeheader()
         writer.writerows(posts)
 
