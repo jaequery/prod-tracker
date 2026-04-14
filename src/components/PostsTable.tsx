@@ -69,6 +69,7 @@ function formatTime(dateStr: string) {
 export default function PostsTable({ posts }: { posts: Post[] }) {
   const [sortField, setSortField] = useState<SortField>("postedAt");
   const [sortDir, setSortDir] = useState<SortDir>("default");
+  const [expandedDays, setExpandedDays] = useState<Set<string>>(new Set());
 
   function handleSort(field: SortField) {
     if (field === sortField) {
@@ -85,6 +86,20 @@ export default function PostsTable({ posts }: { posts: Post[] }) {
     <div className="space-y-8">
       {Array.from(groups.entries()).map(([day, dayPosts]) => {
         const sorted = sortPosts(dayPosts, sortField, sortDir);
+        const isExpanded = expandedDays.has(day);
+        const limit = 10;
+        const visiblePosts = isExpanded ? sorted : sorted.slice(0, limit);
+        const hiddenCount = sorted.length - limit;
+
+        function toggleDay() {
+          setExpandedDays((prev) => {
+            const next = new Set(prev);
+            if (next.has(day)) next.delete(day);
+            else next.add(day);
+            return next;
+          });
+        }
+
         return (
           <section key={day}>
             <div className="flex items-baseline gap-3 mb-3">
@@ -122,7 +137,7 @@ export default function PostsTable({ posts }: { posts: Post[] }) {
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-zinc-100 dark:divide-zinc-800">
-                  {sorted.map((post) => (
+                  {visiblePosts.map((post) => (
                     <tr
                       key={post.id}
                       className="hover:bg-zinc-50 dark:hover:bg-zinc-800/30 transition-colors"
@@ -154,6 +169,14 @@ export default function PostsTable({ posts }: { posts: Post[] }) {
                 </tbody>
               </table>
             </div>
+            {hiddenCount > 0 && (
+              <button
+                onClick={toggleDay}
+                className="mt-2 text-sm text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
+              >
+                {isExpanded ? "Show less" : `Show ${hiddenCount} more`}
+              </button>
+            )}
           </section>
         );
       })}
