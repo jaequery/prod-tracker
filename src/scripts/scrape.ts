@@ -3,7 +3,7 @@ import fs from "fs";
 import path from "path";
 import { PrismaPg } from "@prisma/adapter-pg";
 import { PrismaClient } from "../generated/prisma/client";
-import { reviewPost } from "../lib/ai";
+import { Inngest } from "inngest";
 
 const LOG_FILE = path.resolve(process.cwd(), "scrape.log");
 
@@ -157,44 +157,13 @@ async function main() {
     console.log(`  ${day}: ${count} posts`);
   }
 
-  // AI review for posts without scores
-  const unscored = await prisma.showHnPost.findMany({
-    where: { aiScore: null },
-    orderBy: { postedAt: "desc" },
-    take: 50,
-  });
-
-  if (unscored.length > 0) {
-    console.log(`\nReviewing ${unscored.length} posts with AI...`);
-    log(`Reviewing ${unscored.length} posts with AI`);
-
-    const AI_BATCH = 10;
-    let reviewed = 0;
-    for (let i = 0; i < unscored.length; i += AI_BATCH) {
-      const batch = unscored.slice(i, i + AI_BATCH);
-      const results = await Promise.all(
-        batch.map(async (post) => {
-          const review = await reviewPost(post.title, post.url);
-          return { post, review };
-        })
-      );
-      for (const { post, review } of results) {
-        if (review) {
-          await prisma.showHnPost.update({
-            where: { id: post.id },
-            data: {
-              aiSummary: review.summary,
-              aiScore: review.score,
-              aiScoreDetails: JSON.parse(JSON.stringify({ targetAudience: review.targetAudience, dimensions: review.dimensions })),
-            },
-          });
-          reviewed++;
-          console.log(`  [${reviewed}/${unscored.length}] ${post.title} → ${review.score}/100`);
-          log(`  Reviewed: ${post.title} → ${review.score}/100`);
-        }
-      }
-    }
-    console.log(`AI review complete: ${reviewed} posts scored.`);
+  // Trigger AI review via Inngest
+  const unscoredCount = await prisma.showHnPost.count({ where: { aiScore: null } });
+  if (unscoredCount > 0) {
+    console.log(`\n${unscoredCount} unscored posts — sending to Inngest for AI review...`);
+    const inngest = new Inngest({ id: "prod-tracker" });
+    await inngest.send({ name: "posts/review.requested", data: {} });
+    console.log("Inngest event sent. Reviews will process in background.");
   }
 
   log(`Scrape complete. Total: ${totalUpserted}`);

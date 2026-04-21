@@ -2,18 +2,12 @@
 
 import { useState } from "react";
 
-type Dimension = {
-  label: string;
-  grade: string;
-  comment: string;
-};
-
 type AiDetails = {
   targetAudience?: string;
-  dimensions?: Dimension[];
-  // legacy panel format
-  role?: string;
-  score?: number;
+  whyItMatters?: string;
+  vibe?: string;
+  techStack?: string;
+  dimensions?: unknown[];
 };
 
 type Post = {
@@ -29,43 +23,16 @@ type Post = {
   aiSummary: string | null;
   aiScore: number | null;
   aiScoreDetails: unknown;
+  previewImage: string | null;
+  siteDescription: string | null;
 };
 
+type Rating = { postId: number; value: number; reason: string | null };
+
 type SortField = "postedAt" | "upvotes" | "numComments" | "aiScore";
-type SortDir = "default" | "asc" | "desc";
-
-function nextDir(dir: SortDir): SortDir {
-  if (dir === "default") return "asc";
-  if (dir === "asc") return "desc";
-  return "default";
-}
-
-function sortIndicator(field: SortField, activeField: SortField, dir: SortDir) {
-  if (field !== activeField || dir === "default") return "";
-  return dir === "asc" ? " \u2191" : " \u2193";
-}
-
-function groupByDay(posts: Post[]): Map<string, Post[]> {
-  const groups = new Map<string, Post[]>();
-  for (const post of posts) {
-    const day = new Date(post.postedAt).toLocaleDateString("en-US", {
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-      timeZone: "UTC",
-    });
-    if (!groups.has(day)) groups.set(day, []);
-    groups.get(day)!.push(post);
-  }
-  return groups;
-}
+type SortDir = "asc" | "desc";
 
 function sortPosts(posts: Post[], field: SortField, dir: SortDir): Post[] {
-  if (dir === "default") {
-    return [...posts].sort(
-      (a, b) => new Date(b.postedAt).getTime() - new Date(a.postedAt).getTime()
-    );
-  }
   const mult = dir === "asc" ? 1 : -1;
   return [...posts].sort((a, b) => {
     if (field === "postedAt") {
@@ -75,40 +42,10 @@ function sortPosts(posts: Post[], field: SortField, dir: SortDir): Post[] {
   });
 }
 
-function formatTime(dateStr: string) {
-  return new Date(dateStr).toLocaleTimeString("en-US", {
-    hour: "numeric",
-    minute: "2-digit",
-    timeZone: "UTC",
-  });
-}
-
-function scoreColor(score: number): string {
-  if (score >= 75) return "text-emerald-600 dark:text-emerald-400";
-  if (score >= 50) return "text-amber-600 dark:text-amber-400";
-  return "text-rose-500 dark:text-rose-400";
-}
-
-function scoreBg(score: number): string {
-  if (score >= 75) return "bg-emerald-50 dark:bg-emerald-950/30 ring-1 ring-inset ring-emerald-500/20";
-  if (score >= 50) return "bg-amber-50 dark:bg-amber-950/30 ring-1 ring-inset ring-amber-500/20";
-  return "bg-rose-50 dark:bg-rose-950/30 ring-1 ring-inset ring-rose-500/20";
-}
-
-function gradeColor(grade: string): string {
-  if (grade === "A") return "text-emerald-600 dark:text-emerald-400";
-  if (grade === "B") return "text-lime-600 dark:text-lime-400";
-  if (grade === "C") return "text-amber-600 dark:text-amber-400";
-  if (grade === "D") return "text-orange-500 dark:text-orange-400";
-  return "text-rose-500 dark:text-rose-400";
-}
-
-function gradeBg(grade: string): string {
-  if (grade === "A") return "bg-emerald-50 dark:bg-emerald-950/20";
-  if (grade === "B") return "bg-lime-50 dark:bg-lime-950/20";
-  if (grade === "C") return "bg-amber-50 dark:bg-amber-950/20";
-  if (grade === "D") return "bg-orange-50 dark:bg-orange-950/20";
-  return "bg-rose-50 dark:bg-rose-950/20";
+function getVerdict(score: number) {
+  if (score >= 70) return { label: "Fresh", icon: "🍅", color: "text-fresh" };
+  if (score >= 40) return { label: "Mid", icon: "🍿", color: "text-mid" };
+  return { label: "Rotten", icon: "🤢", color: "text-rotten" };
 }
 
 function getHostname(url: string): string | null {
@@ -121,117 +58,188 @@ function getHostname(url: string): string | null {
   }
 }
 
-export default function PostsTable({ posts }: { posts: Post[] }) {
+function shouldShowPreview(url: string): boolean {
+  try {
+    return !new URL(url).hostname.includes("news.ycombinator.com");
+  } catch {
+    return false;
+  }
+}
+
+function groupByDay(posts: Post[]): Map<string, Post[]> {
+  const groups = new Map<string, Post[]>();
+  for (const post of posts) {
+    const day = new Date(post.postedAt).toLocaleDateString("en-US", {
+      month: "long",
+      day: "numeric",
+      timeZone: "UTC",
+    });
+    if (!groups.has(day)) groups.set(day, []);
+    groups.get(day)!.push(post);
+  }
+  return groups;
+}
+
+export default function PostsTable({
+  posts,
+  initialRatings = [],
+}: {
+  posts: Post[];
+  initialRatings?: Rating[];
+}) {
   const [sortField, setSortField] = useState<SortField>("aiScore");
   const [sortDir, setSortDir] = useState<SortDir>("desc");
   const [expandedDays, setExpandedDays] = useState<Set<string>>(new Set());
-  const [expandedScores, setExpandedScores] = useState<Set<number>>(new Set());
-
-  function toggleScore(id: number) {
-    setExpandedScores((prev) => {
-      const next = new Set(prev);
-      if (next.has(id)) next.delete(id);
-      else next.add(id);
-      return next;
-    });
-  }
+  const [ratings, setRatings] = useState<Map<number, Rating>>(
+    () => new Map(initialRatings.map((r) => [r.postId, r])),
+  );
+  const [reasonOpen, setReasonOpen] = useState<number | null>(null);
+  const [reasonDraft, setReasonDraft] = useState("");
 
   function handleSort(field: SortField) {
     if (field === sortField) {
-      setSortDir(nextDir(sortDir));
+      setSortDir(sortDir === "asc" ? "desc" : "asc");
     } else {
       setSortField(field);
-      setSortDir("asc");
+      setSortDir("desc");
     }
+  }
+
+  async function saveRating(postId: number, value: 1 | -1, reason: string | null) {
+    const prev = ratings.get(postId) ?? null;
+    const next = new Map(ratings);
+    next.set(postId, { postId, value, reason });
+    setRatings(next);
+    try {
+      const res = await fetch("/api/ratings", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ postId, value, reason }),
+      });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    } catch (err) {
+      console.error("saveRating failed", err);
+      const rollback = new Map(ratings);
+      if (prev) rollback.set(postId, prev);
+      else rollback.delete(postId);
+      setRatings(rollback);
+    }
+  }
+
+  async function clearRating(postId: number) {
+    const prev = ratings.get(postId) ?? null;
+    const next = new Map(ratings);
+    next.delete(postId);
+    setRatings(next);
+    try {
+      const res = await fetch(`/api/ratings?postId=${postId}`, { method: "DELETE" });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    } catch (err) {
+      console.error("clearRating failed", err);
+      const rollback = new Map(ratings);
+      if (prev) rollback.set(postId, prev);
+      setRatings(rollback);
+    }
+  }
+
+  function toggleThumb(postId: number, value: 1 | -1) {
+    const current = ratings.get(postId);
+    if (current?.value === value) {
+      clearRating(postId);
+      if (reasonOpen === postId) setReasonOpen(null);
+      return;
+    }
+    saveRating(postId, value, current?.reason ?? null);
+    setReasonDraft(current?.reason ?? "");
+    setReasonOpen(postId);
+  }
+
+  function submitReason(postId: number) {
+    const current = ratings.get(postId);
+    if (!current) return;
+    const reason = reasonDraft.trim() || null;
+    saveRating(postId, current.value as 1 | -1, reason);
+    setReasonOpen(null);
+    setReasonDraft("");
   }
 
   const groups = groupByDay(posts);
 
-  const sortButtonClass =
-    "px-3 py-1.5 text-xs font-medium rounded-md cursor-pointer select-none transition-colors duration-150 text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 hover:bg-zinc-100 dark:hover:bg-zinc-800";
+  const sortBtnClass = (field: SortField) =>
+    `text-base font-600 cursor-pointer transition-colors ${
+      field === sortField
+        ? "text-neutral-900 underline underline-offset-4 decoration-2"
+        : "text-neutral-400 hover:text-neutral-600"
+    }`;
 
   return (
-    <div className="space-y-10">
-      {Array.from(groups.entries()).map(([day, dayPosts]) => {
-        const sorted = sortPosts(dayPosts, sortField, sortDir);
-        const isExpanded = expandedDays.has(day);
-        const limit = 10;
-        const visiblePosts = isExpanded ? sorted : sorted.slice(0, limit);
-        const hiddenCount = sorted.length - limit;
+    <div>
+      {/* Sort */}
+      <div className="flex items-center gap-6 mb-10">
+        <span className="text-sm text-neutral-400 uppercase tracking-widest font-600">Sort</span>
+        <button onClick={() => handleSort("aiScore")} className={sortBtnClass("aiScore")}>
+          Score {sortField === "aiScore" && (sortDir === "asc" ? "↑" : "↓")}
+        </button>
+        <button onClick={() => handleSort("upvotes")} className={sortBtnClass("upvotes")}>
+          Upvotes {sortField === "upvotes" && (sortDir === "asc" ? "↑" : "↓")}
+        </button>
+        <button onClick={() => handleSort("numComments")} className={sortBtnClass("numComments")}>
+          Comments {sortField === "numComments" && (sortDir === "asc" ? "↑" : "↓")}
+        </button>
+      </div>
 
-        function toggleDay() {
-          setExpandedDays((prev) => {
-            const next = new Set(prev);
-            if (next.has(day)) next.delete(day);
-            else next.add(day);
-            return next;
-          });
-        }
+      <div className="space-y-14">
+        {Array.from(groups.entries()).map(([day, dayPosts]) => {
+          const sorted = sortPosts(dayPosts, sortField, sortDir);
+          const limit = 10;
+          const isExpanded = expandedDays.has(day);
+          const visible = isExpanded ? sorted : sorted.slice(0, limit);
+          const hiddenCount = sorted.length - limit;
 
-        return (
-          <section key={day}>
-            <div className="flex items-baseline justify-between gap-3 mb-4">
-              <div className="flex items-baseline gap-3">
-                <h2 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
-                  {day}
-                </h2>
-                <span className="text-xs font-medium text-zinc-400 dark:text-zinc-500">
-                  {dayPosts.length} post{dayPosts.length !== 1 ? "s" : ""}
-                </span>
-              </div>
-              <div className="flex items-center gap-1">
-                <span className="text-xs text-zinc-400 dark:text-zinc-500 mr-1">Sort:</span>
-                <button onClick={() => handleSort("aiScore")} className={sortButtonClass}>
-                  Score{sortIndicator("aiScore", sortField, sortDir)}
-                </button>
-                <button onClick={() => handleSort("upvotes")} className={sortButtonClass}>
-                  Upvotes{sortIndicator("upvotes", sortField, sortDir)}
-                </button>
-                <button onClick={() => handleSort("numComments")} className={sortButtonClass}>
-                  Comments{sortIndicator("numComments", sortField, sortDir)}
-                </button>
-                <button onClick={() => handleSort("postedAt")} className={sortButtonClass}>
-                  Posted{sortIndicator("postedAt", sortField, sortDir)}
-                </button>
-              </div>
-            </div>
+          return (
+            <section key={day}>
+              <h3 className="text-sm text-neutral-400 uppercase tracking-widest font-600 mb-6 border-b border-neutral-100 pb-3">
+                {day} · {dayPosts.length} projects
+              </h3>
 
-            <div className="space-y-3">
-              {visiblePosts.map((post) => {
-                const hostname = getHostname(post.url);
-                const hnLink = `https://news.ycombinator.com/item?id=${post.hnId}`;
+              <div className="space-y-0">
+                {visible.map((post) => {
+                  const hostname = getHostname(post.url);
+                  const hnLink = `https://news.ycombinator.com/item?id=${post.hnId}`;
+                  const details = post.aiScoreDetails as AiDetails | null;
+                  const det = details && typeof details === "object" && !Array.isArray(details) ? details : null;
+                  const whyItMatters = det?.whyItMatters ?? null;
+                  const vibe = det?.vibe ?? null;
+                  const techStack = det?.techStack ?? null;
+                  const verdict = post.aiScore != null ? getVerdict(post.aiScore) : null;
+                  const screenshot =
+                    post.previewImage && shouldShowPreview(post.url) ? post.previewImage : null;
 
-                const showScorePanel = expandedScores.has(post.id);
-                const details = post.aiScoreDetails as AiDetails | AiDetails[] | null;
-                const isNewFormat = details && !Array.isArray(details) && "dimensions" in details;
-                const dimensions = isNewFormat ? (details as AiDetails).dimensions : null;
-                const targetAudience = isNewFormat ? (details as AiDetails).targetAudience : null;
+                  return (
+                    <div key={post.id} className="border-b border-neutral-50 last:border-b-0">
+                      <div className="py-7 flex items-start gap-6">
+                        {/* Score */}
+                        {verdict && post.aiScore != null ? (
+                          <div className="shrink-0 w-20 flex flex-col items-center">
+                            <span className="text-4xl">{verdict.icon}</span>
+                            <span className={`text-2xl font-800 font-mono ${verdict.color}`}>
+                              {post.aiScore}
+                            </span>
+                          </div>
+                        ) : (
+                          <div className="shrink-0 w-20 flex flex-col items-center opacity-20">
+                            <span className="text-4xl">🍅</span>
+                            <span className="text-lg text-neutral-400">—</span>
+                          </div>
+                        )}
 
-                return (
-                  <div
-                    key={post.id}
-                    className="group rounded-xl bg-white dark:bg-zinc-900/60 p-5 transition-all duration-200 hover:shadow-md ring-1 ring-zinc-100 dark:ring-zinc-800"
-                  >
-                    {/* Row 1: Score + Title + Hostname */}
-                    <div className="flex items-start gap-4">
-                      {post.aiScore != null && (
-                        <button
-                          onClick={() => toggleScore(post.id)}
-                          className={`shrink-0 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-bold tabular-nums cursor-pointer transition-all duration-150 hover:scale-105 ${scoreBg(post.aiScore)} ${scoreColor(post.aiScore)}`}
-                          title="Click for breakdown"
-                        >
-                          {post.aiScore}
-                        </button>
-                      )}
-
-                      <div className="min-w-0 flex-1">
-                        {/* Title line */}
-                        <div className="flex items-baseline gap-2 flex-wrap">
+                        {/* Content */}
+                        <div className="min-w-0 flex-1">
                           <a
                             href={hnLink}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-base font-semibold leading-snug text-zinc-900 dark:text-zinc-100 hover:text-amber-600 dark:hover:text-amber-400 transition-colors duration-150"
+                            className="text-xl font-700 leading-snug text-neutral-900 hover:text-fresh transition-colors"
                           >
                             {post.title}
                           </a>
@@ -240,81 +248,188 @@ export default function PostsTable({ posts }: { posts: Post[] }) {
                               href={post.url}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="text-xs text-zinc-400 dark:text-zinc-500 hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors duration-150"
+                              className="ml-2 text-base text-neutral-400 hover:text-neutral-600 transition-colors"
                             >
-                              {hostname}
+                              {hostname} ↗
                             </a>
                           )}
-                        </div>
 
-                        {/* Row 2: Audience pill + Summary */}
-                        <div className="mt-1.5 flex items-start gap-2">
-                          {targetAudience && (
-                            <span className="shrink-0 inline-flex items-center text-[11px] font-medium px-2 py-0.5 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 mt-0.5">
-                              {targetAudience}
-                            </span>
+                          {/* Site's own description */}
+                          {post.siteDescription && (
+                            <p className="mt-2 text-base text-neutral-600 leading-relaxed">
+                              {post.siteDescription}
+                            </p>
                           )}
+
+                          {/* AI summary */}
                           {post.aiSummary && (
-                            <p className="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed line-clamp-1">
+                            <p className="mt-2 text-base text-neutral-500 leading-relaxed italic">
                               {post.aiSummary}
                             </p>
                           )}
+
+                          {/* Why it matters — the standout line */}
+                          {whyItMatters && (
+                            <p className="mt-2 text-base font-600 text-neutral-700">
+                              → {whyItMatters}
+                            </p>
+                          )}
+
+                          {/* Meta */}
+                          <div className="mt-3 flex items-center gap-4 flex-wrap text-base">
+                            <span className="font-mono text-neutral-400">▲ {post.upvotes}</span>
+                            <span className="font-mono text-neutral-400">◇ {post.numComments}</span>
+                            {vibe && (
+                              <span className="bg-neutral-100 text-neutral-600 px-3 py-1 rounded-full font-500 italic text-sm">
+                                {vibe}
+                              </span>
+                            )}
+                            {techStack && (
+                              <span className="font-mono text-neutral-400 text-sm">{techStack}</span>
+                            )}
+                            {verdict && (
+                              <span className={`font-700 ${verdict.color}`}>{verdict.label}</span>
+                            )}
+
+                            {/* Rating thumbs */}
+                            {(() => {
+                              const rating = ratings.get(post.id);
+                              const up = rating?.value === 1;
+                              const down = rating?.value === -1;
+                              return (
+                                <span className="ml-auto flex items-center gap-1">
+                                  <button
+                                    onClick={() => toggleThumb(post.id, 1)}
+                                    title={up ? "Rated good (click to clear)" : "Rate as good Show HN"}
+                                    className={`px-2 py-1 rounded-full text-lg transition-all cursor-pointer ${
+                                      up
+                                        ? "bg-fresh/10 text-fresh"
+                                        : "text-neutral-300 hover:text-neutral-600 hover:bg-neutral-100"
+                                    }`}
+                                  >
+                                    👍
+                                  </button>
+                                  <button
+                                    onClick={() => toggleThumb(post.id, -1)}
+                                    title={down ? "Rated bad (click to clear)" : "Rate as bad Show HN"}
+                                    className={`px-2 py-1 rounded-full text-lg transition-all cursor-pointer ${
+                                      down
+                                        ? "bg-rotten/10 text-rotten"
+                                        : "text-neutral-300 hover:text-neutral-600 hover:bg-neutral-100"
+                                    }`}
+                                  >
+                                    👎
+                                  </button>
+                                </span>
+                              );
+                            })()}
+                          </div>
+
+                          {/* Saved rating reason */}
+                          {(() => {
+                            const rating = ratings.get(post.id);
+                            if (!rating?.reason || reasonOpen === post.id) return null;
+                            return (
+                              <p className="mt-2 text-sm italic text-neutral-500">
+                                <span className="font-600 not-italic text-neutral-400">
+                                  {rating.value === 1 ? "Liked:" : "Disliked:"}
+                                </span>{" "}
+                                {rating.reason}{" "}
+                                <button
+                                  onClick={() => {
+                                    setReasonOpen(post.id);
+                                    setReasonDraft(rating.reason ?? "");
+                                  }}
+                                  className="text-neutral-400 hover:text-neutral-700 cursor-pointer underline underline-offset-2"
+                                >
+                                  edit
+                                </button>
+                              </p>
+                            );
+                          })()}
+
+                          {/* Reason input */}
+                          {reasonOpen === post.id && ratings.get(post.id) && (
+                            <div className="mt-3 flex items-start gap-2">
+                              <textarea
+                                autoFocus
+                                value={reasonDraft}
+                                onChange={(e) => setReasonDraft(e.target.value)}
+                                placeholder="Why? (optional) — e.g. novel approach, solid craft, clone of X…"
+                                className="flex-1 text-sm border border-neutral-200 rounded-md px-3 py-2 resize-none focus:outline-none focus:border-neutral-500"
+                                rows={2}
+                                onKeyDown={(e) => {
+                                  if (e.key === "Enter" && (e.metaKey || e.ctrlKey)) {
+                                    submitReason(post.id);
+                                  }
+                                  if (e.key === "Escape") {
+                                    setReasonOpen(null);
+                                    setReasonDraft("");
+                                  }
+                                }}
+                              />
+                              <div className="flex flex-col gap-1">
+                                <button
+                                  onClick={() => submitReason(post.id)}
+                                  className="text-sm font-600 px-3 py-1.5 bg-neutral-900 text-white rounded-md hover:bg-neutral-700 cursor-pointer"
+                                >
+                                  Save
+                                </button>
+                                <button
+                                  onClick={() => {
+                                    setReasonOpen(null);
+                                    setReasonDraft("");
+                                  }}
+                                  className="text-sm text-neutral-400 hover:text-neutral-700 cursor-pointer"
+                                >
+                                  Skip
+                                </button>
+                              </div>
+                            </div>
+                          )}
                         </div>
 
-                        {/* Row 3: Stats */}
-                        <div className="mt-2 flex items-center gap-3 text-xs tabular-nums text-zinc-400 dark:text-zinc-500">
-                          <span className="inline-flex items-center gap-1">
-                            <svg className="w-3 h-3" viewBox="0 0 16 16" fill="currentColor"><path d="M8 2l6 8H2z"/></svg>
-                            {post.upvotes}
-                          </span>
-                          <span className="inline-flex items-center gap-1">
-                            <svg className="w-3 h-3" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M2 3h12v8H5l-3 3V3z"/></svg>
-                            {post.numComments}
-                          </span>
-                          <span>{formatTime(post.postedAt)}</span>
-                        </div>
+                        {/* Screenshot preview */}
+                        {screenshot && (
+                          <a
+                            href={post.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="shrink-0 hidden sm:block w-40 h-28 rounded-md overflow-hidden border border-neutral-100 bg-neutral-50 hover:border-neutral-300 transition-colors"
+                          >
+                            <img
+                              src={screenshot}
+                              alt={`${hostname ?? "site"} preview`}
+                              loading="lazy"
+                              className="w-full h-full object-cover object-top"
+                            />
+                          </a>
+                        )}
                       </div>
                     </div>
+                  );
+                })}
+              </div>
 
-                    {/* Expandable grade breakdown */}
-                    {showScorePanel && dimensions && (
-                      <div className="mt-4 pt-4 border-t border-zinc-100 dark:border-zinc-800/80">
-                        <div className="grid grid-cols-3 gap-3">
-                          {dimensions.map((d) => (
-                            <div
-                              key={d.label}
-                              className={`flex flex-col items-center gap-1 p-3 rounded-lg ${gradeBg(d.grade)}`}
-                            >
-                              <span className={`text-xl font-bold ${gradeColor(d.grade)}`}>
-                                {d.grade}
-                              </span>
-                              <span className="text-[11px] font-medium uppercase tracking-wide text-zinc-400 dark:text-zinc-500">
-                                {d.label}
-                              </span>
-                              <p className="text-xs text-zinc-500 dark:text-zinc-400 text-center leading-snug line-clamp-2">
-                                {d.comment}
-                              </p>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-                  </div>
-                );
-              })}
-            </div>
-
-            {hiddenCount > 0 && (
-              <button
-                onClick={toggleDay}
-                className="mt-3 text-sm font-medium text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors duration-150 cursor-pointer"
-              >
-                {isExpanded ? "Show less" : `Show ${hiddenCount} more`}
-              </button>
-            )}
-          </section>
-        );
-      })}
+              {hiddenCount > 0 && (
+                <button
+                  onClick={() => {
+                    setExpandedDays((prev) => {
+                      const next = new Set(prev);
+                      if (next.has(day)) next.delete(day);
+                      else next.add(day);
+                      return next;
+                    });
+                  }}
+                  className="mt-4 text-base font-600 text-neutral-400 hover:text-neutral-900 cursor-pointer transition-colors"
+                >
+                  {isExpanded ? "Show less" : `+ ${hiddenCount} more`}
+                </button>
+              )}
+            </section>
+          );
+        })}
+      </div>
     </div>
   );
 }

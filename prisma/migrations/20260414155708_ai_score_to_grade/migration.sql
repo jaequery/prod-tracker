@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "ShowHnPost" ALTER COLUMN "aiScore" SET DATA TYPE TEXT;

@@ -1,47 +1,81 @@
-interface Dimension {
-  label: string;
-  grade: string;
-  comment: string;
-}
-
 export interface AiReview {
   summary: string;
   score: number;
+  whyItMatters: string;
   targetAudience: string;
-  dimensions: Dimension[];
+  vibe: string;
+  techStack: string;
 }
 
-const VALID_GRADES = ["A", "B", "C", "D", "F"];
+export type Exemplar = {
+  title: string;
+  value: 1 | -1;
+  reason: string;
+};
+
+function isValidScore(n: unknown): n is number {
+  return typeof n === "number" && n >= 0 && n <= 100;
+}
+
+function renderExemplars(exemplars: Exemplar[]): string {
+  if (exemplars.length === 0) return "";
+  const liked = exemplars.filter((e) => e.value === 1);
+  const disliked = exemplars.filter((e) => e.value === -1);
+  const fmt = (e: Exemplar) => `- "${e.title}" — ${e.reason}`;
+  const lines: string[] = [
+    "",
+    "THE USER'S TASTE (calibrate against these labeled examples — weight them heavily):",
+  ];
+  if (liked.length) {
+    lines.push("");
+    lines.push("Projects the user rated as GOOD Show HN:");
+    lines.push(...liked.map(fmt));
+  }
+  if (disliked.length) {
+    lines.push("");
+    lines.push("Projects the user rated as BAD Show HN:");
+    lines.push(...disliked.map(fmt));
+  }
+  lines.push("");
+  return lines.join("\n");
+}
 
 export async function reviewPost(
   title: string,
   url: string,
+  exemplars: Exemplar[] = [],
 ): Promise<AiReview | null> {
   const apiKey = process.env.OPENROUTER_API_KEY;
   if (!apiKey) return null;
 
-  const prompt = `You are reviewing a Show HN project. Be concise and honest.
+  const prompt = `You're reviewing a Show HN project for an audience of developers, designers, and startup founders who browse HN daily. They want to know: is this cool? is this useful? should I care?
 
+You appreciate BOTH serious business tools AND delightful hobby projects. A beautifully crafted weekend hack can score higher than a boring SaaS clone. What matters is: does this project make you feel something — curiosity, excitement, respect for the craft?
+${renderExemplars(exemplars)}
 Project title: ${title}
 Project URL: ${url}
 
-Evaluate:
-1. Who is this for? (specific target audience)
-2. Usefulness — how useful is it for that audience? Grade A-F.
-3. Competition — how crowded is this space? Grade A-F (A = wide open, F = saturated).
-4. Money — revenue potential? Grade A-F.
-5. Overall score 0-100: how interesting is this idea to the mass HN audience, considering novelty, usefulness, and potential impact? Be unbiased. Use the FULL range — boring/derivative projects get 20-40, decent ones 40-60, good ones 60-80, exceptional ones 80+. Do NOT default to 72.
+SCORING — use the FULL 0-100 range with HIGH VARIANCE:
+- 90-100: "Drop everything and look at this." Genuinely novel, beautifully executed, or solves a massive pain point. ~5%.
+- 75-89: Really impressive. Great craft, clear value, makes you want to star/bookmark it. ~10%.
+- 55-74: Solid work. Useful or interesting but not exceptional. ~25%.
+- 35-54: Meh. Another todo app, thin wrapper, or solution seeking a problem. ~30%.
+- 15-34: Weak. Unclear purpose, poor execution, or deeply crowded space. ~20%.
+- 0-14: Why was this posted? ~10%.
+
+Also provide:
+- "whyItMatters": 1 sentence — the single most compelling reason someone should click through and try this. What makes it stand out? Be specific. If nothing stands out, say so honestly.
+- "vibe": A 2-4 word vibe check (e.g., "weekend hack energy", "VC-ready polish", "niche but brilliant", "overengineered todo app", "actually useful CLI", "beautiful and pointless", "scratching own itch")
+- "techStack": Key technologies detected or inferred (e.g., "Rust, WASM", "Next.js, Supabase", "Python CLI")
 
 Respond in this exact JSON format (no markdown, no code fences):
 {
-  "summary": "1-2 sentence summary of what this does and why it matters.",
+  "summary": "1-2 sentence take. Be opinionated. Be specific. Be entertaining. What would you say about this to a friend over coffee?",
+  "whyItMatters": "One compelling sentence about why this is worth your time — or why it isn't.",
   "targetAudience": "specific audience in a few words",
-  "score": 72,
-  "dimensions": [
-    {"label": "Usefulness", "grade": "B", "comment": "one sentence"},
-    {"label": "Competition", "grade": "C", "comment": "one sentence"},
-    {"label": "Money", "grade": "B", "comment": "one sentence"}
-  ]
+  "vibe": "2-4 word vibe check",
+  "techStack": "key tech",
+  "score": 38
 }`;
 
   try {
@@ -69,21 +103,23 @@ Respond in this exact JSON format (no markdown, no code fences):
 
     content = content.replace(/^```(?:json)?\s*/i, "").replace(/\s*```$/, "");
 
+    // Strip control characters that break JSON.parse (tabs/newlines inside strings)
+    content = content.replace(/[\x00-\x1f]/g, (ch: string) =>
+      ch === "\n" || ch === "\r" || ch === "\t" ? " " : ""
+    );
+
     const parsed = JSON.parse(content);
 
     // Validate score
-    if (typeof parsed.score !== "number" || parsed.score < 0 || parsed.score > 100) return null;
-
-    // Validate dimensions
-    for (const d of parsed.dimensions) {
-      if (!VALID_GRADES.includes(d.grade)) return null;
-    }
+    if (!isValidScore(parsed.score)) return null;
 
     return {
       summary: parsed.summary,
       score: parsed.score,
+      whyItMatters: parsed.whyItMatters || "",
       targetAudience: parsed.targetAudience,
-      dimensions: parsed.dimensions,
+      vibe: parsed.vibe || "",
+      techStack: parsed.techStack || "",
     };
   } catch (err) {
     console.error("AI review failed:", err);

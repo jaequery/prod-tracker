@@ -20,4 +20,18 @@ model ShowHnPost {
   aiSummary      String?
   aiScore        Int?
   aiScoreDetails Json?
+  previewImage   String?
+  previewFetchedAt DateTime?
+  siteDescription String?
+  rating         UserRating?
+}
+
+model UserRating {
+  id        Int        @id @default(autoincrement())
+  postId    Int        @unique
+  post      ShowHnPost @relation(fields: [postId], references: [id], onDelete: Cascade)
+  value     Int
+  reason    String?
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
 }

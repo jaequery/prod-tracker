@@ -2,9 +2,12 @@ import { prisma } from "@/lib/prisma";
 import Dashboard from "@/components/Dashboard";
 
 export default async function Home() {
-  const posts = await prisma.showHnPost.findMany({
-    orderBy: { postedAt: "desc" },
-  });
+  const [posts, ratings] = await Promise.all([
+    prisma.showHnPost.findMany({ orderBy: { postedAt: "desc" } }),
+    prisma.userRating.findMany({
+      select: { postId: true, value: true, reason: true },
+    }),
+  ]);
 
   const serialized = posts.map((p) => ({
     ...p,
@@ -12,5 +15,5 @@ export default async function Home() {
     createdAt: p.createdAt.toISOString(),
   }));
 
-  return <Dashboard posts={serialized} />;
+  return <Dashboard posts={serialized} ratings={ratings} />;
 }
