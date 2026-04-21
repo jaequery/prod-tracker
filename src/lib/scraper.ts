@@ -1,15 +1,6 @@
-import fs from "fs";
-import path from "path";
 import { PrismaPg } from "@prisma/adapter-pg";
 import { PrismaClient } from "@/generated/prisma/client";
 import { inngest } from "./inngest";
-
-const LOG_FILE = path.resolve(process.cwd(), "scrape.log");
-
-function log(message: string) {
-  const line = `[${new Date().toISOString()}] ${message}\n`;
-  fs.appendFileSync(LOG_FILE, line);
-}
 
 interface HnHit {
   objectID: string;
@@ -43,31 +34,36 @@ const BATCH_SIZE = 5;
 
 export type ProgressCallback = (done: number, total: number, message: string) => void;
 
-/** Fetch all hits for a single day, then batch-upsert them. */
-async function scrapeDay(
-  prisma: PrismaClient,
-  dayStart: number,
-  dayEnd: number,
-  dayLabel: string,
-): Promise<number> {
-  log(`Scraping day ${dayLabel}`);
+export interface DayEntry {
+  dayStart: number;
+  dayEnd: number;
+  dayLabel: string;
+}
 
+export function buildDayEntries(days: number): DayEntry[] {
+  const now = Math.floor(Date.now() / 1000);
+  const entries: DayEntry[] = [];
+  for (let dayIndex = days - 1; dayIndex >= 0; dayIndex--) {
+    const dayStart = now - (dayIndex + 1) * 86400;
+    const dayEnd = now - dayIndex * 86400;
+    const dayLabel = new Date(dayStart * 1000).toISOString().slice(0, 10);
+    entries.push({ dayStart, dayEnd, dayLabel });
+  }
+  return entries;
+}
+
+/** Fetch all hits for a single day, then upsert them. */
+export async function scrapeDay(
+  prisma: PrismaClient,
+  entry: DayEntry,
+): Promise<number> {
+  const { dayStart, dayEnd, dayLabel } = entry;
   const numericFilters = `created_at_i>${dayStart},created_at_i<${dayEnd}`;
   let page = 0;
   const allHits: HnHit[] = [];
 
-  // Collect all hits for this day
   while (true) {
-    log(`  Fetching page ${page + 1} for ${dayLabel}`);
-    let data: HnResponse;
-    try {
-      data = await fetchPage(page, numericFilters);
-    } catch (err) {
-      const msg = err instanceof Error ? err.message : String(err);
-      log(`  Error fetching page ${page + 1} for ${dayLabel}: ${msg}`);
-      throw err;
-    }
-
+    const data = await fetchPage(page, numericFilters);
     if (data.hits.length === 0) break;
     allHits.push(...data.hits);
 
@@ -75,7 +71,6 @@ async function scrapeDay(
     if (page >= data.nbPages) break;
   }
 
-  // Batch upsert all hits for this day
   for (const hit of allHits) {
     const postedAt = new Date(hit.created_at);
     const hnItemUrl = `https://news.ycombinator.com/item?id=${hit.objectID}`;
@@ -102,74 +97,65 @@ async function scrapeDay(
     });
   }
 
-  log(`  ${dayLabel}: ${allHits.length} posts (${page} page(s))`);
+  console.log(`  ${dayLabel}: ${allHits.length} posts (${page} page(s))`);
   return allHits.length;
 }
 
+/** After a scrape, dispatch Inngest events for any unscored/preview-missing posts. */
+export async function triggerPostProcessing(prisma: PrismaClient): Promise<{
+  unscored: number;
+  missingPreviews: number;
+}> {
+  const [unscored, missingPreviews] = await Promise.all([
+    prisma.showHnPost.count({ where: { aiScore: null } }),
+    prisma.showHnPost.count({ where: { previewFetchedAt: null } }),
+  ]);
+
+  if (unscored > 0) {
+    await inngest.send({ name: "posts/review.requested", data: {} });
+  }
+  if (missingPreviews > 0) {
+    await inngest.send({ name: "posts/preview.requested", data: {} });
+  }
+
+  return { unscored, missingPreviews };
+}
+
+/** Top-level scrape entry point for the CLI. */
 export async function scrape(
   days: number,
-  onProgress?: ProgressCallback
+  onProgress?: ProgressCallback,
 ): Promise<number> {
-  // Clear log file at start of each run
-  fs.writeFileSync(LOG_FILE, "");
-  log(`Starting scrape for ${days} day(s)`);
-
   const adapter = new PrismaPg({ connectionString: process.env.DATABASE_URL! });
   const prisma = new PrismaClient({ adapter });
 
   try {
-    const now = Math.floor(Date.now() / 1000);
+    const dayEntries = buildDayEntries(days);
     let totalUpserted = 0;
 
     onProgress?.(0, days, "Starting...");
 
-    // Build list of days (oldest first)
-    const dayEntries: { dayStart: number; dayEnd: number; dayLabel: string }[] = [];
-    for (let dayIndex = days - 1; dayIndex >= 0; dayIndex--) {
-      const dayStart = now - (dayIndex + 1) * 86400;
-      const dayEnd = now - dayIndex * 86400;
-      const dayLabel = new Date(dayStart * 1000).toISOString().slice(0, 10);
-      dayEntries.push({ dayStart, dayEnd, dayLabel });
-    }
-
-    // Process days in batches of BATCH_SIZE concurrently
     let daysCompleted = 0;
     for (let i = 0; i < dayEntries.length; i += BATCH_SIZE) {
       const batch = dayEntries.slice(i, i + BATCH_SIZE);
       const batchLabels = batch.map((d) => d.dayLabel).join(", ");
 
       onProgress?.(daysCompleted, days, `Scraping batch: ${batchLabels}...`);
+      console.log(`Scraping batch: ${batchLabels}...`);
 
-      const results = await Promise.all(
-        batch.map((entry) =>
-          scrapeDay(prisma, entry.dayStart, entry.dayEnd, entry.dayLabel)
-        )
-      );
-
-      for (const count of results) {
-        totalUpserted += count;
-      }
+      const results = await Promise.all(batch.map((entry) => scrapeDay(prisma, entry)));
+      for (const count of results) totalUpserted += count;
 
       daysCompleted += batch.length;
     }
 
-    log(`Scrape complete. Total posts upserted: ${totalUpserted}`);
-
-    // Trigger AI review via Inngest
-    const unscoredCount = await prisma.showHnPost.count({ where: { aiScore: null } });
-    if (unscoredCount > 0) {
-      log(`${unscoredCount} unscored posts — sending to Inngest for AI review`);
-      onProgress?.(days, days, `${unscoredCount} posts queued for AI review...`);
-      await inngest.send({ name: "posts/review.requested", data: {} });
+    const { unscored, missingPreviews } = await triggerPostProcessing(prisma);
+    if (unscored > 0) {
+      onProgress?.(days, days, `${unscored} posts queued for AI review...`);
+      console.log(`${unscored} unscored posts queued for AI review.`);
     }
-
-    // Trigger preview-image fetch via Inngest
-    const missingPreviewCount = await prisma.showHnPost.count({
-      where: { previewFetchedAt: null },
-    });
-    if (missingPreviewCount > 0) {
-      log(`${missingPreviewCount} posts missing previews — sending to Inngest`);
-      await inngest.send({ name: "posts/preview.requested", data: {} });
+    if (missingPreviews > 0) {
+      console.log(`${missingPreviews} posts queued for preview fetch.`);
     }
 
     onProgress?.(days, days, `Done. ${totalUpserted} posts upserted.`);
