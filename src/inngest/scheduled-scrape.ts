@@ -8,7 +8,7 @@ export const scheduledScrape = inngest.createFunction(
   {
     id: "scheduled-scrape",
     retries: 2,
-    triggers: [{ cron: "0 * * * *" }],
+    triggers: [{ cron: "*/15 * * * *" }],
   },
   async ({ step }) => {
     const entries = buildDayEntries(DAYS);
