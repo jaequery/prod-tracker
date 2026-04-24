@@ -5,7 +5,7 @@ import { fetchSiteMeta } from "@/lib/og-image";
 export const fetchMissingPreviews = inngest.createFunction(
   {
     id: "fetch-missing-previews",
-    concurrency: { limit: 8 },
+    concurrency: { limit: 5 },
     retries: 1,
     triggers: [{ event: "posts/preview.requested" }],
   },
