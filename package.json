@@ -10,6 +10,7 @@
     "lint": "eslint",
     "review:status": "npx tsx src/scripts/review-status.ts",
     "scrape": "npx tsx src/scripts/scrape.ts",
+    "scrape:prod": "npx tsx --env-file=.env.prod src/scripts/scrape.ts",
     "scrape:year": "npx tsx src/scripts/scrape.ts --days 365",
     "db:migrate": "npx prisma migrate dev && npx prisma generate",
     "postinstall": "npx prisma generate"

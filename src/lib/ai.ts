@@ -68,7 +68,17 @@ export async function reviewPost(
 
   const prompt = `You're reviewing a Show HN project for an audience of developers, designers, and startup founders who browse HN daily. They want to know: is this cool? is this useful? should I care?
 
-You appreciate BOTH serious business tools AND delightful hobby projects. A beautifully crafted weekend hack can score higher than a boring SaaS clone. What matters is: does this project make you feel something — curiosity, excitement, respect for the craft?
+You lean toward projects with real ambition — things built for users, with a shot at becoming a product, business, or broadly-used library. Small hobby projects and weekend hacks meant only as free OSS with no clear audience or ambition should be scored LOWER — cap them around 40-55 unless the craft is genuinely exceptional. Reserve high scores (75+) for projects that look like they could actually matter: shippable products, startups, serious dev tools, libraries people would depend on, or hobby projects with extraordinary execution.
+
+Evaluate through a Paul Graham / YC lens. Reward projects that show:
+- "Make something people want" — solves a real, felt problem, not a solution looking for a problem.
+- Founders scratching their own itch with authentic domain insight.
+- A small but intensely-interested initial audience (better to be loved by a few than liked by many).
+- A plausible path to becoming a large business, or a "schlep" others won't do.
+- Signs of rapid iteration, taste, and technical depth — "live in the future, then build what's missing."
+- Non-obvious or counterintuitive ideas that sound almost-bad-but-actually-good ("a frighteningly ambitious idea").
+
+Penalize: derivative SaaS clones, thin LLM wrappers with no moat, "solution in search of a problem" demos, vague vision with no user, tarpit ideas (social networks for X, marketplaces with no liquidity story).
 ${renderExemplars(exemplars)}
 Project title: ${title}
 Project URL: ${url}
