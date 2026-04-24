@@ -68,11 +68,13 @@ export const reviewUnscored = inngest.createFunction(
                 data: {
                   aiSummary: review.summary,
                   aiScore: review.score,
+                  category: review.category,
                   aiScoreDetails: {
                     targetAudience: review.targetAudience,
                     whyItMatters: review.whyItMatters,
                     vibe: review.vibe,
                     techStack: review.techStack,
+                    category: review.category,
                   },
                 },
               });

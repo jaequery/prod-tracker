@@ -1,0 +1,128 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - heading "Show HN" [level=1] [ref=e4]
+      - paragraph [ref=e5]: 854 projects tracked
+    - button "Apr854" [ref=e7] [cursor=pointer]
+    - heading "April 2026" [level=2] [ref=e8]
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]: Sort
+        - button "Score ↓" [ref=e12] [cursor=pointer]
+        - button "Upvotes" [ref=e13] [cursor=pointer]
+        - button "Comments" [ref=e14] [cursor=pointer]
+      - generic [ref=e15]:
+        - heading "April 14, 2026" [level=3] [ref=e16]
+        - generic [ref=e17]:
+          - generic [ref=e19]
+          - generic [ref=e31]
+          - generic [ref=e43]
+          - generic [ref=e55]
+          - generic [ref=e67]
+          - generic [ref=e79]
+          - generic [ref=e91]
+          - generic [ref=e103]
+          - generic [ref=e115]
+          - generic [ref=e127]
+        - button "+ 94 more" [ref=e136] [cursor=pointer]
+      - generic [ref=e137]:
+        - heading "April 13, 2026" [level=3] [ref=e138]
+        - generic [ref=e139]:
+          - generic [ref=e141]
+          - generic [ref=e153]
+          - generic [ref=e165]
+          - generic [ref=e177]
+          - generic [ref=e189]
+          - generic [ref=e201]
+          - generic [ref=e213]
+          - generic [ref=e225]
+          - generic [ref=e237]
+          - generic [ref=e249]
+        - button "+ 114 more" [ref=e260] [cursor=pointer]
+      - generic [ref=e261]:
+        - heading "April 12, 2026" [level=3] [ref=e262]
+        - generic [ref=e263]:
+          - generic [ref=e265]
+          - generic [ref=e277]
+          - generic [ref=e289]
+          - generic [ref=e301]
+          - generic [ref=e313]
+          - generic [ref=e325]
+          - generic [ref=e337]
+          - generic [ref=e349]
+          - generic [ref=e361]
+          - generic [ref=e373]
+        - button "+ 82 more" [ref=e384] [cursor=pointer]
+      - generic [ref=e385]:
+        - heading "April 11, 2026" [level=3] [ref=e386]
+        - generic [ref=e387]:
+          - generic [ref=e389]
+          - generic [ref=e401]
+          - generic [ref=e413]
+          - generic [ref=e425]
+          - generic [ref=e437]
+          - generic [ref=e449]
+          - generic [ref=e461]
+          - generic [ref=e473]
+          - generic [ref=e485]
+          - generic [ref=e495]
+        - button "+ 63 more" [ref=e506] [cursor=pointer]
+      - generic [ref=e507]:
+        - heading "April 10, 2026" [level=3] [ref=e508]
+        - generic [ref=e509]:
+          - generic [ref=e511]
+          - generic [ref=e523]
+          - generic [ref=e535]
+          - generic [ref=e547]
+          - generic [ref=e559]
+          - generic [ref=e571]
+          - generic [ref=e583]
+          - generic [ref=e595]
+          - generic [ref=e607]
+          - generic [ref=e619]
+        - button "+ 100 more" [ref=e630] [cursor=pointer]
+      - generic [ref=e631]:
+        - heading "April 9, 2026" [level=3] [ref=e632]
+        - generic [ref=e633]:
+          - generic [ref=e635]
+          - generic [ref=e647]
+          - generic [ref=e659]
+          - generic [ref=e671]
+          - generic [ref=e681]
+          - generic [ref=e693]
+          - generic [ref=e705]
+          - generic [ref=e717]
+          - generic [ref=e729]
+          - generic [ref=e739]
+        - button "+ 148 more" [ref=e750] [cursor=pointer]
+      - generic [ref=e751]:
+        - heading "April 8, 2026" [level=3] [ref=e752]
+        - generic [ref=e753]:
+          - generic [ref=e755]
+          - generic [ref=e767]
+          - generic [ref=e779]
+          - generic [ref=e791]
+          - generic [ref=e803]
+          - generic [ref=e815]
+          - generic [ref=e827]
+          - generic [ref=e839]
+          - generic [ref=e851]
+          - generic [ref=e863]
+        - button "+ 137 more" [ref=e874] [cursor=pointer]
+      - generic [ref=e875]:
+        - heading "April 7, 2026" [level=3] [ref=e876]
+        - generic [ref=e877]:
+          - generic [ref=e879]
+          - generic [ref=e891]
+          - generic [ref=e903]
+          - generic [ref=e915]
+          - generic [ref=e925]
+          - generic [ref=e937]
+          - generic [ref=e949]
+          - generic [ref=e961]
+          - generic [ref=e973]
+          - generic [ref=e985]
+        - button "+ 36 more" [ref=e996] [cursor=pointer]
+  - button "Open Next.js Dev Tools" [ref=e1002] [cursor=pointer]:
+    - img [ref=e1003]
+  - alert [ref=e1006]

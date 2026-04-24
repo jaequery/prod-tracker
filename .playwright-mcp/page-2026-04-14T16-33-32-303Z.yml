@@ -1,0 +1,1234 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - heading "Show HN" [level=1] [ref=e4]
+      - paragraph [ref=e5]: 854 projects tracked
+    - button "Apr854" [ref=e7] [cursor=pointer]
+    - heading "April 2026" [level=2] [ref=e8]
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]: Sort
+        - button "Score" [ref=e1267] [cursor=pointer]
+        - button "Upvotes ↓" [active] [ref=e1268] [cursor=pointer]
+        - button "Comments" [ref=e14] [cursor=pointer]
+      - generic [ref=e15]:
+        - heading "April 14, 2026" [level=3] [ref=e16]
+        - generic [ref=e17]:
+          - generic [ref=e1270]:
+            - button "🤷 Mid 55" [ref=e1271] [cursor=pointer]:
+              - generic [ref=e1272]: 🤷
+              - generic [ref=e1273]: Mid
+              - generic [ref=e1274]: "55"
+            - generic [ref=e1275]:
+              - 'link "Show HN: Kontext CLI – Credential broker for AI coding agents in Go" [ref=e1276] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47765374
+              - link "github.com" [ref=e1278] [cursor=pointer]:
+                - /url: https://github.com/kontext-dev/kontext-cli
+              - paragraph [ref=e1279]: “This is a command-line tool that helps manage credentials for AI coding agents, primarily by providing a centralized, secure way to store and retrieve them. It aims to simplify the process of connecting AI tools to various services.”
+              - generic [ref=e1280]:
+                - generic [ref=e1281]: ▲ 19
+                - generic [ref=e1282]: ◇ 5
+                - generic [ref=e1283]: "For: Developers building or integrating with AI coding agents"
+          - generic [ref=e1285]:
+            - button "🤷 Mid 55" [ref=e1286] [cursor=pointer]:
+              - generic [ref=e1287]: 🤷
+              - generic [ref=e1288]: Mid
+              - generic [ref=e1289]: "55"
+            - generic [ref=e1290]:
+              - 'link "Show HN: A CLI that writes its own integration code" [ref=e1291] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47762951
+              - link "docs.superglue.cloud" [ref=e1293] [cursor=pointer]:
+                - /url: https://docs.superglue.cloud/getting-started/cli-skills
+              - paragraph [ref=e1294]: “A CLI tool that generates integration code for various web services by leveraging large language models. It's essentially an AI-powered glue code generator.”
+              - generic [ref=e1295]:
+                - generic [ref=e1296]: ▲ 10
+                - generic [ref=e1297]: ◇ 6
+                - generic [ref=e1298]: "For: Backend engineers building microservices and SaaS integrations"
+          - generic [ref=e1300]:
+            - button "🤷 Mid 55" [ref=e1301] [cursor=pointer]:
+              - generic [ref=e1302]: 🤷
+              - generic [ref=e1303]: Mid
+              - generic [ref=e1304]: "55"
+            - generic [ref=e1305]:
+              - 'link "Show HN: Host, share, promote and track release artifacts via your coding agent" [ref=e1306] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47764383
+              - link "jfrog.com" [ref=e1308] [cursor=pointer]:
+                - /url: https://jfrog.com/fly/
+              - paragraph [ref=e1309]: “This project offers a service to host, share, and track release artifacts, aiming to streamline software deployment and distribution processes, particularly for teams using automated coding agents.”
+              - generic [ref=e1310]:
+                - generic [ref=e1311]: ▲ 9
+                - generic [ref=e1312]: ◇ 0
+                - generic [ref=e1313]: "For: DevOps engineers and release managers in mid-to-large organizations managing complex software releases."
+          - generic [ref=e1315]:
+            - button "🤷 Mid 45" [ref=e1316] [cursor=pointer]:
+              - generic [ref=e1317]: 🤷
+              - generic [ref=e1318]: Mid
+              - generic [ref=e1319]: "45"
+            - generic [ref=e1320]:
+              - 'link "Show HN: A stateful UI runtime for reactive web apps in Go" [ref=e1321] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47762851
+              - link "github.com" [ref=e1323] [cursor=pointer]:
+                - /url: https://github.com/doors-dev/doors
+              - paragraph [ref=e1324]: “A Go-based library for building reactive web UIs that attempts to bridge the gap between server-side rendering and client-side interactivity without a full JavaScript framework.”
+              - generic [ref=e1325]:
+                - generic [ref=e1326]: ▲ 8
+                - generic [ref=e1327]: ◇ 4
+                - generic [ref=e1328]: "For: Go developers building web applications, potentially those leaning towards server-side rendering who want more dynamic UIs."
+          - generic [ref=e1330]:
+            - button "🤷 Mid 45" [ref=e1331] [cursor=pointer]:
+              - generic [ref=e1332]: 🤷
+              - generic [ref=e1333]: Mid
+              - generic [ref=e1334]: "45"
+            - generic [ref=e1335]:
+              - 'link "Show HN: Pushduck – S3 uploads that run on Cloudflare Workers, no AWS SDK" [ref=e1336] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47761892
+              - paragraph [ref=e1337]: “This project offers a way to upload files to S3 via Cloudflare Workers, sidestepping the need for the AWS SDK directly on the client.”
+              - generic [ref=e1338]:
+                - generic [ref=e1339]: ▲ 8
+                - generic [ref=e1340]: ◇ 4
+                - generic [ref=e1341]: "For: Frontend developers needing S3 uploads"
+          - generic [ref=e1343]:
+            - button "🤷 Mid 45" [ref=e1344] [cursor=pointer]:
+              - generic [ref=e1345]: 🤷
+              - generic [ref=e1346]: Mid
+              - generic [ref=e1347]: "45"
+            - generic [ref=e1348]:
+              - 'link "Show HN: We built an MCP for Windows – ask Claude about CPU, temps, and privacy" [ref=e1349] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47766443
+              - link "github.com" [ref=e1351] [cursor=pointer]:
+                - /url: https://github.com/AppControlLabs/appcontrol-mcp-go/
+              - paragraph [ref=e1352]: “A local Windows agent for monitoring system metrics and controlling applications, acting as a basic service manager.”
+              - generic [ref=e1353]:
+                - generic [ref=e1354]: ▲ 6
+                - generic [ref=e1355]: ◇ 3
+                - generic [ref=e1356]: "For: Windows power users and tinkerers"
+          - generic [ref=e1358]:
+            - button "🤷 Mid 45" [ref=e1359] [cursor=pointer]:
+              - generic [ref=e1360]: 🤷
+              - generic [ref=e1361]: Mid
+              - generic [ref=e1362]: "45"
+            - generic [ref=e1363]:
+              - 'link "Show HN: Tsplat – Render Gaussian Splats directly in your terminal" [ref=e1364] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47762025
+              - link "github.com" [ref=e1366] [cursor=pointer]:
+                - /url: https://github.com/darshanmakwana412/tsplat
+              - paragraph [ref=e1367]: “This project renders Gaussian splats, a 3D representation technique, directly within a text-based terminal environment. It's essentially a novel visualization hack.”
+              - generic [ref=e1368]:
+                - generic [ref=e1369]: ▲ 6
+                - generic [ref=e1370]: ◇ 1
+                - generic [ref=e1371]: "For: Hobbyists, tinkerers, and researchers in 3D graphics and terminal UI enthusiasts."
+          - generic [ref=e1373]:
+            - button "🤷 Mid 45" [ref=e1374] [cursor=pointer]:
+              - generic [ref=e1375]: 🤷
+              - generic [ref=e1376]: Mid
+              - generic [ref=e1377]: "45"
+            - generic [ref=e1378]:
+              - 'link "Show HN: One-command deploys from your terminal with CreateOS CLI" [ref=e1379] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47761684
+              - link "nodeops.network" [ref=e1381] [cursor=pointer]:
+                - /url: https://nodeops.network/createos/docs/CLI/Overview
+              - paragraph [ref=e1382]: “This is a command-line tool for deploying applications, claiming to simplify the process with a single command. It appears to be a wrapper around existing infrastructure and deployment tools.”
+              - generic [ref=e1383]:
+                - generic [ref=e1384]: ▲ 6
+                - generic [ref=e1385]: ◇ 1
+                - generic [ref=e1386]: "For: Junior-to-mid-level backend developers managing small-to-medium scale applications"
+          - generic [ref=e1388]:
+            - button "🤷 Mid 45" [ref=e1389] [cursor=pointer]:
+              - generic [ref=e1390]: 🤷
+              - generic [ref=e1391]: Mid
+              - generic [ref=e1392]: "45"
+            - generic [ref=e1393]:
+              - 'link "Show HN: Deflect One – command line dashboard for managing Linux servers via SSH" [ref=e1394] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47761442
+              - link "github.com" [ref=e1396] [cursor=pointer]:
+                - /url: https://github.com/Frytskyy/deflect-one
+              - paragraph [ref=e1397]: “A command-line interface dashboard for managing multiple Linux servers via SSH, offering a centralized view of basic system metrics.”
+              - generic [ref=e1398]:
+                - generic [ref=e1399]: ▲ 5
+                - generic [ref=e1400]: ◇ 4
+                - generic [ref=e1401]: "For: DevOps engineers and sysadmins managing a moderate number of Linux servers."
+          - generic [ref=e1403]:
+            - button "🤢 Rotten 35" [ref=e1404] [cursor=pointer]:
+              - generic [ref=e1405]: 🤢
+              - generic [ref=e1406]: Rotten
+              - generic [ref=e1407]: "35"
+            - generic [ref=e1408]:
+              - 'link "Show HN: A 24/7 live stream where AI writes a new song about the current time" [ref=e1409] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47759535
+              - link "youtube.com" [ref=e1411] [cursor=pointer]:
+                - /url: https://www.youtube.com/watch?v=ZJKx8KEdQkM
+              - paragraph [ref=e1412]: “This project is a 24/7 YouTube live stream where an AI generates songs about the current time. It's a novelty, not a tool.”
+              - generic [ref=e1413]:
+                - generic [ref=e1414]: ▲ 5
+                - generic [ref=e1415]: ◇ 3
+                - generic [ref=e1416]: "For: Passive YouTube viewers looking for ambient/novelty content"
+        - button "+ 94 more" [ref=e166] [cursor=pointer]
+      - generic [ref=e167]:
+        - heading "April 13, 2026" [level=3] [ref=e168]
+        - generic [ref=e169]:
+          - generic [ref=e1418]:
+            - button "🤷 Mid 45" [ref=e1419] [cursor=pointer]:
+              - generic [ref=e1420]: 🤷
+              - generic [ref=e1421]: Mid
+              - generic [ref=e1422]: "45"
+            - generic [ref=e1423]:
+              - 'link "Show HN: I built a social media management tool in 3 weeks with Claude and Codex" [ref=e1424] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47749674
+              - link "github.com" [ref=e1426] [cursor=pointer]:
+                - /url: https://github.com/brightbeanxyz/brightbean-studio
+              - paragraph [ref=e1427]: “A social media management tool built in three weeks leveraging AI, aiming to streamline content creation and scheduling for individuals and small businesses.”
+              - generic [ref=e1428]:
+                - generic [ref=e1429]: ▲ 184
+                - generic [ref=e1430]: ◇ 125
+                - generic [ref=e1431]: "For: Small business owners, solopreneurs, content creators"
+          - generic [ref=e1433]:
+            - button "🤷 Mid 45" [ref=e1434] [cursor=pointer]:
+              - generic [ref=e1435]: 🤷
+              - generic [ref=e1436]: Mid
+              - generic [ref=e1437]: "45"
+            - generic [ref=e1438]:
+              - 'link "Show HN: Ithihāsas – a character explorer for Hindu epics, built in a few hours" [ref=e1439] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47756569
+              - link "ithihasas.in" [ref=e1441] [cursor=pointer]:
+                - /url: https://www.ithihasas.in
+              - paragraph [ref=e1442]: “A web-based tool for exploring characters and relationships within Hindu epics, built quickly with Vite and Svelte.”
+              - generic [ref=e1443]:
+                - generic [ref=e1444]: ▲ 161
+                - generic [ref=e1445]: ◇ 42
+                - generic [ref=e1446]: "For: Hobbyists and students of Hindu epics"
+          - generic [ref=e1448]:
+            - button "🤷 Mid 45" [ref=e1449] [cursor=pointer]:
+              - generic [ref=e1450]: 🤷
+              - generic [ref=e1451]: Mid
+              - generic [ref=e1452]: "45"
+            - generic [ref=e1453]:
+              - 'link "Show HN: Continual Learning with .md" [ref=e1454] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47757552
+              - link "github.com" [ref=e1456] [cursor=pointer]:
+                - /url: https://github.com/SunAndClouds/ReadMe
+              - paragraph [ref=e1457]: “This project offers a CLI tool to manage knowledge bases using Markdown files, allowing for querying and summarization of personal notes.”
+              - generic [ref=e1458]:
+                - generic [ref=e1459]: ▲ 31
+                - generic [ref=e1460]: ◇ 28
+                - generic [ref=e1461]: "For: Individuals managing personal knowledge bases in Markdown"
+          - generic [ref=e1463]:
+            - button "🤷 Mid 45" [ref=e1464] [cursor=pointer]:
+              - generic [ref=e1465]: 🤷
+              - generic [ref=e1466]: Mid
+              - generic [ref=e1467]: "45"
+            - generic [ref=e1468]:
+              - 'link "Show HN: IceGate – Observability data lake engine" [ref=e1469] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47753261
+              - link "github.com" [ref=e1471] [cursor=pointer]:
+                - /url: https://github.com/icegatetech/icegate
+              - paragraph [ref=e1472]: “IceGate is a data lake engine designed for observability data, aiming to centralize and query logs, metrics, and traces from various sources.”
+              - generic [ref=e1473]:
+                - generic [ref=e1474]: ▲ 15
+                - generic [ref=e1475]: ◇ 5
+                - generic [ref=e1476]: "For: DevOps engineers, SREs, backend developers managing distributed systems."
+          - generic [ref=e1478]:
+            - button "🤷 Mid 45" [ref=e1479] [cursor=pointer]:
+              - generic [ref=e1480]: 🤷
+              - generic [ref=e1481]: Mid
+              - generic [ref=e1482]: "45"
+            - generic [ref=e1483]:
+              - 'link "Show HN: Equirect – a Rust VR video player" [ref=e1484] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47749295
+              - link "github.com" [ref=e1486] [cursor=pointer]:
+                - /url: https://github.com/greggman/equirect
+              - paragraph [ref=e1487]: “A VR video player written in Rust, designed for playing equirectangular (360°) videos. It's a desktop application, not a web-based solution.”
+              - generic [ref=e1488]:
+                - generic [ref=e1489]: ▲ 13
+                - generic [ref=e1490]: ◇ 1
+                - generic [ref=e1491]: "For: VR enthusiasts, 360° video creators"
+          - generic [ref=e1493]:
+            - button "🤷 Mid 45" [ref=e1494] [cursor=pointer]:
+              - generic [ref=e1495]: 🤷
+              - generic [ref=e1496]: Mid
+              - generic [ref=e1497]: "45"
+            - generic [ref=e1498]:
+              - 'link "Show HN: Mcptube – Karpathy''s LLM Wiki idea applied to YouTube videos" [ref=e1499] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47754559
+              - link "github.com" [ref=e1501] [cursor=pointer]:
+                - /url: https://github.com/0xchamin/mcptube
+              - paragraph [ref=e1502]: “A YouTube video summarization tool using LLMs, aiming to replicate Karpathy's LLM Wiki concept.”
+              - generic [ref=e1503]:
+                - generic [ref=e1504]: ▲ 12
+                - generic [ref=e1505]: ◇ 2
+                - generic [ref=e1506]: "For: YouTube viewers seeking concise content"
+          - generic [ref=e1508]:
+            - button "🤷 Mid 45" [ref=e1509] [cursor=pointer]:
+              - generic [ref=e1510]: 🤷
+              - generic [ref=e1511]: Mid
+              - generic [ref=e1512]: "45"
+            - generic [ref=e1513]:
+              - 'link "Show HN: ParseBench – Document parsing benchmark for AI agents" [ref=e1514] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47752197
+              - link "parsebench.ai" [ref=e1516] [cursor=pointer]:
+                - /url: https://www.parsebench.ai/
+              - paragraph [ref=e1517]: “ParseBench is a standardized benchmark for evaluating document parsing accuracy of AI models, offering a way to compare performance rather than providing a direct parsing service.”
+              - generic [ref=e1518]:
+                - generic [ref=e1519]: ▲ 9
+                - generic [ref=e1520]: ◇ 5
+                - generic [ref=e1521]: "For: AI/ML engineers, researchers"
+          - generic [ref=e261]:
+            - button "🤷 Mid 55" [ref=e262] [cursor=pointer]:
+              - generic [ref=e263]: 🤷
+              - generic [ref=e264]: Mid
+              - generic [ref=e265]: "55"
+            - generic [ref=e266]:
+              - 'link "Show HN: I benchmarked Gemma 4 E2B – the 2B model beat the 12B on multi-turn" [ref=e267] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47756892
+              - link "aiexplr.com" [ref=e269] [cursor=pointer]:
+                - /url: https://aiexplr.com/post/gemma-4-e2b-benchmark
+              - paragraph [ref=e270]: “This project benchmarks Gemma's 2B model against its 12B counterpart on multi-turn conversational tasks, showing surprising outperformance by the smaller model.”
+              - generic [ref=e271]:
+                - generic [ref=e272]: ▲ 7
+                - generic [ref=e273]: ◇ 1
+                - generic [ref=e274]: "For: LLM researchers and developers evaluating model performance"
+          - generic [ref=e1523]:
+            - button "🤷 Mid 45" [ref=e1524] [cursor=pointer]:
+              - generic [ref=e1525]: 🤷
+              - generic [ref=e1526]: Mid
+              - generic [ref=e1527]: "45"
+            - generic [ref=e1528]:
+              - 'link "Show HN: pg_grpc – Call gRPC services directly from PostgreSQL" [ref=e1529] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47755563
+              - link "github.com" [ref=e1531] [cursor=pointer]:
+                - /url: https://github.com/CSenshi/pg_grpc
+              - paragraph [ref=e1532]: “This project allows PostgreSQL to directly call gRPC services, enabling database procedures to interact with external microservices without complex application-level orchestration.”
+              - generic [ref=e1533]:
+                - generic [ref=e1534]: ▲ 7
+                - generic [ref=e1535]: ◇ 1
+                - generic [ref=e1536]: "For: Database administrators and backend engineers working with PostgreSQL microservices."
+          - generic [ref=e1538]:
+            - button "🤷 Mid 45" [ref=e1539] [cursor=pointer]:
+              - generic [ref=e1540]: 🤷
+              - generic [ref=e1541]: Mid
+              - generic [ref=e1542]: "45"
+            - generic [ref=e1543]:
+              - 'link "Show HN: Bloomberg Terminal for LLM ops – free and open source" [ref=e1544] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47754636
+              - paragraph [ref=e1545]: “An open-source dashboard and API for monitoring and managing LLM deployments, aiming to provide visibility into metrics and operations.”
+              - generic [ref=e1546]:
+                - generic [ref=e1547]: ▲ 7
+                - generic [ref=e1548]: ◇ 1
+                - generic [ref=e1549]: "For: MLOps engineers and teams building/managing LLM applications"
+        - button "+ 114 more" [ref=e320] [cursor=pointer]
+      - generic [ref=e321]:
+        - heading "April 12, 2026" [level=3] [ref=e322]
+        - generic [ref=e323]:
+          - generic [ref=e400]:
+            - button "🤷 Mid 55" [ref=e401] [cursor=pointer]:
+              - generic [ref=e402]: 🤷
+              - generic [ref=e403]: Mid
+              - generic [ref=e404]: "55"
+            - generic [ref=e405]:
+              - 'link "Show HN: boringBar – a taskbar-style dock replacement for macOS" [ref=e406] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47742200
+              - link "boringbar.app" [ref=e408] [cursor=pointer]:
+                - /url: https://boringbar.app/
+              - paragraph [ref=e409]: “A macOS taskbar replacement that offers a more organized and customizable application launcher and status indicator than the default Dock and Menu Bar.”
+              - generic [ref=e410]:
+                - generic [ref=e411]: ▲ 510
+                - generic [ref=e412]: ◇ 292
+                - generic [ref=e413]: "For: macOS users seeking enhanced dock functionality and minimalists."
+          - generic [ref=e1551]:
+            - button "🤷 Mid 45" [ref=e1552] [cursor=pointer]:
+              - generic [ref=e1553]: 🤷
+              - generic [ref=e1554]: Mid
+              - generic [ref=e1555]: "45"
+            - generic [ref=e1556]:
+              - 'link "Show HN: Oberon System 3 runs natively on Raspberry Pi 3 (with ready SD card)" [ref=e1557] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47739174
+              - link "github.com" [ref=e1559] [cursor=pointer]:
+                - /url: https://github.com/rochus-keller/OberonSystem3Native/releases
+              - paragraph [ref=e1560]: “This project ports a niche Oberon System, a historical educational operating system and programming environment, to run natively on a Raspberry Pi 3. It offers a retro computing experience rather than a modern development platform.”
+              - generic [ref=e1561]:
+                - generic [ref=e1562]: ▲ 240
+                - generic [ref=e1563]: ◇ 107
+                - generic [ref=e1564]: "For: Retro computing enthusiasts, educational institutions exploring historical OS, niche hobbyists."
+          - generic [ref=e1566]:
+            - button "🤷 Mid 48" [ref=e1567] [cursor=pointer]:
+              - generic [ref=e1568]: 🤷
+              - generic [ref=e1569]: Mid
+              - generic [ref=e1570]: "48"
+            - generic [ref=e1571]:
+              - 'link "Show HN: Claudraband – Claude Code for the Power User" [ref=e1572] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47741889
+              - link "github.com" [ref=e1574] [cursor=pointer]:
+                - /url: https://github.com/halfwhey/claudraband
+              - paragraph [ref=e1575]: “This project offers a VS Code extension to directly integrate Claude AI for code generation and analysis within the IDE.”
+              - generic [ref=e1576]:
+                - generic [ref=e1577]: ▲ 118
+                - generic [ref=e1578]: ◇ 44
+                - generic [ref=e1579]: "For: VS Code users leveraging AI for coding tasks"
+          - generic [ref=e1581]:
+            - button "🤷 Mid 45" [ref=e1582] [cursor=pointer]:
+              - generic [ref=e1583]: 🤷
+              - generic [ref=e1584]: Mid
+              - generic [ref=e1585]: "45"
+            - generic [ref=e1586]:
+              - 'link "Show HN: Revdiff – TUI diff reviewer with inline annotations for AI agents" [ref=e1587] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47742437
+              - link "github.com" [ref=e1589] [cursor=pointer]:
+                - /url: https://github.com/umputun/revdiff
+              - paragraph [ref=e1590]: “A TUI tool that displays diffs and allows AI agents to add inline comments, aiming to improve code review workflows.”
+              - generic [ref=e1591]:
+                - generic [ref=e1592]: ▲ 16
+                - generic [ref=e1593]: ◇ 3
+                - generic [ref=e1594]: "For: Developers doing code reviews, particularly those integrating AI assistance."
+          - generic [ref=e1596]:
+            - button "🤷 Mid 45" [ref=e1597] [cursor=pointer]:
+              - generic [ref=e1598]: 🤷
+              - generic [ref=e1599]: Mid
+              - generic [ref=e1600]: "45"
+            - generic [ref=e1601]:
+              - 'link "Show HN: A social feed with no strangers" [ref=e1602] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47745300
+              - link "grateful.so" [ref=e1604] [cursor=pointer]:
+                - /url: https://www.grateful.so/
+              - paragraph [ref=e1605]: “A social feed designed to connect users only with people they already know, aiming to avoid the noise of public social networks.”
+              - generic [ref=e1606]:
+                - generic [ref=e1607]: ▲ 9
+                - generic [ref=e1608]: ◇ 5
+                - generic [ref=e1609]: "For: Individuals seeking private, curated social interactions."
+          - generic [ref=e460]:
+            - button "🤷 Mid 55" [ref=e461] [cursor=pointer]:
+              - generic [ref=e462]: 🤷
+              - generic [ref=e463]: Mid
+              - generic [ref=e464]: "55"
+            - generic [ref=e465]:
+              - 'link "Show HN: Lazyagent – a local TUI for watching what your coding agents are doing" [ref=e466] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47741279
+              - link "github.com" [ref=e468] [cursor=pointer]:
+                - /url: https://github.com/chojs23/lazyagent
+              - paragraph [ref=e469]: “A command-line interface that displays the real-time output of multiple coding agent processes, allowing users to monitor their execution status.”
+              - generic [ref=e470]:
+                - generic [ref=e471]: ▲ 8
+                - generic [ref=e472]: ◇ 0
+                - generic [ref=e473]: "For: Developers running distributed or concurrent AI agent tasks"
+          - generic [ref=e1611]:
+            - button "🤷 Mid 45" [ref=e1612] [cursor=pointer]:
+              - generic [ref=e1613]: 🤷
+              - generic [ref=e1614]: Mid
+              - generic [ref=e1615]: "45"
+            - generic [ref=e1616]:
+              - 'link "Show HN: Rekal – Long-term memory for LLMs in a single SQLite file" [ref=e1617] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47744683
+              - link "github.com" [ref=e1619] [cursor=pointer]:
+                - /url: https://github.com/janbjorge/rekal
+              - paragraph [ref=e1620]: “A local database for LLM chat history, designed for persistence and retrieval within a single SQLite file. It aims to provide long-term memory without external vector databases or complex infrastructure.”
+              - generic [ref=e1621]:
+                - generic [ref=e1622]: ▲ 7
+                - generic [ref=e1623]: ◇ 9
+                - generic [ref=e1624]: "For: Hobbyist LLM developers, individuals building local AI agents"
+          - generic [ref=e415]:
+            - button "🤷 Mid 55" [ref=e416] [cursor=pointer]:
+              - generic [ref=e417]: 🤷
+              - generic [ref=e418]: Mid
+              - generic [ref=e419]: "55"
+            - generic [ref=e420]:
+              - 'link "Show HN: T4 – a versioned datastore with branching and time-travel (S3-backed)" [ref=e421] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47742167
+              - link "github.com" [ref=e423] [cursor=pointer]:
+                - /url: https://github.com/t4db/t4
+              - paragraph [ref=e424]: “A versioned datastore using S3 as a backend, offering branching and time-travel capabilities akin to Git for data. It's essentially a data warehousing primitive.”
+              - generic [ref=e425]:
+                - generic [ref=e426]: ▲ 7
+                - generic [ref=e427]: ◇ 2
+                - generic [ref=e428]: "For: Data engineers, backend developers managing state"
+          - generic [ref=e1626]:
+            - button "🤷 Mid 45" [ref=e1627] [cursor=pointer]:
+              - generic [ref=e1628]: 🤷
+              - generic [ref=e1629]: Mid
+              - generic [ref=e1630]: "45"
+            - generic [ref=e1631]:
+              - 'link "Show HN: I made a Browser game with physics" [ref=e1632] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47743182
+              - paragraph [ref=e1633]: “A browser-based 2D physics sandbox game where users can create and manipulate objects with basic physics properties.”
+              - generic [ref=e1634]:
+                - generic [ref=e1635]: ▲ 5
+                - generic [ref=e1636]: ◇ 0
+                - generic [ref=e1637]: "For: Casual web gamers, tinkerers"
+          - generic [ref=e1639]:
+            - button "🤷 Mid 55" [ref=e1640] [cursor=pointer]:
+              - generic [ref=e1641]: 🤷
+              - generic [ref=e1642]: Mid
+              - generic [ref=e1643]: "55"
+            - generic [ref=e1644]:
+              - 'link "Show HN: Run AI coding agents in real, local sandboxes, not Git worktrees" [ref=e1645] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47741064
+              - link "superhq.ai" [ref=e1647] [cursor=pointer]:
+                - /url: https://superhq.ai/
+              - paragraph [ref=e1648]: “This project allows developers to run AI coding agents in isolated local environments, separate from their primary development workspace, to avoid pollution and ensure reproducibility.”
+              - generic [ref=e1649]:
+                - generic [ref=e1650]: ▲ 5
+                - generic [ref=e1651]: ◇ 0
+                - generic [ref=e1652]: "For: Backend engineers and senior developers working on complex, multi-service architectures"
+        - button "+ 82 more" [ref=e474] [cursor=pointer]
+      - generic [ref=e475]:
+        - heading "April 11, 2026" [level=3] [ref=e476]
+        - generic [ref=e477]:
+          - generic [ref=e599]:
+            - button "🤷 Mid 55" [ref=e600] [cursor=pointer]:
+              - generic [ref=e601]: 🤷
+              - generic [ref=e602]: Mid
+              - generic [ref=e603]: "55"
+            - generic [ref=e604]:
+              - 'link "Show HN: Pardonned.com – A searchable database of US Pardons" [ref=e605] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47727960
+              - paragraph [ref=e606]: “A searchable database of US pardons, offering a centralized way to find information that is otherwise fragmented and difficult to access.”
+              - generic [ref=e607]:
+                - generic [ref=e608]: ▲ 497
+                - generic [ref=e609]: ◇ 272
+                - generic [ref=e610]: "For: Legal professionals, researchers, journalists, individuals seeking pardon information."
+          - generic [ref=e1654]:
+            - button "🤷 Mid 45" [ref=e1655] [cursor=pointer]:
+              - generic [ref=e1656]: 🤷
+              - generic [ref=e1657]: Mid
+              - generic [ref=e1658]: "45"
+            - generic [ref=e1659]:
+              - 'link "Show HN: Hormuz Havoc, a satirical game that got overrun by AI bots in 24 hours" [ref=e1660] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47729477
+              - link "hormuz-havoc.com" [ref=e1662] [cursor=pointer]:
+                - /url: https://www.hormuz-havoc.com/
+              - paragraph [ref=e1663]: “A satirical, text-based strategy game about navigating geopolitical tensions in the Strait of Hormuz, which was quickly overwhelmed by automated bot players.”
+              - generic [ref=e1664]:
+                - generic [ref=e1665]: ▲ 54
+                - generic [ref=e1666]: ◇ 16
+                - generic [ref=e1667]: "For: Niche gamers interested in political satire"
+          - generic [ref=e1669]:
+            - button "🤷 Mid 52" [ref=e1670] [cursor=pointer]:
+              - generic [ref=e1671]: 🤷
+              - generic [ref=e1672]: Mid
+              - generic [ref=e1673]: "52"
+            - generic [ref=e1674]:
+              - 'link "Show HN: Waffle – Native macOS terminal that auto-tiles sessions into a grid" [ref=e1675] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47730522
+              - link "waffle.baby" [ref=e1677] [cursor=pointer]:
+                - /url: https://waffle.baby
+              - paragraph [ref=e1678]: “A native macOS terminal emulator that automatically arranges terminal windows into a grid. It's a fancier way to manage multiple shell sessions.”
+              - generic [ref=e1679]:
+                - generic [ref=e1680]: ▲ 40
+                - generic [ref=e1681]: ◇ 21
+                - generic [ref=e1682]: "For: macOS users managing multiple terminal sessions who dislike manual window arrangement"
+          - generic [ref=e1684]:
+            - button "🤷 Mid 45" [ref=e1685] [cursor=pointer]:
+              - generic [ref=e1686]: 🤷
+              - generic [ref=e1687]: Mid
+              - generic [ref=e1688]: "45"
+            - generic [ref=e1689]:
+              - 'link "Show HN: Editing 2000 photos made me build a macOS bulk photo editor" [ref=e1690] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47733385
+              - link "apps.apple.com" [ref=e1692] [cursor=pointer]:
+                - /url: https://apps.apple.com/us/app/rapidphoto-batch-crop-edit/id6758485661?mt=12
+              - paragraph [ref=e1693]: “A macOS application that allows users to batch crop and edit photos, born from the developer's personal frustration with manual editing.”
+              - generic [ref=e1694]:
+                - generic [ref=e1695]: ▲ 13
+                - generic [ref=e1696]: ◇ 25
+                - generic [ref=e1697]: "For: Hobbyist photographers, social media managers, small businesses needing consistent visual assets."
+          - generic [ref=e1699]:
+            - button "🤷 Mid 45" [ref=e1700] [cursor=pointer]:
+              - generic [ref=e1701]: 🤷
+              - generic [ref=e1702]: Mid
+              - generic [ref=e1703]: "45"
+            - generic [ref=e1704]:
+              - 'link "Show HN: I forced Claude to play Tetris in Emacs" [ref=e1705] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47726541
+              - link "imgur.com" [ref=e1707] [cursor=pointer]:
+                - /url: https://imgur.com/a/e3nxq5k
+              - paragraph [ref=e1708]: “This project demonstrates an AI model (Claude) playing Tetris within the Emacs text editor, controlled by user input, primarily as a technical novelty.”
+              - generic [ref=e1709]:
+                - generic [ref=e1710]: ▲ 12
+                - generic [ref=e1711]: ◇ 3
+                - generic [ref=e1712]: "For: Emacs users with AI curiosity"
+          - generic [ref=e1714]:
+            - button "🤷 Mid 45" [ref=e1715] [cursor=pointer]:
+              - generic [ref=e1716]: 🤷
+              - generic [ref=e1717]: Mid
+              - generic [ref=e1718]: "45"
+            - generic [ref=e1719]:
+              - 'link "Show HN: Git why – log your agent reasoning trace along your code" [ref=e1720] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47734253
+              - link "hexapode.github.io" [ref=e1722] [cursor=pointer]:
+                - /url: https://hexapode.github.io/git-why/
+              - paragraph [ref=e1723]: “This tool logs your reasoning behind code changes in a git commit message, ostensibly to aid future understanding.”
+              - generic [ref=e1724]:
+                - generic [ref=e1725]: ▲ 11
+                - generic [ref=e1726]: ◇ 1
+                - generic [ref=e1727]: "For: Solo developers, junior developers seeking mentorship, those working on poorly documented legacy code"
+          - generic [ref=e1729]:
+            - button "🤷 Mid 45" [ref=e1730] [cursor=pointer]:
+              - generic [ref=e1731]: 🤷
+              - generic [ref=e1732]: Mid
+              - generic [ref=e1733]: "45"
+            - generic [ref=e1734]:
+              - 'link "Show HN: Collabmem – a memory system for long-term collaboration with AI" [ref=e1735] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47726056
+              - link "github.com" [ref=e1737] [cursor=pointer]:
+                - /url: https://github.com/visionscaper/collabmem
+              - paragraph [ref=e1738]: “Collabmem claims to be a memory system for long-term AI collaboration, essentially a way to give AI persistent context across interactions.”
+              - generic [ref=e1739]:
+                - generic [ref=e1740]: ▲ 11
+                - generic [ref=e1741]: ◇ 1
+                - generic [ref=e1742]: "For: AI researchers and developers building and experimenting with persistent AI agents."
+          - generic [ref=e1744]:
+            - button "🤷 Mid 45" [ref=e1745] [cursor=pointer]:
+              - generic [ref=e1746]: 🤷
+              - generic [ref=e1747]: Mid
+              - generic [ref=e1748]: "45"
+            - generic [ref=e1749]:
+              - 'link "Show HN: A Better Internet" [ref=e1750] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47733479
+              - link "tomclancy.info" [ref=e1752] [cursor=pointer]:
+                - /url: https://tomclancy.info/pages/abi-a-better-internet.html
+              - paragraph [ref=e1753]: “This project aims to improve the internet by providing a curated, opinionated, and privacy-focused browsing experience, essentially a personal knowledge management tool with a content aggregation layer.”
+              - generic [ref=e1754]:
+                - generic [ref=e1755]: ▲ 10
+                - generic [ref=e1756]: ◇ 3
+                - generic [ref=e1757]: "For: Individuals seeking a curated, distraction-free online experience and better personal knowledge organization."
+          - generic [ref=e1759]:
+            - button "🤷 Mid 55" [ref=e1760] [cursor=pointer]:
+              - generic [ref=e1761]: 🤷
+              - generic [ref=e1762]: Mid
+              - generic [ref=e1763]: "55"
+            - generic [ref=e1764]:
+              - 'link "Show HN: HyperFlow – A self-improving agent framework built on LangGraph" [ref=e1765] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47727255
+              - paragraph [ref=e1766]: “This is a framework for building self-improving AI agents using LangGraph, pitched as a way to create more autonomous and capable AI systems.”
+              - generic [ref=e1767]:
+                - generic [ref=e1768]: ▲ 8
+                - generic [ref=e1769]: ◇ 1
+                - generic [ref=e1770]: "For: AI researchers and advanced developers experimenting with agentic systems"
+          - generic [ref=e1772]:
+            - button "🤷 Mid 45" [ref=e1773] [cursor=pointer]:
+              - generic [ref=e1774]: 🤷
+              - generic [ref=e1775]: Mid
+              - generic [ref=e1776]: "45"
+            - generic [ref=e1777]:
+              - 'link "Show HN: We scanned uscis.gov for third-party trackers. The results are jarring" [ref=e1778] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47730540
+              - link "varlog.in" [ref=e1780] [cursor=pointer]:
+                - /url: https://varlog.in/posts/uscis-who-is-watching/
+              - paragraph [ref=e1781]: “This project scans a government website (USCIS.gov) for third-party tracking scripts, presenting the findings in a blog post. It's essentially a one-off report, not a dynamic tool.”
+              - generic [ref=e1782]:
+                - generic [ref=e1783]: ▲ 7
+                - generic [ref=e1784]: ◇ 0
+                - generic [ref=e1785]: "For: Privacy-conscious individuals interested in government data"
+        - button "+ 63 more" [ref=e626] [cursor=pointer]
+      - generic [ref=e627]:
+        - heading "April 10, 2026" [level=3] [ref=e628]
+        - generic [ref=e629]:
+          - generic [ref=e1787]:
+            - button "🤷 Mid 45" [ref=e1788] [cursor=pointer]:
+              - generic [ref=e1789]: 🤷
+              - generic [ref=e1790]: Mid
+              - generic [ref=e1791]: "45"
+            - generic [ref=e1792]:
+              - 'link "Show HN: FluidCAD – Parametric CAD with JavaScript" [ref=e1793] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47721997
+              - link "fluidcad.io" [ref=e1795] [cursor=pointer]:
+                - /url: https://fluidcad.io/
+              - paragraph [ref=e1796]: “FluidCAD is a browser-based parametric CAD system built with JavaScript, aiming to provide a more accessible and web-native alternative to desktop applications.”
+              - generic [ref=e1797]:
+                - generic [ref=e1798]: ▲ 155
+                - generic [ref=e1799]: ◇ 37
+                - generic [ref=e1800]: "For: Hobbyists and designers needing simple parametric modeling, potentially embedding in web apps."
+          - generic [ref=e1802]:
+            - button "🤢 Rotten 35" [ref=e1803] [cursor=pointer]:
+              - generic [ref=e1804]: 🤢
+              - generic [ref=e1805]: Rotten
+              - generic [ref=e1806]: "35"
+            - generic [ref=e1807]:
+              - 'link "Show HN: A WYSIWYG word processor in Python" [ref=e1808] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47722011
+              - link "codeberg.org" [ref=e1810] [cursor=pointer]:
+                - /url: https://codeberg.org/chrisecker/miniword
+              - paragraph [ref=e1811]: “A basic WYSIWYG word processor implemented in Python using Tkinter, promising a self-contained desktop application for simple document editing.”
+              - generic [ref=e1812]:
+                - generic [ref=e1813]: ▲ 91
+                - generic [ref=e1814]: ◇ 39
+                - generic [ref=e1815]: "For: Novice users needing a distraction-free, offline text editor for extremely basic documents."
+          - generic [ref=e1817]:
+            - button "🤷 Mid 45" [ref=e1818] [cursor=pointer]:
+              - generic [ref=e1819]: 🤷
+              - generic [ref=e1820]: Mid
+              - generic [ref=e1821]: "45"
+            - generic [ref=e1822]:
+              - 'link "Show HN: Eve – Managed OpenClaw for work" [ref=e1823] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47721255
+              - link "eve.new" [ref=e1825] [cursor=pointer]:
+                - /url: https://eve.new/login
+              - paragraph [ref=e1826]: “Eve offers managed OpenClaw, a Python framework for building distributed applications, abstracting away infrastructure complexities for users.”
+              - generic [ref=e1827]:
+                - generic [ref=e1828]: ▲ 71
+                - generic [ref=e1829]: ◇ 39
+                - generic [ref=e1830]: "For: Python developers building distributed systems"
+          - generic [ref=e1832]:
+            - button "🤷 Mid 48" [ref=e1833] [cursor=pointer]:
+              - generic [ref=e1834]: 🤷
+              - generic [ref=e1835]: Mid
+              - generic [ref=e1836]: "48"
+            - generic [ref=e1837]:
+              - 'link "Show HN: Keeper – embedded secret store for Go (help me break it)" [ref=e1838] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47715339
+              - link "github.com" [ref=e1840] [cursor=pointer]:
+                - /url: https://github.com/agberohq/keeper
+              - paragraph [ref=e1841]: “A Go library for storing secrets that are embedded directly into the application binary, intended for simplicity and avoiding external dependencies.”
+              - generic [ref=e1842]:
+                - generic [ref=e1843]: ▲ 63
+                - generic [ref=e1844]: ◇ 33
+                - generic [ref=e1845]: "For: Go backend engineers managing sensitive configurations"
+          - generic [ref=e1847]:
+            - button "🤷 Mid 45" [ref=e1848] [cursor=pointer]:
+              - generic [ref=e1849]: 🤷
+              - generic [ref=e1850]: Mid
+              - generic [ref=e1851]: "45"
+            - generic [ref=e1852]:
+              - 'link "Show HN: Do All the Things" [ref=e1853] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47716617
+              - link "doallthethings.app" [ref=e1855] [cursor=pointer]:
+                - /url: https://www.doallthethings.app/
+              - paragraph [ref=e1856]: “This is a personal task management app with a focus on integrating various productivity tools and providing a unified view. It claims to help users 'do all the things' they need to do.”
+              - generic [ref=e1857]:
+                - generic [ref=e1858]: ▲ 27
+                - generic [ref=e1859]: ◇ 8
+                - generic [ref=e1860]: "For: Individuals overwhelmed by multiple productivity tools"
+          - generic [ref=e661]:
+            - button "🤷 Mid 55" [ref=e662] [cursor=pointer]:
+              - generic [ref=e663]: 🤷
+              - generic [ref=e664]: Mid
+              - generic [ref=e665]: "55"
+            - generic [ref=e666]:
+              - 'link "Show HN: DecisionNode – shared structured memory for all AI coding tools via MCP" [ref=e667] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47723505
+              - link "github.com" [ref=e669] [cursor=pointer]:
+                - /url: https://github.com/decisionnode/DecisionNode
+              - paragraph [ref=e670]: “This project offers a shared structured memory layer for AI coding tools, aiming to standardize how these tools interact with and remember project context. It's essentially a pluggable API for AI to access and process codebases.”
+              - generic [ref=e671]:
+                - generic [ref=e672]: ▲ 23
+                - generic [ref=e673]: ◇ 5
+                - generic [ref=e674]: "For: AI engineers, LLM Ops, Tooling developers"
+          - generic [ref=e1862]:
+            - button "🤷 Mid 45" [ref=e1863] [cursor=pointer]:
+              - generic [ref=e1864]: 🤷
+              - generic [ref=e1865]: Mid
+              - generic [ref=e1866]: "45"
+            - generic [ref=e1867]:
+              - 'link "Show HN: Tinycloud – Claude Code for video work" [ref=e1868] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47720755
+              - link "tinycloud.cloudglue.dev" [ref=e1870] [cursor=pointer]:
+                - /url: https://tinycloud.cloudglue.dev/
+              - paragraph [ref=e1871]: “Tinycloud offers a platform to build and manage AI-powered video editing workflows using a visual, node-based interface. It integrates Claude for video analysis and generation tasks.”
+              - generic [ref=e1872]:
+                - generic [ref=e1873]: ▲ 12
+                - generic [ref=e1874]: ◇ 2
+                - generic [ref=e1875]: "For: Video editors, content creators, marketing teams"
+          - generic [ref=e1877]:
+            - button "🤢 Rotten 35" [ref=e1878] [cursor=pointer]:
+              - generic [ref=e1879]: 🤢
+              - generic [ref=e1880]: Rotten
+              - generic [ref=e1881]: "35"
+            - generic [ref=e1882]:
+              - 'link "Show HN: Hindsight Simulator – Go back in time and get rich" [ref=e1883] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47715460
+              - link "chrispattle.com" [ref=e1885] [cursor=pointer]:
+                - /url: https://chrispattle.com/hindsight-simulator
+              - paragraph [ref=e1886]: “A simulation tool that allows users to input historical stock market data and see what would have happened if they had invested at specific past points, framed as a 'get rich' tool.”
+              - generic [ref=e1887]:
+                - generic [ref=e1888]: ▲ 12
+                - generic [ref=e1889]: ◇ 4
+                - generic [ref=e1890]: "For: Amateur investors and speculators"
+          - generic [ref=e1892]:
+            - button "🤷 Mid 45" [ref=e1893] [cursor=pointer]:
+              - generic [ref=e1894]: 🤷
+              - generic [ref=e1895]: Mid
+              - generic [ref=e1896]: "45"
+            - generic [ref=e1897]:
+              - 'link "Show HN: Figma for Coding Agents" [ref=e1898] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47719485
+              - link "getdesign.md" [ref=e1900] [cursor=pointer]:
+                - /url: https://getdesign.md
+              - paragraph [ref=e1901]: “This is a visual editor for defining AI agent workflows, allowing users to chain prompts and tools without writing code. It's essentially a low-code/no-code interface for generative AI applications.”
+              - generic [ref=e1902]:
+                - generic [ref=e1903]: ▲ 11
+                - generic [ref=e1904]: ◇ 6
+                - generic [ref=e1905]: "For: Prototypers, product managers, non-technical AI users"
+          - generic [ref=e1907]:
+            - button "🤷 Mid 50" [ref=e1908] [cursor=pointer]:
+              - generic [ref=e1909]: 🤷
+              - generic [ref=e1910]: Mid
+              - generic [ref=e1911]: "50"
+            - generic [ref=e1912]:
+              - 'link "Show HN: Run GUIs as Scripts" [ref=e1913] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47714770
+              - link "github.com" [ref=e1915] [cursor=pointer]:
+                - /url: https://github.com/skinnyjames/hokusai-pocket
+              - paragraph [ref=e1916]: “This project allows users to run graphical applications directly from the command line, essentially treating GUIs as scripts. It's a novel approach to desktop automation that bypasses the typical GUI interaction model.”
+              - generic [ref=e1917]:
+                - generic [ref=e1918]: ▲ 11
+                - generic [ref=e1919]: ◇ 4
+                - generic [ref=e1920]: "For: Developers needing to automate GUI tasks programmatically"
+        - button "+ 100 more" [ref=e780] [cursor=pointer]
+      - generic [ref=e781]:
+        - heading "April 9, 2026" [level=3] [ref=e782]
+        - generic [ref=e783]:
+          - generic [ref=e1922]:
+            - button "🤷 Mid 45" [ref=e1923] [cursor=pointer]:
+              - generic [ref=e1924]: 🤷
+              - generic [ref=e1925]: Mid
+              - generic [ref=e1926]: "45"
+            - generic [ref=e1927]:
+              - 'link "Show HN: I built a Cargo-like build tool for C/C++" [ref=e1928] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47705413
+              - link "github.com" [ref=e1930] [cursor=pointer]:
+                - /url: https://github.com/randerson112/craft
+              - paragraph [ref=e1931]: “A build tool for C/C++ projects that mimics Cargo's dependency management and build process, aiming to simplify the developer experience.”
+              - generic [ref=e1932]:
+                - generic [ref=e1933]: ▲ 176
+                - generic [ref=e1934]: ◇ 168
+                - generic [ref=e1935]: "For: C/C++ developers seeking simpler build/dependency management"
+          - generic [ref=e1937]:
+            - button "🤷 Mid 55" [ref=e1938] [cursor=pointer]:
+              - generic [ref=e1939]: 🤷
+              - generic [ref=e1940]: Mid
+              - generic [ref=e1941]: "55"
+            - generic [ref=e1942]:
+              - 'link "Show HN: CSS Studio. Design by hand, code by agent" [ref=e1943] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47702196
+              - link "cssstudio.ai" [ref=e1945] [cursor=pointer]:
+                - /url: https://cssstudio.ai
+              - paragraph [ref=e1946]: “This tool allows designers to create CSS visually without writing code, then generates that code using an AI agent. It aims to bridge the gap between design and development.”
+              - generic [ref=e1947]:
+                - generic [ref=e1948]: ▲ 174
+                - generic [ref=e1949]: ◇ 107
+                - generic [ref=e1950]: "For: Frontend developers and designers with limited CSS expertise"
+          - generic [ref=e1952]:
+            - button "🤷 Mid 45" [ref=e1953] [cursor=pointer]:
+              - generic [ref=e1954]: 🤷
+              - generic [ref=e1955]: Mid
+              - generic [ref=e1956]: "45"
+            - generic [ref=e1957]:
+              - 'link "Show HN: 41 years sea surface temperature anomalies" [ref=e1958] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47702791
+              - link "ssta.willhelps.org" [ref=e1960] [cursor=pointer]:
+                - /url: https://ssta.willhelps.org
+              - paragraph [ref=e1961]: “This project visualizes 41 years of sea surface temperature anomalies, largely presenting publicly available NOAA data in a straightforward manner.”
+              - generic [ref=e1962]:
+                - generic [ref=e1963]: ▲ 147
+                - generic [ref=e1964]: ◇ 73
+                - generic [ref=e1965]: "For: Climate researchers, meteorologists, oceanographers"
+          - generic [ref=e1967]:
+            - button "🤷 Mid 45" [ref=e1968] [cursor=pointer]:
+              - generic [ref=e1969]: 🤷
+              - generic [ref=e1970]: Mid
+              - generic [ref=e1971]: "45"
+            - generic [ref=e1972]:
+              - 'link "Show HN: Guruka.com – free guided mediations. No signup, private, works offline" [ref=e1973] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47704259
+              - link "guruka.com" [ref=e1975] [cursor=pointer]:
+                - /url: https://guruka.com/
+              - paragraph [ref=e1976]: “Guruka.com offers entirely free, offline guided meditations without requiring user accounts, aiming for privacy and accessibility.”
+              - generic [ref=e1977]:
+                - generic [ref=e1978]: ▲ 39
+                - generic [ref=e1979]: ◇ 16
+                - generic [ref=e1980]: "For: Individuals seeking basic, private, offline meditation without commitment."
+          - generic [ref=e1982]:
+            - button "🤷 Mid 45" [ref=e1983] [cursor=pointer]:
+              - generic [ref=e1984]: 🤷
+              - generic [ref=e1985]: Mid
+              - generic [ref=e1986]: "45"
+            - generic [ref=e1987]:
+              - 'link "Show HN: Rust based eBook library for Python, with MIT license" [ref=e1988] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47710835
+              - link "github.com" [ref=e1990] [cursor=pointer]:
+                - /url: https://github.com/arc53/fast-ebook
+              - paragraph [ref=e1991]: “A Rust binary that serves local EB files to a Python interpreter, claiming faster parsing than existing Python solutions.”
+              - generic [ref=e1992]:
+                - generic [ref=e1993]: ▲ 33
+                - generic [ref=e1994]: ◇ 3
+                - generic [ref=e1995]: "For: Python developers with large local EB datasets"
+          - generic [ref=e903]:
+            - button "🤷 Mid 55" [ref=e904] [cursor=pointer]:
+              - generic [ref=e905]: 🤷
+              - generic [ref=e906]: Mid
+              - generic [ref=e907]: "55"
+            - generic [ref=e908]:
+              - 'link "Show HN: QVAC SDK, a universal JavaScript SDK for building local AI applications" [ref=e909] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47708697
+              - paragraph [ref=e910]: “A JavaScript SDK that allows web applications to interact with local LLMs, simplifying the process of building client-side AI features.”
+              - generic [ref=e911]:
+                - generic [ref=e912]: ▲ 30
+                - generic [ref=e913]: ◇ 14
+                - generic [ref=e914]: "For: Frontend developers building web applications with local AI features"
+          - generic [ref=e1997]:
+            - button "🤷 Mid 45" [ref=e1998] [cursor=pointer]:
+              - generic [ref=e1999]: 🤷
+              - generic [ref=e2000]: Mid
+              - generic [ref=e2001]: "45"
+            - generic [ref=e2002]:
+              - 'link "Show HN: Mdpdf a 2k line C CLI to convert Markdown to tiny PDFs" [ref=e2003] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47705802
+              - link "github.com" [ref=e2005] [cursor=pointer]:
+                - /url: https://github.com/schicho/mdpdf
+              - paragraph [ref=e2006]: “A command-line tool that converts Markdown files into PDF documents, touting small file sizes.”
+              - generic [ref=e2007]:
+                - generic [ref=e2008]: ▲ 15
+                - generic [ref=e2009]: ◇ 4
+                - generic [ref=e2010]: "For: Developers needing simple, lightweight PDF generation for documentation or reports without complex formatting."
+          - generic [ref=e2012]:
+            - button "🤷 Mid 45" [ref=e2013] [cursor=pointer]:
+              - generic [ref=e2014]: 🤷
+              - generic [ref=e2015]: Mid
+              - generic [ref=e2016]: "45"
+            - generic [ref=e2017]:
+              - 'link "Show HN: Zoneless – Open-source Stripe Connect clone with $0.002 fees using USDC" [ref=e2018] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47704260
+              - link "github.com" [ref=e2020] [cursor=pointer]:
+                - /url: https://github.com/zonelessdev/zoneless
+              - paragraph [ref=e2021]: “An open-source re-implementation of Stripe Connect using USDC, aiming to offer lower transaction fees for programmatic payments.”
+              - generic [ref=e2022]:
+                - generic [ref=e2023]: ▲ 15
+                - generic [ref=e2024]: ◇ 7
+                - generic [ref=e2025]: "For: Fintech developers needing low-cost payment rails"
+          - generic [ref=e2027]:
+            - button "🤷 Mid 45" [ref=e2028] [cursor=pointer]:
+              - generic [ref=e2029]: 🤷
+              - generic [ref=e2030]: Mid
+              - generic [ref=e2031]: "45"
+            - generic [ref=e2032]:
+              - 'link "Show HN: Control your X/Twitter feed using a small on-device LLM" [ref=e2033] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47706293
+              - link "imbue.com" [ref=e2035] [cursor=pointer]:
+                - /url: https://imbue.com/product/bouncer/
+              - paragraph [ref=e2036]: “This is a desktop application that uses a local LLM to filter and summarize X/Twitter content, aiming to reduce noise. It's essentially a fancier RSS reader with AI-powered summarization for a platform known for its ephemeral, often noisy, content.”
+              - generic [ref=e2037]:
+                - generic [ref=e2038]: ▲ 14
+                - generic [ref=e2039]: ◇ 3
+                - generic [ref=e2040]: "For: Power X/Twitter users overwhelmed by information overload."
+          - generic [ref=e2042]:
+            - button "🤷 Mid 45" [ref=e2043] [cursor=pointer]:
+              - generic [ref=e2044]: 🤷
+              - generic [ref=e2045]: Mid
+              - generic [ref=e2046]: "45"
+            - generic [ref=e2047]:
+              - 'link "Show HN: I built a weather site for the Eastern Caribbean" [ref=e2048] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47709917
+              - paragraph [ref=e2049]: “A weather website focused on the Eastern Caribbean region, aggregating data and presenting it with a specific regional emphasis.”
+              - generic [ref=e2050]:
+                - generic [ref=e2051]: ▲ 12
+                - generic [ref=e2052]: ◇ 0
+                - generic [ref=e2053]: "For: Residents and travelers to the Eastern Caribbean"
+        - button "+ 148 more" [ref=e930] [cursor=pointer]
+      - generic [ref=e931]:
+        - heading "April 8, 2026" [level=3] [ref=e932]
+        - generic [ref=e933]:
+          - generic [ref=e2055]:
+            - button "🤷 Mid 45" [ref=e2056] [cursor=pointer]:
+              - generic [ref=e2057]: 🤷
+              - generic [ref=e2058]: Mid
+              - generic [ref=e2059]: "45"
+            - generic [ref=e2060]:
+              - 'link "Show HN: Is Hormuz open yet?" [ref=e2061] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47696562
+              - link "ishormuzopenyet.com" [ref=e2063] [cursor=pointer]:
+                - /url: https://www.ishormuzopenyet.com/
+              - paragraph [ref=e2064]: “This website provides a single, real-time status of the Hormuz Strait, implying it's for tracking geopolitical risks impacting shipping.”
+              - generic [ref=e2065]:
+                - generic [ref=e2066]: ▲ 483
+                - generic [ref=e2067]: ◇ 209
+                - generic [ref=e2068]: "For: Maritime logistics managers, risk analysts, defense strategists"
+          - generic [ref=e2070]:
+            - button "🤷 Mid 45" [ref=e2071] [cursor=pointer]:
+              - generic [ref=e2072]: 🤷
+              - generic [ref=e2073]: Mid
+              - generic [ref=e2074]: "45"
+            - generic [ref=e2075]:
+              - 'link "Show HN: Orange Juice – Small UX improvements that make HN easier to read" [ref=e2076] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47694036
+              - link "oj-hn.com" [ref=e2078] [cursor=pointer]:
+                - /url: http://oj-hn.com/
+              - paragraph [ref=e2079]: “A browser extension that applies minor visual tweaks to Hacker News to improve readability, such as font adjustments and link styling.”
+              - generic [ref=e2080]:
+                - generic [ref=e2081]: ▲ 147
+                - generic [ref=e2082]: ◇ 158
+                - generic [ref=e2083]: "For: Frequent Hacker News readers seeking minor UI enhancements"
+          - generic [ref=e2085]:
+            - button "🤷 Mid 45" [ref=e2086] [cursor=pointer]:
+              - generic [ref=e2087]: 🤷
+              - generic [ref=e2088]: Mid
+              - generic [ref=e2089]: "45"
+            - generic [ref=e2090]:
+              - 'link "Show HN: I pipe free sports streams into Jellyfin – no ads, just HLS" [ref=e2091] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47689165
+              - link "github.com" [ref=e2093] [cursor=pointer]:
+                - /url: https://github.com/pcruz1905/hls-restream-proxy
+              - paragraph [ref=e2094]: “This project repackages free sports streams into HLS format for Jellyfin, bypassing ads. It's essentially a stream re-streamer with a media server integration focus.”
+              - generic [ref=e2095]:
+                - generic [ref=e2096]: ▲ 120
+                - generic [ref=e2097]: ◇ 36
+                - generic [ref=e2098]: "For: Sports fans frustrated with ads on free streams, using Jellyfin for media management."
+          - generic [ref=e2100]:
+            - button "🤷 Mid 45" [ref=e2101] [cursor=pointer]:
+              - generic [ref=e2102]: 🤷
+              - generic [ref=e2103]: Mid
+              - generic [ref=e2104]: "45"
+            - generic [ref=e2105]:
+              - 'link "Show HN: We fingerprinted 178 AI models'' writing styles and similarity clusters" [ref=e2106] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47690415
+              - link "rival.tips" [ref=e2108] [cursor=pointer]:
+                - /url: https://rival.tips/research/model-similarity
+              - paragraph [ref=e2109]: “This project presents a classification of 178 AI models based on writing style similarity, offering a visual representation of their clustering. It's a research artifact, not a product.”
+              - generic [ref=e2110]:
+                - generic [ref=e2111]: ▲ 78
+                - generic [ref=e2112]: ◇ 23
+                - generic [ref=e2113]: "For: AI researchers, LLM enthusiasts, curious technologists"
+          - generic [ref=e2115]:
+            - button "🤷 Mid 45" [ref=e2116] [cursor=pointer]:
+              - generic [ref=e2117]: 🤷
+              - generic [ref=e2118]: Mid
+              - generic [ref=e2119]: "45"
+            - generic [ref=e2120]:
+              - 'link "Show HN: Druids – Build your own software factory" [ref=e2121] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47695666
+              - link "github.com" [ref=e2123] [cursor=pointer]:
+                - /url: https://github.com/fulcrumresearch/druids
+              - paragraph [ref=e2124]: “Druids is a tool that automates the generation of boilerplate code for various software components, aiming to accelerate development by providing pre-built solutions for common tasks.”
+              - generic [ref=e2125]:
+                - generic [ref=e2126]: ▲ 64
+                - generic [ref=e2127]: ◇ 15
+                - generic [ref=e2128]: "For: Backend developers building microservices and APIs"
+          - generic [ref=e2130]:
+            - button "🤷 Mid 45" [ref=e2131] [cursor=pointer]:
+              - generic [ref=e2132]: 🤷
+              - generic [ref=e2133]: Mid
+              - generic [ref=e2134]: "45"
+            - generic [ref=e2135]:
+              - 'link "Show HN: Go-Bt: Minimalist Behavior Trees for Go" [ref=e2136] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47690797
+              - link "github.com" [ref=e2138] [cursor=pointer]:
+                - /url: https://github.com/rvitorper/go-bt
+              - paragraph [ref=e2139]: “A Go library for building behavior trees, a common pattern for AI decision-making in games and robotics.”
+              - generic [ref=e2140]:
+                - generic [ref=e2141]: ▲ 62
+                - generic [ref=e2142]: ◇ 12
+                - generic [ref=e2143]: "For: Game developers, AI engineers, Robotics programmers"
+          - generic [ref=e2145]:
+            - button "🤷 Mid 45" [ref=e2146] [cursor=pointer]:
+              - generic [ref=e2147]: 🤷
+              - generic [ref=e2148]: Mid
+              - generic [ref=e2149]: "45"
+            - generic [ref=e2150]:
+              - 'link "Show HN: Skrun – Deploy any agent skill as an API" [ref=e2151] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47689319
+              - link "github.com" [ref=e2153] [cursor=pointer]:
+                - /url: https://github.com/skrun-dev/skrun
+              - paragraph [ref=e2154]: “Skrun allows developers to expose functions from various AI agent frameworks as REST APIs, simplifying integration. It doesn't fundamentally reinvent AI agent capabilities but offers a translation layer.”
+              - generic [ref=e2155]:
+                - generic [ref=e2156]: ▲ 62
+                - generic [ref=e2157]: ◇ 12
+                - generic [ref=e2158]: "For: Backend engineers integrating AI agents into applications"
+          - generic [ref=e2160]:
+            - button "🤷 Mid 55" [ref=e2161] [cursor=pointer]:
+              - generic [ref=e2162]: 🤷
+              - generic [ref=e2163]: Mid
+              - generic [ref=e2164]: "55"
+            - generic [ref=e2165]:
+              - 'link "Show HN: TUI-use: Let AI agents control interactive terminal programs" [ref=e2166] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47692661
+              - link "github.com" [ref=e2168] [cursor=pointer]:
+                - /url: https://github.com/onesuper/tui-use
+              - paragraph [ref=e2169]: “This project allows AI agents to interact with and control terminal applications, essentially automating command-line workflows.”
+              - generic [ref=e2170]:
+                - generic [ref=e2171]: ▲ 52
+                - generic [ref=e2172]: ◇ 37
+                - generic [ref=e2173]: "For: DevOps engineers, sysadmins, and developers automating repetitive terminal tasks."
+          - generic [ref=e2175]:
+            - button "🤷 Mid 45" [ref=e2176] [cursor=pointer]:
+              - generic [ref=e2177]: 🤷
+              - generic [ref=e2178]: Mid
+              - generic [ref=e2179]: "45"
+            - generic [ref=e2180]:
+              - 'link "Show HN: Explore the Silk Roads through an interactive map" [ref=e2181] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47691174
+              - link "intofarlands.com" [ref=e2183] [cursor=pointer]:
+                - /url: https://www.intofarlands.com/silk-roads-map
+              - paragraph [ref=e2184]: “An interactive map visualizing historical Silk Road routes with placemarkers for cities and trade goods. It's a digital atlas for a niche historical interest.”
+              - generic [ref=e2185]:
+                - generic [ref=e2186]: ▲ 47
+                - generic [ref=e2187]: ◇ 6
+                - generic [ref=e2188]: "For: History enthusiasts, academics, students of ancient trade"
+          - generic [ref=e2190]:
+            - button "🤷 Mid 45" [ref=e2191] [cursor=pointer]:
+              - generic [ref=e2192]: 🤷
+              - generic [ref=e2193]: Mid
+              - generic [ref=e2194]: "45"
+            - generic [ref=e2195]:
+              - 'link "Show HN: BAREmail – minimalist Gmail client for bad WiFi" [ref=e2196] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47690950
+              - link "github.com" [ref=e2198] [cursor=pointer]:
+                - /url: https://github.com/matt-virgo/baremail
+              - paragraph [ref=e2199]: “A minimalist desktop Gmail client designed for low-bandwidth environments, offering only essential email features.”
+              - generic [ref=e2200]:
+                - generic [ref=e2201]: ▲ 44
+                - generic [ref=e2202]: ◇ 44
+                - generic [ref=e2203]: "For: Users with persistently poor internet connectivity needing basic email access."
+        - button "+ 137 more" [ref=e1084] [cursor=pointer]
+      - generic [ref=e1085]:
+        - heading "April 7, 2026" [level=3] [ref=e1086]
+        - generic [ref=e1087]:
+          - generic [ref=e1119]:
+            - button "🤷 Mid 55" [ref=e1120] [cursor=pointer]:
+              - generic [ref=e1121]: 🤷
+              - generic [ref=e1122]: Mid
+              - generic [ref=e1123]: "55"
+            - generic [ref=e1124]:
+              - 'link "Show HN: An interactive map of Tolkien''s Middle-earth" [ref=e1125] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47681112
+              - link "middle-earth-interactive-map.web.app" [ref=e1127] [cursor=pointer]:
+                - /url: https://middle-earth-interactive-map.web.app/
+              - paragraph [ref=e1128]: “An interactive web-based map of J.R.R. Tolkien's Middle-earth, allowing users to view locations and read associated lore. It's a digital fan-made atlas.”
+              - generic [ref=e1129]:
+                - generic [ref=e1130]: ▲ 291
+                - generic [ref=e1131]: ◇ 70
+                - generic [ref=e1132]: "For: Tolkien fans and casual readers"
+          - generic [ref=e2205]:
+            - button "🤷 Mid 45" [ref=e2206] [cursor=pointer]:
+              - generic [ref=e2207]: 🤷
+              - generic [ref=e2208]: Mid
+              - generic [ref=e2209]: "45"
+            - generic [ref=e2210]:
+              - 'link "Show HN: Gemma 4 Multimodal Fine-Tuner for Apple Silicon" [ref=e2211] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47680309
+              - link "github.com" [ref=e2213] [cursor=pointer]:
+                - /url: https://github.com/mattmireles/gemma-tuner-multimodal
+              - paragraph [ref=e2214]: “This is a tool that allows users to fine-tune Google's Gemma multimodal model on Apple Silicon, primarily for creating custom image-to-text generators.”
+              - generic [ref=e2215]:
+                - generic [ref=e2216]: ▲ 234
+                - generic [ref=e2217]: ◇ 28
+                - generic [ref=e2218]: "For: ML hobbyists, researchers with Apple Silicon"
+          - generic [ref=e1089]:
+            - button "🤷 Mid 58" [ref=e1090] [cursor=pointer]:
+              - generic [ref=e1091]: 🤷
+              - generic [ref=e1092]: Mid
+              - generic [ref=e1093]: "58"
+            - generic [ref=e1094]:
+              - 'link "Show HN: Marimo pair – Reactive Python notebooks as environments for agents" [ref=e1095] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47678844
+              - link "github.com" [ref=e1097] [cursor=pointer]:
+                - /url: https://github.com/marimo-team/marimo-pair
+              - paragraph [ref=e1098]: “Marimo Pair provides reactive Python notebooks designed for agentic workflows, essentially allowing for iterative development and debugging of AI agents within a familiar notebook environment. It offers a stateful, interactive canvas for orchestrating agent actions.”
+              - generic [ref=e1099]:
+                - generic [ref=e1100]: ▲ 140
+                - generic [ref=e1101]: ◇ 34
+                - generic [ref=e1102]: "For: AI/ML engineers building and debugging multi-agent systems"
+          - generic [ref=e2220]:
+            - button "🤷 Mid 45" [ref=e2221] [cursor=pointer]:
+              - generic [ref=e2222]: 🤷
+              - generic [ref=e2223]: Mid
+              - generic [ref=e2224]: "45"
+            - generic [ref=e2225]:
+              - 'link "Show HN: I built a database for AI agents" [ref=e2226] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47678048
+              - link "github.com" [ref=e2228] [cursor=pointer]:
+                - /url: https://github.com/DinobaseHQ/dinobase
+              - paragraph [ref=e2229]: “An open-source vector database specifically designed for AI agents to store and retrieve information.”
+              - generic [ref=e2230]:
+                - generic [ref=e2231]: ▲ 12
+                - generic [ref=e2232]: ◇ 10
+                - generic [ref=e2233]: "For: AI researchers and developers building agentic systems"
+          - generic [ref=e2235]:
+            - button "🤷 Mid 45" [ref=e2236] [cursor=pointer]:
+              - generic [ref=e2237]: 🤷
+              - generic [ref=e2238]: Mid
+              - generic [ref=e2239]: "45"
+            - generic [ref=e2240]:
+              - 'link "Show HN: Mo – checks GitHub PRs against decisions approved in Slack" [ref=e2241] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47681602
+              - link "motionode.com" [ref=e2243] [cursor=pointer]:
+                - /url: https://motionode.com/index
+              - paragraph [ref=e2244]: “This tool automates the process of checking GitHub Pull Requests against decisions previously made in Slack channels. It aims to reduce manual cross-referencing and ensure alignment between code changes and ongoing team discussions.”
+              - generic [ref=e2245]:
+                - generic [ref=e2246]: ▲ 10
+                - generic [ref=e2247]: ◇ 3
+                - generic [ref=e2248]: "For: Engineering managers and senior engineers in medium to large teams with active Slack-based decision-making."
+          - generic [ref=e1222]:
+            - button "🤷 Mid 55" [ref=e1223] [cursor=pointer]:
+              - generic [ref=e1224]: 🤷
+              - generic [ref=e1225]: Mid
+              - generic [ref=e1226]: "55"
+            - generic [ref=e1227]:
+              - 'link "Show HN: Frontend-VisualQA — give coding agents eyes to verify their own UI work" [ref=e1228] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47678328
+              - link "github.com" [ref=e1230] [cursor=pointer]:
+                - /url: https://github.com/yutori-ai/frontend-visualqa
+              - paragraph [ref=e1231]: “This project provides a framework for AI agents to visually inspect and verify their own UI generation or modification work, essentially giving them 'eyes' to detect rendering issues.”
+              - generic [ref=e1232]:
+                - generic [ref=e1233]: ▲ 10
+                - generic [ref=e1234]: ◇ 0
+                - generic [ref=e1235]: "For: Frontend developers and UI/UX engineers building complex web applications or working with AI-assisted design tools."
+          - generic [ref=e2250]:
+            - button "🤷 Mid 45" [ref=e2251] [cursor=pointer]:
+              - generic [ref=e2252]: 🤷
+              - generic [ref=e2253]: Mid
+              - generic [ref=e2254]: "45"
+            - generic [ref=e2255]:
+              - 'link "Show HN: Clawcast – A peer-to-peer podcast network for agents" [ref=e2256] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47678064
+              - link "clawcast.dev" [ref=e2258] [cursor=pointer]:
+                - /url: https://www.clawcast.dev/
+              - paragraph [ref=e2259]: “Clawcast is a peer-to-peer podcasting platform intended for agents, aiming to bypass traditional hosting services and content delivery networks.”
+              - generic [ref=e2260]:
+                - generic [ref=e2261]: ▲ 8
+                - generic [ref=e2262]: ◇ 5
+                - generic [ref=e2263]: "For: Real estate agents and similar professionals."
+          - generic [ref=e2265]:
+            - button "🤷 Mid 45" [ref=e2266] [cursor=pointer]:
+              - generic [ref=e2267]: 🤷
+              - generic [ref=e2268]: Mid
+              - generic [ref=e2269]: "45"
+            - generic [ref=e2270]:
+              - 'link "Show HN: Clify – generate a CLI from any API docs, use it as agent tooling" [ref=e2271] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47682217
+              - link "github.com" [ref=e2273] [cursor=pointer]:
+                - /url: https://github.com/derrickko/clify
+              - paragraph [ref=e2274]: “Clify attempts to auto-generate CLI tools from API documentation, enabling their use as agent tooling, but faces challenges in practical adoption.”
+              - generic [ref=e2275]:
+                - generic [ref=e2276]: ▲ 5
+                - generic [ref=e2277]: ◇ 0
+                - generic [ref=e2278]: "For: Developers interacting with APIs lacking CLIs"
+          - generic [ref=e2280]:
+            - button "🤷 Mid 45" [ref=e2281] [cursor=pointer]:
+              - generic [ref=e2282]: 🤷
+              - generic [ref=e2283]: Mid
+              - generic [ref=e2284]: "45"
+            - generic [ref=e2285]:
+              - 'link "Show HN: See What AI Models \"Think\" About You" [ref=e2286] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47678425
+              - link "cytable.com" [ref=e2288] [cursor=pointer]:
+                - /url: https://cytable.com/
+              - paragraph [ref=e2289]: “This tool visualizes how different AI models perceive user-provided text, offering a glimpse into their internal representations.”
+              - generic [ref=e2290]:
+                - generic [ref=e2291]: ▲ 5
+                - generic [ref=e2292]: ◇ 0
+                - generic [ref=e2293]: "For: AI researchers and curious developers"
+          - generic [ref=e2295]:
+            - button "🤷 Mid 45" [ref=e2296] [cursor=pointer]:
+              - generic [ref=e2297]: 🤷
+              - generic [ref=e2298]: Mid
+              - generic [ref=e2299]: "45"
+            - generic [ref=e2300]:
+              - 'link "Show HN: Open-source GDPR router for LLMs detects PII, forces EU-only inference" [ref=e2301] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47681656
+              - link "github.com" [ref=e2303] [cursor=pointer]:
+                - /url: https://github.com/mahadillahm4di-cyber/mh-gdpr-ai.eu
+              - paragraph [ref=e2304]: “This project acts as a proxy for LLM API calls, attempting to detect PII and redirect traffic to EU-based inference endpoints when necessary, ostensibly for GDPR compliance.”
+              - generic [ref=e2305]:
+                - generic [ref=e2306]: ▲ 4
+                - generic [ref=e2307]: ◇ 0
+                - generic [ref=e2308]: "For: Companies with EU customer data using LLMs"
+        - button "+ 36 more" [ref=e1236] [cursor=pointer]
+  - button "Open Next.js Dev Tools" [ref=e1242] [cursor=pointer]:
+    - img [ref=e1243]
+  - alert [ref=e1246]

@@ -1,0 +1,65 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e5]: 🍅
+        - heading "Show HN" [level=1] [ref=e6]
+      - paragraph [ref=e7]: AI critic reviews for every Show HN project
+    - button "Apr854" [ref=e9] [cursor=pointer]
+    - generic [ref=e10]:
+      - heading "April 2026" [level=2] [ref=e11]
+      - generic [ref=e12]:
+        - generic [ref=e13]: 854 projects
+        - generic [ref=e14]:
+          - generic [ref=e15]: 🍅
+          - generic [ref=e16]: "0"
+          - generic [ref=e17]: Fresh
+        - generic [ref=e18]:
+          - generic [ref=e19]: 🤢
+          - generic [ref=e20]: "42"
+          - generic [ref=e21]: Rotten
+        - generic [ref=e22]:
+          - generic [ref=e23]: 47%
+          - generic [ref=e24]: avg
+    - generic [ref=e25]:
+      - generic [ref=e26]:
+        - generic [ref=e27]: Sort
+        - button "Score ↓" [ref=e28] [cursor=pointer]
+        - button "Upvotes" [ref=e29] [cursor=pointer]
+        - button "Comments" [ref=e30] [cursor=pointer]
+      - generic [ref=e31]:
+        - generic [ref=e32]:
+          - heading "April 14 · 104 projects" [level=3] [ref=e33]
+          - generic [ref=e34]
+          - button "+ 94 more" [ref=e174] [cursor=pointer]
+        - generic [ref=e175]:
+          - heading "April 13 · 124 projects" [level=3] [ref=e176]
+          - generic [ref=e177]
+          - button "+ 114 more" [ref=e318] [cursor=pointer]
+        - generic [ref=e319]:
+          - heading "April 12 · 92 projects" [level=3] [ref=e320]
+          - generic [ref=e321]
+          - button "+ 82 more" [ref=e462] [cursor=pointer]
+        - generic [ref=e463]:
+          - heading "April 11 · 73 projects" [level=3] [ref=e464]
+          - generic [ref=e465]
+          - button "+ 63 more" [ref=e605] [cursor=pointer]
+        - generic [ref=e606]:
+          - heading "April 10 · 110 projects" [level=3] [ref=e607]
+          - generic [ref=e608]
+          - button "+ 100 more" [ref=e749] [cursor=pointer]
+        - generic [ref=e750]:
+          - heading "April 9 · 158 projects" [level=3] [ref=e751]
+          - generic [ref=e752]
+          - button "+ 148 more" [ref=e891] [cursor=pointer]
+        - generic [ref=e892]:
+          - heading "April 8 · 147 projects" [level=3] [ref=e893]
+          - generic [ref=e894]
+          - button "+ 137 more" [ref=e1035] [cursor=pointer]
+        - generic [ref=e1036]:
+          - heading "April 7 · 46 projects" [level=3] [ref=e1037]
+          - generic [ref=e1038]
+          - button "+ 36 more" [ref=e1178] [cursor=pointer]
+  - button "Open Next.js Dev Tools" [ref=e1184] [cursor=pointer]:
+    - img [ref=e1185]
+  - alert [ref=e1188]

@@ -1,0 +1,1006 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - heading "Show HN" [level=1] [ref=e4]
+      - paragraph [ref=e5]: 854 projects tracked
+    - button "Apr854" [ref=e7] [cursor=pointer]
+    - heading "April 2026" [level=2] [ref=e8]
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]: Sort
+        - button "Score ↓" [ref=e12] [cursor=pointer]
+        - button "Upvotes" [ref=e13] [cursor=pointer]
+        - button "Comments" [ref=e14] [cursor=pointer]
+      - generic [ref=e15]:
+        - heading "April 14, 2026" [level=3] [ref=e16]
+        - generic [ref=e17]:
+          - generic [ref=e18]:
+            - generic [ref=e19]:
+              - button "C" [ref=e20] [cursor=pointer]
+              - generic [ref=e21]:
+                - 'link "Show HN: I built an agent memory system for myself and got 90.8% on LongMemEval" [ref=e22] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47765140
+                - link "github.com" [ref=e24] [cursor=pointer]:
+                  - /url: https://github.com/shane-farkas/memento-memory
+                - paragraph [ref=e25]: This project presents a novel approach to agent memory by integrating a vector database with a retrieval mechanism for long-term context. It claims high performance on a specific benchmark.
+                - generic [ref=e26]
+            - generic [ref=e1007]:
+              - generic [ref=e1008]:
+                - generic [ref=e1009]
+                - paragraph [ref=e1012]: Addresses a genuine pain point in LLM agent development, offering a potentially more robust memory than basic context windows or simple vector stores.
+              - generic [ref=e1013]:
+                - generic [ref=e1014]
+                - paragraph [ref=e1017]: The LLM application space is rapidly evolving with many solutions for context management, including LangChain's memory modules, custom RAG pipelines, and proprietary platform offerings.
+              - generic [ref=e1018]:
+                - generic [ref=e1019]
+                - paragraph [ref=e1022]: Direct revenue potential is limited without a clear commercialization strategy; it's currently an open-source tool for a niche technical audience.
+          - generic [ref=e31]:
+            - button "C" [ref=e32] [cursor=pointer]
+            - generic [ref=e33]:
+              - 'link "Show HN: Write better Go integration tests with open source dockertest v4" [ref=e34] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47765234
+              - link "github.com" [ref=e36] [cursor=pointer]:
+                - /url: https://github.com/ory/dockertest/tree/v4
+              - paragraph [ref=e37]: This is an updated version of dockertest, a Go library to help developers run integration tests against Docker containers.
+              - generic [ref=e38]:
+                - generic [ref=e39]: ▲ 3
+                - generic [ref=e40]: ◇ 0
+                - generic [ref=e41]: Go developers writing integration tests needing external dependencies.
+          - generic [ref=e43]:
+            - button "C" [ref=e44] [cursor=pointer]
+            - generic [ref=e45]:
+              - 'link "Show HN: I Added Support for Qwen3-ASR and Qwen3 ForcedAligner in WhisperX" [ref=e46] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47767361
+              - link "github.com" [ref=e48] [cursor=pointer]:
+                - /url: https://github.com/m-bain/whisperX/pull/1401
+              - paragraph [ref=e49]: This project integrates Qwen3's ASR and forced alignment models into WhisperX, a fork of OpenAI's Whisper model.
+              - generic [ref=e50]:
+                - generic [ref=e51]: ▲ 1
+                - generic [ref=e52]: ◇ 1
+                - generic [ref=e53]: AI researchers and developers working with speech processing, specifically those needing enhanced accuracy or Chinese language support.
+          - generic [ref=e55]:
+            - button "C" [ref=e56] [cursor=pointer]
+            - generic [ref=e57]:
+              - 'link "Show HN: LoadLens – See why queues hide overload instead of solving it" [ref=e58] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47767314
+              - link "loadlens.dev" [ref=e60] [cursor=pointer]:
+                - /url: https://loadlens.dev
+              - paragraph [ref=e61]: LoadLens visualizes queue behavior to diagnose overload issues, claiming it's better than traditional queuing solutions.
+              - generic [ref=e62]:
+                - generic [ref=e63]: ▲ 1
+                - generic [ref=e64]: ◇ 0
+                - generic [ref=e65]: Backend engineers managing distributed systems with message queues
+          - generic [ref=e67]:
+            - button "C" [ref=e68] [cursor=pointer]
+            - generic [ref=e69]:
+              - 'link "Show HN: AriaType – open-source privacy-first and local-first voice-to-text app" [ref=e70] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47767296
+              - link "github.com" [ref=e72] [cursor=pointer]:
+                - /url: https://github.com/joe223/AriaType
+              - paragraph [ref=e73]: A local-first, privacy-focused desktop voice-to-text application that performs transcription entirely on the user's device.
+              - generic [ref=e74]:
+                - generic [ref=e75]: ▲ 1
+                - generic [ref=e76]: ◇ 0
+                - generic [ref=e77]: Privacy-conscious desktop users, academics, journalists, or individuals needing offline transcription.
+          - generic [ref=e79]:
+            - button "C" [ref=e80] [cursor=pointer]
+            - generic [ref=e81]:
+              - 'link "Show HN: Free browser-based vector tile inspector – paste any MVT/PBF URL" [ref=e82] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47766773
+              - link "marinecharts.io" [ref=e84] [cursor=pointer]:
+                - /url: https://marinecharts.io/tools/vector-tile-inspector
+              - paragraph [ref=e85]: A browser-based tool that visualizes vector tiles from a provided URL, useful for inspecting map data formats.
+              - generic [ref=e86]:
+                - generic [ref=e87]: ▲ 1
+                - generic [ref=e88]: ◇ 0
+                - generic [ref=e89]: Geospatial developers, map data engineers
+          - generic [ref=e91]:
+            - button "C" [ref=e92] [cursor=pointer]
+            - generic [ref=e93]:
+              - 'link "Show HN: Game recommender around experience, not genre – here''s what emerged" [ref=e94] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47766624
+              - link "slated.gg" [ref=e96] [cursor=pointer]:
+                - /url: https://slated.gg/map
+              - paragraph [ref=e97]: A web app that recommends games based on desired player experiences rather than traditional genres, visualizing these experiences on a map.
+              - generic [ref=e98]:
+                - generic [ref=e99]: ▲ 1
+                - generic [ref=e100]: ◇ 0
+                - generic [ref=e101]: Frustrated gamers seeking discovery
+          - generic [ref=e103]:
+            - button "C" [ref=e104] [cursor=pointer]
+            - generic [ref=e105]:
+              - 'link "Show HN: Resonly – prioritize feature requests by revenue impact" [ref=e106] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47766516
+              - link "resonly.com" [ref=e108] [cursor=pointer]:
+                - /url: https://resonly.com/
+              - paragraph [ref=e109]: This tool attempts to prioritize product features by estimating their potential revenue impact, positioning itself as a data-driven alternative to gut feeling.
+              - generic [ref=e110]:
+                - generic [ref=e111]: ▲ 1
+                - generic [ref=e112]: ◇ 0
+                - generic [ref=e113]: Product managers and founders in B2B SaaS companies with established customer bases.
+          - generic [ref=e115]:
+            - button "C" [ref=e116] [cursor=pointer]
+            - generic [ref=e117]:
+              - 'link "Show HN: Fleet Watch – preflight guard for local AI inference on Apple Silicon" [ref=e118] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47766303
+              - link "github.com" [ref=e120] [cursor=pointer]:
+                - /url: https://github.com/cjchanh/fleet-watch
+              - paragraph [ref=e121]: This project provides a local watchdog for AI model inference on Apple Silicon, intended to prevent excessive resource consumption. It's a niche tool for individuals running AI models locally on Macs.
+              - generic [ref=e122]:
+                - generic [ref=e123]: ▲ 1
+                - generic [ref=e124]: ◇ 1
+                - generic [ref=e125]: Mac users running resource-intensive local AI inference
+          - generic [ref=e127]:
+            - button "C" [ref=e128] [cursor=pointer]
+            - generic [ref=e129]:
+              - 'link "Show HN: OpenParallax: OS-level privilege separation for AI agent execution" [ref=e130] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47765871
+              - paragraph [ref=e131]: This project implements OS-level privilege separation for running AI agents, aiming to isolate them and prevent them from accessing unauthorized system resources. It's a technical solution to a growing security concern.
+              - generic [ref=e132]:
+                - generic [ref=e133]: ▲ 1
+                - generic [ref=e134]: ◇ 0
+                - generic [ref=e135]: Security-conscious AI developers and infrastructure engineers.
+        - button "+ 94 more" [ref=e136] [cursor=pointer]
+      - generic [ref=e137]:
+        - heading "April 13, 2026" [level=3] [ref=e138]
+        - generic [ref=e139]:
+          - generic [ref=e141]:
+            - button "C" [ref=e142] [cursor=pointer]
+            - generic [ref=e143]:
+              - 'link "Show HN: The Infinite Tolkien – endless narration of Middle-earth" [ref=e144] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47750975
+              - link "infinitetolkien.com" [ref=e146] [cursor=pointer]:
+                - /url: http://infinitetolkien.com/
+              - paragraph [ref=e147]: A website that uses AI to generate endless narration and summaries of J.R.R. Tolkien's works, offering a novel way to consume familiar lore.
+              - generic [ref=e148]:
+                - generic [ref=e149]: ▲ 5
+                - generic [ref=e150]: ◇ 1
+                - generic [ref=e151]: Tolkien enthusiasts, casual lore explorers
+          - generic [ref=e153]:
+            - button "C" [ref=e154] [cursor=pointer]
+            - generic [ref=e155]:
+              - 'link "Show HN: Mercury – No-code orchestration for human and agent teams" [ref=e156] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47758643
+              - link "mercury.build" [ref=e158] [cursor=pointer]:
+                - /url: https://www.mercury.build/
+              - paragraph [ref=e159]: Mercury is a no-code platform for designing, managing, and automating workflows involving both human tasks and AI agents, aiming to orchestrate complex processes.
+              - generic [ref=e160]:
+                - generic [ref=e161]: ▲ 6
+                - generic [ref=e162]: ◇ 5
+                - generic [ref=e163]: Operations managers, small business owners, and project managers seeking to automate repetitive tasks.
+          - generic [ref=e165]:
+            - button "C" [ref=e166] [cursor=pointer]
+            - generic [ref=e167]:
+              - 'link "Show HN: Circle2Search, a macOS app for translating on screen text" [ref=e168] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47758513
+              - link "github.com" [ref=e170] [cursor=pointer]:
+                - /url: https://github.com/yashdhanore/circle2search
+              - paragraph [ref=e171]: A macOS app that lets users circle text on their screen to quickly search for it in their browser or translate it.
+              - generic [ref=e172]:
+                - generic [ref=e173]: ▲ 2
+                - generic [ref=e174]: ◇ 1
+                - generic [ref=e175]: macOS users needing quick on-screen lookups
+          - generic [ref=e177]:
+            - button "C" [ref=e178] [cursor=pointer]
+            - generic [ref=e179]:
+              - 'link "Show HN: YouTube and Apple Podcast Transcripts" [ref=e180] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47757527
+              - link "appblit.com" [ref=e182] [cursor=pointer]:
+                - /url: https://www.appblit.com/scribe
+              - paragraph [ref=e183]: This project provides AI-generated transcripts for YouTube videos and Apple Podcasts, with features like speaker identification and summarization, aiming to improve content accessibility and searchability.
+              - generic [ref=e184]:
+                - generic [ref=e185]: ▲ 1
+                - generic [ref=e186]: ◇ 0
+                - generic [ref=e187]: Content creators, researchers, journalists, students
+          - generic [ref=e189]:
+            - button "C" [ref=e190] [cursor=pointer]
+            - generic [ref=e191]:
+              - 'link "Show HN: Deconflict – Open-source WiFi planner with physics-based walls" [ref=e192] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47757351
+              - link "deconflict.pages.dev" [ref=e194] [cursor=pointer]:
+                - /url: https://deconflict.pages.dev
+              - paragraph [ref=e195]: An open-source tool for visually planning WiFi networks, incorporating physics-based wall attenuation for more accurate signal prediction.
+              - generic [ref=e196]:
+                - generic [ref=e197]: ▲ 3
+                - generic [ref=e198]: ◇ 1
+                - generic [ref=e199]: Network engineers, IT professionals, and consultants involved in WiFi deployment and troubleshooting.
+          - generic [ref=e201]:
+            - button "C" [ref=e202] [cursor=pointer]
+            - generic [ref=e203]:
+              - 'link "Show HN: On-Device vs. Cloud LLMs for Agentic Tool Calling in a Real iOS App" [ref=e204] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47757131
+              - link "subralabs.com" [ref=e206] [cursor=pointer]:
+                - /url: https://subralabs.com/lab/on-device-vs-cloud-llm.html
+              - paragraph [ref=e207]: This project benchmarks on-device versus cloud LLMs for agentic tool calling within an iOS app, aiming to inform development choices.
+              - generic [ref=e208]:
+                - generic [ref=e209]: ▲ 2
+                - generic [ref=e210]: ◇ 0
+                - generic [ref=e211]: Mobile developers evaluating LLM deployment strategies
+          - generic [ref=e213]:
+            - button "C" [ref=e214] [cursor=pointer]
+            - generic [ref=e215]:
+              - 'link "Show HN: I benchmarked Gemma 4 E2B – the 2B model beat the 12B on multi-turn" [ref=e216] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47756892
+              - link "aiexplr.com" [ref=e218] [cursor=pointer]:
+                - /url: https://aiexplr.com/post/gemma-4-e2b-benchmark
+              - paragraph [ref=e219]: This project benchmarks Gemma's 2B model against its 12B counterpart on multi-turn conversational tasks, showing surprising outperformance by the smaller model.
+              - generic [ref=e220]:
+                - generic [ref=e221]: ▲ 7
+                - generic [ref=e222]: ◇ 1
+                - generic [ref=e223]: LLM researchers and developers evaluating model performance
+          - generic [ref=e225]:
+            - button "C" [ref=e226] [cursor=pointer]
+            - generic [ref=e227]:
+              - 'link "Show HN: A calculator to expose the hidden infrastructural costs behind RAG" [ref=e228] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47755853
+              - link "bytecalculators.com" [ref=e230] [cursor=pointer]:
+                - /url: https://bytecalculators.com/rag-cost-calculator
+              - paragraph [ref=e231]: A web-based calculator that attempts to quantify the infrastructure costs associated with Retrieval Augmented Generation (RAG) systems.
+              - generic [ref=e232]:
+                - generic [ref=e233]: ▲ 2
+                - generic [ref=e234]: ◇ 0
+                - generic [ref=e235]: AI/ML Engineers, Data Scientists, CTOs evaluating RAG.
+          - generic [ref=e237]:
+            - button "C" [ref=e238] [cursor=pointer]
+            - generic [ref=e239]:
+              - 'link "Show HN: Open-source strategy that placed #2 in a prediction market challenge" [ref=e240] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47754075
+              - link "github.com" [ref=e242] [cursor=pointer]:
+                - /url: https://github.com/octavi42/prediction-market-maker
+              - paragraph [ref=e243]: "An open-source algorithm for developing strategies in prediction markets, claiming #2 placement in a challenge."
+              - generic [ref=e244]:
+                - generic [ref=e245]: ▲ 1
+                - generic [ref=e246]: ◇ 0
+                - generic [ref=e247]: Algorithmic traders in prediction markets
+          - generic [ref=e249]:
+            - button "C" [ref=e250] [cursor=pointer]
+            - generic [ref=e251]:
+              - 'link "Show HN: 15 yrs of Django in prod: patterns I keep using (agent skills)" [ref=e252] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47753245
+              - link "github.com" [ref=e254] [cursor=pointer]:
+                - /url: https://github.com/dvf/opinionated-django
+              - paragraph [ref=e255]: A curated set of Django best practices and architectural patterns derived from 15 years of production experience, presented as a personal opinionated guide and code examples.
+              - generic [ref=e256]:
+                - generic [ref=e257]: ▲ 6
+                - generic [ref=e258]: ◇ 1
+                - generic [ref=e259]: Senior Django developers and architects
+        - button "+ 114 more" [ref=e260] [cursor=pointer]
+      - generic [ref=e261]:
+        - heading "April 12, 2026" [level=3] [ref=e262]
+        - generic [ref=e263]:
+          - generic [ref=e265]:
+            - button "C" [ref=e266] [cursor=pointer]
+            - generic [ref=e267]:
+              - 'link "Show HN: PDF-Proof – Make Claude show where it found each value in a PDF" [ref=e268] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47740577
+              - link "github.com" [ref=e270] [cursor=pointer]:
+                - /url: https://github.com/metedata/pdf-proof
+              - paragraph [ref=e271]: This project provides a tool to make Large Language Models like Claude cite specific evidence from PDF documents, a helpful feature for verifying AI-generated summaries or answers.
+              - generic [ref=e272]:
+                - generic [ref=e273]: ▲ 4
+                - generic [ref=e274]: ◇ 0
+                - generic [ref=e275]: Professionals and researchers using AI for document analysis
+          - generic [ref=e277]:
+            - button "C" [ref=e278] [cursor=pointer]
+            - generic [ref=e279]:
+              - 'link "Show HN: Real-Time OLAP Infrastructure" [ref=e280] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47739049
+              - link "modolap.com" [ref=e282] [cursor=pointer]:
+                - /url: https://modolap.com
+              - paragraph [ref=e283]: ModoLAP provides a real-time OLAP engine aiming for lower latency and higher throughput compared to traditional solutions like Apache Druid or ClickHouse for analytical workloads.
+              - generic [ref=e284]:
+                - generic [ref=e285]: ▲ 4
+                - generic [ref=e286]: ◇ 0
+                - generic [ref=e287]: Data engineers and analysts dealing with real-time, high-volume event streams needing interactive analysis.
+          - generic [ref=e289]:
+            - button "C" [ref=e290] [cursor=pointer]
+            - generic [ref=e291]:
+              - 'link "Show HN: Posse – A Web UI for Claude Managed Agents" [ref=e292] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47743767
+              - link "github.com" [ref=e294] [cursor=pointer]:
+                - /url: https://github.com/oguzbilgic/posse
+              - paragraph [ref=e295]: A web UI for interacting with Claude's managed agents, primarily for developers experimenting with AI agent workflows.
+              - generic [ref=e296]:
+                - generic [ref=e297]: ▲ 1
+                - generic [ref=e298]: ◇ 0
+                - generic [ref=e299]: AI developers testing Claude agents
+          - generic [ref=e301]:
+            - button "C" [ref=e302] [cursor=pointer]
+            - generic [ref=e303]:
+              - 'link "Show HN: NeonD – open-source DX-oriented Postgres Control Plane" [ref=e304] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47743503
+              - link "github.com" [ref=e306] [cursor=pointer]:
+                - /url: https://github.com/matisiekpl/neond/
+              - paragraph [ref=e307]: NeonD is an open-source control plane for PostgreSQL that focuses on developer experience, aiming to simplify database management tasks for developers.
+              - generic [ref=e308]:
+                - generic [ref=e309]: ▲ 4
+                - generic [ref=e310]: ◇ 0
+                - generic [ref=e311]: Backend engineers managing PostgreSQL
+          - generic [ref=e313]:
+            - button "C" [ref=e314] [cursor=pointer]
+            - generic [ref=e315]:
+              - 'link "Show HN: A better way to compare job offers than just salary" [ref=e316] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47742370
+              - link "stayorqu.it" [ref=e318] [cursor=pointer]:
+                - /url: https://stayorqu.it/true-compensation
+              - paragraph [ref=e319]: A web application that attempts to standardize and compare job offers by factoring in more than just base salary, including equity, bonuses, and benefits.
+              - generic [ref=e320]:
+                - generic [ref=e321]: ▲ 2
+                - generic [ref=e322]: ◇ 4
+                - generic [ref=e323]: Job seekers in tech with complex compensation packages
+          - generic [ref=e325]:
+            - button "C" [ref=e326] [cursor=pointer]
+            - generic [ref=e327]:
+              - 'link "Show HN: boringBar – a taskbar-style dock replacement for macOS" [ref=e328] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47742200
+              - link "boringbar.app" [ref=e330] [cursor=pointer]:
+                - /url: https://boringbar.app/
+              - paragraph [ref=e331]: A macOS taskbar replacement that offers a more organized and customizable application launcher and status indicator than the default Dock and Menu Bar.
+              - generic [ref=e332]:
+                - generic [ref=e333]: ▲ 510
+                - generic [ref=e334]: ◇ 292
+                - generic [ref=e335]: macOS users seeking enhanced dock functionality and minimalists.
+          - generic [ref=e337]:
+            - button "C" [ref=e338] [cursor=pointer]
+            - generic [ref=e339]:
+              - 'link "Show HN: T4 – a versioned datastore with branching and time-travel (S3-backed)" [ref=e340] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47742167
+              - link "github.com" [ref=e342] [cursor=pointer]:
+                - /url: https://github.com/t4db/t4
+              - paragraph [ref=e343]: A versioned datastore using S3 as a backend, offering branching and time-travel capabilities akin to Git for data. It's essentially a data warehousing primitive.
+              - generic [ref=e344]:
+                - generic [ref=e345]: ▲ 7
+                - generic [ref=e346]: ◇ 2
+                - generic [ref=e347]: Data engineers, backend developers managing state
+          - generic [ref=e349]:
+            - button "C" [ref=e350] [cursor=pointer]
+            - generic [ref=e351]:
+              - 'link "Show HN: QueueForge – a self-hosted RabbitMQ dead-letter queue manager" [ref=e352] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47741641
+              - link "queueforgehq.com" [ref=e354] [cursor=pointer]:
+                - /url: https://queueforgehq.com
+              - paragraph [ref=e355]: QueueForge is a self-hosted web UI for managing RabbitMQ dead-letter queues, enabling retries and dead-lettering.
+              - generic [ref=e356]:
+                - generic [ref=e357]: ▲ 1
+                - generic [ref=e358]: ◇ 0
+                - generic [ref=e359]: Backend engineers managing distributed systems with RabbitMQ, specifically those dealing with message failures.
+          - generic [ref=e361]:
+            - button "C" [ref=e362] [cursor=pointer]
+            - generic [ref=e363]:
+              - 'link "Show HN: Give your AI agent a preview link for files and diff" [ref=e364] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47741581
+              - link "diff4.com" [ref=e366] [cursor=pointer]:
+                - /url: https://diff4.com/
+              - paragraph [ref=e367]: This project provides shareable preview links for files and their differences, intended for use in AI agent workflows.
+              - generic [ref=e368]:
+                - generic [ref=e369]: ▲ 1
+                - generic [ref=e370]: ◇ 0
+                - generic [ref=e371]: AI developers/researchers integrating file diffs
+          - generic [ref=e373]:
+            - button "C" [ref=e374] [cursor=pointer]
+            - generic [ref=e375]:
+              - 'link "Show HN: Lazyagent – a local TUI for watching what your coding agents are doing" [ref=e376] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47741279
+              - link "github.com" [ref=e378] [cursor=pointer]:
+                - /url: https://github.com/chojs23/lazyagent
+              - paragraph [ref=e379]: A command-line interface that displays the real-time output of multiple coding agent processes, allowing users to monitor their execution status.
+              - generic [ref=e380]:
+                - generic [ref=e381]: ▲ 8
+                - generic [ref=e382]: ◇ 0
+                - generic [ref=e383]: Developers running distributed or concurrent AI agent tasks
+        - button "+ 82 more" [ref=e384] [cursor=pointer]
+      - generic [ref=e385]:
+        - heading "April 11, 2026" [level=3] [ref=e386]
+        - generic [ref=e387]:
+          - generic [ref=e389]:
+            - button "C" [ref=e390] [cursor=pointer]
+            - generic [ref=e391]:
+              - 'link "Show HN: LSM Trees: MemTable, Compaction, and the Amplification Triangle [video]" [ref=e392] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47728661
+              - link "youtube.com" [ref=e394] [cursor=pointer]:
+                - /url: https://www.youtube.com/watch?v=rOC7jkN748w
+              - paragraph [ref=e395]: This is a video explaining the internal workings of LSM trees, focusing on MemTables and Compaction, and the trade-offs in the 'Amplification Triangle'.
+              - generic [ref=e396]:
+                - generic [ref=e397]: ▲ 1
+                - generic [ref=e398]: ◇ 0
+                - generic [ref=e399]: Database engineers, low-level systems developers
+          - generic [ref=e401]:
+            - button "C" [ref=e402] [cursor=pointer]
+            - generic [ref=e403]:
+              - 'link "Show HN: Bunqueue – Saga workflow engine for Bun with embedded SQLite" [ref=e404] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47729938
+              - link "bunqueue.dev" [ref=e406] [cursor=pointer]:
+                - /url: https://bunqueue.dev/guide/workflow/
+              - paragraph [ref=e407]: A JavaScript-based workflow engine for managing distributed tasks, leveraging Bun and embedded SQLite, marketed as a 'saga' solution.
+              - generic [ref=e408]:
+                - generic [ref=e409]: ▲ 3
+                - generic [ref=e410]: ◇ 0
+                - generic [ref=e411]: Backend engineers building complex distributed systems on Node.js/Bun.
+          - generic [ref=e413]:
+            - button "C" [ref=e414] [cursor=pointer]
+            - generic [ref=e415]:
+              - 'link "Show HN: Self-hostable STT service with a Deepgram-compatible listen API" [ref=e416] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47732461
+              - link "vedgupta.in" [ref=e418] [cursor=pointer]:
+                - /url: https://vedgupta.in/projects/whisper-api/
+              - paragraph [ref=e419]: This project offers a self-hostable Speech-to-Text service that emulates Deepgram's API, allowing users to run Whisper locally.
+              - generic [ref=e420]:
+                - generic [ref=e421]: ▲ 2
+                - generic [ref=e422]: ◇ 0
+                - generic [ref=e423]: Developers needing local STT inference
+          - generic [ref=e425]:
+            - button "C" [ref=e426] [cursor=pointer]
+            - generic [ref=e427]:
+              - 'link "Show HN: Docker-whisper: Self-hosted Whisper speech-to-text server (OpenAI API)" [ref=e428] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47732384
+              - link "github.com" [ref=e430] [cursor=pointer]:
+                - /url: https://github.com/hwdsl2/docker-whisper
+              - paragraph [ref=e431]: A Docker image that packages OpenAI's Whisper model into a self-hosted speech-to-text server, intended to be an alternative to cloud-based APIs.
+              - generic [ref=e432]:
+                - generic [ref=e433]: ▲ 6
+                - generic [ref=e434]: ◇ 1
+                - generic [ref=e435]: Developers needing private ASR, privacy-conscious users
+          - generic [ref=e437]:
+            - button "C" [ref=e438] [cursor=pointer]
+            - generic [ref=e439]:
+              - 'link "Show HN: Recursive-Mode for Coding Agents" [ref=e440] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47731307
+              - link "recursive-mode.dev" [ref=e442] [cursor=pointer]:
+                - /url: https://recursive-mode.dev/introduction
+              - paragraph [ref=e443]: This project introduces a 'recursive-mode' for AI coding agents, allowing them to iteratively refine their code based on feedback and self-correction, aiming to improve code quality and reduce human oversight.
+              - generic [ref=e444]:
+                - generic [ref=e445]: ▲ 6
+                - generic [ref=e446]: ◇ 0
+                - generic [ref=e447]: AI researchers and developers building and testing complex AI coding agents
+          - generic [ref=e449]:
+            - button "C" [ref=e450] [cursor=pointer]
+            - generic [ref=e451]:
+              - 'link "Show HN: Lodmem – Level of Detail Context Management for Agents" [ref=e452] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47729563
+              - link "github.com" [ref=e454] [cursor=pointer]:
+                - /url: https://github.com/agenteractai/lodmem
+              - paragraph [ref=e455]: This project offers a configurable memory system for LLM agents, allowing developers to control the level of detail stored and retrieved. It aims to optimize LLM agent performance and cost by managing context effectively.
+              - generic [ref=e456]:
+                - generic [ref=e457]: ▲ 2
+                - generic [ref=e458]: ◇ 0
+                - generic [ref=e459]: LLM application developers, AI engineers
+          - generic [ref=e461]:
+            - button "C" [ref=e462] [cursor=pointer]
+            - generic [ref=e463]:
+              - 'link "Show HN: SubnetLens – a concurrent local network scanner built in Go with a TUI" [ref=e464] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47729289
+              - link "github.com" [ref=e466] [cursor=pointer]:
+                - /url: https://github.com/ostefani/subnetlens
+              - paragraph [ref=e467]: A Go-based tool that scans local networks concurrently and displays results in a terminal UI.
+              - generic [ref=e468]:
+                - generic [ref=e469]: ▲ 3
+                - generic [ref=e470]: ◇ 0
+                - generic [ref=e471]: Network administrators, IT support, hobbyist networkers
+          - generic [ref=e473]:
+            - button "C" [ref=e474] [cursor=pointer]
+            - generic [ref=e475]:
+              - 'link "Show HN: RelayFreeLLM — Free AI Gateway with Auto-Failover (Updates)" [ref=e476] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47728043
+              - link "github.com" [ref=e478] [cursor=pointer]:
+                - /url: https://github.com/msmarkgu/RelayFreeLLM
+              - paragraph [ref=e479]: This project offers a free, self-hosted gateway for LLM APIs, featuring automatic failover between different providers. It aims to provide a resilient and potentially cost-saving access layer for developers consuming AI models.
+              - generic [ref=e480]:
+                - generic [ref=e481]: ▲ 2
+                - generic [ref=e482]: ◇ 0
+                - generic [ref=e483]: Developers and small teams using multiple LLM APIs
+          - generic [ref=e485]:
+            - button "C" [ref=e486] [cursor=pointer]
+            - generic [ref=e487]:
+              - 'link "Show HN: Pardonned.com – A searchable database of US Pardons" [ref=e488] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47727960
+              - paragraph [ref=e489]: A searchable database of US pardons, offering a centralized way to find information that is otherwise fragmented and difficult to access.
+              - generic [ref=e490]:
+                - generic [ref=e491]: ▲ 497
+                - generic [ref=e492]: ◇ 272
+                - generic [ref=e493]: Legal professionals, researchers, journalists, individuals seeking pardon information.
+          - generic [ref=e495]:
+            - button "C" [ref=e496] [cursor=pointer]
+            - generic [ref=e497]:
+              - 'link "Show HN: Dux, a TUI Agent Multiplexer" [ref=e498] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47727890
+              - link "github.com" [ref=e500] [cursor=pointer]:
+                - /url: https://github.com/patrickdappollonio/dux
+              - paragraph [ref=e501]: Dux allows users to run multiple TUI commands concurrently in a multiplexed terminal interface, focusing on agent-like multitasking for command-line operations.
+              - generic [ref=e502]:
+                - generic [ref=e503]: ▲ 2
+                - generic [ref=e504]: ◇ 1
+                - generic [ref=e505]: CLI power users managing multiple long-running processes
+        - button "+ 63 more" [ref=e506] [cursor=pointer]
+      - generic [ref=e507]:
+        - heading "April 10, 2026" [level=3] [ref=e508]
+        - generic [ref=e509]:
+          - generic [ref=e511]:
+            - button "C" [ref=e512] [cursor=pointer]
+            - generic [ref=e513]:
+              - 'link "Show HN: Mantyx – Agents that solve real problems for you and your business" [ref=e514] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47715401
+              - link "mantyx.io" [ref=e516] [cursor=pointer]:
+                - /url: https://mantyx.io/
+              - paragraph [ref=e517]: Mantyx offers AI agents to automate business tasks, positioning itself as a solution for operational efficiency by handling repetitive workflows.
+              - generic [ref=e518]:
+                - generic [ref=e519]: ▲ 2
+                - generic [ref=e520]: ◇ 0
+                - generic [ref=e521]: SMB owners/operators and their staff overloaded with administrative tasks
+          - generic [ref=e523]:
+            - button "C" [ref=e524] [cursor=pointer]
+            - generic [ref=e525]:
+              - 'link "Show HN: A 1KB zero-dependency relative time formatter for UI systems" [ref=e526] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47724511
+              - link "appents.com" [ref=e528] [cursor=pointer]:
+                - /url: https://appents.com/tech/human-time
+              - paragraph [ref=e529]: A JavaScript library that formats timestamps into human-readable relative time strings like '2 hours ago' or 'in 3 days', weighing just 1KB and requiring no external dependencies.
+              - generic [ref=e530]:
+                - generic [ref=e531]: ▲ 1
+                - generic [ref=e532]: ◇ 0
+                - generic [ref=e533]: Frontend developers in web applications
+          - generic [ref=e535]:
+            - button "C" [ref=e536] [cursor=pointer]
+            - generic [ref=e537]:
+              - 'link "Show HN: DecisionNode – shared structured memory for all AI coding tools via MCP" [ref=e538] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47723505
+              - link "github.com" [ref=e540] [cursor=pointer]:
+                - /url: https://github.com/decisionnode/DecisionNode
+              - paragraph [ref=e541]: This project offers a shared structured memory layer for AI coding tools, aiming to standardize how these tools interact with and remember project context. It's essentially a pluggable API for AI to access and process codebases.
+              - generic [ref=e542]:
+                - generic [ref=e543]: ▲ 23
+                - generic [ref=e544]: ◇ 5
+                - generic [ref=e545]: AI engineers, LLM Ops, Tooling developers
+          - generic [ref=e547]:
+            - button "C" [ref=e548] [cursor=pointer]
+            - generic [ref=e549]:
+              - 'link "Show HN: The API directory for AI agents and developers" [ref=e550] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47721851
+              - link "saxi.ai" [ref=e552] [cursor=pointer]:
+                - /url: https://saxi.ai/
+              - paragraph [ref=e553]: Sax.ai is a curated directory of APIs for AI agents and developers to discover and integrate with AI capabilities. It functions as a catalog of function-calling APIs.
+              - generic [ref=e554]:
+                - generic [ref=e555]: ▲ 4
+                - generic [ref=e556]: ◇ 1
+                - generic [ref=e557]: AI developers, AI agent builders
+          - generic [ref=e559]:
+            - button "C" [ref=e560] [cursor=pointer]
+            - generic [ref=e561]:
+              - 'link "Show HN: I got tired, so I built an offline desktop job tracker + resume builder" [ref=e562] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47721649
+              - link "github.com" [ref=e564] [cursor=pointer]:
+                - /url: https://github.com/ruslanora/kin
+              - paragraph [ref=e565]: An offline, desktop application for tracking job applications and building resumes. It addresses the pain of managing job searches locally.
+              - generic [ref=e566]:
+                - generic [ref=e567]: ▲ 4
+                - generic [ref=e568]: ◇ 1
+                - generic [ref=e569]: Job seekers, particularly those who prefer offline tools or have privacy concerns with cloud-based solutions.
+          - generic [ref=e571]:
+            - button "C" [ref=e572] [cursor=pointer]
+            - generic [ref=e573]:
+              - 'link "Show HN: Kitted: Local inventory and production management for small businesses" [ref=e574] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47721603
+              - link "kitted.site" [ref=e576] [cursor=pointer]:
+                - /url: https://kitted.site/
+              - paragraph [ref=e577]: Kitted is a web-based inventory and production management tool for small businesses that don't need full-blown ERP systems.
+              - generic [ref=e578]:
+                - generic [ref=e579]: ▲ 3
+                - generic [ref=e580]: ◇ 0
+                - generic [ref=e581]: Small manufacturing/craft businesses, local retailers with simple assembly.
+          - generic [ref=e583]:
+            - button "C" [ref=e584] [cursor=pointer]
+            - generic [ref=e585]:
+              - 'link "Show HN: I run AI background removal in the browser–no upload,no server" [ref=e586] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47721594
+              - link "allplix.com" [ref=e588] [cursor=pointer]:
+                - /url: https://www.allplix.com/en/background-remover
+              - paragraph [ref=e589]: A web-based tool that removes image backgrounds using AI directly in the browser, avoiding server-side processing.
+              - generic [ref=e590]:
+                - generic [ref=e591]: ▲ 7
+                - generic [ref=e592]: ◇ 0
+                - generic [ref=e593]: Casual users and small businesses needing simple image edits.
+          - generic [ref=e595]:
+            - button "C" [ref=e596] [cursor=pointer]
+            - generic [ref=e597]:
+              - 'link "Show HN: I built an AI pipeline to turn Infosec talks into readable, quick blogs" [ref=e598] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47720484
+              - link "greptalks.ai" [ref=e600] [cursor=pointer]:
+                - /url: https://greptalks.ai
+              - paragraph [ref=e601]: This project automates the summarization of cybersecurity conference talks into blog posts using AI, aiming to make dense technical content more accessible.
+              - generic [ref=e602]:
+                - generic [ref=e603]: ▲ 1
+                - generic [ref=e604]: ◇ 0
+                - generic [ref=e605]: Infosec professionals and content creators needing to digest or disseminate technical talks.
+          - generic [ref=e607]:
+            - button "C" [ref=e608] [cursor=pointer]
+            - generic [ref=e609]:
+              - 'link "Show HN: Faster more accurate multimodal vector search" [ref=e610] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47720263
+              - link "github.com" [ref=e612] [cursor=pointer]:
+                - /url: https://github.com/nickswami/dasein-python-sdk
+              - paragraph [ref=e613]: This is a Python SDK for multimodal vector search, aiming to be faster and more accurate than existing solutions. It enables searching across text, images, and potentially other modalities using vector embeddings.
+              - generic [ref=e614]:
+                - generic [ref=e615]: ▲ 3
+                - generic [ref=e616]: ◇ 0
+                - generic [ref=e617]: Data scientists, ML engineers, backend developers
+          - generic [ref=e619]:
+            - button "C" [ref=e620] [cursor=pointer]
+            - generic [ref=e621]:
+              - 'link "Show HN: LuxShot – Open-source, native macOS OCR utility" [ref=e622] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47720095
+              - link "github.com" [ref=e624] [cursor=pointer]:
+                - /url: https://github.com/lukebuild/LuxShot
+              - paragraph [ref=e625]: LuxShot is an open-source macOS app that captures screenshots and extracts text using OCR, aiming to replace multiple utilities with a single, streamlined tool.
+              - generic [ref=e626]:
+                - generic [ref=e627]: ▲ 1
+                - generic [ref=e628]: ◇ 0
+                - generic [ref=e629]: macOS users needing quick OCR on screenshots
+        - button "+ 100 more" [ref=e630] [cursor=pointer]
+      - generic [ref=e631]:
+        - heading "April 9, 2026" [level=3] [ref=e632]
+        - generic [ref=e633]:
+          - generic [ref=e635]:
+            - button "C" [ref=e636] [cursor=pointer]
+            - generic [ref=e637]:
+              - 'link "Show HN: Proposal for a real long-term AI memory benchmark" [ref=e638] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47705847
+              - link "penfieldlabs.substack.com" [ref=e640] [cursor=pointer]:
+                - /url: https://penfieldlabs.substack.com/p/proposal-a-new-benchmark-for-long
+              - paragraph [ref=e641]: This project proposes a benchmark for evaluating long-term memory in AI models, an important but currently underserved area.
+              - generic [ref=e642]:
+                - generic [ref=e643]: ▲ 4
+                - generic [ref=e644]: ◇ 0
+                - generic [ref=e645]: AI researchers and developers focused on LLM capabilities
+          - generic [ref=e647]:
+            - button "C" [ref=e648] [cursor=pointer]
+            - generic [ref=e649]:
+              - 'link "Show HN: I built a local coding agent using Apple Intelligence" [ref=e650] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47703108
+              - link "barrasso.me" [ref=e652] [cursor=pointer]:
+                - /url: https://barrasso.me/posts/2026-04-09-on-device-coding-with-apple-intelligence/
+              - paragraph [ref=e653]: This project leverages Apple Intelligence to create an on-device coding assistant, primarily for generating and refactoring Swift code based on natural language prompts.
+              - generic [ref=e654]:
+                - generic [ref=e655]: ▲ 3
+                - generic [ref=e656]: ◇ 0
+                - generic [ref=e657]: iOS/macOS developers seeking faster code generation/refactoring within their IDE.
+          - generic [ref=e659]:
+            - button "C" [ref=e660] [cursor=pointer]
+            - generic [ref=e661]:
+              - 'link "Show HN: We scored 495 real SoC 2 audit reports – nearly all got a D or F" [ref=e662] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47711665
+              - link "soc2quality.trenta.ai" [ref=e664] [cursor=pointer]:
+                - /url: https://soc2quality.trenta.ai
+              - paragraph [ref=e665]: This project analyzes publicly available SOC 2 audit reports, finding most are of low quality, suggesting a widespread compliance problem.
+              - generic [ref=e666]:
+                - generic [ref=e667]: ▲ 3
+                - generic [ref=e668]: ◇ 2
+                - generic [ref=e669]: Compliance officers, security auditors, SaaS founders
+          - generic [ref=e671]:
+            - button "C" [ref=e672] [cursor=pointer]
+            - generic [ref=e673]:
+              - 'link "Show HN: Memoriki – LLM Wiki+MemPalace for persistent personal knowledge bases" [ref=e674] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47711037
+              - paragraph [ref=e675]: Memoriki is a personal knowledge base that uses LLMs to help users recall information, attempting to combine wiki-like organization with a memory palace technique.
+              - generic [ref=e676]:
+                - generic [ref=e677]: ▲ 5
+                - generic [ref=e678]: ◇ 0
+                - generic [ref=e679]: Academics, researchers, and serious hobbyists who meticulously document personal interests and need robust recall mechanisms.
+          - generic [ref=e681]:
+            - button "C" [ref=e682] [cursor=pointer]
+            - generic [ref=e683]:
+              - 'link "Show HN: Undocumented Qualcomm mesh topology 802.11 frames" [ref=e684] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47710683
+              - link "david.weekly.org" [ref=e686] [cursor=pointer]:
+                - /url: https://david.weekly.org/blog/2026-04-09-orbi-mesh-beacon-topology/
+              - paragraph [ref=e687]: This project reverse-engineers and documents undocumented Qualcomm 802.11 management frames used for mesh topology discovery. It offers a deeper technical understanding for those troubleshooting or building with these specific chipsets.
+              - generic [ref=e688]:
+                - generic [ref=e689]: ▲ 2
+                - generic [ref=e690]: ◇ 0
+                - generic [ref=e691]: Network engineers, WiFi chipset developers, Wi-Fi security researchers
+          - generic [ref=e693]:
+            - button "C" [ref=e694] [cursor=pointer]
+            - generic [ref=e695]:
+              - 'link "Show HN: Coderegon Trail – A retro game to help you explore open-source repos" [ref=e696] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47710627
+              - link "davidtran.me" [ref=e698] [cursor=pointer]:
+                - /url: https://www.davidtran.me/coderegon-trail/
+              - paragraph [ref=e699]: This is a retro-style game that gamifies the exploration of open-source code repositories. It's a novel approach to a niche problem.
+              - generic [ref=e700]:
+                - generic [ref=e701]: ▲ 4
+                - generic [ref=e702]: ◇ 3
+                - generic [ref=e703]: Curious developers, open-source enthusiasts
+          - generic [ref=e705]:
+            - button "C" [ref=e706] [cursor=pointer]
+            - generic [ref=e707]:
+              - 'link "Show HN: Solving digital piracy with game theory instead of DRM" [ref=e708] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47710119
+              - link "piecely.app" [ref=e710] [cursor=pointer]:
+                - /url: https://piecely.app/explore
+              - paragraph [ref=e711]: This project offers an alternative to traditional DRM by using game theory to incentivize fair use of digital content, essentially making piracy less appealing or more costly than legitimate access.
+              - generic [ref=e712]:
+                - generic [ref=e713]: ▲ 5
+                - generic [ref=e714]: ◇ 3
+                - generic [ref=e715]: Creators of digital content (e.g., online course instructors, indie game developers, ebook authors) facing piracy losses.
+          - generic [ref=e717]:
+            - button "C" [ref=e718] [cursor=pointer]
+            - generic [ref=e719]:
+              - 'link "Show HN: RepoWarden – Autopilot for your GitHub dependency updates" [ref=e720] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47708725
+              - link "repowarden.dev" [ref=e722] [cursor=pointer]:
+                - /url: https://repowarden.dev/
+              - paragraph [ref=e723]: RepoWarden automates dependency updates in GitHub repositories, aiming to reduce manual effort and security risks.
+              - generic [ref=e724]:
+                - generic [ref=e725]: ▲ 3
+                - generic [ref=e726]: ◇ 0
+                - generic [ref=e727]: DevOps engineers and teams responsible for repository maintenance
+          - generic [ref=e729]:
+            - button "C" [ref=e730] [cursor=pointer]
+            - generic [ref=e731]:
+              - 'link "Show HN: QVAC SDK, a universal JavaScript SDK for building local AI applications" [ref=e732] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47708697
+              - paragraph [ref=e733]: A JavaScript SDK that allows web applications to interact with local LLMs, simplifying the process of building client-side AI features.
+              - generic [ref=e734]:
+                - generic [ref=e735]: ▲ 30
+                - generic [ref=e736]: ◇ 14
+                - generic [ref=e737]: Frontend developers building web applications with local AI features
+          - generic [ref=e739]:
+            - button "C" [ref=e740] [cursor=pointer]
+            - generic [ref=e741]:
+              - 'link "Show HN: 12k+ in free AI ad credits, every platform, one file" [ref=e742] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47708666
+              - link "github.com" [ref=e744] [cursor=pointer]:
+                - /url: https://github.com/darwin-studios/dmos/blob/main/free-ai-ad-credits.md
+              - paragraph [ref=e745]: This project aggregates free AI ad credits from various platforms into a single markdown document, saving users the effort of searching individually.
+              - generic [ref=e746]:
+                - generic [ref=e747]: ▲ 4
+                - generic [ref=e748]: ◇ 0
+                - generic [ref=e749]: Small business owners, marketers, and individuals seeking to experiment with AI advertising without initial cost.
+        - button "+ 148 more" [ref=e750] [cursor=pointer]
+      - generic [ref=e751]:
+        - heading "April 8, 2026" [level=3] [ref=e752]
+        - generic [ref=e753]:
+          - generic [ref=e755]:
+            - button "C" [ref=e756] [cursor=pointer]
+            - generic [ref=e757]:
+              - 'link "Show HN: Google Antigravity and Firebase MCP: In 12 Minutes [video]" [ref=e758] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47692256
+              - link "youtube.com" [ref=e760] [cursor=pointer]:
+                - /url: https://www.youtube.com/watch?v=-QKpKMY_9PM
+              - paragraph [ref=e761]: This video demonstrates a novel approach to managing Firebase client-side data using Google's internal Antigravity framework, aiming to improve performance and developer experience.
+              - generic [ref=e762]:
+                - generic [ref=e763]: ▲ 2
+                - generic [ref=e764]: ◇ 0
+                - generic [ref=e765]: Firebase developers facing performance bottlenecks with client-side data synchronization
+          - generic [ref=e767]:
+            - button "C" [ref=e768] [cursor=pointer]
+            - generic [ref=e769]:
+              - 'link "Show HN: Linggen – Open-source AI agent with P2P remote access from your phone" [ref=e770] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47696666
+              - link "linggen.dev" [ref=e772] [cursor=pointer]:
+                - /url: https://linggen.dev/
+              - paragraph [ref=e773]: An open-source AI agent that allows users to control their local machine remotely via a phone interface, blurring the lines between local compute and cloud-like access.
+              - generic [ref=e774]:
+                - generic [ref=e775]: ▲ 4
+                - generic [ref=e776]: ◇ 1
+                - generic [ref=e777]: Tech-savvy individuals needing remote control of their personal computers.
+          - generic [ref=e779]:
+            - button "C" [ref=e780] [cursor=pointer]
+            - generic [ref=e781]:
+              - 'link "Show HN: CongaLine – Self-hosted isolated AI agent fleet (OpenClaw, Hermes)" [ref=e782] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47696273
+              - link "github.com" [ref=e784] [cursor=pointer]:
+                - /url: https://github.com/cruxdigital-llc/congaline
+              - paragraph [ref=e785]: This project offers a self-hosted framework for orchestrating multiple AI agents, designed for localized execution and data privacy.
+              - generic [ref=e786]:
+                - generic [ref=e787]: ▲ 4
+                - generic [ref=e788]: ◇ 0
+                - generic [ref=e789]: Security-conscious developers, researchers, and enterprises managing sensitive data.
+          - generic [ref=e791]:
+            - button "C" [ref=e792] [cursor=pointer]
+            - generic [ref=e793]:
+              - 'link "Show HN: I Used 15 AI Agents to Design a Wearable – Here''s Where They Broke" [ref=e794] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47696267
+              - link "chetandesh.substack.com" [ref=e796] [cursor=pointer]:
+                - /url: https://chetandesh.substack.com/p/i-used-15-ai-agents-to-design-a-wearable
+              - paragraph [ref=e797]: This project is a personal experiment using 15 AI agents to simulate a product design process for a wearable device, highlighting the current limitations of AI in complex, iterative design tasks.
+              - generic [ref=e798]:
+                - generic [ref=e799]: ▲ 2
+                - generic [ref=e800]: ◇ 0
+                - generic [ref=e801]: Product designers, AI researchers, engineering leads exploring AI workflows
+          - generic [ref=e803]:
+            - button "C" [ref=e804] [cursor=pointer]
+            - generic [ref=e805]:
+              - 'link "Show HN: Starla – Unofficial Ripe Atlas Software Probe" [ref=e806] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47696181
+              - link "github.com" [ref=e808] [cursor=pointer]:
+                - /url: https://github.com/ananthb/starla
+              - paragraph [ref=e809]: Starla is a CLI tool for interacting with Ripe Atlas probes, allowing users to run custom tests and retrieve results. It's an unofficial wrapper around Ripe Atlas's existing functionality.
+              - generic [ref=e810]:
+                - generic [ref=e811]: ▲ 1
+                - generic [ref=e812]: ◇ 0
+                - generic [ref=e813]: Network engineers, researchers using Ripe Atlas
+          - generic [ref=e815]:
+            - button "C" [ref=e816] [cursor=pointer]
+            - generic [ref=e817]:
+              - 'link "Show HN: MiroTalk SFU" [ref=e818] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47695052
+              - link "github.com" [ref=e820] [cursor=pointer]:
+                - /url: https://github.com/miroslavpejic85/mirotalksfu
+              - paragraph [ref=e821]: A self-hosted, open-source selective forwarding unit (SFU) for WebRTC video conferencing, aiming to offer a decentralized alternative to cloud-based services.
+              - generic [ref=e822]:
+                - generic [ref=e823]: ▲ 1
+                - generic [ref=e824]: ◇ 0
+                - generic [ref=e825]: Self-hosting enthusiasts, small to medium businesses needing controlled video infrastructure, developers building custom video apps.
+          - generic [ref=e827]:
+            - button "C" [ref=e828] [cursor=pointer]
+            - generic [ref=e829]:
+              - 'link "Show HN: An open-source Go CLI to generate local AWS cost reports" [ref=e830] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47694808
+              - link "awsdoctor.compacompila.com" [ref=e832] [cursor=pointer]:
+                - /url: https://awsdoctor.compacompila.com/docs/reporting/
+              - paragraph [ref=e833]: An open-source Go CLI tool that generates local AWS cost reports from usage data.
+              - generic [ref=e834]:
+                - generic [ref=e835]: ▲ 3
+                - generic [ref=e836]: ◇ 1
+                - generic [ref=e837]: Small to medium AWS users needing visibility
+          - generic [ref=e839]:
+            - button "C" [ref=e840] [cursor=pointer]
+            - generic [ref=e841]:
+              - 'link "Show HN: smux: terminal automation and agent-to-agent communication via tmux" [ref=e842] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47694172
+              - link "github.com" [ref=e844] [cursor=pointer]:
+                - /url: https://github.com/ShawnPana/smux
+              - paragraph [ref=e845]: smux allows communication and automation between separate tmux sessions, enabling programmatic control of terminal workflows.
+              - generic [ref=e846]:
+                - generic [ref=e847]: ▲ 4
+                - generic [ref=e848]: ◇ 0
+                - generic [ref=e849]: DevOps engineers, system administrators, seasoned developers managing complex terminal environments.
+          - generic [ref=e851]:
+            - button "C" [ref=e852] [cursor=pointer]
+            - generic [ref=e853]:
+              - 'link "Show HN: Deterministic security guardrails for Claude Code" [ref=e854] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47694119
+              - link "github.com" [ref=e856] [cursor=pointer]:
+                - /url: https://github.com/adityaarakeri/claude-on-a-leash
+              - paragraph [ref=e857]: This project adds deterministic guardrails to Claude's code generation, preventing it from producing obviously insecure or problematic output.
+              - generic [ref=e858]:
+                - generic [ref=e859]: ▲ 3
+                - generic [ref=e860]: ◇ 0
+                - generic [ref=e861]: Developers using LLMs for code generation who have experienced or fear bad outputs
+          - generic [ref=e863]:
+            - button "C" [ref=e864] [cursor=pointer]
+            - generic [ref=e865]:
+              - 'link "Show HN: Embedding Similarity with Confidence Intervals" [ref=e866] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47693425
+              - link "embedding-analytics.com" [ref=e868] [cursor=pointer]:
+                - /url: https://www.embedding-analytics.com
+              - paragraph [ref=e869]: This project offers a Python library to calculate embedding similarity with confidence intervals, aiming to provide statistical rigor to vector comparisons.
+              - generic [ref=e870]:
+                - generic [ref=e871]: ▲ 1
+                - generic [ref=e872]: ◇ 0
+                - generic [ref=e873]: Data scientists and ML engineers validating vector search results.
+        - button "+ 137 more" [ref=e874] [cursor=pointer]
+      - generic [ref=e875]:
+        - heading "April 7, 2026" [level=3] [ref=e876]
+        - generic [ref=e877]:
+          - generic [ref=e879]:
+            - button "C" [ref=e880] [cursor=pointer]
+            - generic [ref=e881]:
+              - 'link "Show HN: Marimo pair – Reactive Python notebooks as environments for agents" [ref=e882] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47678844
+              - link "github.com" [ref=e884] [cursor=pointer]:
+                - /url: https://github.com/marimo-team/marimo-pair
+              - paragraph [ref=e885]: Marimo Pair provides reactive Python notebooks designed for agentic workflows, essentially allowing for iterative development and debugging of AI agents within a familiar notebook environment. It offers a stateful, interactive canvas for orchestrating agent actions.
+              - generic [ref=e886]:
+                - generic [ref=e887]: ▲ 140
+                - generic [ref=e888]: ◇ 34
+                - generic [ref=e889]: AI/ML engineers building and debugging multi-agent systems
+          - generic [ref=e891]:
+            - button "C" [ref=e892] [cursor=pointer]
+            - generic [ref=e893]:
+              - 'link "Show HN: A Zod alternative with runtime schema introspection" [ref=e894] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47682026
+              - link "docs.cleverbrush.com" [ref=e896] [cursor=pointer]:
+                - /url: https://docs.cleverbrush.com
+              - paragraph [ref=e897]: A TypeScript schema validation library that adds runtime introspection capabilities, aiming to differentiate itself from Zod by providing a richer meta-schema representation.
+              - generic [ref=e898]:
+                - generic [ref=e899]: ▲ 2
+                - generic [ref=e900]: ◇ 0
+                - generic [ref=e901]: TypeScript developers needing runtime data validation
+          - generic [ref=e903]:
+            - button "C" [ref=e904] [cursor=pointer]
+            - generic [ref=e905]:
+              - 'link "Show HN: An interactive map of Tolkien''s Middle-earth" [ref=e906] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47681112
+              - link "middle-earth-interactive-map.web.app" [ref=e908] [cursor=pointer]:
+                - /url: https://middle-earth-interactive-map.web.app/
+              - paragraph [ref=e909]: An interactive web-based map of J.R.R. Tolkien's Middle-earth, allowing users to view locations and read associated lore. It's a digital fan-made atlas.
+              - generic [ref=e910]:
+                - generic [ref=e911]: ▲ 291
+                - generic [ref=e912]: ◇ 70
+                - generic [ref=e913]: Tolkien fans and casual readers
+          - generic [ref=e915]:
+            - button "C" [ref=e916] [cursor=pointer]
+            - generic [ref=e917]:
+              - 'link "Show HN: I built a tariff API because USITC data lags executive orders by days" [ref=e918] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47680761
+              - paragraph [ref=e919]: An API that provides tariff data, aiming to be faster than the USITC's official source due to lag behind executive orders.
+              - generic [ref=e920]:
+                - generic [ref=e921]: ▲ 2
+                - generic [ref=e922]: ◇ 0
+                - generic [ref=e923]: Trade compliance professionals, logistics analysts
+          - generic [ref=e925]:
+            - button "C" [ref=e926] [cursor=pointer]
+            - generic [ref=e927]:
+              - 'link "Show HN: Kronaxis Router – Don''t pay frontier prices when a local LLM is enough" [ref=e928] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47680305
+              - link "github.com" [ref=e930] [cursor=pointer]:
+                - /url: https://github.com/Kronaxis/kronaxis-router
+              - paragraph [ref=e931]: This project routes LLM requests between local models and paid APIs, aiming to reduce costs by using cheaper local alternatives when sufficient.
+              - generic [ref=e932]:
+                - generic [ref=e933]: ▲ 2
+                - generic [ref=e934]: ◇ 0
+                - generic [ref=e935]: Developers with LLM integration needs and cost sensitivity
+          - generic [ref=e937]:
+            - button "C" [ref=e938] [cursor=pointer]
+            - generic [ref=e939]:
+              - 'link "Show HN: Visual DLQ monitoring and replay for RabbitMQ" [ref=e940] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47680128
+              - link "queueforgehq.com" [ref=e942] [cursor=pointer]:
+                - /url: https://queueforgehq.com
+              - paragraph [ref=e943]: This is a visual interface for monitoring dead-letter queues (DLQs) in RabbitMQ and replaying messages, aiming to simplify operations for developers.
+              - generic [ref=e944]:
+                - generic [ref=e945]: ▲ 1
+                - generic [ref=e946]: ◇ 0
+                - generic [ref=e947]: Developers operating RabbitMQ DLQs
+          - generic [ref=e949]:
+            - button "C" [ref=e950] [cursor=pointer]
+            - generic [ref=e951]:
+              - 'link "Show HN: A Little Excursion" [ref=e952] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47680001
+              - link "alittleexcursion.com" [ref=e954] [cursor=pointer]:
+                - /url: https://alittleexcursion.com/
+              - paragraph [ref=e955]: A tool for creating and sharing interactive, multi-step guided tours of web pages or applications, primarily for product onboarding and demos.
+              - generic [ref=e956]:
+                - generic [ref=e957]: ▲ 2
+                - generic [ref=e958]: ◇ 0
+                - generic [ref=e959]: Product managers, marketing teams, early-stage startups
+          - generic [ref=e961]:
+            - button "C" [ref=e962] [cursor=pointer]
+            - generic [ref=e963]:
+              - 'link "Show HN: PromptJuggler – A dev env and runner for prompts, workflows, agents" [ref=e964] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47679019
+              - link "promptjuggler.com" [ref=e966] [cursor=pointer]:
+                - /url: https://promptjuggler.com
+              - paragraph [ref=e967]: PromptJuggler offers a localhost development environment and execution runner for prompt chaining, workflows, and agents, aiming to streamline LLM application development.
+              - generic [ref=e968]:
+                - generic [ref=e969]: ▲ 3
+                - generic [ref=e970]: ◇ 0
+                - generic [ref=e971]: LLM application developers and prompt engineers
+          - generic [ref=e973]:
+            - button "C" [ref=e974] [cursor=pointer]
+            - generic [ref=e975]:
+              - 'link "Show HN: Ollama-client-rs, a Rust client for Ollama" [ref=e976] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47678646
+              - link "github.com" [ref=e978] [cursor=pointer]:
+                - /url: https://github.com/anperrone/ollama-client-rs
+              - paragraph [ref=e979]: A Rust library providing idiomatic bindings to the Ollama API, intended for developers integrating local LLMs into their Rust applications.
+              - generic [ref=e980]:
+                - generic [ref=e981]: ▲ 3
+                - generic [ref=e982]: ◇ 0
+                - generic [ref=e983]: Rust developers integrating local LLMs
+          - generic [ref=e985]:
+            - button "C" [ref=e986] [cursor=pointer]
+            - generic [ref=e987]:
+              - 'link "Show HN: Frontend-VisualQA — give coding agents eyes to verify their own UI work" [ref=e988] [cursor=pointer]':
+                - /url: https://news.ycombinator.com/item?id=47678328
+              - link "github.com" [ref=e990] [cursor=pointer]:
+                - /url: https://github.com/yutori-ai/frontend-visualqa
+              - paragraph [ref=e991]: This project provides a framework for AI agents to visually inspect and verify their own UI generation or modification work, essentially giving them 'eyes' to detect rendering issues.
+              - generic [ref=e992]:
+                - generic [ref=e993]: ▲ 10
+                - generic [ref=e994]: ◇ 0
+                - generic [ref=e995]: Frontend developers and UI/UX engineers building complex web applications or working with AI-assisted design tools.
+        - button "+ 36 more" [ref=e996] [cursor=pointer]
+  - button "Open Next.js Dev Tools" [ref=e1002] [cursor=pointer]:
+    - img [ref=e1003]
+  - alert [ref=e1006]

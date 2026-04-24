@@ -1,3 +1,20 @@
+export const CATEGORIES = [
+  "startup",
+  "open-source",
+  "dev-tool",
+  "ai-ml",
+  "video-game",
+  "hardware",
+  "educational",
+  "informational",
+  "research",
+  "content",
+  "demo",
+  "hobby",
+  "other",
+] as const;
+export type Category = (typeof CATEGORIES)[number];
+
 export interface AiReview {
   summary: string;
   score: number;
@@ -5,6 +22,7 @@ export interface AiReview {
   targetAudience: string;
   vibe: string;
   techStack: string;
+  category: Category;
 }
 
 export type Exemplar = {
@@ -67,6 +85,20 @@ Also provide:
 - "whyItMatters": 1 sentence — the single most compelling reason someone should click through and try this. What makes it stand out? Be specific. If nothing stands out, say so honestly.
 - "vibe": A 2-4 word vibe check (e.g., "weekend hack energy", "VC-ready polish", "niche but brilliant", "overengineered todo app", "actually useful CLI", "beautiful and pointless", "scratching own itch")
 - "techStack": Key technologies detected or inferred (e.g., "Rust, WASM", "Next.js, Supabase", "Python CLI")
+- "category": Pick EXACTLY ONE from this list — no other values:
+   - "startup": commercial product, SaaS, paid service, anything pursuing revenue
+   - "open-source": library, framework, SDK, OSS package meant to be imported by other devs
+   - "dev-tool": CLI, IDE plugin, dev workflow utility (not a library)
+   - "ai-ml": AI/ML/LLM-focused product or model release (overrides startup/oss when AI is the headline)
+   - "video-game": a game, playable interactive entertainment
+   - "hardware": physical product, IoT, robotics, electronics
+   - "educational": tutorial, course, interactive lesson, teaching tool
+   - "informational": data viz, dataset, reference site, directory, dashboard about something
+   - "research": academic paper, novel technique writeup, research preview
+   - "content": blog post, newsletter, essay, podcast, video
+   - "demo": showcase/experiment/art piece with no clear utility goal
+   - "hobby": weekend hack, personal side project not aiming for users
+   - "other": none of the above clearly fits
 
 Respond in this exact JSON format (no markdown, no code fences):
 {
@@ -75,6 +107,7 @@ Respond in this exact JSON format (no markdown, no code fences):
   "targetAudience": "specific audience in a few words",
   "vibe": "2-4 word vibe check",
   "techStack": "key tech",
+  "category": "startup",
   "score": 38
 }`;
 
@@ -113,6 +146,11 @@ Respond in this exact JSON format (no markdown, no code fences):
     // Validate score
     if (!isValidScore(parsed.score)) return null;
 
+    const rawCat = typeof parsed.category === "string" ? parsed.category.toLowerCase().trim() : "";
+    const category: Category = (CATEGORIES as readonly string[]).includes(rawCat)
+      ? (rawCat as Category)
+      : "other";
+
     return {
       summary: parsed.summary,
       score: parsed.score,
@@ -120,6 +158,7 @@ Respond in this exact JSON format (no markdown, no code fences):
       targetAudience: parsed.targetAudience,
       vibe: parsed.vibe || "",
       techStack: parsed.techStack || "",
+      category,
     };
   } catch (err) {
     console.error("AI review failed:", err);

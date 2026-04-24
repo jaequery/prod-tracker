@@ -23,7 +23,10 @@ model ShowHnPost {
   previewImage   String?
   previewFetchedAt DateTime?
   siteDescription String?
+  category       String?
   rating         UserRating?
+
+  @@index([category])
 }
 
 model UserRating {

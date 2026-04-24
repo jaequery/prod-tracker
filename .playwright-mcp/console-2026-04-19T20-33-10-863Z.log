@@ -1,0 +1,37 @@
+[     319ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3107/_next/static/chunks/07.t_next_dist_0ti_p5h._.js:2431
+[     333ms] [LOG] [HMR] connected @ http://localhost:3107/_next/static/chunks/07.t_next_dist_0ti_p5h._.js:2431
+[     745ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3107/_next/static/chunks/07.t_next_dist_0ti_p5h._.js:2431
+[     791ms] [LOG] [Fast Refresh] done in 147ms @ http://localhost:3107/_next/static/chunks/07.t_next_dist_0ti_p5h._.js:2431
+[   55198ms] [ERROR] WebSocket connection to 'ws://localhost:3107/_next/webpack-hmr?id=3QiPizTdL7DR_YGpNsgXv' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3107/_next/static/chunks/07.t_next_dist_client_0le5taq._.js:13299
+[   56447ms] [LOG] [HMR] connected @ http://localhost:3107/_next/static/chunks/07.t_next_dist_0ti_p5h._.js:2431
+[   57435ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3107/_next/static/chunks/07.t_next_dist_0ti_p5h._.js:2431
+[   57547ms] [LOG] [HMR] connected @ http://localhost:3107/_next/static/chunks/07.t_next_dist_0ti_p5h._.js:2431
+[   57897ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3107/_next/static/chunks/07.t_next_dist_0ti_p5h._.js:2431
+[   57902ms] [LOG] [Fast Refresh] done in 162ms @ http://localhost:3107/_next/static/chunks/07.t_next_dist_0ti_p5h._.js:2431
+[  148161ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3107/_next/static/chunks/07.t_next_dist_0ti_p5h._.js:2431
+[  148403ms] [LOG] [Fast Refresh] done in 343ms @ http://localhost:3107/_next/static/chunks/07.t_next_dist_0ti_p5h._.js:2431
+[  148953ms] [ERROR] ./src/inngest/fetch-previews.ts:3:1
+Export fetchOgImage doesn't exist in target module
+  1 | import { inngest } from "@/lib/inngest";
+  2 | import { prisma } from "@/lib/prisma";
+> 3 | import { fetchOgImage } from "@/lib/og-image";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export const fetchMissingPreviews = inngest.createFunction(
+  6 |   {
+
+The export fetchOgImage was not found in module [project]/src/lib/og-image.ts [app-route] (ecmascript).
+Did you mean to import fetchSiteMeta?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  App Route:
+    ./src/inngest/fetch-previews.ts
+    ./src/app/api/inngest/route.ts @ http://localhost:3107/_next/static/chunks/07.t_next_dist_0ti_p5h._.js:3272
+[  149054ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3107/_next/static/chunks/07.t_next_dist_0ti_p5h._.js:2431
+[  220904ms] [ERROR] WebSocket connection to 'ws://localhost:3107/_next/webpack-hmr?id=1qnvKABs5FOg62zPWhfeb' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3107/_next/static/chunks/07.t_next_dist_client_0le5taq._.js:13299
+[  222061ms] [LOG] [HMR] connected @ http://localhost:3107/_next/static/chunks/07.t_next_dist_0ti_p5h._.js:2431
+[  222896ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3107/_next/static/chunks/07.t_next_dist_0ti_p5h._.js:2431
+[  222935ms] [LOG] [HMR] connected @ http://localhost:3107/_next/static/chunks/07.t_next_dist_0ti_p5h._.js:2431
+[  358096ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3107/_next/static/chunks/07.t_next_dist_0ti_p5h._.js:2431
+[  358186ms] [LOG] [Fast Refresh] done in 191ms @ http://localhost:3107/_next/static/chunks/07.t_next_dist_0ti_p5h._.js:2431

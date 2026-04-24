@@ -1,0 +1,47 @@
+[     378ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3107/_next/static/chunks/07.t_next_dist_0ti_p5h._.js:2431
+[     428ms] [LOG] [HMR] connected @ http://localhost:3107/_next/static/chunks/07.t_next_dist_0ti_p5h._.js:2431
+[     716ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3107/_next/static/chunks/07.t_next_dist_0ti_p5h._.js:2431
+[     766ms] [LOG] [Fast Refresh] done in 47ms @ http://localhost:3107/_next/static/chunks/07.t_next_dist_0ti_p5h._.js:2431
+[  144671ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3107/_next/static/chunks/07.t_next_dist_0ti_p5h._.js:2431
+[  144919ms] [LOG] [Fast Refresh] done in 257ms @ http://localhost:3107/_next/static/chunks/07.t_next_dist_0ti_p5h._.js:2431
+[  155288ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3107/_next/static/chunks/07.t_next_dist_0ti_p5h._.js:2431
+[  155436ms] [LOG] [Fast Refresh] done in 34ms @ http://localhost:3107/_next/static/chunks/07.t_next_dist_0ti_p5h._.js:2431
+[  161551ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3107/_next/static/chunks/07.t_next_dist_0ti_p5h._.js:2431
+[  161726ms] [LOG] [Fast Refresh] done in 69ms @ http://localhost:3107/_next/static/chunks/07.t_next_dist_0ti_p5h._.js:2431
+[  167013ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3107/_next/static/chunks/07.t_next_dist_0ti_p5h._.js:2431
+[  167112ms] ReferenceError: getScreenshotUrl is not defined
+    at eval (http://localhost:3107/_next/static/chunks/_0aoyvxz._.js?id=%255Bproject%255D%252Fsrc%252Fcomponents%252FPostsTable.tsx+%255Bapp-client%255D+%2528ecmascript%2529:175:56)
+    at Array.map (<anonymous>)
+    at eval (http://localhost:3107/_next/static/chunks/_0aoyvxz._.js?id=%255Bproject%255D%252Fsrc%252Fcomponents%252FPostsTable.tsx+%255Bapp-client%255D+%2528ecmascript%2529:166:51)
+    at Array.map (<anonymous>)
+    at PostsTable (http://localhost:3107/_next/static/chunks/_0aoyvxz._.js?id=%255Bproject%255D%252Fsrc%252Fcomponents%252FPostsTable.tsx+%255Bapp-client%255D+%2528ecmascript%2529:143:56)
+    at Object.react_stack_bottom_frame (http://localhost:3107/_next/static/chunks/07.t_next_dist_compiled_react-dom_0dp~6ud._.js:15037:24)
+    at renderWithHooks (http://localhost:3107/_next/static/chunks/07.t_next_dist_compiled_react-dom_0dp~6ud._.js:4620:24)
+    at updateFunctionComponent (http://localhost:3107/_next/static/chunks/07.t_next_dist_compiled_react-dom_0dp~6ud._.js:6081:21)
+    at beginWork (http://localhost:3107/_next/static/chunks/07.t_next_dist_compiled_react-dom_0dp~6ud._.js:6691:24)
+    at runWithFiberInDEV (http://localhost:3107/_next/static/chunks/07.t_next_dist_compiled_react-dom_0dp~6ud._.js:965:74)
+    at performUnitOfWork (http://localhost:3107/_next/static/chunks/07.t_next_dist_compiled_react-dom_0dp~6ud._.js:9555:97)
+    at workLoopSync (http://localhost:3107/_next/static/chunks/07.t_next_dist_compiled_react-dom_0dp~6ud._.js:9449:40)
+    at renderRootSync (http://localhost:3107/_next/static/chunks/07.t_next_dist_compiled_react-dom_0dp~6ud._.js:9433:13)
+    at performWorkOnRoot (http://localhost:3107/_next/static/chunks/07.t_next_dist_compiled_react-dom_0dp~6ud._.js:9098:47)
+    at performSyncWorkOnRoot (http://localhost:3107/_next/static/chunks/07.t_next_dist_compiled_react-dom_0dp~6ud._.js:10263:9)
+    at flushSyncWorkAcrossRoots_impl (http://localhost:3107/_next/static/chunks/07.t_next_dist_compiled_react-dom_0dp~6ud._.js:10179:316)
+    at flushSyncWork$1 (http://localhost:3107/_next/static/chunks/07.t_next_dist_compiled_react-dom_0dp~6ud._.js:9230:86)
+    at Object.scheduleRefresh (http://localhost:3107/_next/static/chunks/07.t_next_dist_compiled_react-dom_0dp~6ud._.js:299:13)
+    at http://localhost:3107/_next/static/chunks/07.t_next_dist_compiled_0cavhgn._.js:391:33
+    at Set.forEach (<anonymous>)
+    at Object.performReactRefresh (http://localhost:3107/_next/static/chunks/07.t_next_dist_compiled_0cavhgn._.js:384:38)
+    at applyUpdate (http://localhost:3107/_next/static/chunks/07.t_next_dist_compiled_0cavhgn._.js:878:31)
+    at http://localhost:3107/_next/static/chunks/07.t_next_dist_compiled_0cavhgn._.js:886:13
+[  167117ms] [LOG] [Fast Refresh] done in 62ms @ http://localhost:3107/_next/static/chunks/07.t_next_dist_0ti_p5h._.js:2431
+[  167281ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3107/_next/static/chunks/07.t_next_dist_0ti_p5h._.js:2431
+[  167354ms] [LOG] [Fast Refresh] done in 176ms @ http://localhost:3107/_next/static/chunks/07.t_next_dist_0ti_p5h._.js:2431
+[  169897ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3107/_next/static/chunks/07.t_next_dist_0ti_p5h._.js:2431
+[  169898ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ http://localhost:3107/_next/static/chunks/07.t_next_dist_0ti_p5h._.js:2431
+[  170085ms] [LOG] [Fast Refresh] done in 3ms @ http://localhost:3107/_next/static/chunks/07.t_next_dist_0ti_p5h._.js:2431
+[  170405ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3107/_next/static/chunks/07.t_next_dist_0ti_p5h._.js:2431
+[  170424ms] [LOG] [HMR] connected @ http://localhost:3107/_next/static/chunks/07.t_next_dist_0ti_p5h._.js:2431
+[  170573ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3107/_next/static/chunks/07.t_next_dist_0ti_p5h._.js:2431
+[  170574ms] [LOG] [Fast Refresh] done in 142ms @ http://localhost:3107/_next/static/chunks/07.t_next_dist_0ti_p5h._.js:2431
+[  176452ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3107/_next/static/chunks/07.t_next_dist_0ti_p5h._.js:2431
+[  176504ms] [LOG] [Fast Refresh] done in 53ms @ http://localhost:3107/_next/static/chunks/07.t_next_dist_0ti_p5h._.js:2431

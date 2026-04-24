@@ -1,0 +1,288 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - heading "Show HN" [level=1] [ref=e4]
+      - paragraph [ref=e5]: 854 projects tracked
+    - button "Apr854" [ref=e7] [cursor=pointer]
+    - heading "April 2026" [level=2] [ref=e8]
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]: Sort
+        - button "Score ↓" [ref=e12] [cursor=pointer]
+        - button "Upvotes" [ref=e13] [cursor=pointer]
+        - button "Comments" [ref=e14] [cursor=pointer]
+      - generic [ref=e15]:
+        - heading "April 14, 2026" [level=3] [ref=e16]
+        - generic [ref=e17]:
+          - generic [ref=e19]:
+            - button "🤷 Mid 65" [ref=e20] [cursor=pointer]
+            - generic [ref=e24]
+          - generic [ref=e34]:
+            - button "🤷 Mid 58" [ref=e35] [cursor=pointer]
+            - generic [ref=e39]
+          - generic [ref=e49]:
+            - button "🤷 Mid 55" [ref=e50] [cursor=pointer]
+            - generic [ref=e54]
+          - generic [ref=e64]:
+            - button "🤷 Mid 55" [ref=e65] [cursor=pointer]
+            - generic [ref=e69]
+          - generic [ref=e79]:
+            - button "🤷 Mid 55" [ref=e80] [cursor=pointer]
+            - generic [ref=e84]
+          - generic [ref=e94]:
+            - button "🤷 Mid 55" [ref=e95] [cursor=pointer]
+            - generic [ref=e99]
+          - generic [ref=e109]:
+            - button "🤷 Mid 55" [ref=e110] [cursor=pointer]
+            - generic [ref=e114]
+          - generic [ref=e124]:
+            - button "🤷 Mid 55" [ref=e125] [cursor=pointer]
+            - generic [ref=e129]
+          - generic [ref=e139]:
+            - button "🤷 Mid 55" [ref=e140] [cursor=pointer]
+            - generic [ref=e144]
+          - generic [ref=e154]:
+            - button "🤷 Mid 55" [ref=e155] [cursor=pointer]
+            - generic [ref=e159]
+        - button "+ 94 more" [ref=e166] [cursor=pointer]
+      - generic [ref=e167]:
+        - heading "April 13, 2026" [level=3] [ref=e168]
+        - generic [ref=e169]:
+          - generic [ref=e171]:
+            - button "🤷 Mid 60" [ref=e172] [cursor=pointer]
+            - generic [ref=e176]
+          - generic [ref=e186]:
+            - button "🤷 Mid 55" [ref=e187] [cursor=pointer]
+            - generic [ref=e191]
+          - generic [ref=e201]:
+            - button "🤷 Mid 55" [ref=e202] [cursor=pointer]
+            - generic [ref=e206]
+          - generic [ref=e216]:
+            - button "🤷 Mid 55" [ref=e217] [cursor=pointer]
+            - generic [ref=e221]
+          - generic [ref=e231]:
+            - button "🤷 Mid 55" [ref=e232] [cursor=pointer]
+            - generic [ref=e236]
+          - generic [ref=e246]:
+            - button "🤷 Mid 55" [ref=e247] [cursor=pointer]
+            - generic [ref=e251]
+          - generic [ref=e261]:
+            - button "🤷 Mid 55" [ref=e262] [cursor=pointer]
+            - generic [ref=e266]
+          - generic [ref=e276]:
+            - button "🤷 Mid 55" [ref=e277] [cursor=pointer]
+            - generic [ref=e281]
+          - generic [ref=e291]:
+            - button "🤷 Mid 55" [ref=e292] [cursor=pointer]
+            - generic [ref=e296]
+          - generic [ref=e306]:
+            - button "🤷 Mid 55" [ref=e307] [cursor=pointer]
+            - generic [ref=e311]
+        - button "+ 114 more" [ref=e320] [cursor=pointer]
+      - generic [ref=e321]:
+        - heading "April 12, 2026" [level=3] [ref=e322]
+        - generic [ref=e323]:
+          - generic [ref=e325]:
+            - button "🤷 Mid 65" [ref=e326] [cursor=pointer]
+            - generic [ref=e330]
+          - generic [ref=e340]:
+            - button "🤷 Mid 60" [ref=e341] [cursor=pointer]
+            - generic [ref=e345]
+          - generic [ref=e355]:
+            - button "🤷 Mid 55" [ref=e356] [cursor=pointer]
+            - generic [ref=e360]
+          - generic [ref=e370]:
+            - button "🤷 Mid 55" [ref=e371] [cursor=pointer]
+            - generic [ref=e375]
+          - generic [ref=e385]:
+            - button "🤷 Mid 55" [ref=e386] [cursor=pointer]
+            - generic [ref=e390]
+          - generic [ref=e400]:
+            - button "🤷 Mid 55" [ref=e401] [cursor=pointer]
+            - generic [ref=e405]
+          - generic [ref=e415]:
+            - button "🤷 Mid 55" [ref=e416] [cursor=pointer]
+            - generic [ref=e420]
+          - generic [ref=e430]:
+            - button "🤷 Mid 55" [ref=e431] [cursor=pointer]
+            - generic [ref=e435]
+          - generic [ref=e445]:
+            - button "🤷 Mid 55" [ref=e446] [cursor=pointer]
+            - generic [ref=e450]
+          - generic [ref=e460]:
+            - button "🤷 Mid 55" [ref=e461] [cursor=pointer]
+            - generic [ref=e465]
+        - button "+ 82 more" [ref=e474] [cursor=pointer]
+      - generic [ref=e475]:
+        - heading "April 11, 2026" [level=3] [ref=e476]
+        - generic [ref=e477]:
+          - generic [ref=e479]:
+            - button "🤷 Mid 65" [ref=e480] [cursor=pointer]
+            - generic [ref=e484]
+          - generic [ref=e494]:
+            - button "🤷 Mid 60" [ref=e495] [cursor=pointer]
+            - generic [ref=e499]
+          - generic [ref=e509]:
+            - button "🤷 Mid 55" [ref=e510] [cursor=pointer]
+            - generic [ref=e514]
+          - generic [ref=e524]:
+            - button "🤷 Mid 55" [ref=e525] [cursor=pointer]
+            - generic [ref=e529]
+          - generic [ref=e539]:
+            - button "🤷 Mid 55" [ref=e540] [cursor=pointer]
+            - generic [ref=e544]
+          - generic [ref=e554]:
+            - button "🤷 Mid 55" [ref=e555] [cursor=pointer]
+            - generic [ref=e559]
+          - generic [ref=e569]:
+            - button "🤷 Mid 55" [ref=e570] [cursor=pointer]
+            - generic [ref=e574]
+          - generic [ref=e584]:
+            - button "🤷 Mid 55" [ref=e585] [cursor=pointer]
+            - generic [ref=e589]
+          - generic [ref=e599]:
+            - button "🤷 Mid 55" [ref=e600] [cursor=pointer]
+            - generic [ref=e604]
+          - generic [ref=e612]:
+            - button "🤷 Mid 55" [ref=e613] [cursor=pointer]
+            - generic [ref=e617]
+        - button "+ 63 more" [ref=e626] [cursor=pointer]
+      - generic [ref=e627]:
+        - heading "April 10, 2026" [level=3] [ref=e628]
+        - generic [ref=e629]:
+          - generic [ref=e631]:
+            - button "🤷 Mid 58" [ref=e632] [cursor=pointer]
+            - generic [ref=e636]
+          - generic [ref=e646]:
+            - button "🤷 Mid 55" [ref=e647] [cursor=pointer]
+            - generic [ref=e651]
+          - generic [ref=e661]:
+            - button "🤷 Mid 55" [ref=e662] [cursor=pointer]
+            - generic [ref=e666]
+          - generic [ref=e676]:
+            - button "🤷 Mid 55" [ref=e677] [cursor=pointer]
+            - generic [ref=e681]
+          - generic [ref=e691]:
+            - button "🤷 Mid 55" [ref=e692] [cursor=pointer]
+            - generic [ref=e696]
+          - generic [ref=e706]:
+            - button "🤷 Mid 55" [ref=e707] [cursor=pointer]
+            - generic [ref=e711]
+          - generic [ref=e721]:
+            - button "🤷 Mid 55" [ref=e722] [cursor=pointer]
+            - generic [ref=e726]
+          - generic [ref=e736]:
+            - button "🤷 Mid 55" [ref=e737] [cursor=pointer]
+            - generic [ref=e741]
+          - generic [ref=e751]:
+            - button "🤷 Mid 55" [ref=e752] [cursor=pointer]
+            - generic [ref=e756]
+          - generic [ref=e766]:
+            - button "🤷 Mid 55" [ref=e767] [cursor=pointer]
+            - generic [ref=e771]
+        - button "+ 100 more" [ref=e780] [cursor=pointer]
+      - generic [ref=e781]:
+        - heading "April 9, 2026" [level=3] [ref=e782]
+        - generic [ref=e783]:
+          - generic [ref=e785]:
+            - button "🤷 Mid 65" [ref=e786] [cursor=pointer]
+            - generic [ref=e790]
+          - generic [ref=e800]:
+            - button "🤷 Mid 58" [ref=e801] [cursor=pointer]
+            - generic [ref=e805]
+          - generic [ref=e815]:
+            - button "🤷 Mid 55" [ref=e816] [cursor=pointer]
+            - generic [ref=e820]
+          - generic [ref=e830]:
+            - button "🤷 Mid 55" [ref=e831] [cursor=pointer]
+            - generic [ref=e835]
+          - generic [ref=e843]:
+            - button "🤷 Mid 55" [ref=e844] [cursor=pointer]
+            - generic [ref=e848]
+          - generic [ref=e858]:
+            - button "🤷 Mid 55" [ref=e859] [cursor=pointer]
+            - generic [ref=e863]
+          - generic [ref=e873]:
+            - button "🤷 Mid 55" [ref=e874] [cursor=pointer]
+            - generic [ref=e878]
+          - generic [ref=e888]:
+            - button "🤷 Mid 55" [ref=e889] [cursor=pointer]
+            - generic [ref=e893]
+          - generic [ref=e903]:
+            - button "🤷 Mid 55" [ref=e904] [cursor=pointer]
+            - generic [ref=e908]
+          - generic [ref=e916]:
+            - button "🤷 Mid 55" [ref=e917] [cursor=pointer]
+            - generic [ref=e921]
+        - button "+ 148 more" [ref=e930] [cursor=pointer]
+      - generic [ref=e931]:
+        - heading "April 8, 2026" [level=3] [ref=e932]
+        - generic [ref=e933]:
+          - generic [ref=e935]:
+            - button "🤷 Mid 65" [ref=e936] [cursor=pointer]
+            - generic [ref=e940]
+          - generic [ref=e950]:
+            - button "🤷 Mid 55" [ref=e951] [cursor=pointer]
+            - generic [ref=e955]
+          - generic [ref=e965]:
+            - button "🤷 Mid 55" [ref=e966] [cursor=pointer]
+            - generic [ref=e970]
+          - generic [ref=e980]:
+            - button "🤷 Mid 55" [ref=e981] [cursor=pointer]
+            - generic [ref=e985]
+          - generic [ref=e995]:
+            - button "🤷 Mid 55" [ref=e996] [cursor=pointer]
+            - generic [ref=e1000]
+          - generic [ref=e1010]:
+            - button "🤷 Mid 55" [ref=e1011] [cursor=pointer]
+            - generic [ref=e1015]
+          - generic [ref=e1025]:
+            - button "🤷 Mid 55" [ref=e1026] [cursor=pointer]
+            - generic [ref=e1030]
+          - generic [ref=e1040]:
+            - button "🤷 Mid 55" [ref=e1041] [cursor=pointer]
+            - generic [ref=e1045]
+          - generic [ref=e1055]:
+            - button "🤷 Mid 55" [ref=e1056] [cursor=pointer]
+            - generic [ref=e1060]
+          - generic [ref=e1070]:
+            - button "🤷 Mid 55" [ref=e1071] [cursor=pointer]
+            - generic [ref=e1075]
+        - button "+ 137 more" [ref=e1084] [cursor=pointer]
+      - generic [ref=e1085]:
+        - heading "April 7, 2026" [level=3] [ref=e1086]
+        - generic [ref=e1087]:
+          - generic [ref=e1089]:
+            - button "🤷 Mid 58" [ref=e1090] [cursor=pointer]
+            - generic [ref=e1094]
+          - generic [ref=e1104]:
+            - button "🤷 Mid 55" [ref=e1105] [cursor=pointer]
+            - generic [ref=e1109]
+          - generic [ref=e1119]:
+            - button "🤷 Mid 55" [ref=e1120] [cursor=pointer]
+            - generic [ref=e1124]
+          - generic [ref=e1134]:
+            - button "🤷 Mid 55" [ref=e1135] [cursor=pointer]
+            - generic [ref=e1139]
+          - generic [ref=e1147]:
+            - button "🤷 Mid 55" [ref=e1148] [cursor=pointer]
+            - generic [ref=e1152]
+          - generic [ref=e1162]:
+            - button "🤷 Mid 55" [ref=e1163] [cursor=pointer]
+            - generic [ref=e1167]
+          - generic [ref=e1177]:
+            - button "🤷 Mid 55" [ref=e1178] [cursor=pointer]
+            - generic [ref=e1182]
+          - generic [ref=e1192]:
+            - button "🤷 Mid 55" [ref=e1193] [cursor=pointer]
+            - generic [ref=e1197]
+          - generic [ref=e1207]:
+            - button "🤷 Mid 55" [ref=e1208] [cursor=pointer]
+            - generic [ref=e1212]
+          - generic [ref=e1222]:
+            - button "🤷 Mid 55" [ref=e1223] [cursor=pointer]
+            - generic [ref=e1227]
+        - button "+ 36 more" [ref=e1236] [cursor=pointer]
+  - button "Open Next.js Dev Tools" [ref=e1242] [cursor=pointer]:
+    - img [ref=e1243]
+  - alert [ref=e1246]

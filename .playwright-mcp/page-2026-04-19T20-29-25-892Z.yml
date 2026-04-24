@@ -1,0 +1,2149 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e5]: 🍅
+        - heading "Show HN" [level=1] [ref=e6]
+      - paragraph [ref=e7]: AI critic reviews for Show HN projects
+    - button "Apr1409" [ref=e9] [cursor=pointer]
+    - generic [ref=e10]:
+      - heading "April 2026" [level=2] [ref=e11]
+      - generic [ref=e12]:
+        - generic [ref=e13]: 1409 projects
+        - generic [ref=e14]:
+          - generic [ref=e15]: 🍅
+          - generic [ref=e16]: "69"
+          - generic [ref=e17]: Fresh
+        - generic [ref=e18]:
+          - generic [ref=e19]: 🤢
+          - generic [ref=e20]: "58"
+          - generic [ref=e21]: Rotten
+        - generic [ref=e22]:
+          - generic [ref=e23]: 55%
+          - generic [ref=e24]: avg
+    - generic [ref=e25]:
+      - generic [ref=e26]:
+        - generic [ref=e27]: Sort
+        - button "Score ↓" [ref=e28] [cursor=pointer]
+        - button "Upvotes" [ref=e29] [cursor=pointer]
+        - button "Comments" [ref=e30] [cursor=pointer]
+      - generic [ref=e31]:
+        - generic [ref=e32]:
+          - heading "April 19 · 65 projects" [level=3] [ref=e33]
+          - generic [ref=e34]:
+            - generic [ref=e36]:
+              - generic [ref=e37]:
+                - generic [ref=e38]: 🍅
+                - generic [ref=e39]: —
+              - generic [ref=e40]:
+                - 'link "Show HN: Lmcli v0.5.0 – A useable tool for LLM minimalists" [ref=e41] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47827162
+                - link "codeberg.org ↗" [ref=e42] [cursor=pointer]:
+                  - /url: https://codeberg.org/mlow/lmcli
+                - generic [ref=e43]:
+                  - generic [ref=e44]: ▲ 2
+                  - generic [ref=e45]: ◇ 0
+              - link "codeberg.org preview" [ref=e46] [cursor=pointer]:
+                - /url: https://codeberg.org/mlow/lmcli
+                - img "codeberg.org preview" [ref=e47]
+            - generic [ref=e49]:
+              - generic [ref=e50]:
+                - generic [ref=e51]: 🍅
+                - generic [ref=e52]: —
+              - generic [ref=e53]:
+                - 'link "Show HN: NYC Guessr – GeoGuessr for NYC but with live video cam footage" [ref=e54] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47827033
+                - link "nycguessr.vercel.app ↗" [ref=e55] [cursor=pointer]:
+                  - /url: https://nycguessr.vercel.app/
+                - generic [ref=e56]:
+                  - generic [ref=e57]: ▲ 2
+                  - generic [ref=e58]: ◇ 0
+              - link "nycguessr.vercel.app preview" [ref=e59] [cursor=pointer]:
+                - /url: https://nycguessr.vercel.app/
+                - img "nycguessr.vercel.app preview" [ref=e60]
+            - generic [ref=e62]:
+              - generic [ref=e63]:
+                - generic [ref=e64]: 🍅
+                - generic [ref=e65]: —
+              - generic [ref=e66]:
+                - 'link "Show HN: EIDWTimes – Predicting airport wait times with ML for a school project" [ref=e67] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47826926
+                - link "eidwtimes.xyz ↗" [ref=e68] [cursor=pointer]:
+                  - /url: https://eidwtimes.xyz/
+                - generic [ref=e69]:
+                  - generic [ref=e70]: ▲ 3
+                  - generic [ref=e71]: ◇ 0
+              - link "eidwtimes.xyz preview" [ref=e72] [cursor=pointer]:
+                - /url: https://eidwtimes.xyz/
+                - img "eidwtimes.xyz preview" [ref=e73]
+            - generic [ref=e75]:
+              - generic [ref=e76]:
+                - generic [ref=e77]: 🍅
+                - generic [ref=e78]: —
+              - generic [ref=e79]:
+                - 'link "Show HN: YouDeserveNow, Justifications for Treating Yourself" [ref=e80] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47826899
+                - link "youdeservenow.com ↗" [ref=e81] [cursor=pointer]:
+                  - /url: https://www.youdeservenow.com
+                - generic [ref=e82]:
+                  - generic [ref=e83]: ▲ 1
+                  - generic [ref=e84]: ◇ 0
+              - link "youdeservenow.com preview" [ref=e85] [cursor=pointer]:
+                - /url: https://www.youdeservenow.com
+                - img "youdeservenow.com preview" [ref=e86]
+            - generic [ref=e88]:
+              - generic [ref=e89]:
+                - generic [ref=e90]: 🍅
+                - generic [ref=e91]: —
+              - generic [ref=e92]:
+                - 'link "Show HN: LiteMarkup: Markdown parser with TypeScript AST, <3KB, no deps" [ref=e93] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47826850
+                - link "github.com ↗" [ref=e94] [cursor=pointer]:
+                  - /url: https://github.com/tuures/LiteMarkup
+                - generic [ref=e95]:
+                  - generic [ref=e96]: ▲ 2
+                  - generic [ref=e97]: ◇ 0
+              - link "github.com preview" [ref=e98] [cursor=pointer]:
+                - /url: https://github.com/tuures/LiteMarkup
+                - img "github.com preview" [ref=e99]
+            - generic [ref=e101]:
+              - generic [ref=e102]:
+                - generic [ref=e103]: 🍅
+                - generic [ref=e104]: —
+              - generic [ref=e105]:
+                - 'link "Show HN: I couldn''t find any BS-free QR code generator, so I built one" [ref=e106] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47826799
+                - link "cutearr.com ↗" [ref=e107] [cursor=pointer]:
+                  - /url: https://www.cutearr.com/
+                - generic [ref=e108]:
+                  - generic [ref=e109]: ▲ 2
+                  - generic [ref=e110]: ◇ 0
+              - link "cutearr.com preview" [ref=e111] [cursor=pointer]:
+                - /url: https://www.cutearr.com/
+                - img "cutearr.com preview" [ref=e112]
+            - generic [ref=e114]:
+              - generic [ref=e115]:
+                - generic [ref=e116]: 🍅
+                - generic [ref=e117]: —
+              - generic [ref=e118]:
+                - 'link "Show HN: Free PDF redactor that runs client-side" [ref=e119] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47826529
+                - link "redactpdf.net ↗" [ref=e120] [cursor=pointer]:
+                  - /url: https://redactpdf.net
+                - generic [ref=e121]:
+                  - generic [ref=e122]: ▲ 3
+                  - generic [ref=e123]: ◇ 0
+              - link "redactpdf.net preview" [ref=e124] [cursor=pointer]:
+                - /url: https://redactpdf.net
+                - img "redactpdf.net preview" [ref=e125]
+            - generic [ref=e127]:
+              - generic [ref=e128]:
+                - generic [ref=e129]: 🍅
+                - generic [ref=e130]: —
+              - generic [ref=e131]:
+                - 'link "Show HN: Faceoff – A terminal UI for following NHL games" [ref=e132] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47826104
+                - link "vincentgregoire.com ↗" [ref=e133] [cursor=pointer]:
+                  - /url: https://www.vincentgregoire.com/faceoff/
+                - generic [ref=e134]:
+                  - generic [ref=e135]: ▲ 51
+                  - generic [ref=e136]: ◇ 20
+              - link "vincentgregoire.com preview" [ref=e137] [cursor=pointer]:
+                - /url: https://www.vincentgregoire.com/faceoff/
+                - img "vincentgregoire.com preview" [ref=e138]
+            - generic [ref=e140]:
+              - generic [ref=e141]:
+                - generic [ref=e142]: 🍅
+                - generic [ref=e143]: —
+              - generic [ref=e144]:
+                - 'link "Show HN: A drop-in, open-source replacement for YouTube embed iframes" [ref=e145] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47826103
+                - link "embedlite.com ↗" [ref=e146] [cursor=pointer]:
+                  - /url: https://embedlite.com/
+                - generic [ref=e147]:
+                  - generic [ref=e148]: ▲ 1
+                  - generic [ref=e149]: ◇ 0
+              - link "embedlite.com preview" [ref=e150] [cursor=pointer]:
+                - /url: https://embedlite.com/
+                - img "embedlite.com preview" [ref=e151]
+            - generic [ref=e153]:
+              - generic [ref=e154]:
+                - generic [ref=e155]: 🍅
+                - generic [ref=e156]: —
+              - generic [ref=e157]:
+                - 'link "Show HN: Alodb – I got tired of pasting my Postgres schema into ChatGPT" [ref=e158] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47826053
+                - link "alodb.com ↗" [ref=e159] [cursor=pointer]:
+                  - /url: https://alodb.com
+                - generic [ref=e160]:
+                  - generic [ref=e161]: ▲ 1
+                  - generic [ref=e162]: ◇ 1
+              - link "alodb.com preview" [ref=e163] [cursor=pointer]:
+                - /url: https://alodb.com
+                - img "alodb.com preview" [ref=e164]
+          - button "+ 55 more" [ref=e165] [cursor=pointer]
+        - generic [ref=e166]:
+          - heading "April 18 · 66 projects" [level=3] [ref=e167]
+          - generic [ref=e168]:
+            - generic [ref=e170]:
+              - generic [ref=e171]:
+                - generic [ref=e172]: 🍅
+                - generic [ref=e173]: —
+              - generic [ref=e174]:
+                - 'link "Show HN: Jitter Done – a simple tool to understand your caffeine metabolism" [ref=e175] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47820485
+                - link "jitterdone.com ↗" [ref=e176] [cursor=pointer]:
+                  - /url: https://jitterdone.com/
+                - generic [ref=e177]:
+                  - generic [ref=e178]: ▲ 4
+                  - generic [ref=e179]: ◇ 3
+              - link "jitterdone.com preview" [ref=e180] [cursor=pointer]:
+                - /url: https://jitterdone.com/
+                - img "jitterdone.com preview" [ref=e181]
+            - generic [ref=e183]:
+              - generic [ref=e184]:
+                - generic [ref=e185]: 🍅
+                - generic [ref=e186]: —
+              - generic [ref=e187]:
+                - 'link "Show HN: Sostactic – polynomial inequalities using sums-of-squares in Lean" [ref=e188] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47820134
+                - link "github.com ↗" [ref=e189] [cursor=pointer]:
+                  - /url: https://github.com/mmaaz-git/sostactic
+                - generic [ref=e190]:
+                  - generic [ref=e191]: ▲ 12
+                  - generic [ref=e192]: ◇ 1
+              - link "github.com preview" [ref=e193] [cursor=pointer]:
+                - /url: https://github.com/mmaaz-git/sostactic
+                - img "github.com preview" [ref=e194]
+            - generic [ref=e196]:
+              - generic [ref=e197]:
+                - generic [ref=e198]: 🍅
+                - generic [ref=e199]: —
+              - generic [ref=e200]:
+                - 'link "Show HN: AWS''s Kiro just got an Open source Codex" [ref=e201] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47820023
+                - link "github.com ↗" [ref=e202] [cursor=pointer]:
+                  - /url: https://github.com/thabti/kirodex
+                - generic [ref=e203]:
+                  - generic [ref=e204]: ▲ 7
+                  - generic [ref=e205]: ◇ 0
+              - link "github.com preview" [ref=e206] [cursor=pointer]:
+                - /url: https://github.com/thabti/kirodex
+                - img "github.com preview" [ref=e207]
+            - generic [ref=e209]:
+              - generic [ref=e210]:
+                - generic [ref=e211]: 🍅
+                - generic [ref=e212]: —
+              - generic [ref=e213]:
+                - 'link "Show HN: How Are You-elderly fall detection app I built solo with AI in 6 months" [ref=e214] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47819553
+                - generic [ref=e215]:
+                  - generic [ref=e216]: ▲ 4
+                  - generic [ref=e217]: ◇ 10
+            - generic [ref=e219]:
+              - generic [ref=e220]:
+                - generic [ref=e221]: 🍅
+                - generic [ref=e222]: —
+              - generic [ref=e223]:
+                - 'link "Show HN: A Roman fable about a PHP suite that exposed 100 tables in 3 days" [ref=e224] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47819544
+                - link "marius-ciclistu.medium.com ↗" [ref=e225] [cursor=pointer]:
+                  - /url: https://marius-ciclistu.medium.com/list/the-api-grand-prix-486dc1becb36
+                - generic [ref=e226]:
+                  - generic [ref=e227]: ▲ 3
+                  - generic [ref=e228]: ◇ 0
+              - link "marius-ciclistu.medium.com preview" [ref=e229] [cursor=pointer]:
+                - /url: https://marius-ciclistu.medium.com/list/the-api-grand-prix-486dc1becb36
+                - img "marius-ciclistu.medium.com preview" [ref=e230]
+            - generic [ref=e232]:
+              - generic [ref=e233]:
+                - generic [ref=e234]: 🍅
+                - generic [ref=e235]: —
+              - generic [ref=e236]:
+                - 'link "Show HN: Reliably Incorrect – explore LLM reliability with data visualizations" [ref=e237] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47819452
+                - link "adamsohn.com ↗" [ref=e238] [cursor=pointer]:
+                  - /url: https://adamsohn.com/reliably-incorrect/
+                - generic [ref=e239]:
+                  - generic [ref=e240]: ▲ 2
+                  - generic [ref=e241]: ◇ 3
+              - link "adamsohn.com preview" [ref=e242] [cursor=pointer]:
+                - /url: https://adamsohn.com/reliably-incorrect/
+                - img "adamsohn.com preview" [ref=e243]
+            - generic [ref=e245]:
+              - generic [ref=e246]:
+                - generic [ref=e247]: 🍅
+                - generic [ref=e248]: —
+              - generic [ref=e249]:
+                - 'link "Show HN: Coelanox – auditable inference runtime in Rust (BERT runs today)" [ref=e250] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47819334
+                - link "coelanox.com ↗" [ref=e251] [cursor=pointer]:
+                  - /url: https://www.coelanox.com/
+                - generic [ref=e252]:
+                  - generic [ref=e253]: ▲ 3
+                  - generic [ref=e254]: ◇ 0
+              - link "coelanox.com preview" [ref=e255] [cursor=pointer]:
+                - /url: https://www.coelanox.com/
+                - img "coelanox.com preview" [ref=e256]
+            - generic [ref=e258]:
+              - generic [ref=e259]:
+                - generic [ref=e260]: 🍅
+                - generic [ref=e261]: —
+              - generic [ref=e262]:
+                - 'link "Show HN: I built a tool that reads 2000 health studies a day so you dont have to" [ref=e263] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47819271
+                - link "polivora.com ↗" [ref=e264] [cursor=pointer]:
+                  - /url: https://www.polivora.com
+                - generic [ref=e265]:
+                  - generic [ref=e266]: ▲ 2
+                  - generic [ref=e267]: ◇ 5
+              - link "polivora.com preview" [ref=e268] [cursor=pointer]:
+                - /url: https://www.polivora.com
+                - img "polivora.com preview" [ref=e269]
+            - generic [ref=e271]:
+              - generic [ref=e272]:
+                - generic [ref=e273]: 🍅
+                - generic [ref=e274]: —
+              - generic [ref=e275]:
+                - 'link "Show HN: Deadline.email – a daily reminder that you''ll die" [ref=e276] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47818983
+                - link "deadline.email ↗" [ref=e277] [cursor=pointer]:
+                  - /url: https://deadline.email
+                - generic [ref=e278]:
+                  - generic [ref=e279]: ▲ 1
+                  - generic [ref=e280]: ◇ 2
+              - link "deadline.email preview" [ref=e281] [cursor=pointer]:
+                - /url: https://deadline.email
+                - img "deadline.email preview" [ref=e282]
+            - generic [ref=e284]:
+              - generic [ref=e285]:
+                - generic [ref=e286]: 🍅
+                - generic [ref=e287]: —
+              - generic [ref=e288]:
+                - 'link "Show HN: Anya – Offline static malware analysis (Rust)" [ref=e289] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47818911
+                - link "github.com ↗" [ref=e290] [cursor=pointer]:
+                  - /url: https://github.com/elementmerc/anya
+                - generic [ref=e291]:
+                  - generic [ref=e292]: ▲ 1
+                  - generic [ref=e293]: ◇ 2
+              - link "github.com preview" [ref=e294] [cursor=pointer]:
+                - /url: https://github.com/elementmerc/anya
+                - img "github.com preview" [ref=e295]
+          - button "+ 56 more" [ref=e296] [cursor=pointer]
+        - generic [ref=e297]:
+          - heading "April 17 · 108 projects" [level=3] [ref=e298]
+          - generic [ref=e299]:
+            - generic [ref=e301]:
+              - generic [ref=e302]:
+                - generic [ref=e303]: 🍅
+                - generic [ref=e304]: —
+              - generic [ref=e305]:
+                - 'link "Show HN: AI agents should browse your site, not call your API" [ref=e306] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47811609
+                - link "rtrvr.ai ↗" [ref=e307] [cursor=pointer]:
+                  - /url: https://www.rtrvr.ai/rover/blog/four-architectures-website-ai-agents
+                - generic [ref=e308]:
+                  - generic [ref=e309]: ▲ 2
+                  - generic [ref=e310]: ◇ 0
+              - link "rtrvr.ai preview" [ref=e311] [cursor=pointer]:
+                - /url: https://www.rtrvr.ai/rover/blog/four-architectures-website-ai-agents
+                - img "rtrvr.ai preview" [ref=e312]
+            - generic [ref=e314]:
+              - generic [ref=e315]:
+                - generic [ref=e316]: 🍅
+                - generic [ref=e317]: —
+              - generic [ref=e318]:
+                - 'link "Show HN: codeburn-rs; CodeBurn but 600x faster in Rust [view coding token usage]" [ref=e319] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47811503
+                - link "github.com ↗" [ref=e320] [cursor=pointer]:
+                  - /url: https://github.com/rossnoah/codeburn-rs
+                - generic [ref=e321]:
+                  - generic [ref=e322]: ▲ 1
+                  - generic [ref=e323]: ◇ 0
+              - link "github.com preview" [ref=e324] [cursor=pointer]:
+                - /url: https://github.com/rossnoah/codeburn-rs
+                - img "github.com preview" [ref=e325]
+            - generic [ref=e327]:
+              - generic [ref=e328]:
+                - generic [ref=e329]: 🍅
+                - generic [ref=e330]: —
+              - generic [ref=e331]:
+                - 'link "Show HN: Cogveo–Schedule AI agents to run Python on your files and email results" [ref=e332] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47811420
+                - link "cogveo.com ↗" [ref=e333] [cursor=pointer]:
+                  - /url: https://cogveo.com
+                - generic [ref=e334]:
+                  - generic [ref=e335]: ▲ 3
+                  - generic [ref=e336]: ◇ 0
+              - link "cogveo.com preview" [ref=e337] [cursor=pointer]:
+                - /url: https://cogveo.com
+                - img "cogveo.com preview" [ref=e338]
+            - generic [ref=e340]:
+              - generic [ref=e341]:
+                - generic [ref=e342]: 🍅
+                - generic [ref=e343]: —
+              - generic [ref=e344]:
+                - 'link "Show HN: External admission gate for GitHub Actions before execution" [ref=e345] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47811161
+                - link "ai-admissibility.com ↗" [ref=e346] [cursor=pointer]:
+                  - /url: https://ai-admissibility.com/
+                - generic [ref=e347]:
+                  - generic [ref=e348]: ▲ 2
+                  - generic [ref=e349]: ◇ 0
+              - link "ai-admissibility.com preview" [ref=e350] [cursor=pointer]:
+                - /url: https://ai-admissibility.com/
+                - img "ai-admissibility.com preview" [ref=e351]
+            - generic [ref=e353]:
+              - generic [ref=e354]:
+                - generic [ref=e355]: 🍅
+                - generic [ref=e356]: —
+              - generic [ref=e357]:
+                - 'link "Show HN: Pyra – a Python toolchain experiment inspired by uv and Bun" [ref=e358] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47810994
+                - link "github.com ↗" [ref=e359] [cursor=pointer]:
+                  - /url: https://github.com/treyorr/pyra
+                - generic [ref=e360]:
+                  - generic [ref=e361]: ▲ 11
+                  - generic [ref=e362]: ◇ 3
+              - link "github.com preview" [ref=e363] [cursor=pointer]:
+                - /url: https://github.com/treyorr/pyra
+                - img "github.com preview" [ref=e364]
+            - generic [ref=e366]:
+              - generic [ref=e367]:
+                - generic [ref=e368]: 🍅
+                - generic [ref=e369]: —
+              - generic [ref=e370]:
+                - 'link "Show HN: Mind-OS – First free online AI dependency self‑assessment" [ref=e371] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47810895
+                - link "iamalex-afk.github.io ↗" [ref=e372] [cursor=pointer]:
+                  - /url: https://iamalex-afk.github.io/human-os-patch-33-protocols/
+                - generic [ref=e373]:
+                  - generic [ref=e374]: ▲ 3
+                  - generic [ref=e375]: ◇ 0
+              - link "iamalex-afk.github.io preview" [ref=e376] [cursor=pointer]:
+                - /url: https://iamalex-afk.github.io/human-os-patch-33-protocols/
+                - img "iamalex-afk.github.io preview" [ref=e377]
+            - generic [ref=e379]:
+              - generic [ref=e380]:
+                - generic [ref=e381]: 🍅
+                - generic [ref=e382]: —
+              - generic [ref=e383]:
+                - 'link "Show HN: recover-pdfs is a tool for revovering all the deleted PDFs from a disk" [ref=e384] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47810848
+                - link "codeberg.org ↗" [ref=e385] [cursor=pointer]:
+                  - /url: https://codeberg.org/seanhly/recover-pdfs
+                - generic [ref=e386]:
+                  - generic [ref=e387]: ▲ 3
+                  - generic [ref=e388]: ◇ 0
+              - link "codeberg.org preview" [ref=e389] [cursor=pointer]:
+                - /url: https://codeberg.org/seanhly/recover-pdfs
+                - img "codeberg.org preview" [ref=e390]
+            - generic [ref=e392]:
+              - generic [ref=e393]:
+                - generic [ref=e394]: 🍅
+                - generic [ref=e395]: —
+              - generic [ref=e396]:
+                - 'link "Show HN: AI Subroutines – Run automation scripts inside your browser tab" [ref=e397] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47810533
+                - link "rtrvr.ai ↗" [ref=e398] [cursor=pointer]:
+                  - /url: https://www.rtrvr.ai/blog/ai-subroutines-zero-token-deterministic-automation
+                - generic [ref=e399]:
+                  - generic [ref=e400]: ▲ 44
+                  - generic [ref=e401]: ◇ 15
+              - link "rtrvr.ai preview" [ref=e402] [cursor=pointer]:
+                - /url: https://www.rtrvr.ai/blog/ai-subroutines-zero-token-deterministic-automation
+                - img "rtrvr.ai preview" [ref=e403]
+            - generic [ref=e405]:
+              - generic [ref=e406]:
+                - generic [ref=e407]: 🍅
+                - generic [ref=e408]: —
+              - generic [ref=e409]:
+                - 'link "Show HN: Realtime Voice AI on ESP32 with Cloudflare Durable Objects" [ref=e410] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47810376
+                - link "github.com ↗" [ref=e411] [cursor=pointer]:
+                  - /url: https://github.com/akdeb/ElatoAI/tree/main/server/cloudflare
+                - generic [ref=e412]:
+                  - generic [ref=e413]: ▲ 2
+                  - generic [ref=e414]: ◇ 0
+              - link "github.com preview" [ref=e415] [cursor=pointer]:
+                - /url: https://github.com/akdeb/ElatoAI/tree/main/server/cloudflare
+                - img "github.com preview" [ref=e416]
+            - generic [ref=e418]:
+              - generic [ref=e419]:
+                - generic [ref=e420]: 🍅
+                - generic [ref=e421]: —
+              - generic [ref=e422]:
+                - 'link "Show HN: Jean2 – An Open-Source Agent You Assemble Like Lego" [ref=e423] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47810277
+                - link "github.com ↗" [ref=e424] [cursor=pointer]:
+                  - /url: https://github.com/rabbyte-tech/jean2
+                - generic [ref=e425]:
+                  - generic [ref=e426]: ▲ 2
+                  - generic [ref=e427]: ◇ 1
+              - link "github.com preview" [ref=e428] [cursor=pointer]:
+                - /url: https://github.com/rabbyte-tech/jean2
+                - img "github.com preview" [ref=e429]
+          - button "+ 98 more" [ref=e430] [cursor=pointer]
+        - generic [ref=e431]:
+          - heading "April 16 · 119 projects" [level=3] [ref=e432]
+          - generic [ref=e433]:
+            - generic [ref=e435]:
+              - generic [ref=e436]:
+                - generic [ref=e437]: 🍅
+                - generic [ref=e438]: —
+              - generic [ref=e439]:
+                - 'link "Show HN: VCoding – A 5 MB native Windows IDE with no dynamic dependencies" [ref=e440] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47800792
+                - generic [ref=e441]:
+                  - generic [ref=e442]: ▲ 2
+                  - generic [ref=e443]: ◇ 1
+            - generic [ref=e445]:
+              - generic [ref=e446]:
+                - generic [ref=e447]: 🍅
+                - generic [ref=e448]: —
+              - generic [ref=e449]:
+                - 'link "Show HN: LLMs don''t hallucinate because they''re bad at math, it''s the format" [ref=e450] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47800756
+                - link "github.com ↗" [ref=e451] [cursor=pointer]:
+                  - /url: https://github.com/yvonboulianne/laeka-rational
+                - generic [ref=e452]:
+                  - generic [ref=e453]: ▲ 2
+                  - generic [ref=e454]: ◇ 2
+              - link "github.com preview" [ref=e455] [cursor=pointer]:
+                - /url: https://github.com/yvonboulianne/laeka-rational
+                - img "github.com preview" [ref=e456]
+            - generic [ref=e458]:
+              - generic [ref=e459]:
+                - generic [ref=e460]: 🍅
+                - generic [ref=e461]: —
+              - generic [ref=e462]:
+                - 'link "Show HN: A free Instagram email downloader" [ref=e463] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47800548
+                - link "virev.ai ↗" [ref=e464] [cursor=pointer]:
+                  - /url: https://virev.ai/instagram-email-finder
+                - generic [ref=e465]:
+                  - generic [ref=e466]: ▲ 1
+                  - generic [ref=e467]: ◇ 0
+              - link "virev.ai preview" [ref=e468] [cursor=pointer]:
+                - /url: https://virev.ai/instagram-email-finder
+                - img "virev.ai preview" [ref=e469]
+            - generic [ref=e471]:
+              - generic [ref=e472]:
+                - generic [ref=e473]: 🍅
+                - generic [ref=e474]: —
+              - generic [ref=e475]:
+                - 'link "Show HN: Rebuilt SETI Home but for AI" [ref=e476] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47800418
+                - link "github.com ↗" [ref=e477] [cursor=pointer]:
+                  - /url: https://github.com/Agent-FM/agentfm-core
+                - generic [ref=e478]:
+                  - generic [ref=e479]: ▲ 4
+                  - generic [ref=e480]: ◇ 3
+              - link "github.com preview" [ref=e481] [cursor=pointer]:
+                - /url: https://github.com/Agent-FM/agentfm-core
+                - img "github.com preview" [ref=e482]
+            - generic [ref=e484]:
+              - generic [ref=e485]:
+                - generic [ref=e486]: 🍅
+                - generic [ref=e487]: —
+              - generic [ref=e488]:
+                - 'link "Show HN: NoFS – What if files are just projections, graph is the truth?" [ref=e489] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47800340
+                - link "nofs.ai ↗" [ref=e490] [cursor=pointer]:
+                  - /url: https://nofs.ai/
+                - generic [ref=e491]:
+                  - generic [ref=e492]: ▲ 3
+                  - generic [ref=e493]: ◇ 1
+              - link "nofs.ai preview" [ref=e494] [cursor=pointer]:
+                - /url: https://nofs.ai/
+                - img "nofs.ai preview" [ref=e495]
+            - generic [ref=e497]:
+              - generic [ref=e498]:
+                - generic [ref=e499]: 🍅
+                - generic [ref=e500]: —
+              - generic [ref=e501]:
+                - 'link "Show HN: Tracking Top US Science Olympiad Alumni over Last 25 Years" [ref=e502] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47800094
+                - link "perplexity.ai ↗" [ref=e503] [cursor=pointer]:
+                  - /url: https://www.perplexity.ai/computer/a/us-olympiad-tracker-__5Gzx3tQaKOInGlalN8sQ
+                - generic [ref=e504]:
+                  - generic [ref=e505]: ▲ 5
+                  - generic [ref=e506]: ◇ 0
+              - link "perplexity.ai preview" [ref=e507] [cursor=pointer]:
+                - /url: https://www.perplexity.ai/computer/a/us-olympiad-tracker-__5Gzx3tQaKOInGlalN8sQ
+                - img "perplexity.ai preview" [ref=e508]
+            - generic [ref=e510]:
+              - generic [ref=e511]:
+                - generic [ref=e512]: 🍅
+                - generic [ref=e513]: —
+              - generic [ref=e514]:
+                - 'link "Show HN: Talk to all your agents in one place" [ref=e515] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47799990
+                - link "github.com ↗" [ref=e516] [cursor=pointer]:
+                  - /url: https://github.com/Potarix/agent-hub
+                - generic [ref=e517]:
+                  - generic [ref=e518]: ▲ 1
+                  - generic [ref=e519]: ◇ 0
+              - link "github.com preview" [ref=e520] [cursor=pointer]:
+                - /url: https://github.com/Potarix/agent-hub
+                - img "github.com preview" [ref=e521]
+            - generic [ref=e523]:
+              - generic [ref=e524]:
+                - generic [ref=e525]: 🍅
+                - generic [ref=e526]: —
+              - generic [ref=e527]:
+                - 'link "Show HN: Runtime security for AI agents(injection,tool abuse, data exfiltration)" [ref=e528] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47799856
+                - generic [ref=e529]:
+                  - generic [ref=e530]: ▲ 1
+                  - generic [ref=e531]: ◇ 0
+            - generic [ref=e533]:
+              - generic [ref=e534]:
+                - generic [ref=e535]: 🍅
+                - generic [ref=e536]: —
+              - generic [ref=e537]:
+                - 'link "Show HN: Ternary Bonsai, delivering top intelligence at 1.58 bits" [ref=e538] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47799849
+                - link "twitter.com ↗" [ref=e539] [cursor=pointer]:
+                  - /url: https://twitter.com/PrismML/status/2044833023682896134
+                - generic [ref=e540]:
+                  - generic [ref=e541]: ▲ 3
+                  - generic [ref=e542]: ◇ 0
+              - link "twitter.com preview" [ref=e543] [cursor=pointer]:
+                - /url: https://twitter.com/PrismML/status/2044833023682896134
+                - img "twitter.com preview" [ref=e544]
+            - generic [ref=e546]:
+              - generic [ref=e547]:
+                - generic [ref=e548]: 🍅
+                - generic [ref=e549]: —
+              - generic [ref=e550]:
+                - 'link "Show HN: Honeymux, a TUI wrapper for tmux that simplifies agent-driven workflows" [ref=e551] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47799791
+                - link "hmx.dev ↗" [ref=e552] [cursor=pointer]:
+                  - /url: https://hmx.dev
+                - generic [ref=e553]:
+                  - generic [ref=e554]: ▲ 2
+                  - generic [ref=e555]: ◇ 0
+              - link "hmx.dev preview" [ref=e556] [cursor=pointer]:
+                - /url: https://hmx.dev
+                - img "hmx.dev preview" [ref=e557]
+          - button "+ 109 more" [ref=e558] [cursor=pointer]
+        - generic [ref=e559]:
+          - heading "April 15 · 150 projects" [level=3] [ref=e560]
+          - generic [ref=e561]:
+            - generic [ref=e563]:
+              - generic [ref=e564]:
+                - generic [ref=e565]: 🍅
+                - generic [ref=e566]: —
+              - generic [ref=e567]:
+                - 'link "Show HN: The RUM Conjecture Explained [video]" [ref=e568] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47786797
+                - link "youtube.com ↗" [ref=e569] [cursor=pointer]:
+                  - /url: https://www.youtube.com/watch?v=DGoI6T3SGfY
+                - generic [ref=e570]:
+                  - generic [ref=e571]: ▲ 3
+                  - generic [ref=e572]: ◇ 0
+              - link "youtube.com preview" [ref=e573] [cursor=pointer]:
+                - /url: https://www.youtube.com/watch?v=DGoI6T3SGfY
+                - img "youtube.com preview" [ref=e574]
+            - generic [ref=e576]:
+              - generic [ref=e577]:
+                - generic [ref=e578]: 🍅
+                - generic [ref=e579]: —
+              - generic [ref=e580]:
+                - 'link "Show HN: Mini-Mythos- A Crowdsourced Mythos Harness copy for Vulnerability Scans" [ref=e581] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47786408
+                - link "github.com ↗" [ref=e582] [cursor=pointer]:
+                  - /url: https://github.com/256thFission/mini-mythos
+                - generic [ref=e583]:
+                  - generic [ref=e584]: ▲ 3
+                  - generic [ref=e585]: ◇ 0
+              - link "github.com preview" [ref=e586] [cursor=pointer]:
+                - /url: https://github.com/256thFission/mini-mythos
+                - img "github.com preview" [ref=e587]
+            - generic [ref=e589]:
+              - generic [ref=e590]:
+                - generic [ref=e591]: 🍅
+                - generic [ref=e592]: —
+              - generic [ref=e593]:
+                - 'link "Show HN: Browsing forgotten digicam photos from early Flickr (2000–2012)" [ref=e594] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47786116
+                - link "flickrgraveyard.com ↗" [ref=e595] [cursor=pointer]:
+                  - /url: https://flickrgraveyard.com/
+                - generic [ref=e596]:
+                  - generic [ref=e597]: ▲ 5
+                  - generic [ref=e598]: ◇ 1
+              - link "flickrgraveyard.com preview" [ref=e599] [cursor=pointer]:
+                - /url: https://flickrgraveyard.com/
+                - img "flickrgraveyard.com preview" [ref=e600]
+            - generic [ref=e602]:
+              - generic [ref=e603]:
+                - generic [ref=e604]: 🍅
+                - generic [ref=e605]: —
+              - generic [ref=e606]:
+                - 'link "Show HN: Notch Pilot – A live Claude Code dashboard in your MacBook notch" [ref=e607] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47785745
+                - link "github.com ↗" [ref=e608] [cursor=pointer]:
+                  - /url: https://github.com/devmegablaster/Notch-Pilot
+                - generic [ref=e609]:
+                  - generic [ref=e610]: ▲ 1
+                  - generic [ref=e611]: ◇ 0
+              - link "github.com preview" [ref=e612] [cursor=pointer]:
+                - /url: https://github.com/devmegablaster/Notch-Pilot
+                - img "github.com preview" [ref=e613]
+            - generic [ref=e615]:
+              - generic [ref=e616]:
+                - generic [ref=e617]: 🍅
+                - generic [ref=e618]: —
+              - generic [ref=e619]:
+                - 'link "Show HN: Made a tool where \"make it feel like cold metal\" is a valid instruction" [ref=e620] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47785712
+                - link "cast.bsct.so ↗" [ref=e621] [cursor=pointer]:
+                  - /url: https://cast.bsct.so/
+                - generic [ref=e622]:
+                  - generic [ref=e623]: ▲ 1
+                  - generic [ref=e624]: ◇ 0
+              - link "cast.bsct.so preview" [ref=e625] [cursor=pointer]:
+                - /url: https://cast.bsct.so/
+                - img "cast.bsct.so preview" [ref=e626]
+            - generic [ref=e628]:
+              - generic [ref=e629]:
+                - generic [ref=e630]: 🍅
+                - generic [ref=e631]: —
+              - generic [ref=e632]:
+                - 'link "Show HN: Springdrift – A persistent runtime for long-lived LLM agents" [ref=e633] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47785663
+                - link "github.com ↗" [ref=e634] [cursor=pointer]:
+                  - /url: https://github.com/seamus-brady/springdrift
+                - generic [ref=e635]:
+                  - generic [ref=e636]: ▲ 2
+                  - generic [ref=e637]: ◇ 0
+              - link "github.com preview" [ref=e638] [cursor=pointer]:
+                - /url: https://github.com/seamus-brady/springdrift
+                - img "github.com preview" [ref=e639]
+            - generic [ref=e641]:
+              - generic [ref=e642]:
+                - generic [ref=e643]: 🍅
+                - generic [ref=e644]: —
+              - generic [ref=e645]:
+                - 'link "Show HN: A magic eraser that runs a 208MB ONNX model in the browser" [ref=e646] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47785142
+                - link "allplix.com ↗" [ref=e647] [cursor=pointer]:
+                  - /url: https://www.allplix.com/en/magic-eraser
+                - generic [ref=e648]:
+                  - generic [ref=e649]: ▲ 2
+                  - generic [ref=e650]: ◇ 0
+              - link "allplix.com preview" [ref=e651] [cursor=pointer]:
+                - /url: https://www.allplix.com/en/magic-eraser
+                - img "allplix.com preview" [ref=e652]
+            - generic [ref=e654]:
+              - generic [ref=e655]:
+                - generic [ref=e656]: 🍅
+                - generic [ref=e657]: —
+              - generic [ref=e658]:
+                - 'link "Show HN: US keyboards don''t have enough keys, so I switched to Japanese" [ref=e659] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47785120
+                - link "simone.org ↗" [ref=e660] [cursor=pointer]:
+                  - /url: https://simone.org/hyperjis/
+                - generic [ref=e661]:
+                  - generic [ref=e662]: ▲ 7
+                  - generic [ref=e663]: ◇ 0
+              - link "simone.org preview" [ref=e664] [cursor=pointer]:
+                - /url: https://simone.org/hyperjis/
+                - img "simone.org preview" [ref=e665]
+            - generic [ref=e667]:
+              - generic [ref=e668]:
+                - generic [ref=e669]: 🍅
+                - generic [ref=e670]: —
+              - generic [ref=e671]:
+                - 'link "Show HN: Originary – emit signed records for MCP tools" [ref=e672] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47784960
+                - link "github.com ↗" [ref=e673] [cursor=pointer]:
+                  - /url: https://github.com/peacprotocol/peac
+                - generic [ref=e674]:
+                  - generic [ref=e675]: ▲ 1
+                  - generic [ref=e676]: ◇ 0
+              - link "github.com preview" [ref=e677] [cursor=pointer]:
+                - /url: https://github.com/peacprotocol/peac
+                - img "github.com preview" [ref=e678]
+            - generic [ref=e680]:
+              - generic [ref=e681]:
+                - generic [ref=e682]: 🍅
+                - generic [ref=e683]: —
+              - generic [ref=e684]:
+                - 'link "Show HN: Omi – watches your screen, hears conversations, tells you what to do" [ref=e685] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47784914
+                - link "github.com ↗" [ref=e686] [cursor=pointer]:
+                  - /url: https://github.com/BasedHardware/omi
+                - generic [ref=e687]:
+                  - generic [ref=e688]: ▲ 18
+                  - generic [ref=e689]: ◇ 13
+              - link "github.com preview" [ref=e690] [cursor=pointer]:
+                - /url: https://github.com/BasedHardware/omi
+                - img "github.com preview" [ref=e691]
+          - button "+ 140 more" [ref=e692] [cursor=pointer]
+        - generic [ref=e693]:
+          - heading "April 14 · 164 projects" [level=3] [ref=e694]
+          - generic [ref=e695]:
+            - generic [ref=e697]:
+              - generic [ref=e698]:
+                - generic [ref=e699]: 🍅
+                - generic [ref=e700]: "79"
+              - generic [ref=e701]:
+                - 'link "Show HN: Free browser-based vector tile inspector – paste any MVT/PBF URL" [ref=e702] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47766773
+                - link "marinecharts.io ↗" [ref=e703] [cursor=pointer]:
+                  - /url: https://marinecharts.io/tools/vector-tile-inspector
+                - paragraph [ref=e704]: This is a fantastic, free browser-based tool for inspecting Mapbox Vector Tiles (MVT/PBF). If you've ever wrestled with understanding the data inside those tiles, this is your new go-to, offering a surprisingly deep dive into PBF structures with a clean UI.
+                - generic [ref=e705]:
+                  - generic [ref=e706]: ▲ 2
+                  - generic [ref=e707]: ◇ 0
+                  - generic [ref=e708]: Fresh
+              - link "marinecharts.io preview" [ref=e709] [cursor=pointer]:
+                - /url: https://marinecharts.io/tools/vector-tile-inspector
+                - img "marinecharts.io preview" [ref=e710]
+            - generic [ref=e712]:
+              - generic [ref=e713]:
+                - generic [ref=e714]: 🍅
+                - generic [ref=e715]: "78"
+              - generic [ref=e716]:
+                - 'link "Show HN: I built an agent memory system for myself and got 90.8% on LongMemEval" [ref=e717] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47765140
+                - link "github.com ↗" [ref=e718] [cursor=pointer]:
+                  - /url: https://github.com/shane-farkas/memento-memory
+                - paragraph [ref=e719]: This project tackles the challenge of making AI agents remember things over long conversations, essentially building a "brain" for them. While not perfect, achieving over 90% on a challenging benchmark is a strong signal that this approach has legs, promising more coherent and useful AI interactions.
+                - generic [ref=e720]:
+                  - generic [ref=e721]: ▲ 3
+                  - generic [ref=e722]: ◇ 0
+                  - generic [ref=e723]: Fresh
+              - link "github.com preview" [ref=e724] [cursor=pointer]:
+                - /url: https://github.com/shane-farkas/memento-memory
+                - img "github.com preview" [ref=e725]
+            - generic [ref=e727]:
+              - generic [ref=e728]:
+                - generic [ref=e729]: 🍅
+                - generic [ref=e730]: "78"
+              - generic [ref=e731]:
+                - 'link "Show HN: Techno Kick" [ref=e732] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47764292
+                - link "technokick.com ↗" [ref=e733] [cursor=pointer]:
+                  - /url: https://technokick.com
+                - paragraph [ref=e734]: Techno Kick is a web-based drum machine that lets you craft rhythmic loops with a familiar, approachable interface that feels instantly playable and surprisingly deep. If you've ever wanted to tap out beats without wrestling with complex DAWs, this is a delightful way to do it.
+                - generic [ref=e735]:
+                  - generic [ref=e736]: ▲ 2
+                  - generic [ref=e737]: ◇ 0
+                  - generic [ref=e738]: Fresh
+              - link "technokick.com preview" [ref=e739] [cursor=pointer]:
+                - /url: https://technokick.com
+                - img "technokick.com preview" [ref=e740]
+            - generic [ref=e742]:
+              - generic [ref=e743]:
+                - generic [ref=e744]: 🍅
+                - generic [ref=e745]: "78"
+              - generic [ref=e746]:
+                - 'link "Show HN: Connections Hint Today – spoiler-safe hints for NYT Connections" [ref=e747] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47762300
+                - link "connections-hint.today ↗" [ref=e748] [cursor=pointer]:
+                  - /url: https://connections-hint.today/
+                - paragraph [ref=e749]: This is a clever little tool that offers spoiler-free hints for the NYT Connections game, which is perfect for when you're stuck but don't want to ruin the discovery. It's a well-executed niche solution that respects the puzzle's integrity.
+                - generic [ref=e750]:
+                  - generic [ref=e751]: ▲ 1
+                  - generic [ref=e752]: ◇ 0
+                  - generic [ref=e753]: Fresh
+              - link "connections-hint.today preview" [ref=e754] [cursor=pointer]:
+                - /url: https://connections-hint.today/
+                - img "connections-hint.today preview" [ref=e755]
+            - generic [ref=e757]:
+              - generic [ref=e758]:
+                - generic [ref=e759]: 🍅
+                - generic [ref=e760]: "76"
+              - generic [ref=e761]:
+                - 'link "Show HN: Tmux-grid – a visual layout builder for tmux" [ref=e762] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47763748
+                - link "tmux-grid.itzami.com ↗" [ref=e763] [cursor=pointer]:
+                  - /url: https://tmux-grid.itzami.com/
+                - paragraph [ref=e764]: Tmux-grid offers a visual drag-and-drop interface to build complex tmux layouts, finally taming the beast that is window management for terminal power users. It's like Figma for your terminal sessions, but it actually saves you time and frustration.
+                - generic [ref=e765]:
+                  - generic [ref=e766]: ▲ 1
+                  - generic [ref=e767]: ◇ 1
+                  - generic [ref=e768]: Fresh
+              - link "tmux-grid.itzami.com preview" [ref=e769] [cursor=pointer]:
+                - /url: https://tmux-grid.itzami.com/
+                - img "tmux-grid.itzami.com preview" [ref=e770]
+            - generic [ref=e772]:
+              - generic [ref=e773]:
+                - generic [ref=e774]: 🍿
+                - generic [ref=e775]: "68"
+              - generic [ref=e776]:
+                - 'link "Show HN: Build Android homescreen widgets with Python" [ref=e777] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47768556
+                - link "github.com ↗" [ref=e778] [cursor=pointer]:
+                  - /url: https://github.com/talshahaf/appy
+                - paragraph [ref=e779]: Finally, a way to ditch the Flutter/Kotlin for Android widgets and just use Python! This project lets you whip up homescreen widgets with your favorite language, and while it's not going to replace a full-blown native app development workflow, it's a seriously cool hack for prototyping, quick info displays, or just showing off your Python skills on your phone.
+                - generic [ref=e780]:
+                  - generic [ref=e781]: ▲ 2
+                  - generic [ref=e782]: ◇ 0
+                  - generic [ref=e783]: Mid
+              - link "github.com preview" [ref=e784] [cursor=pointer]:
+                - /url: https://github.com/talshahaf/appy
+                - img "github.com preview" [ref=e785]
+            - generic [ref=e787]:
+              - generic [ref=e788]:
+                - generic [ref=e789]: 🍿
+                - generic [ref=e790]: "68"
+              - generic [ref=e791]:
+                - 'link "Show HN: I Added Support for Qwen3-ASR and Qwen3 ForcedAligner in WhisperX" [ref=e792] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47767361
+                - link "github.com ↗" [ref=e793] [cursor=pointer]:
+                  - /url: https://github.com/m-bain/whisperX/pull/1401
+                - paragraph [ref=e794]: This PR enhances WhisperX to leverage the powerful Qwen3 ASR and forced alignment models, offering potentially significant improvements in accuracy and multilingual support for audio transcription tasks. While not a groundbreaking new product, it's a crucial step for anyone relying on WhisperX for serious audio processing.
+                - generic [ref=e795]:
+                  - generic [ref=e796]: ▲ 2
+                  - generic [ref=e797]: ◇ 1
+                  - generic [ref=e798]: Mid
+              - link "github.com preview" [ref=e799] [cursor=pointer]:
+                - /url: https://github.com/m-bain/whisperX/pull/1401
+                - img "github.com preview" [ref=e800]
+            - generic [ref=e802]:
+              - generic [ref=e803]:
+                - generic [ref=e804]: 🍿
+                - generic [ref=e805]: "68"
+              - generic [ref=e806]:
+                - 'link "Show HN: LoadLens – See why queues hide overload instead of solving it" [ref=e807] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47767314
+                - link "loadlens.dev ↗" [ref=e808] [cursor=pointer]:
+                  - /url: https://loadlens.dev
+                - paragraph [ref=e809]: This is a clever little tool that visualizes request bottlenecks in the background, making it clear where your application is actually choking instead of just piling up work in a queue, which feels like a genuinely useful debugging insight for anyone running services.
+                - generic [ref=e810]:
+                  - generic [ref=e811]: ▲ 2
+                  - generic [ref=e812]: ◇ 0
+                  - generic [ref=e813]: Mid
+              - link "loadlens.dev preview" [ref=e814] [cursor=pointer]:
+                - /url: https://loadlens.dev
+                - img "loadlens.dev preview" [ref=e815]
+            - generic [ref=e817]:
+              - generic [ref=e818]:
+                - generic [ref=e819]: 🍿
+                - generic [ref=e820]: "68"
+              - generic [ref=e821]:
+                - 'link "Show HN: Cliparr – Export clips from your personal media server" [ref=e822] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47767280
+                - link "github.com ↗" [ref=e823] [cursor=pointer]:
+                  - /url: https://github.com/TechSquidTV/Cliparr
+                - paragraph [ref=e824]: Cliparr lets you snip memorable moments from your self-hosted media servers, turning your Plex/Jellyfin library into a shareable highlight reel. It's a surprisingly slick way to turn your sprawling media collection into bite-sized, shareable content, especially if you're tired of sending full episode links.
+                - generic [ref=e825]:
+                  - generic [ref=e826]: ▲ 2
+                  - generic [ref=e827]: ◇ 0
+                  - generic [ref=e828]: Mid
+              - link "github.com preview" [ref=e829] [cursor=pointer]:
+                - /url: https://github.com/TechSquidTV/Cliparr
+                - img "github.com preview" [ref=e830]
+            - generic [ref=e832]:
+              - generic [ref=e833]:
+                - generic [ref=e834]: 🍿
+                - generic [ref=e835]: "68"
+              - generic [ref=e836]:
+                - 'link "Show HN: Hacker News Sorted, a 12-year-old Chrome extension I still use daily" [ref=e837] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47765716
+                - link "chromewebstore.google.com ↗" [ref=e838] [cursor=pointer]:
+                  - /url: https://chromewebstore.google.com/detail/hacker-news-sorted/djkcnbncofmjekhlhemlkinfpkamlkaj
+                - paragraph [ref=e839]: Hacker News Sorted is a 12-year-old Chrome extension that, despite its age, still feels like a fresh take on surfacing the most relevant HN content, proving that sometimes, the simplest solutions are the most enduring, even if it's just a smarter way to sort your favorite news feed.
+                - generic [ref=e840]:
+                  - generic [ref=e841]: ▲ 3
+                  - generic [ref=e842]: ◇ 1
+                  - generic [ref=e843]: Mid
+              - link "chromewebstore.google.com preview" [ref=e844] [cursor=pointer]:
+                - /url: https://chromewebstore.google.com/detail/hacker-news-sorted/djkcnbncofmjekhlhemlkinfpkamlkaj
+                - img "chromewebstore.google.com preview" [ref=e845]
+          - button "+ 154 more" [ref=e846] [cursor=pointer]
+        - generic [ref=e847]:
+          - heading "April 13 · 125 projects" [level=3] [ref=e848]
+          - generic [ref=e849]:
+            - generic [ref=e851]:
+              - generic [ref=e852]:
+                - generic [ref=e853]: 🍅
+                - generic [ref=e854]: "78"
+              - generic [ref=e855]:
+                - 'link "Show HN: Deconflict – Open-source WiFi planner with physics-based walls" [ref=e856] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47757351
+                - link "deconflict.pages.dev ↗" [ref=e857] [cursor=pointer]:
+                  - /url: https://deconflict.pages.dev
+                - paragraph [ref=e858]: This is a surprisingly deep dive into WiFi planning, using actual physics simulations to model signal propagation through different wall types. If you've ever wrestled with dead spots or poor reception at home or in a small office, this open-source tool offers a level of scientific rigor usually reserved for enterprise-grade solutions, wrapped in an approachable web interface.
+                - generic [ref=e859]:
+                  - generic [ref=e860]: ▲ 3
+                  - generic [ref=e861]: ◇ 1
+                  - generic [ref=e862]: Fresh
+              - link "deconflict.pages.dev preview" [ref=e863] [cursor=pointer]:
+                - /url: https://deconflict.pages.dev
+                - img "deconflict.pages.dev preview" [ref=e864]
+            - generic [ref=e866]:
+              - generic [ref=e867]:
+                - generic [ref=e868]: 🍅
+                - generic [ref=e869]: "78"
+              - generic [ref=e870]:
+                - 'link "Show HN: I benchmarked Gemma 4 E2B – the 2B model beat the 12B on multi-turn" [ref=e871] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47756892
+                - link "aiexplr.com ↗" [ref=e872] [cursor=pointer]:
+                  - /url: https://aiexplr.com/post/gemma-4-e2b-benchmark
+                - paragraph [ref=e873]: This is a fascinatingly nerdy deep dive into the surprising performance of Google's smaller Gemma models against their larger counterparts, specifically highlighting the 2B model punching above its weight in multi-turn conversations. If you've been playing with LLMs and wondering about the real-world trade-offs between size and capability, this benchmark offers a concrete, data-driven answer that defies expectations.
+                - generic [ref=e874]:
+                  - generic [ref=e875]: ▲ 8
+                  - generic [ref=e876]: ◇ 1
+                  - generic [ref=e877]: Fresh
+              - link "aiexplr.com preview" [ref=e878] [cursor=pointer]:
+                - /url: https://aiexplr.com/post/gemma-4-e2b-benchmark
+                - img "aiexplr.com preview" [ref=e879]
+            - generic [ref=e881]:
+              - generic [ref=e882]:
+                - generic [ref=e883]: 🍅
+                - generic [ref=e884]: "78"
+              - generic [ref=e885]:
+                - 'link "Show HN: Ithihāsas – a character explorer for Hindu epics, built in a few hours" [ref=e886] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47756569
+                - link "ithihasas.in ↗" [ref=e887] [cursor=pointer]:
+                  - /url: https://www.ithihasas.in
+                - paragraph [ref=e888]: This is a surprisingly delightful and well-executed character explorer for Hindu epics, demonstrating that even a few hours of focused effort can yield something genuinely cool and informative for a niche audience.
+                - generic [ref=e889]:
+                  - generic [ref=e890]: ▲ 176
+                  - generic [ref=e891]: ◇ 45
+                  - generic [ref=e892]: Fresh
+              - link "ithihasas.in preview" [ref=e893] [cursor=pointer]:
+                - /url: https://www.ithihasas.in
+                - img "ithihasas.in preview" [ref=e894]
+            - generic [ref=e896]:
+              - generic [ref=e897]:
+                - generic [ref=e898]: 🍅
+                - generic [ref=e899]: "78"
+              - generic [ref=e900]:
+                - 'link "Show HN: MOS Tech 6502 emulated in pure Postgres" [ref=e901] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47753091
+                - link "github.com ↗" [ref=e902] [cursor=pointer]:
+                  - /url: https://github.com/lasect/pg_6502
+                - paragraph [ref=e903]: Someone took the iconic 6502 processor and decided to implement a full emulator *inside* PostgreSQL. It's a wild ride that’s less about practical application and more about pushing the boundaries of what you can achieve with a database and a shared love for vintage computing.
+                - generic [ref=e904]:
+                  - generic [ref=e905]: ▲ 2
+                  - generic [ref=e906]: ◇ 0
+                  - generic [ref=e907]: Fresh
+              - link "github.com preview" [ref=e908] [cursor=pointer]:
+                - /url: https://github.com/lasect/pg_6502
+                - img "github.com preview" [ref=e909]
+            - generic [ref=e911]:
+              - generic [ref=e912]:
+                - generic [ref=e913]: 🍅
+                - generic [ref=e914]: "78"
+              - generic [ref=e915]:
+                - 'link "Show HN: Loreo – Bot-free, 8MB AI meeting transcriber using Scribe v2" [ref=e916] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47750788
+                - link "getloreo.com ↗" [ref=e917] [cursor=pointer]:
+                  - /url: https://getloreo.com/
+                - paragraph [ref=e918]: Loreo pitches itself as a bot-free, blazing fast AI meeting transcriber that runs locally, but the real magic is its impressively tiny 8MB footprint. If you're tired of cloud services and want a privacy-focused, offline transcription solution that doesn't hog your resources, this is definitely worth a look.
+                - generic [ref=e919]:
+                  - generic [ref=e920]: ▲ 3
+                  - generic [ref=e921]: ◇ 1
+                  - generic [ref=e922]: Fresh
+              - link "getloreo.com preview" [ref=e923] [cursor=pointer]:
+                - /url: https://getloreo.com/
+                - img "getloreo.com preview" [ref=e924]
+            - generic [ref=e926]:
+              - generic [ref=e927]:
+                - generic [ref=e928]: 🍅
+                - generic [ref=e929]: "78"
+              - generic [ref=e930]:
+                - 'link "Show HN: I built a benchmark platform for WordPress backup plugins" [ref=e931] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47749795
+                - paragraph [ref=e932]: Finally, someone built the actual data behind which WordPress backup plugins *don't* make you cry. This benchmark platform is a vital, no-nonsense resource for anyone running a WordPress site, cutting through the marketing fluff to deliver real-world performance metrics.
+                - generic [ref=e933]:
+                  - generic [ref=e934]: ▲ 2
+                  - generic [ref=e935]: ◇ 0
+                  - generic [ref=e936]: Fresh
+            - generic [ref=e938]:
+              - generic [ref=e939]:
+                - generic [ref=e940]: 🍅
+                - generic [ref=e941]: "78"
+              - generic [ref=e942]:
+                - 'link "Show HN: Equirect – a Rust VR video player" [ref=e943] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47749295
+                - link "github.com ↗" [ref=e944] [cursor=pointer]:
+                  - /url: https://github.com/greggman/equirect
+                - paragraph [ref=e945]: This Rust-based VR video player for equirectangular footage is a beautiful demonstration of low-level control and optimization, allowing for smooth playback where other solutions might struggle, though it's definitely aimed at a specific enthusiast audience.
+                - generic [ref=e946]:
+                  - generic [ref=e947]: ▲ 14
+                  - generic [ref=e948]: ◇ 1
+                  - generic [ref=e949]: Fresh
+              - link "github.com preview" [ref=e950] [cursor=pointer]:
+                - /url: https://github.com/greggman/equirect
+                - img "github.com preview" [ref=e951]
+            - generic [ref=e953]:
+              - generic [ref=e954]:
+                - generic [ref=e955]: 🍅
+                - generic [ref=e956]: "78"
+              - generic [ref=e957]:
+                - 'link "Show HN: Bad Apple (Oscilloscope-Like) – one stroke per frame" [ref=e958] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47747795
+                - link "bad-apple-on-oscilloscope.pages.dev ↗" [ref=e959] [cursor=pointer]:
+                  - /url: https://bad-apple-on-oscilloscope.pages.dev/
+                - paragraph [ref=e960]: This is the Bad Apple anime but rendered crudely on an oscilloscope, which is delightfully absurd and a surprisingly elegant way to visualize vector graphics. It's a testament to the power of creative constraints and a fantastic example of how charming side projects can be.
+                - generic [ref=e961]:
+                  - generic [ref=e962]: ▲ 5
+                  - generic [ref=e963]: ◇ 1
+                  - generic [ref=e964]: Fresh
+              - link "bad-apple-on-oscilloscope.pages.dev preview" [ref=e965] [cursor=pointer]:
+                - /url: https://bad-apple-on-oscilloscope.pages.dev/
+                - img "bad-apple-on-oscilloscope.pages.dev preview" [ref=e966]
+            - generic [ref=e968]:
+              - generic [ref=e969]:
+                - generic [ref=e970]: 🍿
+                - generic [ref=e971]: "68"
+              - generic [ref=e972]:
+                - 'link "Show HN: I reverse-engineered the driver for my 15 year old printer (Dell 1320c)" [ref=e973] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47758203
+                - link "github.com ↗" [ref=e974] [cursor=pointer]:
+                  - /url: https://github.com/biosed/dell-1320c-cups-driver
+                - paragraph [ref=e975]: This is a delightful deep dive into the guts of an ancient printer driver, proving that even legacy hardware can be tamed with enough curiosity and elbow grease. It's a testament to the hacker spirit, even if your immediate need for a 15-year-old printer driver is nil.
+                - generic [ref=e976]:
+                  - generic [ref=e977]: ▲ 3
+                  - generic [ref=e978]: ◇ 1
+                  - generic [ref=e979]: Mid
+              - link "github.com preview" [ref=e980] [cursor=pointer]:
+                - /url: https://github.com/biosed/dell-1320c-cups-driver
+                - img "github.com preview" [ref=e981]
+            - generic [ref=e983]:
+              - generic [ref=e984]:
+                - generic [ref=e985]: 🍿
+                - generic [ref=e986]: "68"
+              - generic [ref=e987]:
+                - 'link "Show HN: 15 yrs of Django in prod: patterns I keep using (agent skills)" [ref=e988] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47753245
+                - link "github.com ↗" [ref=e989] [cursor=pointer]:
+                  - /url: https://github.com/dvf/opinionated-django
+                - paragraph [ref=e990]: This repository is a deep dive into 15 years of Django production experience, distilled into actionable patterns. It's less a brand new tool and more a seasoned chef's recipe book for building robust Django apps, which is incredibly valuable for seasoned and aspiring Django devs alike.
+                - generic [ref=e991]:
+                  - generic [ref=e992]: ▲ 6
+                  - generic [ref=e993]: ◇ 1
+                  - generic [ref=e994]: Mid
+              - link "github.com preview" [ref=e995] [cursor=pointer]:
+                - /url: https://github.com/dvf/opinionated-django
+                - img "github.com preview" [ref=e996]
+          - button "+ 115 more" [ref=e997] [cursor=pointer]
+        - generic [ref=e998]:
+          - heading "April 12 · 92 projects" [level=3] [ref=e999]
+          - generic [ref=e1000]:
+            - generic [ref=e1002]:
+              - generic [ref=e1003]:
+                - generic [ref=e1004]: 🍅
+                - generic [ref=e1005]: "78"
+              - generic [ref=e1006]:
+                - 'link "Show HN: Local LLM on a Pi 4 controlling hardware via tool calling" [ref=e1007] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47745503
+                - link "github.com ↗" [ref=e1008] [cursor=pointer]:
+                  - /url: https://github.com/stfurkan/pi-llm
+                - paragraph [ref=e1009]: This is a genuinely cool hack that squeezes a local LLM onto a Raspberry Pi 4 and makes it talk to actual hardware. It's a playful exploration of on-device AI and the creative potential of making our smart devices *actually* smart and responsive, not just cloud-dependent.
+                - generic [ref=e1010]:
+                  - generic [ref=e1011]: ▲ 3
+                  - generic [ref=e1012]: ◇ 7
+                  - generic [ref=e1013]: Fresh
+              - link "github.com preview" [ref=e1014] [cursor=pointer]:
+                - /url: https://github.com/stfurkan/pi-llm
+                - img "github.com preview" [ref=e1015]
+            - generic [ref=e1017]:
+              - generic [ref=e1018]:
+                - generic [ref=e1019]: 🍅
+                - generic [ref=e1020]: "78"
+              - generic [ref=e1021]:
+                - 'link "Show HN: Redactify – macOS/iOS app to redact sensitive data before using LLMs" [ref=e1022] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47744106
+                - paragraph [ref=e1023]: Redactify is a promising macOS/iOS app that offers a crucial safeguard for anyone feeding sensitive data into LLMs. It smartly tackles the privacy concerns that have been a major roadblock for more widespread LLM adoption, providing a tangible solution for a growing problem.
+                - generic [ref=e1024]:
+                  - generic [ref=e1025]: ▲ 4
+                  - generic [ref=e1026]: ◇ 1
+                  - generic [ref=e1027]: Fresh
+            - generic [ref=e1029]:
+              - generic [ref=e1030]:
+                - generic [ref=e1031]: 🍅
+                - generic [ref=e1032]: "78"
+              - generic [ref=e1033]:
+                - 'link "Show HN: Prediction game where AI copies of people earn and replicate" [ref=e1034] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47743208
+                - paragraph [ref=e1035]: This is a fascinating simulation of an AI-driven artificial economy where digital agents learn, reproduce, and compete for resources. It's like Tamagotchi meets an economics 101 lecture, with surprisingly emergent behaviors from simple rules.
+                - generic [ref=e1036]:
+                  - generic [ref=e1037]: ▲ 3
+                  - generic [ref=e1038]: ◇ 0
+                  - generic [ref=e1039]: Fresh
+            - generic [ref=e1041]:
+              - generic [ref=e1042]:
+                - generic [ref=e1043]: 🍅
+                - generic [ref=e1044]: "78"
+              - generic [ref=e1045]:
+                - 'link "Show HN: A proactive AI agent on iMessage that texts you before you even ask" [ref=e1046] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47742490
+                - link "hemesh.tech ↗" [ref=e1047] [cursor=pointer]:
+                  - /url: https://hemesh.tech/builds/summer-ai.html
+                - paragraph [ref=e1048]: This feels like the first *truly* proactive AI assistant, not just another chatbot you have to poll. Imagine your phone nudging you about things you *should* be doing before you even think to ask, all within iMessage. It's a fascinating glimpse into ambient computing.
+                - generic [ref=e1049]:
+                  - generic [ref=e1050]: ▲ 1
+                  - generic [ref=e1051]: ◇ 0
+                  - generic [ref=e1052]: Fresh
+              - link "hemesh.tech preview" [ref=e1053] [cursor=pointer]:
+                - /url: https://hemesh.tech/builds/summer-ai.html
+                - img "hemesh.tech preview" [ref=e1054]
+            - generic [ref=e1056]:
+              - generic [ref=e1057]:
+                - generic [ref=e1058]: 🍅
+                - generic [ref=e1059]: "78"
+              - generic [ref=e1060]:
+                - 'link "Show HN: Revdiff – TUI diff reviewer with inline annotations for AI agents" [ref=e1061] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47742437
+                - link "github.com ↗" [ref=e1062] [cursor=pointer]:
+                  - /url: https://github.com/umputun/revdiff
+                - paragraph [ref=e1063]: This is a slick TUI tool for reviewing code diffs, especially when AI is involved. It’s got that satisfyingly fast, focused feel that CLI nerds dream of, and the inline annotation feature is genuinely smart for keeping AI feedback organized.
+                - generic [ref=e1064]:
+                  - generic [ref=e1065]: ▲ 16
+                  - generic [ref=e1066]: ◇ 3
+                  - generic [ref=e1067]: Fresh
+              - link "github.com preview" [ref=e1068] [cursor=pointer]:
+                - /url: https://github.com/umputun/revdiff
+                - img "github.com preview" [ref=e1069]
+            - generic [ref=e1071]:
+              - generic [ref=e1072]:
+                - generic [ref=e1073]: 🍅
+                - generic [ref=e1074]: "78"
+              - generic [ref=e1075]:
+                - 'link "Show HN: T4 – a versioned datastore with branching and time-travel (S3-backed)" [ref=e1076] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47742167
+                - link "github.com ↗" [ref=e1077] [cursor=pointer]:
+                  - /url: https://github.com/t4db/t4
+                - paragraph [ref=e1078]: "T4 sounds like Git for your data, built on S3. If you've ever desperately needed to rewind your database to a specific point or work with parallel versions of your data without complex ETL, this could be a game-changer. It's like finally having `git blame` for your application's state."
+                - generic [ref=e1079]:
+                  - generic [ref=e1080]: ▲ 7
+                  - generic [ref=e1081]: ◇ 2
+                  - generic [ref=e1082]: Fresh
+              - link "github.com preview" [ref=e1083] [cursor=pointer]:
+                - /url: https://github.com/t4db/t4
+                - img "github.com preview" [ref=e1084]
+            - generic [ref=e1086]:
+              - generic [ref=e1087]:
+                - generic [ref=e1088]: 🍅
+                - generic [ref=e1089]: "78"
+              - generic [ref=e1090]:
+                - 'link "Show HN: 7 Years of Tropospheric NO₂" [ref=e1091] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47740777
+                - link "no2.libmap.org ↗" [ref=e1092] [cursor=pointer]:
+                  - /url: https://no2.libmap.org/
+                - paragraph [ref=e1093]: This is a beautifully rendered, interactive map of tropospheric NO₂ levels over the last seven years, showcasing planetary-scale pollution trends in a way that's both visually stunning and subtly alarming. It's basically a 'where's the smog?' tracker, but for geeks who appreciate data visualization and a planet slightly on fire.
+                - generic [ref=e1094]:
+                  - generic [ref=e1095]: ▲ 1
+                  - generic [ref=e1096]: ◇ 0
+                  - generic [ref=e1097]: Fresh
+              - link "no2.libmap.org preview" [ref=e1098] [cursor=pointer]:
+                - /url: https://no2.libmap.org/
+                - img "no2.libmap.org preview" [ref=e1099]
+            - generic [ref=e1101]:
+              - generic [ref=e1102]:
+                - generic [ref=e1103]: 🍅
+                - generic [ref=e1104]: "78"
+              - generic [ref=e1105]:
+                - 'link "Show HN: Turn 3 letters into a cube with different projections (inspired by GEB)" [ref=e1106] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47740516
+                - link "geb.gjlmotea.com ↗" [ref=e1107] [cursor=pointer]:
+                  - /url: https://geb.gjlmotea.com/
+                - paragraph [ref=e1108]: This isn't just an alphabet visualizer; it's a surprisingly elegant exploration of dimensionality, powered by geometric intuition and a dash of Gödel, Escher, Bach flair. It's a delightful digital doodle that's more than the sum of its projected parts.
+                - generic [ref=e1109]:
+                  - generic [ref=e1110]: ▲ 1
+                  - generic [ref=e1111]: ◇ 0
+                  - generic [ref=e1112]: Fresh
+              - link "geb.gjlmotea.com preview" [ref=e1113] [cursor=pointer]:
+                - /url: https://geb.gjlmotea.com/
+                - img "geb.gjlmotea.com preview" [ref=e1114]
+            - generic [ref=e1116]:
+              - generic [ref=e1117]:
+                - generic [ref=e1118]: 🍅
+                - generic [ref=e1119]: "78"
+              - generic [ref=e1120]:
+                - 'link "Show HN: Minimal mobile HN reader – real-time and dark mode" [ref=e1121] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47740229
+                - link "hn.brae.workers.dev ↗" [ref=e1122] [cursor=pointer]:
+                  - /url: https://hn.brae.workers.dev/
+                - paragraph [ref=e1123]: This is a clean, no-frills Hacker News reader that actually feels faster and more pleasant than the official site, especially with its real-time updates and excellent dark mode. It's the kind of app you didn't know you needed until you try it, making HN browsing a more enjoyable experience.
+                - generic [ref=e1124]:
+                  - generic [ref=e1125]: ▲ 4
+                  - generic [ref=e1126]: ◇ 2
+                  - generic [ref=e1127]: Fresh
+              - link "hn.brae.workers.dev preview" [ref=e1128] [cursor=pointer]:
+                - /url: https://hn.brae.workers.dev/
+                - img "hn.brae.workers.dev preview" [ref=e1129]
+            - generic [ref=e1131]:
+              - generic [ref=e1132]:
+                - generic [ref=e1133]: 🍅
+                - generic [ref=e1134]: "78"
+              - generic [ref=e1135]:
+                - 'link "Show HN: Telegram feed reader using DNS TXT records for Iran''s Internet shutdown" [ref=e1136] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47739532
+                - link "github.com ↗" [ref=e1137] [cursor=pointer]:
+                  - /url: https://github.com/sartoopjj/thefeed
+                - paragraph [ref=e1138]: This is a fascinating and ethically charged weekend hack that cleverly bypasses internet censorship in Iran by leveraging DNS TXT records for Telegram messages. It's a testament to ingenious problem-solving under duress, turning a system intended for metadata into a covert communication channel.
+                - generic [ref=e1139]:
+                  - generic [ref=e1140]: ▲ 2
+                  - generic [ref=e1141]: ◇ 2
+                  - generic [ref=e1142]: Fresh
+              - link "github.com preview" [ref=e1143] [cursor=pointer]:
+                - /url: https://github.com/sartoopjj/thefeed
+                - img "github.com preview" [ref=e1144]
+          - button "+ 82 more" [ref=e1145] [cursor=pointer]
+        - generic [ref=e1146]:
+          - heading "April 11 · 73 projects" [level=3] [ref=e1147]
+          - generic [ref=e1148]:
+            - generic [ref=e1150]:
+              - generic [ref=e1151]:
+                - generic [ref=e1152]: 🍅
+                - generic [ref=e1153]: "82"
+              - generic [ref=e1154]:
+                - 'link "Show HN: LSM Trees: MemTable, Compaction, and the Amplification Triangle [video]" [ref=e1155] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47728661
+                - link "youtube.com ↗" [ref=e1156] [cursor=pointer]:
+                  - /url: https://www.youtube.com/watch?v=rOC7jkN748w
+                - paragraph [ref=e1157]: This isn't your typical Show HN; it's a deep dive into the guts of LSM trees with clear, animated explanations that demystify complex database concepts like memtables, compaction, and the dreaded amplification triangle. If you've ever wondered what's happening under the hood of your favorite databases, this video is a masterclass in making the arcane accessible.
+                - generic [ref=e1158]:
+                  - generic [ref=e1159]: ▲ 1
+                  - generic [ref=e1160]: ◇ 0
+                  - generic [ref=e1161]: Fresh
+              - link "youtube.com preview" [ref=e1162] [cursor=pointer]:
+                - /url: https://www.youtube.com/watch?v=rOC7jkN748w
+                - img "youtube.com preview" [ref=e1163]
+            - generic [ref=e1165]:
+              - generic [ref=e1166]:
+                - generic [ref=e1167]: 🍅
+                - generic [ref=e1168]: "78"
+              - generic [ref=e1169]:
+                - 'link "Show HN: Waffle – Native macOS terminal that auto-tiles sessions into a grid" [ref=e1170] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47730522
+                - link "waffle.baby ↗" [ref=e1171] [cursor=pointer]:
+                  - /url: https://waffle.baby
+                - paragraph [ref=e1172]: Waffle is a macOS terminal emulator that automatically arranges your open terminal sessions into a grid, which is surprisingly delightful and genuinely useful for anyone juggling multiple command-line tasks. It elegantly solves the spatial chaos that often plagues terminal users without feeling overhyped.
+                - generic [ref=e1173]:
+                  - generic [ref=e1174]: ▲ 40
+                  - generic [ref=e1175]: ◇ 21
+                  - generic [ref=e1176]: Fresh
+              - link "waffle.baby preview" [ref=e1177] [cursor=pointer]:
+                - /url: https://waffle.baby
+                - img "waffle.baby preview" [ref=e1178]
+            - generic [ref=e1180]:
+              - generic [ref=e1181]:
+                - generic [ref=e1182]: 🍅
+                - generic [ref=e1183]: "78"
+              - generic [ref=e1184]:
+                - 'link "Show HN: An offline, privacy-first Pomodoro timer with 18 ambient soundscapes" [ref=e1185] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47730322
+                - link "adribyte-studio.com ↗" [ref=e1186] [cursor=pointer]:
+                  - /url: https://www.adribyte-studio.com/mobile-apps/focusscape
+                - paragraph [ref=e1187]: This is a beautifully designed, privacy-focused Pomodoro timer that actually feels like a treat to use, not just another productivity tool. If you're tired of noisy apps and want to create a serene focus bubble, this is worth a look.
+                - generic [ref=e1188]:
+                  - generic [ref=e1189]: ▲ 1
+                  - generic [ref=e1190]: ◇ 0
+                  - generic [ref=e1191]: Fresh
+              - link "adribyte-studio.com preview" [ref=e1192] [cursor=pointer]:
+                - /url: https://www.adribyte-studio.com/mobile-apps/focusscape
+                - img "adribyte-studio.com preview" [ref=e1193]
+            - generic [ref=e1195]:
+              - generic [ref=e1196]:
+                - generic [ref=e1197]: 🍅
+                - generic [ref=e1198]: "78"
+              - generic [ref=e1199]:
+                - 'link "Show HN: Bal – a Knights and Knaves logic puzzle game with Glicko rating system" [ref=e1200] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47730020
+                - link "bal.sciforge.ai ↗" [ref=e1201] [cursor=pointer]:
+                  - /url: https://bal.sciforge.ai/
+                - paragraph [ref=e1202]: Bal is a surprisingly deep dive into Knights and Knaves puzzles, gamified with a Glicko rating that actually makes you ponder your logical prowess. It’s a delightfully niche project that elevated a classic brain teaser into something you might actually get competitive about.
+                - generic [ref=e1203]:
+                  - generic [ref=e1204]: ▲ 1
+                  - generic [ref=e1205]: ◇ 3
+                  - generic [ref=e1206]: Fresh
+              - link "bal.sciforge.ai preview" [ref=e1207] [cursor=pointer]:
+                - /url: https://bal.sciforge.ai/
+                - img "bal.sciforge.ai preview" [ref=e1208]
+            - generic [ref=e1210]:
+              - generic [ref=e1211]:
+                - generic [ref=e1212]: 🍅
+                - generic [ref=e1213]: "78"
+              - generic [ref=e1214]:
+                - 'link "Show HN: Function Calling Harness, from 6.75% to 100% (Qwen Meetup Presentation)" [ref=e1215] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47725813
+                - link "typia.io ↗" [ref=e1216] [cursor=pointer]:
+                  - /url: https://typia.io/blog/function-calling-harness-qwen-meetup-korea/
+                - paragraph [ref=e1217]: This is a deep dive into optimizing LLM function calling, showcasing how a clever harness can dramatically improve reliability from a dismal 6.75% to a near-perfect 100%. It's a fascinating look at the nitty-gritty of making AI tools actually work, presented with impressive technical detail.
+                - generic [ref=e1218]:
+                  - generic [ref=e1219]: ▲ 1
+                  - generic [ref=e1220]: ◇ 0
+                  - generic [ref=e1221]: Fresh
+              - link "typia.io preview" [ref=e1222] [cursor=pointer]:
+                - /url: https://typia.io/blog/function-calling-harness-qwen-meetup-korea/
+                - img "typia.io preview" [ref=e1223]
+            - generic [ref=e1225]:
+              - generic [ref=e1226]:
+                - generic [ref=e1227]: 🍿
+                - generic [ref=e1228]: "68"
+              - generic [ref=e1229]:
+                - 'link "Show HN: PlaneFeed – scroll live flights like TikTok" [ref=e1230] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47733597
+                - link "planefeed.app ↗" [ref=e1231] [cursor=pointer]:
+                  - /url: https://planefeed.app/
+                - paragraph [ref=e1232]: PlaneFeed turns the often-mundane world of flight tracking into a mesmerizing, TikTok-esque scrolling experience. It's a surprisingly addictive way to passively consume aviation data, transforming a niche interest into something more broadly engaging.
+                - generic [ref=e1233]:
+                  - generic [ref=e1234]: ▲ 2
+                  - generic [ref=e1235]: ◇ 0
+                  - generic [ref=e1236]: Mid
+              - link "planefeed.app preview" [ref=e1237] [cursor=pointer]:
+                - /url: https://planefeed.app/
+                - img "planefeed.app preview" [ref=e1238]
+            - generic [ref=e1240]:
+              - generic [ref=e1241]:
+                - generic [ref=e1242]: 🍿
+                - generic [ref=e1243]: "68"
+              - generic [ref=e1244]:
+                - 'link "Show HN: A General Purpose KMC Crystal Growth Simulator in Rust-WASM" [ref=e1245] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47732644
+                - link "amdson.github.io ↗" [ref=e1246] [cursor=pointer]:
+                  - /url: https://amdson.github.io/blog/crystals/
+                - paragraph [ref=e1247]: This is a surprisingly beautiful and intriguing simulation of crystal growth, rendered in the browser using Rust and WebAssembly. While it might not be a day-one business tool, it's a masterful demonstration of what's possible with modern web tech and a testament to the creator's patience and skill in modeling complex physical processes.
+                - generic [ref=e1248]:
+                  - generic [ref=e1249]: ▲ 2
+                  - generic [ref=e1250]: ◇ 0
+                  - generic [ref=e1251]: Mid
+              - link "amdson.github.io preview" [ref=e1252] [cursor=pointer]:
+                - /url: https://amdson.github.io/blog/crystals/
+                - img "amdson.github.io preview" [ref=e1253]
+            - generic [ref=e1255]:
+              - generic [ref=e1256]:
+                - generic [ref=e1257]: 🍿
+                - generic [ref=e1258]: "68"
+              - generic [ref=e1259]:
+                - 'link "Show HN: Self-hostable STT service with a Deepgram-compatible listen API" [ref=e1260] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47732461
+                - link "vedgupta.in ↗" [ref=e1261] [cursor=pointer]:
+                  - /url: https://vedgupta.in/projects/whisper-api/
+                - paragraph [ref=e1262]: This is a self-hostable Whisper API that mimics Deepgram's interface, offering a privacy-focused alternative for developers needing robust speech-to-text without sending data to a third party. It's a clever way to leverage the power of a local model with a familiar API.
+                - generic [ref=e1263]:
+                  - generic [ref=e1264]: ▲ 2
+                  - generic [ref=e1265]: ◇ 0
+                  - generic [ref=e1266]: Mid
+              - link "vedgupta.in preview" [ref=e1267] [cursor=pointer]:
+                - /url: https://vedgupta.in/projects/whisper-api/
+                - img "vedgupta.in preview" [ref=e1268]
+            - generic [ref=e1270]:
+              - generic [ref=e1271]:
+                - generic [ref=e1272]: 🍿
+                - generic [ref=e1273]: "68"
+              - generic [ref=e1274]:
+                - 'link "Show HN: I rebuilt a 2000s browser strategy game on Cloudflare''s edge" [ref=e1275] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47729925
+                - link "kampfinsel.com ↗" [ref=e1276] [cursor=pointer]:
+                  - /url: https://kampfinsel.com/
+                - paragraph [ref=e1277]: This is a surprisingly charming blast from the past, rebuilt with modern tech! If you ever wasted hours on those clunky 2000s browser strategy games, this brings back that nostalgia but actually runs smoothly and feels surprisingly responsive, all thanks to some clever edge computing.
+                - generic [ref=e1278]:
+                  - generic [ref=e1279]: ▲ 8
+                  - generic [ref=e1280]: ◇ 1
+                  - generic [ref=e1281]: Mid
+              - link "kampfinsel.com preview" [ref=e1282] [cursor=pointer]:
+                - /url: https://kampfinsel.com/
+                - img "kampfinsel.com preview" [ref=e1283]
+            - generic [ref=e1285]:
+              - generic [ref=e1286]:
+                - generic [ref=e1287]: 🍿
+                - generic [ref=e1288]: "65"
+              - generic [ref=e1289]:
+                - 'link "Show HN: Editing 2000 photos made me build a macOS bulk photo editor" [ref=e1290] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47733385
+                - link "apps.apple.com ↗" [ref=e1291] [cursor=pointer]:
+                  - /url: https://apps.apple.com/us/app/rapidphoto-batch-crop-edit/id6758485661?mt=12
+                - paragraph [ref=e1292]: Ah, the classic 'scratching an itch' story! This developer wrestled with 2000 photos and decided the existing tools were too clunky, so they built a macOS app for bulk batch photo editing. It's a solid tool for photographers or anyone drowning in a sea of images, offering a focused solution to a real pain point.
+                - generic [ref=e1293]:
+                  - generic [ref=e1294]: ▲ 13
+                  - generic [ref=e1295]: ◇ 25
+                  - generic [ref=e1296]: Mid
+              - link "apps.apple.com preview" [ref=e1297] [cursor=pointer]:
+                - /url: https://apps.apple.com/us/app/rapidphoto-batch-crop-edit/id6758485661?mt=12
+                - img "apps.apple.com preview" [ref=e1298]
+          - button "+ 63 more" [ref=e1299] [cursor=pointer]
+        - generic [ref=e1300]:
+          - heading "April 10 · 110 projects" [level=3] [ref=e1301]
+          - generic [ref=e1302]:
+            - generic [ref=e1304]:
+              - generic [ref=e1305]:
+                - generic [ref=e1306]: 🍅
+                - generic [ref=e1307]: "78"
+              - generic [ref=e1308]:
+                - 'link "Show HN: Gravity Garden, an Interactive Simulator" [ref=e1309] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47722023
+                - link "tortured-metaphor.github.io ↗" [ref=e1310] [cursor=pointer]:
+                  - /url: https://tortured-metaphor.github.io/Gravity-Garden/
+                - paragraph [ref=e1311]: This is a surprisingly delightful and beautiful little physics simulator that lets you play God with gravity! It's like a digital sandbox for celestial ballet, offering a visually pleasing and conceptually interesting way to experiment with planetary interactions, even if its practical utility is near zero. A true testament to the joy of building cool stuff.
+                - generic [ref=e1312]:
+                  - generic [ref=e1313]: ▲ 2
+                  - generic [ref=e1314]: ◇ 0
+                  - generic [ref=e1315]: Fresh
+              - link "tortured-metaphor.github.io preview" [ref=e1316] [cursor=pointer]:
+                - /url: https://tortured-metaphor.github.io/Gravity-Garden/
+                - img "tortured-metaphor.github.io preview" [ref=e1317]
+            - generic [ref=e1319]:
+              - generic [ref=e1320]:
+                - generic [ref=e1321]: 🍅
+                - generic [ref=e1322]: "78"
+              - generic [ref=e1323]:
+                - 'link "Show HN: Deconstructing a Black Hole in a Fragment Shader" [ref=e1324] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47720349
+                - link "vaidikv.github.io ↗" [ref=e1325] [cursor=pointer]:
+                  - /url: https://vaidikv.github.io/deconstructing-a-black-hole/
+                - paragraph [ref=e1326]: This is a mesmerizing visual journey into the heart of a black hole, rendered entirely in a fragment shader. It's not a tool you'll use for work, but it's a stunning demonstration of what's possible with graphics programming and a fantastic way to spend ten minutes marveling at the cosmos (and shader capabilities).
+                - generic [ref=e1327]:
+                  - generic [ref=e1328]: ▲ 3
+                  - generic [ref=e1329]: ◇ 1
+                  - generic [ref=e1330]: Fresh
+              - link "vaidikv.github.io preview" [ref=e1331] [cursor=pointer]:
+                - /url: https://vaidikv.github.io/deconstructing-a-black-hole/
+                - img "vaidikv.github.io preview" [ref=e1332]
+            - generic [ref=e1334]:
+              - generic [ref=e1335]:
+                - generic [ref=e1336]: 🍅
+                - generic [ref=e1337]: "78"
+              - generic [ref=e1338]:
+                - 'link "Show HN: LuxShot – Open-source, native macOS OCR utility" [ref=e1339] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47720095
+                - link "github.com ↗" [ref=e1340] [cursor=pointer]:
+                  - /url: https://github.com/lukebuild/LuxShot
+                - paragraph [ref=e1341]: LuxShot is a slick, open-source macOS app that lets you snag text from screenshots with impressive speed and accuracy, all without needing to upload your precious images to the cloud. It's the kind of tool you didn't realize you needed until you try it, and then you wonder how you lived without it.
+                - generic [ref=e1342]:
+                  - generic [ref=e1343]: ▲ 1
+                  - generic [ref=e1344]: ◇ 0
+                  - generic [ref=e1345]: Fresh
+              - link "github.com preview" [ref=e1346] [cursor=pointer]:
+                - /url: https://github.com/lukebuild/LuxShot
+                - img "github.com preview" [ref=e1347]
+            - generic [ref=e1349]:
+              - generic [ref=e1350]:
+                - generic [ref=e1351]: 🍅
+                - generic [ref=e1352]: "78"
+              - generic [ref=e1353]:
+                - 'link "Show HN: Formally Verified Leaderless Log Protocol for Kafka" [ref=e1354] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47720094
+                - link "github.com ↗" [ref=e1355] [cursor=pointer]:
+                  - /url: https://github.com/lakestream-io/leaderless-log-protocol
+                - paragraph [ref=e1356]: This is a deep dive into the theoretical underpinnings of distributed systems, aiming to formally verify a leaderless log protocol for Kafka. It's a serious piece of academic-grade engineering that might make your brain hurt but also earn a lot of respect from hardcore systems folks.
+                - generic [ref=e1357]:
+                  - generic [ref=e1358]: ▲ 5
+                  - generic [ref=e1359]: ◇ 1
+                  - generic [ref=e1360]: Fresh
+              - link "github.com preview" [ref=e1361] [cursor=pointer]:
+                - /url: https://github.com/lakestream-io/leaderless-log-protocol
+                - img "github.com preview" [ref=e1362]
+            - generic [ref=e1364]:
+              - generic [ref=e1365]:
+                - generic [ref=e1366]: 🍅
+                - generic [ref=e1367]: "78"
+              - generic [ref=e1368]:
+                - 'link "Show HN: LightningWindowSwitcher – search for open windows on macOS/Win" [ref=e1369] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47717962
+                - link "lightningwindowswitcher.com ↗" [ref=e1370] [cursor=pointer]:
+                  - /url: https://lightningwindowswitcher.com/
+                - paragraph [ref=e1371]: This is a pretty slick window switcher for macOS and Windows that uses a fuzzy search to find and switch to your open applications, feeling like a faster, more focused Spotlight for your windows. If you're drowning in open tabs and apps, this might just be the lifesaver you didn't know you needed.
+                - generic [ref=e1372]:
+                  - generic [ref=e1373]: ▲ 4
+                  - generic [ref=e1374]: ◇ 0
+                  - generic [ref=e1375]: Fresh
+              - link "lightningwindowswitcher.com preview" [ref=e1376] [cursor=pointer]:
+                - /url: https://lightningwindowswitcher.com/
+                - img "lightningwindowswitcher.com preview" [ref=e1377]
+            - generic [ref=e1379]:
+              - generic [ref=e1380]:
+                - generic [ref=e1381]: 🍅
+                - generic [ref=e1382]: "78"
+              - generic [ref=e1383]:
+                - 'link "Show HN: The Stack, a Clay sculpture that writes poems through Wi-Fi [video]" [ref=e1384] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47715650
+                - link "vimeo.com ↗" [ref=e1385] [cursor=pointer]:
+                  - /url: https://vimeo.com/1181880000
+                - paragraph [ref=e1386]: This is a delightful, almost absurd, project that transmutes digital poetry into physical clay sculptures. While its practical utility is nil, the sheer audacity and artistic execution of literally sculpting words via Wi-Fi is undeniably cool and a testament to creative engineering.
+                - generic [ref=e1387]:
+                  - generic [ref=e1388]: ▲ 1
+                  - generic [ref=e1389]: ◇ 1
+                  - generic [ref=e1390]: Fresh
+              - link "vimeo.com preview" [ref=e1391] [cursor=pointer]:
+                - /url: https://vimeo.com/1181880000
+                - img "vimeo.com preview" [ref=e1392]
+            - generic [ref=e1394]:
+              - generic [ref=e1395]:
+                - generic [ref=e1396]: 🍿
+                - generic [ref=e1397]: "68"
+              - generic [ref=e1398]:
+                - 'link "Show HN: I built an AI pipeline to turn Infosec talks into readable, quick blogs" [ref=e1399] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47720484
+                - link "greptalks.ai ↗" [ref=e1400] [cursor=pointer]:
+                  - /url: https://greptalks.ai
+                - paragraph [ref=e1401]: This is a clever use of AI to distill dense infosec talks into digestible blog posts, which is genuinely useful for anyone trying to keep up with the flood of security knowledge. It's the kind of tool that makes you think, 'Why didn't I think of that?'
+                - generic [ref=e1402]:
+                  - generic [ref=e1403]: ▲ 1
+                  - generic [ref=e1404]: ◇ 0
+                  - generic [ref=e1405]: Mid
+              - link "greptalks.ai preview" [ref=e1406] [cursor=pointer]:
+                - /url: https://greptalks.ai
+                - img "greptalks.ai preview" [ref=e1407]
+            - generic [ref=e1409]:
+              - generic [ref=e1410]:
+                - generic [ref=e1411]: 🍿
+                - generic [ref=e1412]: "65"
+              - generic [ref=e1413]:
+                - 'link "Show HN: Ark – AI agent runtime in Go that tracks cost per decision step" [ref=e1414] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47724969
+                - link "github.com ↗" [ref=e1415] [cursor=pointer]:
+                  - /url: https://github.com/atripati/ark
+                - paragraph [ref=e1416]: Ark is an AI agent runtime built in Go that meticulously tracks the cost of each decision step, which is frankly an incredibly spicy take for anyone trying to wrangle those increasingly expensive LLM calls. It's less about building the next chatbot and more about understanding the plumbing behind it, which is a surprisingly insightful angle, even if it feels like a bit of a niche concern right now.
+                - generic [ref=e1417]:
+                  - generic [ref=e1418]: ▲ 3
+                  - generic [ref=e1419]: ◇ 2
+                  - generic [ref=e1420]: Mid
+              - link "github.com preview" [ref=e1421] [cursor=pointer]:
+                - /url: https://github.com/atripati/ark
+                - img "github.com preview" [ref=e1422]
+            - generic [ref=e1424]:
+              - generic [ref=e1425]:
+                - generic [ref=e1426]: 🍿
+                - generic [ref=e1427]: "65"
+              - generic [ref=e1428]:
+                - 'link "Show HN: The Universe in One Chart" [ref=e1429] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47724793
+                - link "saminloes.com ↗" [ref=e1430] [cursor=pointer]:
+                  - /url: https://saminloes.com/one-chart/
+                - paragraph [ref=e1431]: This is a visually stunning, interactive chart that attempts to condense the entire history of the universe into a single, scrollable timeline. While ambitious and beautifully rendered, its sheer scope makes it more of a fascinating exploration than a practical tool, leaving you awestruck but perhaps a little lost.
+                - generic [ref=e1432]:
+                  - generic [ref=e1433]: ▲ 8
+                  - generic [ref=e1434]: ◇ 0
+                  - generic [ref=e1435]: Mid
+              - link "saminloes.com preview" [ref=e1436] [cursor=pointer]:
+                - /url: https://saminloes.com/one-chart/
+                - img "saminloes.com preview" [ref=e1437]
+            - generic [ref=e1439]:
+              - generic [ref=e1440]:
+                - generic [ref=e1441]: 🍿
+                - generic [ref=e1442]: "65"
+              - generic [ref=e1443]:
+                - 'link "Show HN: I built a tool to bootstrap VLESS and REALITY over SSH (with rollback)" [ref=e1444] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47723287
+                - paragraph [ref=e1445]: This is a fascinating, albeit highly specialized, tool for setting up VLESS and REALITY proxies over SSH with a handy rollback feature. If you're deep into the privacy/proxy world and wrestling with VLESS/REALITY, this could save you a lot of headache, otherwise, it's likely not for you.
+                - generic [ref=e1446]:
+                  - generic [ref=e1447]: ▲ 1
+                  - generic [ref=e1448]: ◇ 0
+                  - generic [ref=e1449]: Mid
+          - button "+ 100 more" [ref=e1450] [cursor=pointer]
+        - generic [ref=e1451]:
+          - heading "April 9 · 158 projects" [level=3] [ref=e1452]
+          - generic [ref=e1453]:
+            - generic [ref=e1455]:
+              - generic [ref=e1456]:
+                - generic [ref=e1457]: 🍅
+                - generic [ref=e1458]: "82"
+              - generic [ref=e1459]:
+                - 'link "Show HN: Running a 1.7B parameters LLM on an Apple Watch" [ref=e1460] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47701467
+                - link "twitter.com ↗" [ref=e1461] [cursor=pointer]:
+                  - /url: https://twitter.com/nobodywho_ai/status/2042179816925864209
+                - paragraph [ref=e1462]: Someone actually managed to get a 1.7 billion parameter LLM to run on an Apple Watch. While the practical utility is questionable right now (it's slow and likely drains the battery faster than a cryptocurrency miner), it's a staggering demonstration of how far edge AI compute has come, pushing the boundaries of what we thought was even remotely possible on such a tiny device.
+                - generic [ref=e1463]:
+                  - generic [ref=e1464]: ▲ 3
+                  - generic [ref=e1465]: ◇ 0
+                  - generic [ref=e1466]: Fresh
+              - link "twitter.com preview" [ref=e1467] [cursor=pointer]:
+                - /url: https://twitter.com/nobodywho_ai/status/2042179816925864209
+                - img "twitter.com preview" [ref=e1468]
+            - generic [ref=e1470]:
+              - generic [ref=e1471]:
+                - generic [ref=e1472]: 🍅
+                - generic [ref=e1473]: "79"
+              - generic [ref=e1474]:
+                - 'link "Show HN: Monetary policy tracker – AI sentiment analysis of 26 central bank" [ref=e1475] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47709333
+                - link "monetary.live ↗" [ref=e1476] [cursor=pointer]:
+                  - /url: https://monetary.live/
+                - paragraph [ref=e1477]: This project uses AI to analyze the sentiment of 26 central banks, which sounds incredibly niche but actually taps into a powerful, under-served need for understanding the subtle shifts in global financial discourse. It's a fascinating application of NLP to an area that usually requires wading through jargon and official pronouncements.
+                - generic [ref=e1478]:
+                  - generic [ref=e1479]: ▲ 1
+                  - generic [ref=e1480]: ◇ 0
+                  - generic [ref=e1481]: Fresh
+              - link "monetary.live preview" [ref=e1482] [cursor=pointer]:
+                - /url: https://monetary.live/
+                - img "monetary.live preview" [ref=e1483]
+            - generic [ref=e1485]:
+              - generic [ref=e1486]:
+                - generic [ref=e1487]: 🍅
+                - generic [ref=e1488]: "78"
+              - generic [ref=e1489]:
+                - 'link "Show HN: I built a tool to bootstrap VLESS and REALITY over SSH (with rollback)" [ref=e1490] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47709058
+                - paragraph [ref=e1491]: This project tackles the labyrinthine world of VLESS and REALITY proxies by wrapping them in the familiar embrace of SSH, adding a much-needed layer of simplicity and crucial rollback functionality.
+                - generic [ref=e1492]:
+                  - generic [ref=e1493]: ▲ 2
+                  - generic [ref=e1494]: ◇ 0
+                  - generic [ref=e1495]: Fresh
+            - generic [ref=e1497]:
+              - generic [ref=e1498]:
+                - generic [ref=e1499]: 🍅
+                - generic [ref=e1500]: "78"
+              - generic [ref=e1501]:
+                - 'link "Show HN: Browse museum collections tik tok style" [ref=e1502] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47705688
+                - link "artsnap.vaguespac.es ↗" [ref=e1503] [cursor=pointer]:
+                  - /url: https://artsnap.vaguespac.es/
+                - paragraph [ref=e1504]: This project takes the endless scroll of TikTok and applies it to the often intimidating world of museum art, offering a surprisingly engaging way to discover pieces you might otherwise miss.
+                - generic [ref=e1505]:
+                  - generic [ref=e1506]: ▲ 3
+                  - generic [ref=e1507]: ◇ 0
+                  - generic [ref=e1508]: Fresh
+              - link "artsnap.vaguespac.es preview" [ref=e1509] [cursor=pointer]:
+                - /url: https://artsnap.vaguespac.es/
+                - img "artsnap.vaguespac.es preview" [ref=e1510]
+            - generic [ref=e1512]:
+              - generic [ref=e1513]:
+                - generic [ref=e1514]: 🍅
+                - generic [ref=e1515]: "78"
+              - generic [ref=e1516]:
+                - 'link "Show HN: MCP Gateway – Zero-Trust Access to MCP Tool Servers" [ref=e1517] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47704652
+                - link "github.com ↗" [ref=e1518] [cursor=pointer]:
+                  - /url: https://github.com/openziti/mcp-gateway
+                - paragraph [ref=e1519]: This project tackles the pain of securely exposing legacy MCP tool servers without resorting to clunky VPNs or exposing them directly. It's a smart piece of infrastructure that leverages OpenZiti for zero-trust networking, making it a genuinely useful tool for ops folks wrestling with older systems.
+                - generic [ref=e1520]:
+                  - generic [ref=e1521]: ▲ 4
+                  - generic [ref=e1522]: ◇ 2
+                  - generic [ref=e1523]: Fresh
+              - link "github.com preview" [ref=e1524] [cursor=pointer]:
+                - /url: https://github.com/openziti/mcp-gateway
+                - img "github.com preview" [ref=e1525]
+            - generic [ref=e1527]:
+              - generic [ref=e1528]:
+                - generic [ref=e1529]: 🍅
+                - generic [ref=e1530]: "78"
+              - generic [ref=e1531]:
+                - 'link "Show HN: Qiaohu – offline multimodal voice assistant on Snapdragon 8 Gen 2" [ref=e1532] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47704486
+                - link "github.com ↗" [ref=e1533] [cursor=pointer]:
+                  - /url: https://github.com/donge/qiaohu/blob/main/README.en.md
+                - paragraph [ref=e1534]: This project brings offline, multimodal voice control to a high-end mobile chip, demonstrating a significant step towards truly private and capable on-device AI assistants – imagine your phone understanding you without sending data to the cloud. It's a fascinating glimpse into the future of personal computing, built with impressive technical chops.
+                - generic [ref=e1535]:
+                  - generic [ref=e1536]: ▲ 2
+                  - generic [ref=e1537]: ◇ 0
+                  - generic [ref=e1538]: Fresh
+              - link "github.com preview" [ref=e1539] [cursor=pointer]:
+                - /url: https://github.com/donge/qiaohu/blob/main/README.en.md
+                - img "github.com preview" [ref=e1540]
+            - generic [ref=e1542]:
+              - generic [ref=e1543]:
+                - generic [ref=e1544]: 🍅
+                - generic [ref=e1545]: "78"
+              - generic [ref=e1546]:
+                - 'link "Show HN: Browsable index of every lecture and talk from the CMU Database Group" [ref=e1547] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47704257
+                - link "github.com ↗" [ref=e1548] [cursor=pointer]:
+                  - /url: https://github.com/tamnd/cmu-database-group-videos-index
+                - paragraph [ref=e1549]: This is a beautifully organized, searchable index of all CMU database group lectures, a goldmine for anyone interested in the cutting edge of database research. It's not a groundbreaking SaaS, but it's incredibly well-executed for what it is.
+                - generic [ref=e1550]:
+                  - generic [ref=e1551]: ▲ 1
+                  - generic [ref=e1552]: ◇ 0
+                  - generic [ref=e1553]: Fresh
+              - link "github.com preview" [ref=e1554] [cursor=pointer]:
+                - /url: https://github.com/tamnd/cmu-database-group-videos-index
+                - img "github.com preview" [ref=e1555]
+            - generic [ref=e1557]:
+              - generic [ref=e1558]:
+                - generic [ref=e1559]: 🍅
+                - generic [ref=e1560]: "78"
+              - generic [ref=e1561]:
+                - 'link "Show HN: I built a 2006 twttr clone with no replies, likes, or algorithms" [ref=e1562] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47703681
+                - link "scrollr.net ↗" [ref=e1563] [cursor=pointer]:
+                  - /url: https://scrollr.net
+                - paragraph [ref=e1564]: This is a charming, nostalgic trip back to the early, simpler days of Twitter, offering a hyper-focused experience that strips away the modern platform's noise and complexity. It's a beautifully crafted reminder of what social media *could* be, if we valued intentionality over engagement metrics.
+                - generic [ref=e1565]:
+                  - generic [ref=e1566]: ▲ 2
+                  - generic [ref=e1567]: ◇ 0
+                  - generic [ref=e1568]: Fresh
+              - link "scrollr.net preview" [ref=e1569] [cursor=pointer]:
+                - /url: https://scrollr.net
+                - img "scrollr.net preview" [ref=e1570]
+            - generic [ref=e1572]:
+              - generic [ref=e1573]:
+                - generic [ref=e1574]: 🍅
+                - generic [ref=e1575]: "78"
+              - generic [ref=e1576]:
+                - 'link "Show HN: I built an app that charges you real money when you miss your goals" [ref=e1577] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47702960
+                - link "trykiri.io ↗" [ref=e1578] [cursor=pointer]:
+                  - /url: https://trykiri.io
+                - paragraph [ref=e1579]: This app leverages the 'stickiest' motivator known to humankind – actual money – to enforce your commitments. It's a clever, albeit potentially anxiety-inducing, take on accountability.
+                - generic [ref=e1580]:
+                  - generic [ref=e1581]: ▲ 1
+                  - generic [ref=e1582]: ◇ 0
+                  - generic [ref=e1583]: Fresh
+              - link "trykiri.io preview" [ref=e1584] [cursor=pointer]:
+                - /url: https://trykiri.io
+                - img "trykiri.io preview" [ref=e1585]
+            - generic [ref=e1587]:
+              - generic [ref=e1588]:
+                - generic [ref=e1589]: 🍅
+                - generic [ref=e1590]: "78"
+              - generic [ref=e1591]:
+                - 'link "Show HN: Proroot – Zero-overhead proot replacement for Android" [ref=e1592] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47699575
+                - link "github.com ↗" [ref=e1593] [cursor=pointer]:
+                  - /url: https://github.com/coderredlab/proroot
+                - paragraph [ref=e1594]: "This 'zero-overhead' `proot` alternative for Android sounds like it could be the magic bullet for rooting enthusiasts who want root access without the usual performance hit. It promises a cleaner, faster way to run Linux environments on Android, which is pretty neat if it actually delivers."
+                - generic [ref=e1595]:
+                  - generic [ref=e1596]: ▲ 2
+                  - generic [ref=e1597]: ◇ 1
+                  - generic [ref=e1598]: Fresh
+              - link "github.com preview" [ref=e1599] [cursor=pointer]:
+                - /url: https://github.com/coderredlab/proroot
+                - img "github.com preview" [ref=e1600]
+          - button "+ 148 more" [ref=e1601] [cursor=pointer]
+        - generic [ref=e1602]:
+          - heading "April 8 · 147 projects" [level=3] [ref=e1603]
+          - generic [ref=e1604]:
+            - generic [ref=e1606]:
+              - generic [ref=e1607]:
+                - generic [ref=e1608]: 🍅
+                - generic [ref=e1609]: "85"
+              - generic [ref=e1610]:
+                - 'link "Show HN: The 323, a 32-bit computer in Conway''s Game of Life" [ref=e1611] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47687498
+                - link "256-32.com ↗" [ref=e1612] [cursor=pointer]:
+                  - /url: https://256-32.com/computers/323
+                - paragraph [ref=e1613]: This is an absolutely bonkers, yet strangely beautiful, recreation of a 32-bit computer entirely within Conway's Game of Life. Prepare to question reality and marvel at the sheer dedication to computational art.
+                - generic [ref=e1614]:
+                  - generic [ref=e1615]: ▲ 1
+                  - generic [ref=e1616]: ◇ 0
+                  - generic [ref=e1617]: Fresh
+              - link "256-32.com preview" [ref=e1618] [cursor=pointer]:
+                - /url: https://256-32.com/computers/323
+                - img "256-32.com preview" [ref=e1619]
+            - generic [ref=e1621]:
+              - generic [ref=e1622]:
+                - generic [ref=e1623]: 🍅
+                - generic [ref=e1624]: "78"
+              - generic [ref=e1625]:
+                - 'link "Show HN: MiroTalk SFU" [ref=e1626] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47695052
+                - link "github.com ↗" [ref=e1627] [cursor=pointer]:
+                  - /url: https://github.com/miroslavpejic85/mirotalksfu
+                - paragraph [ref=e1628]: MiroTalk SFU is an open-source, self-hostable WebRTC SFU that's remarkably lightweight and promises to be a drop-in replacement for many SaaS video conferencing solutions. It's a serious contender for anyone needing more control or privacy over their real-time communication, especially given its modest server requirements.
+                - generic [ref=e1629]:
+                  - generic [ref=e1630]: ▲ 1
+                  - generic [ref=e1631]: ◇ 0
+                  - generic [ref=e1632]: Fresh
+              - link "github.com preview" [ref=e1633] [cursor=pointer]:
+                - /url: https://github.com/miroslavpejic85/mirotalksfu
+                - img "github.com preview" [ref=e1634]
+            - generic [ref=e1636]:
+              - generic [ref=e1637]:
+                - generic [ref=e1638]: 🍅
+                - generic [ref=e1639]: "78"
+              - generic [ref=e1640]:
+                - 'link "Show HN: Palinode – Git-versioned Markdown memory for AI agents" [ref=e1641] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47693575
+                - link "github.com ↗" [ref=e1642] [cursor=pointer]:
+                  - /url: https://github.com/Paul-Kyle/palinode
+                - paragraph [ref=e1643]: Palinode is a Git-versioned knowledge base for AI agents, turning your Markdown notes into a searchable, auditable memory. It's a clever fusion of personal knowledge management and the emerging AI agent landscape, offering a way to ground LLMs in your own verifiable data.
+                - generic [ref=e1644]:
+                  - generic [ref=e1645]: ▲ 2
+                  - generic [ref=e1646]: ◇ 0
+                  - generic [ref=e1647]: Fresh
+              - link "github.com preview" [ref=e1648] [cursor=pointer]:
+                - /url: https://github.com/Paul-Kyle/palinode
+                - img "github.com preview" [ref=e1649]
+            - generic [ref=e1651]:
+              - generic [ref=e1652]:
+                - generic [ref=e1653]: 🍅
+                - generic [ref=e1654]: "78"
+              - generic [ref=e1655]:
+                - 'link "Show HN: Host Infinite Python Services" [ref=e1656] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47693214
+                - link "phemeral.dev ↗" [ref=e1657] [cursor=pointer]:
+                  - /url: https://phemeral.dev/docs
+                - paragraph [ref=e1658]: This project offers a clever take on hosting Python services, letting you spin up serverless functions for free, indefinitely, with a focus on simplicity. It's a neat way to prototype and deploy lightweight Python APIs without the usual cloud wrestling.
+                - generic [ref=e1659]:
+                  - generic [ref=e1660]: ▲ 1
+                  - generic [ref=e1661]: ◇ 0
+                  - generic [ref=e1662]: Fresh
+              - link "phemeral.dev preview" [ref=e1663] [cursor=pointer]:
+                - /url: https://phemeral.dev/docs
+                - img "phemeral.dev preview" [ref=e1664]
+            - generic [ref=e1666]:
+              - generic [ref=e1667]:
+                - generic [ref=e1668]: 🍅
+                - generic [ref=e1669]: "78"
+              - generic [ref=e1670]:
+                - 'link "Show HN: Prompt injection detector beats ProtectAI by 19% accuracy, 8.9x smaller" [ref=e1671] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47692952
+                - link "huggingface.co ↗" [ref=e1672] [cursor=pointer]:
+                  - /url: https://huggingface.co/hlyn/prompt-injection-judge-deberta-70m
+                - paragraph [ref=e1673]: This HN poster has built a prompt injection detector that's both more accurate and significantly smaller than a commercial competitor, a neat win for anyone dabbling in LLM security. It's a solid step forward in making LLM defense more accessible.
+                - generic [ref=e1674]:
+                  - generic [ref=e1675]: ▲ 3
+                  - generic [ref=e1676]: ◇ 2
+                  - generic [ref=e1677]: Fresh
+              - link "huggingface.co preview" [ref=e1678] [cursor=pointer]:
+                - /url: https://huggingface.co/hlyn/prompt-injection-judge-deberta-70m
+                - img "huggingface.co preview" [ref=e1679]
+            - generic [ref=e1681]:
+              - generic [ref=e1682]:
+                - generic [ref=e1683]: 🍅
+                - generic [ref=e1684]: "78"
+              - generic [ref=e1685]:
+                - 'link "Show HN: I built a personal corporation of AI agents that runs on your PC" [ref=e1686] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47692333
+                - link "github.com ↗" [ref=e1687] [cursor=pointer]:
+                  - /url: https://github.com/re-marked/claude-corp
+                - paragraph [ref=e1688]: This project lets you spin up a whole 'corporation' of AI agents on your local machine, each with a distinct role, to collaborate on tasks like writing code or planning projects. It's a fascinating, albeit early, glimpse into autonomous AI teamwork, moving beyond single-prompt interactions.
+                - generic [ref=e1689]:
+                  - generic [ref=e1690]: ▲ 2
+                  - generic [ref=e1691]: ◇ 0
+                  - generic [ref=e1692]: Fresh
+              - link "github.com preview" [ref=e1693] [cursor=pointer]:
+                - /url: https://github.com/re-marked/claude-corp
+                - img "github.com preview" [ref=e1694]
+            - generic [ref=e1696]:
+              - generic [ref=e1697]:
+                - generic [ref=e1698]: 🍅
+                - generic [ref=e1699]: "78"
+              - generic [ref=e1700]:
+                - 'link "Show HN: Interactive first-principles climate physics simulation with explainer" [ref=e1701] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47691681
+                - link "earth.crackalamoo.com ↗" [ref=e1702] [cursor=pointer]:
+                  - /url: https://earth.crackalamoo.com
+                - paragraph [ref=e1703]: This is a beautifully interactive way to explore the fundamental physics of our planet's climate, letting you tweak variables and see the ripple effects. While it's not going to replace your climate model for serious research, it's a fantastic educational tool that makes complex science feel accessible and, dare I say, fun.
+                - generic [ref=e1704]:
+                  - generic [ref=e1705]: ▲ 1
+                  - generic [ref=e1706]: ◇ 0
+                  - generic [ref=e1707]: Fresh
+              - link "earth.crackalamoo.com preview" [ref=e1708] [cursor=pointer]:
+                - /url: https://earth.crackalamoo.com
+                - img "earth.crackalamoo.com preview" [ref=e1709]
+            - generic [ref=e1711]:
+              - generic [ref=e1712]:
+                - generic [ref=e1713]: 🍅
+                - generic [ref=e1714]: "78"
+              - generic [ref=e1715]:
+                - 'link "Show HN: Load huge CSVs/XLSX files without crashing your computer" [ref=e1716] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47691614
+                - link "viztab.com ↗" [ref=e1717] [cursor=pointer]:
+                  - /url: https://viztab.com
+                - paragraph [ref=e1718]: This VizTab project tackles the frustrating reality of handling massive CSV and XLSX files by cleverly offloading the heavy lifting to the browser using WebAssembly, allowing you to actually interact with your data without your machine groaning in protest.
+                - generic [ref=e1719]:
+                  - generic [ref=e1720]: ▲ 3
+                  - generic [ref=e1721]: ◇ 0
+                  - generic [ref=e1722]: Fresh
+              - link "viztab.com preview" [ref=e1723] [cursor=pointer]:
+                - /url: https://viztab.com
+                - img "viztab.com preview" [ref=e1724]
+            - generic [ref=e1726]:
+              - generic [ref=e1727]:
+                - generic [ref=e1728]: 🍅
+                - generic [ref=e1729]: "78"
+              - generic [ref=e1730]:
+                - 'link "Show HN: OS Megakernel that match M5 Max Tok/w at 2x the Throughput on RTX 3090" [ref=e1731] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47691182
+                - link "github.com ↗" [ref=e1732] [cursor=pointer]:
+                  - /url: https://github.com/Luce-Org/luce-megakernel
+                - paragraph [ref=e1733]: This project claims to be an OS megakernel that absolutely *crushes* the throughput of a top-tier GPU for a specific inference task, outperforming a powerful consumer chip by 2x. It's a bold claim, and if true, it's a massive feat of low-level engineering that could have serious implications for AI hardware acceleration.
+                - generic [ref=e1734]:
+                  - generic [ref=e1735]: ▲ 5
+                  - generic [ref=e1736]: ◇ 1
+                  - generic [ref=e1737]: Fresh
+              - link "github.com preview" [ref=e1738] [cursor=pointer]:
+                - /url: https://github.com/Luce-Org/luce-megakernel
+                - img "github.com preview" [ref=e1739]
+            - generic [ref=e1741]:
+              - generic [ref=e1742]:
+                - generic [ref=e1743]: 🍅
+                - generic [ref=e1744]: "78"
+              - generic [ref=e1745]:
+                - 'link "Show HN: Idt – A Swiss Army Knife for UUID, ULID, Snowflake, and More" [ref=e1746] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47690138
+                - link "github.com ↗" [ref=e1747] [cursor=pointer]:
+                  - /url: https://github.com/sh-cho/idt
+                - paragraph [ref=e1748]: This is a beautifully crafted CLI tool that elegantly solves the surprisingly common problem of managing and converting various unique ID formats. If you've ever found yourself wrestling with UUIDs, ULIDs, or Snowflake IDs, this is the elegant, no-nonsense Swiss Army knife you didn't know you needed.
+                - generic [ref=e1749]:
+                  - generic [ref=e1750]: ▲ 2
+                  - generic [ref=e1751]: ◇ 2
+                  - generic [ref=e1752]: Fresh
+              - link "github.com preview" [ref=e1753] [cursor=pointer]:
+                - /url: https://github.com/sh-cho/idt
+                - img "github.com preview" [ref=e1754]
+          - button "+ 137 more" [ref=e1755] [cursor=pointer]
+        - generic [ref=e1756]:
+          - heading "April 7 · 32 projects" [level=3] [ref=e1757]
+          - generic [ref=e1758]:
+            - generic [ref=e1760]:
+              - generic [ref=e1761]:
+                - generic [ref=e1762]: 🍅
+                - generic [ref=e1763]: "78"
+              - generic [ref=e1764]:
+                - 'link "Show HN: Onepilot – Multi-agent orchestration from iPhone over native SSH" [ref=e1765] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47679890
+                - link "onepilotapp.com ↗" [ref=e1766] [cursor=pointer]:
+                  - /url: https://onepilotapp.com
+                - paragraph [ref=e1767]: Onepilot offers a surprisingly elegant way to manage and orchestrate multiple SSH agents directly from your iPhone, turning your phone into a surprisingly powerful remote server management tool. It's a clever blend of necessity and delightful engineering for anyone who lives in the terminal.
+                - generic [ref=e1768]:
+                  - generic [ref=e1769]: ▲ 4
+                  - generic [ref=e1770]: ◇ 0
+                  - generic [ref=e1771]: Fresh
+              - link "onepilotapp.com preview" [ref=e1772] [cursor=pointer]:
+                - /url: https://onepilotapp.com
+                - img "onepilotapp.com preview" [ref=e1773]
+            - generic [ref=e1775]:
+              - generic [ref=e1776]:
+                - generic [ref=e1777]: 🍅
+                - generic [ref=e1778]: "70"
+              - generic [ref=e1779]:
+                - 'link "Show HN: Visualize token entropy in a tiny in-browser LLM" [ref=e1780] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47680568
+                - link "tonkotsu-ai.github.io ↗" [ref=e1781] [cursor=pointer]:
+                  - /url: https://tonkotsu-ai.github.io/prism/
+                - paragraph [ref=e1782]: This Show HN is a surprisingly addictive visualizer for token entropy in a tiny in-browser LLM, turning abstract AI concepts into a mesmerizing, colorful dance that sparks genuine curiosity about how these models actually work. It's like a digital lava lamp for your neural network dreams.
+                - generic [ref=e1783]:
+                  - generic [ref=e1784]: ▲ 1
+                  - generic [ref=e1785]: ◇ 1
+                  - generic [ref=e1786]: Fresh
+              - link "tonkotsu-ai.github.io preview" [ref=e1787] [cursor=pointer]:
+                - /url: https://tonkotsu-ai.github.io/prism/
+                - img "tonkotsu-ai.github.io preview" [ref=e1788]
+            - generic [ref=e1790]:
+              - generic [ref=e1791]:
+                - generic [ref=e1792]: 🍅
+                - generic [ref=e1793]: "70"
+              - generic [ref=e1794]:
+                - 'link "Show HN: Whirligig" [ref=e1795] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47679892
+                - link "whirligig.live ↗" [ref=e1796] [cursor=pointer]:
+                  - /url: https://whirligig.live
+                - paragraph [ref=e1797]: Whirligig is a surprisingly potent browser-based MIDI sequencer that feels like a modern take on those old-school tracker music tools, but with a slick, visual twist.
+                - generic [ref=e1798]:
+                  - generic [ref=e1799]: ▲ 1
+                  - generic [ref=e1800]: ◇ 1
+                  - generic [ref=e1801]: Fresh
+              - link "whirligig.live preview" [ref=e1802] [cursor=pointer]:
+                - /url: https://whirligig.live
+                - img "whirligig.live preview" [ref=e1803]
+            - generic [ref=e1805]:
+              - generic [ref=e1806]:
+                - generic [ref=e1807]: 🍿
+                - generic [ref=e1808]: "68"
+              - generic [ref=e1809]:
+                - 'link "Show HN: Open Browser Control – drive your real Chrome from any MCP client" [ref=e1810] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47682485
+                - link "github.com ↗" [ref=e1811] [cursor=pointer]:
+                  - /url: https://github.com/smankoo/open-browser-control
+                - paragraph [ref=e1812]: This project lets you puppet your actual Chrome browser from another application, essentially building custom browser automation tools without the usual complexity. It's like having a programmable remote control for the web.
+                - generic [ref=e1813]:
+                  - generic [ref=e1814]: ▲ 2
+                  - generic [ref=e1815]: ◇ 0
+                  - generic [ref=e1816]: Mid
+              - link "github.com preview" [ref=e1817] [cursor=pointer]:
+                - /url: https://github.com/smankoo/open-browser-control
+                - img "github.com preview" [ref=e1818]
+            - generic [ref=e1820]:
+              - generic [ref=e1821]:
+                - generic [ref=e1822]: 🍿
+                - generic [ref=e1823]: "68"
+              - generic [ref=e1824]:
+                - 'link "Show HN: Gemma 4 Multimodal Fine-Tuner for Apple Silicon" [ref=e1825] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47680309
+                - link "github.com ↗" [ref=e1826] [cursor=pointer]:
+                  - /url: https://github.com/mattmireles/gemma-tuner-multimodal
+                - paragraph [ref=e1827]: This looks like a really cool weekend project for anyone playing with Gemma on their Mac! It lets you fine-tune multimodal models locally on Apple Silicon, which is pretty neat if you're into tinkering with AI without needing cloud GPUs.
+                - generic [ref=e1828]:
+                  - generic [ref=e1829]: ▲ 234
+                  - generic [ref=e1830]: ◇ 28
+                  - generic [ref=e1831]: Mid
+              - link "github.com preview" [ref=e1832] [cursor=pointer]:
+                - /url: https://github.com/mattmireles/gemma-tuner-multimodal
+                - img "github.com preview" [ref=e1833]
+            - generic [ref=e1835]:
+              - generic [ref=e1836]:
+                - generic [ref=e1837]: 🍿
+                - generic [ref=e1838]: "65"
+              - generic [ref=e1839]:
+                - 'link "Show HN: A small neural net asks if physical law is inevitable for any observer" [ref=e1840] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47680408
+                - paragraph [ref=e1841]: This is a fascinatingly abstract experiment that uses a small neural net to probe the philosophical question of whether physical laws are a fundamental reality or just an emergent property for conscious observers. It's less a product and more a thought-provoking demo, showcasing a creative application of AI to deep philosophical inquiry.
+                - generic [ref=e1842]:
+                  - generic [ref=e1843]: ▲ 1
+                  - generic [ref=e1844]: ◇ 0
+                  - generic [ref=e1845]: Mid
+            - generic [ref=e1847]:
+              - generic [ref=e1848]:
+                - generic [ref=e1849]: 🍿
+                - generic [ref=e1850]: "62"
+              - generic [ref=e1851]:
+                - 'link "Show HN: Clify – generate a CLI from any API docs, use it as agent tooling" [ref=e1852] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47682217
+                - link "github.com ↗" [ref=e1853] [cursor=pointer]:
+                  - /url: https://github.com/derrickko/clify
+                - paragraph [ref=e1854]: Clify lets you turn any API docs into a usable CLI, which is a neat trick for faster prototyping and exploration, but it feels like a really fancy tool for something that might be a bit too niche to become a daily driver for most.
+                - generic [ref=e1855]:
+                  - generic [ref=e1856]: ▲ 5
+                  - generic [ref=e1857]: ◇ 0
+                  - generic [ref=e1858]: Mid
+              - link "github.com preview" [ref=e1859] [cursor=pointer]:
+                - /url: https://github.com/derrickko/clify
+                - img "github.com preview" [ref=e1860]
+            - generic [ref=e1862]:
+              - generic [ref=e1863]:
+                - generic [ref=e1864]: 🍿
+                - generic [ref=e1865]: "62"
+              - generic [ref=e1866]:
+                - 'link "Show HN: No AI tool could annotate my files and cite text accurately" [ref=e1867] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47682055
+                - link "old.reddit.com ↗" [ref=e1868] [cursor=pointer]:
+                  - /url: https://old.reddit.com/r/LLMDevs/comments/1sbusn8/new_pdfviewer_notes_panel_search_downloader_tool/
+                - paragraph [ref=e1869]: This project tackles the surprisingly thorny problem of annotating PDFs and getting accurate citations, something even fancy AI tools struggle with. It's a focused PDF viewer with a neat notes panel and search, aiming to be your go-to for digging into documents without the AI hallucination headache.
+                - generic [ref=e1870]:
+                  - generic [ref=e1871]: ▲ 3
+                  - generic [ref=e1872]: ◇ 0
+                  - generic [ref=e1873]: Mid
+              - link "old.reddit.com preview" [ref=e1874] [cursor=pointer]:
+                - /url: https://old.reddit.com/r/LLMDevs/comments/1sbusn8/new_pdfviewer_notes_panel_search_downloader_tool/
+                - img "old.reddit.com preview" [ref=e1875]
+            - generic [ref=e1877]:
+              - generic [ref=e1878]:
+                - generic [ref=e1879]: 🍿
+                - generic [ref=e1880]: "62"
+              - generic [ref=e1881]:
+                - 'link "Show HN: Mo – checks GitHub PRs against decisions approved in Slack" [ref=e1882] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47681602
+                - link "motionode.com ↗" [ref=e1883] [cursor=pointer]:
+                  - /url: https://motionode.com/index
+                - paragraph [ref=e1884]: This is a clever little tool that bridges the gap between your team's Slack decisions and your GitHub PRs. If you've ever felt like conversations about PR requirements get lost in the chat ether, this might actually save you some headaches.
+                - generic [ref=e1885]:
+                  - generic [ref=e1886]: ▲ 10
+                  - generic [ref=e1887]: ◇ 3
+                  - generic [ref=e1888]: Mid
+              - link "motionode.com preview" [ref=e1889] [cursor=pointer]:
+                - /url: https://motionode.com/index
+                - img "motionode.com preview" [ref=e1890]
+            - generic [ref=e1892]:
+              - generic [ref=e1893]:
+                - generic [ref=e1894]: 🍿
+                - generic [ref=e1895]: "62"
+              - generic [ref=e1896]:
+                - 'link "Show HN: Alap – turn any link into a menu of destinations" [ref=e1897] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47681400
+                - link "alap.info ↗" [ref=e1898] [cursor=pointer]:
+                  - /url: https://alap.info
+                - paragraph [ref=e1899]: Alap is a clever idea that aims to declutter your browser tab frenzy by creating a dynamic, context-aware menu from any link. Think of it as a smart bookmarking tool that anticipates where you *might* want to go next based on the content of the page you're on.
+                - generic [ref=e1900]:
+                  - generic [ref=e1901]: ▲ 1
+                  - generic [ref=e1902]: ◇ 0
+                  - generic [ref=e1903]: Mid
+              - link "alap.info preview" [ref=e1904] [cursor=pointer]:
+                - /url: https://alap.info
+                - img "alap.info preview" [ref=e1905]
+          - button "+ 22 more" [ref=e1906] [cursor=pointer]
+  - button "Open Next.js Dev Tools" [ref=e1912] [cursor=pointer]:
+    - img [ref=e1913]

@@ -1,0 +1,794 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e5]:
+          - generic [ref=e6]: 🍅
+          - generic [ref=e7]: Show HN Reviews
+        - button "Apr" [ref=e9] [cursor=pointer]
+    - generic [ref=e11]:
+      - heading "April 2026" [level=1] [ref=e12]
+      - paragraph [ref=e13]: AI-reviewed Show HN projects — rated like movies
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - generic [ref=e16]: "854"
+          - generic [ref=e17]: Projects
+        - generic [ref=e19]:
+          - generic [ref=e20]: 🍅
+          - generic [ref=e21]: "0"
+          - generic [ref=e22]: Fresh
+        - generic [ref=e24]:
+          - generic [ref=e25]: 🤢
+          - generic [ref=e26]: "42"
+          - generic [ref=e27]: Rotten
+        - generic [ref=e29]:
+          - generic [ref=e30]: 47%
+          - generic [ref=e31]: Avg Score
+    - generic [ref=e33]:
+      - generic [ref=e34]:
+        - generic [ref=e35]: Sort by
+        - button "Score ↓" [ref=e36] [cursor=pointer]
+        - button "Upvotes" [ref=e37] [cursor=pointer]
+        - button "Comments" [ref=e38] [cursor=pointer]
+        - button "Date" [ref=e39] [cursor=pointer]
+      - generic [ref=e40]:
+        - generic [ref=e41]:
+          - heading "Apr 14 · 104 projects" [level=3] [ref=e42]
+          - generic [ref=e43]:
+            - generic [ref=e45]:
+              - button "🍿 65%" [ref=e46] [cursor=pointer]:
+                - generic [ref=e47]: 🍿
+                - generic [ref=e48]: 65%
+              - generic [ref=e49]:
+                - generic [ref=e50]
+                - generic [ref=e53]: AI researchers, developers building complex LLM agents
+                - paragraph [ref=e54]: This project presents a novel approach to agent memory by integrating a vector database with a retrieval mechanism for long-term context. It claims high performance on a specific benchmark.
+                - generic [ref=e55]
+            - generic [ref=e64]:
+              - button "🍿 58%" [ref=e65] [cursor=pointer]:
+                - generic [ref=e66]: 🍿
+                - generic [ref=e67]: 58%
+              - generic [ref=e68]:
+                - generic [ref=e69]
+                - generic [ref=e72]: Go developers writing integration tests needing external dependencies.
+                - paragraph [ref=e73]: This is an updated version of dockertest, a Go library to help developers run integration tests against Docker containers.
+                - generic [ref=e74]
+            - generic [ref=e83]:
+              - button "🍿 55%" [ref=e84] [cursor=pointer]:
+                - generic [ref=e85]: 🍿
+                - generic [ref=e86]: 55%
+              - generic [ref=e87]:
+                - generic [ref=e88]
+                - generic [ref=e91]: AI researchers and developers working with speech processing, specifically those needing enhanced accuracy or Chinese language support.
+                - paragraph [ref=e92]: This project integrates Qwen3's ASR and forced alignment models into WhisperX, a fork of OpenAI's Whisper model.
+                - generic [ref=e93]
+            - generic [ref=e102]:
+              - button "🍿 55%" [ref=e103] [cursor=pointer]:
+                - generic [ref=e104]: 🍿
+                - generic [ref=e105]: 55%
+              - generic [ref=e106]:
+                - generic [ref=e107]
+                - generic [ref=e110]: Backend engineers managing distributed systems with message queues
+                - paragraph [ref=e111]: LoadLens visualizes queue behavior to diagnose overload issues, claiming it's better than traditional queuing solutions.
+                - generic [ref=e112]
+            - generic [ref=e121]:
+              - button "🍿 55%" [ref=e122] [cursor=pointer]:
+                - generic [ref=e123]: 🍿
+                - generic [ref=e124]: 55%
+              - generic [ref=e125]:
+                - generic [ref=e126]
+                - generic [ref=e129]: Privacy-conscious desktop users, academics, journalists, or individuals needing offline transcription.
+                - paragraph [ref=e130]: A local-first, privacy-focused desktop voice-to-text application that performs transcription entirely on the user's device.
+                - generic [ref=e131]
+            - generic [ref=e140]:
+              - button "🍿 55%" [ref=e141] [cursor=pointer]:
+                - generic [ref=e142]: 🍿
+                - generic [ref=e143]: 55%
+              - generic [ref=e144]:
+                - generic [ref=e145]
+                - generic [ref=e148]: Geospatial developers, map data engineers
+                - paragraph [ref=e149]: A browser-based tool that visualizes vector tiles from a provided URL, useful for inspecting map data formats.
+                - generic [ref=e150]
+            - generic [ref=e159]:
+              - button "🍿 55%" [ref=e160] [cursor=pointer]:
+                - generic [ref=e161]: 🍿
+                - generic [ref=e162]: 55%
+              - generic [ref=e163]:
+                - generic [ref=e164]
+                - generic [ref=e167]: Frustrated gamers seeking discovery
+                - paragraph [ref=e168]: A web app that recommends games based on desired player experiences rather than traditional genres, visualizing these experiences on a map.
+                - generic [ref=e169]
+            - generic [ref=e178]:
+              - button "🍿 55%" [ref=e179] [cursor=pointer]:
+                - generic [ref=e180]: 🍿
+                - generic [ref=e181]: 55%
+              - generic [ref=e182]:
+                - generic [ref=e183]
+                - generic [ref=e186]: Product managers and founders in B2B SaaS companies with established customer bases.
+                - paragraph [ref=e187]: This tool attempts to prioritize product features by estimating their potential revenue impact, positioning itself as a data-driven alternative to gut feeling.
+                - generic [ref=e188]
+            - generic [ref=e197]:
+              - button "🍿 55%" [ref=e198] [cursor=pointer]:
+                - generic [ref=e199]: 🍿
+                - generic [ref=e200]: 55%
+              - generic [ref=e201]:
+                - generic [ref=e202]
+                - generic [ref=e205]: Mac users running resource-intensive local AI inference
+                - paragraph [ref=e206]: This project provides a local watchdog for AI model inference on Apple Silicon, intended to prevent excessive resource consumption. It's a niche tool for individuals running AI models locally on Macs.
+                - generic [ref=e207]
+            - generic [ref=e216]:
+              - button "🍿 55%" [ref=e217] [cursor=pointer]:
+                - generic [ref=e218]: 🍿
+                - generic [ref=e219]: 55%
+              - generic [ref=e220]:
+                - 'link "Show HN: OpenParallax: OS-level privilege separation for AI agent execution" [ref=e222] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47765871
+                - generic [ref=e223]: Security-conscious AI developers and infrastructure engineers.
+                - paragraph [ref=e224]: This project implements OS-level privilege separation for running AI agents, aiming to isolate them and prevent them from accessing unauthorized system resources. It's a technical solution to a growing security concern.
+                - generic [ref=e225]
+          - button "Load 94 more" [ref=e233] [cursor=pointer]
+        - generic [ref=e234]:
+          - heading "Apr 13 · 124 projects" [level=3] [ref=e235]
+          - generic [ref=e236]:
+            - generic [ref=e238]:
+              - button "🍿 60%" [ref=e239] [cursor=pointer]:
+                - generic [ref=e240]: 🍿
+                - generic [ref=e241]: 60%
+              - generic [ref=e242]:
+                - generic [ref=e243]
+                - generic [ref=e246]: Tolkien enthusiasts, casual lore explorers
+                - paragraph [ref=e247]: A website that uses AI to generate endless narration and summaries of J.R.R. Tolkien's works, offering a novel way to consume familiar lore.
+                - generic [ref=e248]
+            - generic [ref=e257]:
+              - button "🍿 55%" [ref=e258] [cursor=pointer]:
+                - generic [ref=e259]: 🍿
+                - generic [ref=e260]: 55%
+              - generic [ref=e261]:
+                - generic [ref=e262]
+                - generic [ref=e265]: Operations managers, small business owners, and project managers seeking to automate repetitive tasks.
+                - paragraph [ref=e266]: Mercury is a no-code platform for designing, managing, and automating workflows involving both human tasks and AI agents, aiming to orchestrate complex processes.
+                - generic [ref=e267]
+            - generic [ref=e276]:
+              - button "🍿 55%" [ref=e277] [cursor=pointer]:
+                - generic [ref=e278]: 🍿
+                - generic [ref=e279]: 55%
+              - generic [ref=e280]:
+                - generic [ref=e281]
+                - generic [ref=e284]: macOS users needing quick on-screen lookups
+                - paragraph [ref=e285]: A macOS app that lets users circle text on their screen to quickly search for it in their browser or translate it.
+                - generic [ref=e286]
+            - generic [ref=e295]:
+              - button "🍿 55%" [ref=e296] [cursor=pointer]:
+                - generic [ref=e297]: 🍿
+                - generic [ref=e298]: 55%
+              - generic [ref=e299]:
+                - generic [ref=e300]
+                - generic [ref=e303]: Content creators, researchers, journalists, students
+                - paragraph [ref=e304]: This project provides AI-generated transcripts for YouTube videos and Apple Podcasts, with features like speaker identification and summarization, aiming to improve content accessibility and searchability.
+                - generic [ref=e305]
+            - generic [ref=e314]:
+              - button "🍿 55%" [ref=e315] [cursor=pointer]:
+                - generic [ref=e316]: 🍿
+                - generic [ref=e317]: 55%
+              - generic [ref=e318]:
+                - generic [ref=e319]
+                - generic [ref=e322]: Network engineers, IT professionals, and consultants involved in WiFi deployment and troubleshooting.
+                - paragraph [ref=e323]: An open-source tool for visually planning WiFi networks, incorporating physics-based wall attenuation for more accurate signal prediction.
+                - generic [ref=e324]
+            - generic [ref=e333]:
+              - button "🍿 55%" [ref=e334] [cursor=pointer]:
+                - generic [ref=e335]: 🍿
+                - generic [ref=e336]: 55%
+              - generic [ref=e337]:
+                - generic [ref=e338]
+                - generic [ref=e341]: Mobile developers evaluating LLM deployment strategies
+                - paragraph [ref=e342]: This project benchmarks on-device versus cloud LLMs for agentic tool calling within an iOS app, aiming to inform development choices.
+                - generic [ref=e343]
+            - generic [ref=e352]:
+              - button "🍿 55%" [ref=e353] [cursor=pointer]:
+                - generic [ref=e354]: 🍿
+                - generic [ref=e355]: 55%
+              - generic [ref=e356]:
+                - generic [ref=e357]
+                - generic [ref=e360]: LLM researchers and developers evaluating model performance
+                - paragraph [ref=e361]: This project benchmarks Gemma's 2B model against its 12B counterpart on multi-turn conversational tasks, showing surprising outperformance by the smaller model.
+                - generic [ref=e362]
+            - generic [ref=e371]:
+              - button "🍿 55%" [ref=e372] [cursor=pointer]:
+                - generic [ref=e373]: 🍿
+                - generic [ref=e374]: 55%
+              - generic [ref=e375]:
+                - generic [ref=e376]
+                - generic [ref=e379]: AI/ML Engineers, Data Scientists, CTOs evaluating RAG.
+                - paragraph [ref=e380]: A web-based calculator that attempts to quantify the infrastructure costs associated with Retrieval Augmented Generation (RAG) systems.
+                - generic [ref=e381]
+            - generic [ref=e390]:
+              - button "🍿 55%" [ref=e391] [cursor=pointer]:
+                - generic [ref=e392]: 🍿
+                - generic [ref=e393]: 55%
+              - generic [ref=e394]:
+                - generic [ref=e395]
+                - generic [ref=e398]: Algorithmic traders in prediction markets
+                - paragraph [ref=e399]: "An open-source algorithm for developing strategies in prediction markets, claiming #2 placement in a challenge."
+                - generic [ref=e400]
+            - generic [ref=e409]:
+              - button "🍿 55%" [ref=e410] [cursor=pointer]:
+                - generic [ref=e411]: 🍿
+                - generic [ref=e412]: 55%
+              - generic [ref=e413]:
+                - generic [ref=e414]
+                - generic [ref=e417]: Senior Django developers and architects
+                - paragraph [ref=e418]: A curated set of Django best practices and architectural patterns derived from 15 years of production experience, presented as a personal opinionated guide and code examples.
+                - generic [ref=e419]
+          - button "Load 114 more" [ref=e427] [cursor=pointer]
+        - generic [ref=e428]:
+          - heading "Apr 12 · 92 projects" [level=3] [ref=e429]
+          - generic [ref=e430]:
+            - generic [ref=e432]:
+              - button "🍿 65%" [ref=e433] [cursor=pointer]:
+                - generic [ref=e434]: 🍿
+                - generic [ref=e435]: 65%
+              - generic [ref=e436]:
+                - generic [ref=e437]
+                - generic [ref=e440]: Professionals and researchers using AI for document analysis
+                - paragraph [ref=e441]: This project provides a tool to make Large Language Models like Claude cite specific evidence from PDF documents, a helpful feature for verifying AI-generated summaries or answers.
+                - generic [ref=e442]
+            - generic [ref=e451]:
+              - button "🍿 60%" [ref=e452] [cursor=pointer]:
+                - generic [ref=e453]: 🍿
+                - generic [ref=e454]: 60%
+              - generic [ref=e455]:
+                - generic [ref=e456]
+                - generic [ref=e459]: Data engineers and analysts dealing with real-time, high-volume event streams needing interactive analysis.
+                - paragraph [ref=e460]: ModoLAP provides a real-time OLAP engine aiming for lower latency and higher throughput compared to traditional solutions like Apache Druid or ClickHouse for analytical workloads.
+                - generic [ref=e461]
+            - generic [ref=e470]:
+              - button "🍿 55%" [ref=e471] [cursor=pointer]:
+                - generic [ref=e472]: 🍿
+                - generic [ref=e473]: 55%
+              - generic [ref=e474]:
+                - generic [ref=e475]
+                - generic [ref=e478]: AI developers testing Claude agents
+                - paragraph [ref=e479]: A web UI for interacting with Claude's managed agents, primarily for developers experimenting with AI agent workflows.
+                - generic [ref=e480]
+            - generic [ref=e489]:
+              - button "🍿 55%" [ref=e490] [cursor=pointer]:
+                - generic [ref=e491]: 🍿
+                - generic [ref=e492]: 55%
+              - generic [ref=e493]:
+                - generic [ref=e494]
+                - generic [ref=e497]: Backend engineers managing PostgreSQL
+                - paragraph [ref=e498]: NeonD is an open-source control plane for PostgreSQL that focuses on developer experience, aiming to simplify database management tasks for developers.
+                - generic [ref=e499]
+            - generic [ref=e508]:
+              - button "🍿 55%" [ref=e509] [cursor=pointer]:
+                - generic [ref=e510]: 🍿
+                - generic [ref=e511]: 55%
+              - generic [ref=e512]:
+                - generic [ref=e513]
+                - generic [ref=e516]: Job seekers in tech with complex compensation packages
+                - paragraph [ref=e517]: A web application that attempts to standardize and compare job offers by factoring in more than just base salary, including equity, bonuses, and benefits.
+                - generic [ref=e518]
+            - generic [ref=e527]:
+              - button "🍿 55%" [ref=e528] [cursor=pointer]:
+                - generic [ref=e529]: 🍿
+                - generic [ref=e530]: 55%
+              - generic [ref=e531]:
+                - generic [ref=e532]
+                - generic [ref=e535]: macOS users seeking enhanced dock functionality and minimalists.
+                - paragraph [ref=e536]: A macOS taskbar replacement that offers a more organized and customizable application launcher and status indicator than the default Dock and Menu Bar.
+                - generic [ref=e537]
+            - generic [ref=e546]:
+              - button "🍿 55%" [ref=e547] [cursor=pointer]:
+                - generic [ref=e548]: 🍿
+                - generic [ref=e549]: 55%
+              - generic [ref=e550]:
+                - generic [ref=e551]
+                - generic [ref=e554]: Data engineers, backend developers managing state
+                - paragraph [ref=e555]: A versioned datastore using S3 as a backend, offering branching and time-travel capabilities akin to Git for data. It's essentially a data warehousing primitive.
+                - generic [ref=e556]
+            - generic [ref=e565]:
+              - button "🍿 55%" [ref=e566] [cursor=pointer]:
+                - generic [ref=e567]: 🍿
+                - generic [ref=e568]: 55%
+              - generic [ref=e569]:
+                - generic [ref=e570]
+                - generic [ref=e573]: Backend engineers managing distributed systems with RabbitMQ, specifically those dealing with message failures.
+                - paragraph [ref=e574]: QueueForge is a self-hosted web UI for managing RabbitMQ dead-letter queues, enabling retries and dead-lettering.
+                - generic [ref=e575]
+            - generic [ref=e584]:
+              - button "🍿 55%" [ref=e585] [cursor=pointer]:
+                - generic [ref=e586]: 🍿
+                - generic [ref=e587]: 55%
+              - generic [ref=e588]:
+                - generic [ref=e589]
+                - generic [ref=e592]: AI developers/researchers integrating file diffs
+                - paragraph [ref=e593]: This project provides shareable preview links for files and their differences, intended for use in AI agent workflows.
+                - generic [ref=e594]
+            - generic [ref=e603]:
+              - button "🍿 55%" [ref=e604] [cursor=pointer]:
+                - generic [ref=e605]: 🍿
+                - generic [ref=e606]: 55%
+              - generic [ref=e607]:
+                - generic [ref=e608]
+                - generic [ref=e611]: Developers running distributed or concurrent AI agent tasks
+                - paragraph [ref=e612]: A command-line interface that displays the real-time output of multiple coding agent processes, allowing users to monitor their execution status.
+                - generic [ref=e613]
+          - button "Load 82 more" [ref=e621] [cursor=pointer]
+        - generic [ref=e622]:
+          - heading "Apr 11 · 73 projects" [level=3] [ref=e623]
+          - generic [ref=e624]:
+            - generic [ref=e626]:
+              - button "🍿 65%" [ref=e627] [cursor=pointer]:
+                - generic [ref=e628]: 🍿
+                - generic [ref=e629]: 65%
+              - generic [ref=e630]:
+                - generic [ref=e631]
+                - generic [ref=e634]: Database engineers, low-level systems developers
+                - paragraph [ref=e635]: This is a video explaining the internal workings of LSM trees, focusing on MemTables and Compaction, and the trade-offs in the 'Amplification Triangle'.
+                - generic [ref=e636]
+            - generic [ref=e645]:
+              - button "🍿 60%" [ref=e646] [cursor=pointer]:
+                - generic [ref=e647]: 🍿
+                - generic [ref=e648]: 60%
+              - generic [ref=e649]:
+                - generic [ref=e650]
+                - generic [ref=e653]: Backend engineers building complex distributed systems on Node.js/Bun.
+                - paragraph [ref=e654]: A JavaScript-based workflow engine for managing distributed tasks, leveraging Bun and embedded SQLite, marketed as a 'saga' solution.
+                - generic [ref=e655]
+            - generic [ref=e664]:
+              - button "🍿 55%" [ref=e665] [cursor=pointer]:
+                - generic [ref=e666]: 🍿
+                - generic [ref=e667]: 55%
+              - generic [ref=e668]:
+                - generic [ref=e669]
+                - generic [ref=e672]: Developers needing local STT inference
+                - paragraph [ref=e673]: This project offers a self-hostable Speech-to-Text service that emulates Deepgram's API, allowing users to run Whisper locally.
+                - generic [ref=e674]
+            - generic [ref=e683]:
+              - button "🍿 55%" [ref=e684] [cursor=pointer]:
+                - generic [ref=e685]: 🍿
+                - generic [ref=e686]: 55%
+              - generic [ref=e687]:
+                - generic [ref=e688]
+                - generic [ref=e691]: Developers needing private ASR, privacy-conscious users
+                - paragraph [ref=e692]: A Docker image that packages OpenAI's Whisper model into a self-hosted speech-to-text server, intended to be an alternative to cloud-based APIs.
+                - generic [ref=e693]
+            - generic [ref=e702]:
+              - button "🍿 55%" [ref=e703] [cursor=pointer]:
+                - generic [ref=e704]: 🍿
+                - generic [ref=e705]: 55%
+              - generic [ref=e706]:
+                - generic [ref=e707]
+                - generic [ref=e710]: AI researchers and developers building and testing complex AI coding agents
+                - paragraph [ref=e711]: This project introduces a 'recursive-mode' for AI coding agents, allowing them to iteratively refine their code based on feedback and self-correction, aiming to improve code quality and reduce human oversight.
+                - generic [ref=e712]
+            - generic [ref=e721]:
+              - button "🍿 55%" [ref=e722] [cursor=pointer]:
+                - generic [ref=e723]: 🍿
+                - generic [ref=e724]: 55%
+              - generic [ref=e725]:
+                - generic [ref=e726]
+                - generic [ref=e729]: LLM application developers, AI engineers
+                - paragraph [ref=e730]: This project offers a configurable memory system for LLM agents, allowing developers to control the level of detail stored and retrieved. It aims to optimize LLM agent performance and cost by managing context effectively.
+                - generic [ref=e731]
+            - generic [ref=e740]:
+              - button "🍿 55%" [ref=e741] [cursor=pointer]:
+                - generic [ref=e742]: 🍿
+                - generic [ref=e743]: 55%
+              - generic [ref=e744]:
+                - generic [ref=e745]
+                - generic [ref=e748]: Network administrators, IT support, hobbyist networkers
+                - paragraph [ref=e749]: A Go-based tool that scans local networks concurrently and displays results in a terminal UI.
+                - generic [ref=e750]
+            - generic [ref=e759]:
+              - button "🍿 55%" [ref=e760] [cursor=pointer]:
+                - generic [ref=e761]: 🍿
+                - generic [ref=e762]: 55%
+              - generic [ref=e763]:
+                - generic [ref=e764]
+                - generic [ref=e767]: Developers and small teams using multiple LLM APIs
+                - paragraph [ref=e768]: This project offers a free, self-hosted gateway for LLM APIs, featuring automatic failover between different providers. It aims to provide a resilient and potentially cost-saving access layer for developers consuming AI models.
+                - generic [ref=e769]
+            - generic [ref=e778]:
+              - button "🍿 55%" [ref=e779] [cursor=pointer]:
+                - generic [ref=e780]: 🍿
+                - generic [ref=e781]: 55%
+              - generic [ref=e782]:
+                - 'link "Show HN: Pardonned.com – A searchable database of US Pardons" [ref=e784] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47727960
+                - generic [ref=e785]: Legal professionals, researchers, journalists, individuals seeking pardon information.
+                - paragraph [ref=e786]: A searchable database of US pardons, offering a centralized way to find information that is otherwise fragmented and difficult to access.
+                - generic [ref=e787]
+            - generic [ref=e796]:
+              - button "🍿 55%" [ref=e797] [cursor=pointer]:
+                - generic [ref=e798]: 🍿
+                - generic [ref=e799]: 55%
+              - generic [ref=e800]:
+                - generic [ref=e801]
+                - generic [ref=e804]: CLI power users managing multiple long-running processes
+                - paragraph [ref=e805]: Dux allows users to run multiple TUI commands concurrently in a multiplexed terminal interface, focusing on agent-like multitasking for command-line operations.
+                - generic [ref=e806]
+          - button "Load 63 more" [ref=e814] [cursor=pointer]
+        - generic [ref=e815]:
+          - heading "Apr 10 · 110 projects" [level=3] [ref=e816]
+          - generic [ref=e817]:
+            - generic [ref=e819]:
+              - button "🍿 58%" [ref=e820] [cursor=pointer]:
+                - generic [ref=e821]: 🍿
+                - generic [ref=e822]: 58%
+              - generic [ref=e823]:
+                - generic [ref=e824]
+                - generic [ref=e827]: SMB owners/operators and their staff overloaded with administrative tasks
+                - paragraph [ref=e828]: Mantyx offers AI agents to automate business tasks, positioning itself as a solution for operational efficiency by handling repetitive workflows.
+                - generic [ref=e829]
+            - generic [ref=e838]:
+              - button "🍿 55%" [ref=e839] [cursor=pointer]:
+                - generic [ref=e840]: 🍿
+                - generic [ref=e841]: 55%
+              - generic [ref=e842]:
+                - generic [ref=e843]
+                - generic [ref=e846]: Frontend developers in web applications
+                - paragraph [ref=e847]: A JavaScript library that formats timestamps into human-readable relative time strings like '2 hours ago' or 'in 3 days', weighing just 1KB and requiring no external dependencies.
+                - generic [ref=e848]
+            - generic [ref=e857]:
+              - button "🍿 55%" [ref=e858] [cursor=pointer]:
+                - generic [ref=e859]: 🍿
+                - generic [ref=e860]: 55%
+              - generic [ref=e861]:
+                - generic [ref=e862]
+                - generic [ref=e865]: AI engineers, LLM Ops, Tooling developers
+                - paragraph [ref=e866]: This project offers a shared structured memory layer for AI coding tools, aiming to standardize how these tools interact with and remember project context. It's essentially a pluggable API for AI to access and process codebases.
+                - generic [ref=e867]
+            - generic [ref=e876]:
+              - button "🍿 55%" [ref=e877] [cursor=pointer]:
+                - generic [ref=e878]: 🍿
+                - generic [ref=e879]: 55%
+              - generic [ref=e880]:
+                - generic [ref=e881]
+                - generic [ref=e884]: AI developers, AI agent builders
+                - paragraph [ref=e885]: Sax.ai is a curated directory of APIs for AI agents and developers to discover and integrate with AI capabilities. It functions as a catalog of function-calling APIs.
+                - generic [ref=e886]
+            - generic [ref=e895]:
+              - button "🍿 55%" [ref=e896] [cursor=pointer]:
+                - generic [ref=e897]: 🍿
+                - generic [ref=e898]: 55%
+              - generic [ref=e899]:
+                - generic [ref=e900]
+                - generic [ref=e903]: Job seekers, particularly those who prefer offline tools or have privacy concerns with cloud-based solutions.
+                - paragraph [ref=e904]: An offline, desktop application for tracking job applications and building resumes. It addresses the pain of managing job searches locally.
+                - generic [ref=e905]
+            - generic [ref=e914]:
+              - button "🍿 55%" [ref=e915] [cursor=pointer]:
+                - generic [ref=e916]: 🍿
+                - generic [ref=e917]: 55%
+              - generic [ref=e918]:
+                - generic [ref=e919]
+                - generic [ref=e922]: Small manufacturing/craft businesses, local retailers with simple assembly.
+                - paragraph [ref=e923]: Kitted is a web-based inventory and production management tool for small businesses that don't need full-blown ERP systems.
+                - generic [ref=e924]
+            - generic [ref=e933]:
+              - button "🍿 55%" [ref=e934] [cursor=pointer]:
+                - generic [ref=e935]: 🍿
+                - generic [ref=e936]: 55%
+              - generic [ref=e937]:
+                - generic [ref=e938]
+                - generic [ref=e941]: Casual users and small businesses needing simple image edits.
+                - paragraph [ref=e942]: A web-based tool that removes image backgrounds using AI directly in the browser, avoiding server-side processing.
+                - generic [ref=e943]
+            - generic [ref=e952]:
+              - button "🍿 55%" [ref=e953] [cursor=pointer]:
+                - generic [ref=e954]: 🍿
+                - generic [ref=e955]: 55%
+              - generic [ref=e956]:
+                - generic [ref=e957]
+                - generic [ref=e960]: Infosec professionals and content creators needing to digest or disseminate technical talks.
+                - paragraph [ref=e961]: This project automates the summarization of cybersecurity conference talks into blog posts using AI, aiming to make dense technical content more accessible.
+                - generic [ref=e962]
+            - generic [ref=e971]:
+              - button "🍿 55%" [ref=e972] [cursor=pointer]:
+                - generic [ref=e973]: 🍿
+                - generic [ref=e974]: 55%
+              - generic [ref=e975]:
+                - generic [ref=e976]
+                - generic [ref=e979]: Data scientists, ML engineers, backend developers
+                - paragraph [ref=e980]: This is a Python SDK for multimodal vector search, aiming to be faster and more accurate than existing solutions. It enables searching across text, images, and potentially other modalities using vector embeddings.
+                - generic [ref=e981]
+            - generic [ref=e990]:
+              - button "🍿 55%" [ref=e991] [cursor=pointer]:
+                - generic [ref=e992]: 🍿
+                - generic [ref=e993]: 55%
+              - generic [ref=e994]:
+                - generic [ref=e995]
+                - generic [ref=e998]: macOS users needing quick OCR on screenshots
+                - paragraph [ref=e999]: LuxShot is an open-source macOS app that captures screenshots and extracts text using OCR, aiming to replace multiple utilities with a single, streamlined tool.
+                - generic [ref=e1000]
+          - button "Load 100 more" [ref=e1008] [cursor=pointer]
+        - generic [ref=e1009]:
+          - heading "Apr 9 · 158 projects" [level=3] [ref=e1010]
+          - generic [ref=e1011]:
+            - generic [ref=e1013]:
+              - button "🍿 65%" [ref=e1014] [cursor=pointer]:
+                - generic [ref=e1015]: 🍿
+                - generic [ref=e1016]: 65%
+              - generic [ref=e1017]:
+                - generic [ref=e1018]
+                - generic [ref=e1021]: AI researchers and developers focused on LLM capabilities
+                - paragraph [ref=e1022]: This project proposes a benchmark for evaluating long-term memory in AI models, an important but currently underserved area.
+                - generic [ref=e1023]
+            - generic [ref=e1032]:
+              - button "🍿 58%" [ref=e1033] [cursor=pointer]:
+                - generic [ref=e1034]: 🍿
+                - generic [ref=e1035]: 58%
+              - generic [ref=e1036]:
+                - generic [ref=e1037]
+                - generic [ref=e1040]: iOS/macOS developers seeking faster code generation/refactoring within their IDE.
+                - paragraph [ref=e1041]: This project leverages Apple Intelligence to create an on-device coding assistant, primarily for generating and refactoring Swift code based on natural language prompts.
+                - generic [ref=e1042]
+            - generic [ref=e1051]:
+              - button "🍿 55%" [ref=e1052] [cursor=pointer]:
+                - generic [ref=e1053]: 🍿
+                - generic [ref=e1054]: 55%
+              - generic [ref=e1055]:
+                - generic [ref=e1056]
+                - generic [ref=e1059]: Compliance officers, security auditors, SaaS founders
+                - paragraph [ref=e1060]: This project analyzes publicly available SOC 2 audit reports, finding most are of low quality, suggesting a widespread compliance problem.
+                - generic [ref=e1061]
+            - generic [ref=e1070]:
+              - button "🍿 55%" [ref=e1071] [cursor=pointer]:
+                - generic [ref=e1072]: 🍿
+                - generic [ref=e1073]: 55%
+              - generic [ref=e1074]:
+                - 'link "Show HN: Memoriki – LLM Wiki+MemPalace for persistent personal knowledge bases" [ref=e1076] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47711037
+                - generic [ref=e1077]: Academics, researchers, and serious hobbyists who meticulously document personal interests and need robust recall mechanisms.
+                - paragraph [ref=e1078]: Memoriki is a personal knowledge base that uses LLMs to help users recall information, attempting to combine wiki-like organization with a memory palace technique.
+                - generic [ref=e1079]
+            - generic [ref=e1088]:
+              - button "🍿 55%" [ref=e1089] [cursor=pointer]:
+                - generic [ref=e1090]: 🍿
+                - generic [ref=e1091]: 55%
+              - generic [ref=e1092]:
+                - generic [ref=e1093]
+                - generic [ref=e1096]: Network engineers, WiFi chipset developers, Wi-Fi security researchers
+                - paragraph [ref=e1097]: This project reverse-engineers and documents undocumented Qualcomm 802.11 management frames used for mesh topology discovery. It offers a deeper technical understanding for those troubleshooting or building with these specific chipsets.
+                - generic [ref=e1098]
+            - generic [ref=e1107]:
+              - button "🍿 55%" [ref=e1108] [cursor=pointer]:
+                - generic [ref=e1109]: 🍿
+                - generic [ref=e1110]: 55%
+              - generic [ref=e1111]:
+                - generic [ref=e1112]
+                - generic [ref=e1115]: Curious developers, open-source enthusiasts
+                - paragraph [ref=e1116]: This is a retro-style game that gamifies the exploration of open-source code repositories. It's a novel approach to a niche problem.
+                - generic [ref=e1117]
+            - generic [ref=e1126]:
+              - button "🍿 55%" [ref=e1127] [cursor=pointer]:
+                - generic [ref=e1128]: 🍿
+                - generic [ref=e1129]: 55%
+              - generic [ref=e1130]:
+                - generic [ref=e1131]
+                - generic [ref=e1134]: Creators of digital content (e.g., online course instructors, indie game developers, ebook authors) facing piracy losses.
+                - paragraph [ref=e1135]: This project offers an alternative to traditional DRM by using game theory to incentivize fair use of digital content, essentially making piracy less appealing or more costly than legitimate access.
+                - generic [ref=e1136]
+            - generic [ref=e1145]:
+              - button "🍿 55%" [ref=e1146] [cursor=pointer]:
+                - generic [ref=e1147]: 🍿
+                - generic [ref=e1148]: 55%
+              - generic [ref=e1149]:
+                - generic [ref=e1150]
+                - generic [ref=e1153]: DevOps engineers and teams responsible for repository maintenance
+                - paragraph [ref=e1154]: RepoWarden automates dependency updates in GitHub repositories, aiming to reduce manual effort and security risks.
+                - generic [ref=e1155]
+            - generic [ref=e1164]:
+              - button "🍿 55%" [ref=e1165] [cursor=pointer]:
+                - generic [ref=e1166]: 🍿
+                - generic [ref=e1167]: 55%
+              - generic [ref=e1168]:
+                - 'link "Show HN: QVAC SDK, a universal JavaScript SDK for building local AI applications" [ref=e1170] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47708697
+                - generic [ref=e1171]: Frontend developers building web applications with local AI features
+                - paragraph [ref=e1172]: A JavaScript SDK that allows web applications to interact with local LLMs, simplifying the process of building client-side AI features.
+                - generic [ref=e1173]
+            - generic [ref=e1182]:
+              - button "🍿 55%" [ref=e1183] [cursor=pointer]:
+                - generic [ref=e1184]: 🍿
+                - generic [ref=e1185]: 55%
+              - generic [ref=e1186]:
+                - generic [ref=e1187]
+                - generic [ref=e1190]: Small business owners, marketers, and individuals seeking to experiment with AI advertising without initial cost.
+                - paragraph [ref=e1191]: This project aggregates free AI ad credits from various platforms into a single markdown document, saving users the effort of searching individually.
+                - generic [ref=e1192]
+          - button "Load 148 more" [ref=e1200] [cursor=pointer]
+        - generic [ref=e1201]:
+          - heading "Apr 8 · 147 projects" [level=3] [ref=e1202]
+          - generic [ref=e1203]:
+            - generic [ref=e1205]:
+              - button "🍿 65%" [ref=e1206] [cursor=pointer]:
+                - generic [ref=e1207]: 🍿
+                - generic [ref=e1208]: 65%
+              - generic [ref=e1209]:
+                - generic [ref=e1210]
+                - generic [ref=e1213]: Firebase developers facing performance bottlenecks with client-side data synchronization
+                - paragraph [ref=e1214]: This video demonstrates a novel approach to managing Firebase client-side data using Google's internal Antigravity framework, aiming to improve performance and developer experience.
+                - generic [ref=e1215]
+            - generic [ref=e1224]:
+              - button "🍿 55%" [ref=e1225] [cursor=pointer]:
+                - generic [ref=e1226]: 🍿
+                - generic [ref=e1227]: 55%
+              - generic [ref=e1228]:
+                - generic [ref=e1229]
+                - generic [ref=e1232]: Tech-savvy individuals needing remote control of their personal computers.
+                - paragraph [ref=e1233]: An open-source AI agent that allows users to control their local machine remotely via a phone interface, blurring the lines between local compute and cloud-like access.
+                - generic [ref=e1234]
+            - generic [ref=e1243]:
+              - button "🍿 55%" [ref=e1244] [cursor=pointer]:
+                - generic [ref=e1245]: 🍿
+                - generic [ref=e1246]: 55%
+              - generic [ref=e1247]:
+                - generic [ref=e1248]
+                - generic [ref=e1251]: Security-conscious developers, researchers, and enterprises managing sensitive data.
+                - paragraph [ref=e1252]: This project offers a self-hosted framework for orchestrating multiple AI agents, designed for localized execution and data privacy.
+                - generic [ref=e1253]
+            - generic [ref=e1262]:
+              - button "🍿 55%" [ref=e1263] [cursor=pointer]:
+                - generic [ref=e1264]: 🍿
+                - generic [ref=e1265]: 55%
+              - generic [ref=e1266]:
+                - generic [ref=e1267]
+                - generic [ref=e1270]: Product designers, AI researchers, engineering leads exploring AI workflows
+                - paragraph [ref=e1271]: This project is a personal experiment using 15 AI agents to simulate a product design process for a wearable device, highlighting the current limitations of AI in complex, iterative design tasks.
+                - generic [ref=e1272]
+            - generic [ref=e1281]:
+              - button "🍿 55%" [ref=e1282] [cursor=pointer]:
+                - generic [ref=e1283]: 🍿
+                - generic [ref=e1284]: 55%
+              - generic [ref=e1285]:
+                - generic [ref=e1286]
+                - generic [ref=e1289]: Network engineers, researchers using Ripe Atlas
+                - paragraph [ref=e1290]: Starla is a CLI tool for interacting with Ripe Atlas probes, allowing users to run custom tests and retrieve results. It's an unofficial wrapper around Ripe Atlas's existing functionality.
+                - generic [ref=e1291]
+            - generic [ref=e1300]:
+              - button "🍿 55%" [ref=e1301] [cursor=pointer]:
+                - generic [ref=e1302]: 🍿
+                - generic [ref=e1303]: 55%
+              - generic [ref=e1304]:
+                - generic [ref=e1305]
+                - generic [ref=e1308]: Self-hosting enthusiasts, small to medium businesses needing controlled video infrastructure, developers building custom video apps.
+                - paragraph [ref=e1309]: A self-hosted, open-source selective forwarding unit (SFU) for WebRTC video conferencing, aiming to offer a decentralized alternative to cloud-based services.
+                - generic [ref=e1310]
+            - generic [ref=e1319]:
+              - button "🍿 55%" [ref=e1320] [cursor=pointer]:
+                - generic [ref=e1321]: 🍿
+                - generic [ref=e1322]: 55%
+              - generic [ref=e1323]:
+                - generic [ref=e1324]
+                - generic [ref=e1327]: Small to medium AWS users needing visibility
+                - paragraph [ref=e1328]: An open-source Go CLI tool that generates local AWS cost reports from usage data.
+                - generic [ref=e1329]
+            - generic [ref=e1338]:
+              - button "🍿 55%" [ref=e1339] [cursor=pointer]:
+                - generic [ref=e1340]: 🍿
+                - generic [ref=e1341]: 55%
+              - generic [ref=e1342]:
+                - generic [ref=e1343]
+                - generic [ref=e1346]: DevOps engineers, system administrators, seasoned developers managing complex terminal environments.
+                - paragraph [ref=e1347]: smux allows communication and automation between separate tmux sessions, enabling programmatic control of terminal workflows.
+                - generic [ref=e1348]
+            - generic [ref=e1357]:
+              - button "🍿 55%" [ref=e1358] [cursor=pointer]:
+                - generic [ref=e1359]: 🍿
+                - generic [ref=e1360]: 55%
+              - generic [ref=e1361]:
+                - generic [ref=e1362]
+                - generic [ref=e1365]: Developers using LLMs for code generation who have experienced or fear bad outputs
+                - paragraph [ref=e1366]: This project adds deterministic guardrails to Claude's code generation, preventing it from producing obviously insecure or problematic output.
+                - generic [ref=e1367]
+            - generic [ref=e1376]:
+              - button "🍿 55%" [ref=e1377] [cursor=pointer]:
+                - generic [ref=e1378]: 🍿
+                - generic [ref=e1379]: 55%
+              - generic [ref=e1380]:
+                - generic [ref=e1381]
+                - generic [ref=e1384]: Data scientists and ML engineers validating vector search results.
+                - paragraph [ref=e1385]: This project offers a Python library to calculate embedding similarity with confidence intervals, aiming to provide statistical rigor to vector comparisons.
+                - generic [ref=e1386]
+          - button "Load 137 more" [ref=e1394] [cursor=pointer]
+        - generic [ref=e1395]:
+          - heading "Apr 7 · 46 projects" [level=3] [ref=e1396]
+          - generic [ref=e1397]:
+            - generic [ref=e1399]:
+              - button "🍿 58%" [ref=e1400] [cursor=pointer]:
+                - generic [ref=e1401]: 🍿
+                - generic [ref=e1402]: 58%
+              - generic [ref=e1403]:
+                - generic [ref=e1404]
+                - generic [ref=e1407]: AI/ML engineers building and debugging multi-agent systems
+                - paragraph [ref=e1408]: Marimo Pair provides reactive Python notebooks designed for agentic workflows, essentially allowing for iterative development and debugging of AI agents within a familiar notebook environment. It offers a stateful, interactive canvas for orchestrating agent actions.
+                - generic [ref=e1409]
+            - generic [ref=e1418]:
+              - button "🍿 55%" [ref=e1419] [cursor=pointer]:
+                - generic [ref=e1420]: 🍿
+                - generic [ref=e1421]: 55%
+              - generic [ref=e1422]:
+                - generic [ref=e1423]
+                - generic [ref=e1426]: TypeScript developers needing runtime data validation
+                - paragraph [ref=e1427]: A TypeScript schema validation library that adds runtime introspection capabilities, aiming to differentiate itself from Zod by providing a richer meta-schema representation.
+                - generic [ref=e1428]
+            - generic [ref=e1437]:
+              - button "🍿 55%" [ref=e1438] [cursor=pointer]:
+                - generic [ref=e1439]: 🍿
+                - generic [ref=e1440]: 55%
+              - generic [ref=e1441]:
+                - generic [ref=e1442]
+                - generic [ref=e1445]: Tolkien fans and casual readers
+                - paragraph [ref=e1446]: An interactive web-based map of J.R.R. Tolkien's Middle-earth, allowing users to view locations and read associated lore. It's a digital fan-made atlas.
+                - generic [ref=e1447]
+            - generic [ref=e1456]:
+              - button "🍿 55%" [ref=e1457] [cursor=pointer]:
+                - generic [ref=e1458]: 🍿
+                - generic [ref=e1459]: 55%
+              - generic [ref=e1460]:
+                - 'link "Show HN: I built a tariff API because USITC data lags executive orders by days" [ref=e1462] [cursor=pointer]':
+                  - /url: https://news.ycombinator.com/item?id=47680761
+                - generic [ref=e1463]: Trade compliance professionals, logistics analysts
+                - paragraph [ref=e1464]: An API that provides tariff data, aiming to be faster than the USITC's official source due to lag behind executive orders.
+                - generic [ref=e1465]
+            - generic [ref=e1474]:
+              - button "🍿 55%" [ref=e1475] [cursor=pointer]:
+                - generic [ref=e1476]: 🍿
+                - generic [ref=e1477]: 55%
+              - generic [ref=e1478]:
+                - generic [ref=e1479]
+                - generic [ref=e1482]: Developers with LLM integration needs and cost sensitivity
+                - paragraph [ref=e1483]: This project routes LLM requests between local models and paid APIs, aiming to reduce costs by using cheaper local alternatives when sufficient.
+                - generic [ref=e1484]
+            - generic [ref=e1493]:
+              - button "🍿 55%" [ref=e1494] [cursor=pointer]:
+                - generic [ref=e1495]: 🍿
+                - generic [ref=e1496]: 55%
+              - generic [ref=e1497]:
+                - generic [ref=e1498]
+                - generic [ref=e1501]: Developers operating RabbitMQ DLQs
+                - paragraph [ref=e1502]: This is a visual interface for monitoring dead-letter queues (DLQs) in RabbitMQ and replaying messages, aiming to simplify operations for developers.
+                - generic [ref=e1503]
+            - generic [ref=e1512]:
+              - button "🍿 55%" [ref=e1513] [cursor=pointer]:
+                - generic [ref=e1514]: 🍿
+                - generic [ref=e1515]: 55%
+              - generic [ref=e1516]:
+                - generic [ref=e1517]
+                - generic [ref=e1520]: Product managers, marketing teams, early-stage startups
+                - paragraph [ref=e1521]: A tool for creating and sharing interactive, multi-step guided tours of web pages or applications, primarily for product onboarding and demos.
+                - generic [ref=e1522]
+            - generic [ref=e1531]:
+              - button "🍿 55%" [ref=e1532] [cursor=pointer]:
+                - generic [ref=e1533]: 🍿
+                - generic [ref=e1534]: 55%
+              - generic [ref=e1535]:
+                - generic [ref=e1536]
+                - generic [ref=e1539]: LLM application developers and prompt engineers
+                - paragraph [ref=e1540]: PromptJuggler offers a localhost development environment and execution runner for prompt chaining, workflows, and agents, aiming to streamline LLM application development.
+                - generic [ref=e1541]
+            - generic [ref=e1550]:
+              - button "🍿 55%" [ref=e1551] [cursor=pointer]:
+                - generic [ref=e1552]: 🍿
+                - generic [ref=e1553]: 55%
+              - generic [ref=e1554]:
+                - generic [ref=e1555]
+                - generic [ref=e1558]: Rust developers integrating local LLMs
+                - paragraph [ref=e1559]: A Rust library providing idiomatic bindings to the Ollama API, intended for developers integrating local LLMs into their Rust applications.
+                - generic [ref=e1560]
+            - generic [ref=e1569]:
+              - button "🍿 55%" [ref=e1570] [cursor=pointer]:
+                - generic [ref=e1571]: 🍿
+                - generic [ref=e1572]: 55%
+              - generic [ref=e1573]:
+                - generic [ref=e1574]
+                - generic [ref=e1577]: Frontend developers and UI/UX engineers building complex web applications or working with AI-assisted design tools.
+                - paragraph [ref=e1578]: This project provides a framework for AI agents to visually inspect and verify their own UI generation or modification work, essentially giving them 'eyes' to detect rendering issues.
+                - generic [ref=e1579]
+          - button "Load 36 more" [ref=e1587] [cursor=pointer]
+  - button "Open Next.js Dev Tools" [ref=e1593] [cursor=pointer]:
+    - img [ref=e1594]
+  - alert [ref=e1597]

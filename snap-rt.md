@@ -1,0 +1,309 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e5]:
+          - generic [ref=e6]: 🍅
+          - generic [ref=e7]: Show HN Reviews
+        - button "Apr" [ref=e9] [cursor=pointer]
+    - generic [ref=e11]:
+      - heading "April 2026" [level=1] [ref=e12]
+      - paragraph [ref=e13]: AI-reviewed Show HN projects — rated like movies
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - generic [ref=e16]: "854"
+          - generic [ref=e17]: Projects
+        - generic [ref=e19]:
+          - generic [ref=e20]: 🍅
+          - generic [ref=e21]: "0"
+          - generic [ref=e22]: Fresh
+        - generic [ref=e24]:
+          - generic [ref=e25]: 🤢
+          - generic [ref=e26]: "42"
+          - generic [ref=e27]: Rotten
+        - generic [ref=e29]:
+          - generic [ref=e30]: 47%
+          - generic [ref=e31]: Avg Score
+    - generic [ref=e33]:
+      - generic [ref=e34]:
+        - generic [ref=e35]: Sort by
+        - button "Score ↓" [ref=e36] [cursor=pointer]
+        - button "Upvotes" [ref=e37] [cursor=pointer]
+        - button "Comments" [ref=e38] [cursor=pointer]
+        - button "Date" [ref=e39] [cursor=pointer]
+      - generic [ref=e40]:
+        - generic [ref=e41]:
+          - heading "Apr 14 · 104 projects" [level=3] [ref=e42]
+          - generic [ref=e43]:
+            - generic [ref=e45]:
+              - button "🍿 65%" [ref=e46] [cursor=pointer]
+              - generic [ref=e49]
+            - generic [ref=e65]:
+              - button "🍿 58%" [ref=e66] [cursor=pointer]
+              - generic [ref=e69]
+            - generic [ref=e85]:
+              - button "🍿 55%" [ref=e86] [cursor=pointer]
+              - generic [ref=e89]
+            - generic [ref=e105]:
+              - button "🍿 55%" [ref=e106] [cursor=pointer]
+              - generic [ref=e109]
+            - generic [ref=e125]:
+              - button "🍿 55%" [ref=e126] [cursor=pointer]
+              - generic [ref=e129]
+            - generic [ref=e145]:
+              - button "🍿 55%" [ref=e146] [cursor=pointer]
+              - generic [ref=e149]
+            - generic [ref=e165]:
+              - button "🍿 55%" [ref=e166] [cursor=pointer]
+              - generic [ref=e169]
+            - generic [ref=e185]:
+              - button "🍿 55%" [ref=e186] [cursor=pointer]
+              - generic [ref=e189]
+            - generic [ref=e205]:
+              - button "🍿 55%" [ref=e206] [cursor=pointer]
+              - generic [ref=e209]
+            - generic [ref=e225]:
+              - button "🍿 55%" [ref=e226] [cursor=pointer]
+              - generic [ref=e229]
+          - button "Load 94 more" [ref=e243] [cursor=pointer]
+        - generic [ref=e244]:
+          - heading "Apr 13 · 124 projects" [level=3] [ref=e245]
+          - generic [ref=e246]:
+            - generic [ref=e248]:
+              - button "🍿 60%" [ref=e249] [cursor=pointer]
+              - generic [ref=e252]
+            - generic [ref=e268]:
+              - button "🍿 55%" [ref=e269] [cursor=pointer]
+              - generic [ref=e272]
+            - generic [ref=e288]:
+              - button "🍿 55%" [ref=e289] [cursor=pointer]
+              - generic [ref=e292]
+            - generic [ref=e308]:
+              - button "🍿 55%" [ref=e309] [cursor=pointer]
+              - generic [ref=e312]
+            - generic [ref=e328]:
+              - button "🍿 55%" [ref=e329] [cursor=pointer]
+              - generic [ref=e332]
+            - generic [ref=e348]:
+              - button "🍿 55%" [ref=e349] [cursor=pointer]
+              - generic [ref=e352]
+            - generic [ref=e368]:
+              - button "🍿 55%" [ref=e369] [cursor=pointer]
+              - generic [ref=e372]
+            - generic [ref=e388]:
+              - button "🍿 55%" [ref=e389] [cursor=pointer]
+              - generic [ref=e392]
+            - generic [ref=e408]:
+              - button "🍿 55%" [ref=e409] [cursor=pointer]
+              - generic [ref=e412]
+            - generic [ref=e428]:
+              - button "🍿 55%" [ref=e429] [cursor=pointer]
+              - generic [ref=e432]
+          - button "Load 114 more" [ref=e447] [cursor=pointer]
+        - generic [ref=e448]:
+          - heading "Apr 12 · 92 projects" [level=3] [ref=e449]
+          - generic [ref=e450]:
+            - generic [ref=e452]:
+              - button "🍿 65%" [ref=e453] [cursor=pointer]
+              - generic [ref=e456]
+            - generic [ref=e472]:
+              - button "🍿 60%" [ref=e473] [cursor=pointer]
+              - generic [ref=e476]
+            - generic [ref=e492]:
+              - button "🍿 55%" [ref=e493] [cursor=pointer]
+              - generic [ref=e496]
+            - generic [ref=e512]:
+              - button "🍿 55%" [ref=e513] [cursor=pointer]
+              - generic [ref=e516]
+            - generic [ref=e532]:
+              - button "🍿 55%" [ref=e533] [cursor=pointer]
+              - generic [ref=e536]
+            - generic [ref=e552]:
+              - button "🍿 55%" [ref=e553] [cursor=pointer]
+              - generic [ref=e556]
+            - generic [ref=e572]:
+              - button "🍿 55%" [ref=e573] [cursor=pointer]
+              - generic [ref=e576]
+            - generic [ref=e592]:
+              - button "🍿 55%" [ref=e593] [cursor=pointer]
+              - generic [ref=e596]
+            - generic [ref=e612]:
+              - button "🍿 55%" [ref=e613] [cursor=pointer]
+              - generic [ref=e616]
+            - generic [ref=e632]:
+              - button "🍿 55%" [ref=e633] [cursor=pointer]
+              - generic [ref=e636]
+          - button "Load 82 more" [ref=e651] [cursor=pointer]
+        - generic [ref=e652]:
+          - heading "Apr 11 · 73 projects" [level=3] [ref=e653]
+          - generic [ref=e654]:
+            - generic [ref=e656]:
+              - button "🍿 65%" [ref=e657] [cursor=pointer]
+              - generic [ref=e660]
+            - generic [ref=e676]:
+              - button "🍿 60%" [ref=e677] [cursor=pointer]
+              - generic [ref=e680]
+            - generic [ref=e696]:
+              - button "🍿 55%" [ref=e697] [cursor=pointer]
+              - generic [ref=e700]
+            - generic [ref=e716]:
+              - button "🍿 55%" [ref=e717] [cursor=pointer]
+              - generic [ref=e720]
+            - generic [ref=e736]:
+              - button "🍿 55%" [ref=e737] [cursor=pointer]
+              - generic [ref=e740]
+            - generic [ref=e756]:
+              - button "🍿 55%" [ref=e757] [cursor=pointer]
+              - generic [ref=e760]
+            - generic [ref=e776]:
+              - button "🍿 55%" [ref=e777] [cursor=pointer]
+              - generic [ref=e780]
+            - generic [ref=e796]:
+              - button "🍿 55%" [ref=e797] [cursor=pointer]
+              - generic [ref=e800]
+            - generic [ref=e816]:
+              - button "🍿 55%" [ref=e817] [cursor=pointer]
+              - generic [ref=e820]
+            - generic [ref=e835]:
+              - button "🍿 55%" [ref=e836] [cursor=pointer]
+              - generic [ref=e839]
+          - button "Load 63 more" [ref=e854] [cursor=pointer]
+        - generic [ref=e855]:
+          - heading "Apr 10 · 110 projects" [level=3] [ref=e856]
+          - generic [ref=e857]:
+            - generic [ref=e859]:
+              - button "🍿 58%" [ref=e860] [cursor=pointer]
+              - generic [ref=e863]
+            - generic [ref=e879]:
+              - button "🍿 55%" [ref=e880] [cursor=pointer]
+              - generic [ref=e883]
+            - generic [ref=e899]:
+              - button "🍿 55%" [ref=e900] [cursor=pointer]
+              - generic [ref=e903]
+            - generic [ref=e919]:
+              - button "🍿 55%" [ref=e920] [cursor=pointer]
+              - generic [ref=e923]
+            - generic [ref=e939]:
+              - button "🍿 55%" [ref=e940] [cursor=pointer]
+              - generic [ref=e943]
+            - generic [ref=e959]:
+              - button "🍿 55%" [ref=e960] [cursor=pointer]
+              - generic [ref=e963]
+            - generic [ref=e979]:
+              - button "🍿 55%" [ref=e980] [cursor=pointer]
+              - generic [ref=e983]
+            - generic [ref=e999]:
+              - button "🍿 55%" [ref=e1000] [cursor=pointer]
+              - generic [ref=e1003]
+            - generic [ref=e1019]:
+              - button "🍿 55%" [ref=e1020] [cursor=pointer]
+              - generic [ref=e1023]
+            - generic [ref=e1039]:
+              - button "🍿 55%" [ref=e1040] [cursor=pointer]
+              - generic [ref=e1043]
+          - button "Load 100 more" [ref=e1058] [cursor=pointer]
+        - generic [ref=e1059]:
+          - heading "Apr 9 · 158 projects" [level=3] [ref=e1060]
+          - generic [ref=e1061]:
+            - generic [ref=e1063]:
+              - button "🍿 65%" [ref=e1064] [cursor=pointer]
+              - generic [ref=e1067]
+            - generic [ref=e1083]:
+              - button "🍿 58%" [ref=e1084] [cursor=pointer]
+              - generic [ref=e1087]
+            - generic [ref=e1103]:
+              - button "🍿 55%" [ref=e1104] [cursor=pointer]
+              - generic [ref=e1107]
+            - generic [ref=e1123]:
+              - button "🍿 55%" [ref=e1124] [cursor=pointer]
+              - generic [ref=e1127]
+            - generic [ref=e1142]:
+              - button "🍿 55%" [ref=e1143] [cursor=pointer]
+              - generic [ref=e1146]
+            - generic [ref=e1162]:
+              - button "🍿 55%" [ref=e1163] [cursor=pointer]
+              - generic [ref=e1166]
+            - generic [ref=e1182]:
+              - button "🍿 55%" [ref=e1183] [cursor=pointer]
+              - generic [ref=e1186]
+            - generic [ref=e1202]:
+              - button "🍿 55%" [ref=e1203] [cursor=pointer]
+              - generic [ref=e1206]
+            - generic [ref=e1222]:
+              - button "🍿 55%" [ref=e1223] [cursor=pointer]
+              - generic [ref=e1226]
+            - generic [ref=e1241]:
+              - button "🍿 55%" [ref=e1242] [cursor=pointer]
+              - generic [ref=e1245]
+          - button "Load 148 more" [ref=e1260] [cursor=pointer]
+        - generic [ref=e1261]:
+          - heading "Apr 8 · 147 projects" [level=3] [ref=e1262]
+          - generic [ref=e1263]:
+            - generic [ref=e1265]:
+              - button "🍿 65%" [ref=e1266] [cursor=pointer]
+              - generic [ref=e1269]
+            - generic [ref=e1285]:
+              - button "🍿 55%" [ref=e1286] [cursor=pointer]
+              - generic [ref=e1289]
+            - generic [ref=e1305]:
+              - button "🍿 55%" [ref=e1306] [cursor=pointer]
+              - generic [ref=e1309]
+            - generic [ref=e1325]:
+              - button "🍿 55%" [ref=e1326] [cursor=pointer]
+              - generic [ref=e1329]
+            - generic [ref=e1345]:
+              - button "🍿 55%" [ref=e1346] [cursor=pointer]
+              - generic [ref=e1349]
+            - generic [ref=e1365]:
+              - button "🍿 55%" [ref=e1366] [cursor=pointer]
+              - generic [ref=e1369]
+            - generic [ref=e1385]:
+              - button "🍿 55%" [ref=e1386] [cursor=pointer]
+              - generic [ref=e1389]
+            - generic [ref=e1405]:
+              - button "🍿 55%" [ref=e1406] [cursor=pointer]
+              - generic [ref=e1409]
+            - generic [ref=e1425]:
+              - button "🍿 55%" [ref=e1426] [cursor=pointer]
+              - generic [ref=e1429]
+            - generic [ref=e1445]:
+              - button "🍿 55%" [ref=e1446] [cursor=pointer]
+              - generic [ref=e1449]
+          - button "Load 137 more" [ref=e1464] [cursor=pointer]
+        - generic [ref=e1465]:
+          - heading "Apr 7 · 46 projects" [level=3] [ref=e1466]
+          - generic [ref=e1467]:
+            - generic [ref=e1469]:
+              - button "🍿 58%" [ref=e1470] [cursor=pointer]
+              - generic [ref=e1473]
+            - generic [ref=e1489]:
+              - button "🍿 55%" [ref=e1490] [cursor=pointer]
+              - generic [ref=e1493]
+            - generic [ref=e1509]:
+              - button "🍿 55%" [ref=e1510] [cursor=pointer]
+              - generic [ref=e1513]
+            - generic [ref=e1529]:
+              - button "🍿 55%" [ref=e1530] [cursor=pointer]
+              - generic [ref=e1533]
+            - generic [ref=e1548]:
+              - button "🍿 55%" [ref=e1549] [cursor=pointer]
+              - generic [ref=e1552]
+            - generic [ref=e1568]:
+              - button "🍿 55%" [ref=e1569] [cursor=pointer]
+              - generic [ref=e1572]
+            - generic [ref=e1588]:
+              - button "🍿 55%" [ref=e1589] [cursor=pointer]
+              - generic [ref=e1592]
+            - generic [ref=e1608]:
+              - button "🍿 55%" [ref=e1609] [cursor=pointer]
+              - generic [ref=e1612]
+            - generic [ref=e1628]:
+              - button "🍿 55%" [ref=e1629] [cursor=pointer]
+              - generic [ref=e1632]
+            - generic [ref=e1648]:
+              - button "🍿 55%" [ref=e1649] [cursor=pointer]
+              - generic [ref=e1652]
+          - button "Load 36 more" [ref=e1667] [cursor=pointer]
+  - button "Open Next.js Dev Tools" [ref=e1673] [cursor=pointer]:
+    - img [ref=e1674]
+  - alert [ref=e1677]
