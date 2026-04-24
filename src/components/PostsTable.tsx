@@ -128,6 +128,7 @@ export default function PostsTable({
   const [expandedPost, setExpandedPost] = useState<number | null>(null);
   const [categoryFilter, setCategoryFilter] = useState<string | null>(null);
   const [notableOnly, setNotableOnly] = useState(false);
+  const [showAllCategories, setShowAllCategories] = useState(false);
 
   const notableCount = posts.filter((p) => p.notable).length;
 
@@ -145,6 +146,7 @@ export default function PostsTable({
     if (categoryFilter != null && (p.category ?? "other") !== categoryFilter) return false;
     return true;
   });
+
   const [ratings, setRatings] = useState<Map<number, Rating>>(
     () => new Map(initialRatings.map((r) => [r.postId, r])),
   );
@@ -223,8 +225,15 @@ export default function PostsTable({
     f === sortField ? (sortDir === "desc" ? "↓" : "↑") : "";
   const sortBtn = (f: SortField, label: string) => (
     <button
+      type="button"
       onClick={() => handleSort(f)}
-      className={`cursor-pointer transition-colors ${
+      aria-pressed={f === sortField}
+      aria-label={
+        f === sortField
+          ? `Sorted by ${label} ${sortDir === "asc" ? "ascending" : "descending"}, click to reverse`
+          : `Sort by ${label}`
+      }
+      className={`cursor-pointer transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-900 rounded px-0.5 ${
         f === sortField ? "text-neutral-900 font-700" : "text-neutral-400 hover:text-neutral-700"
       }`}
     >
@@ -236,46 +245,100 @@ export default function PostsTable({
 
   return (
     <div>
-      {/* Category filter chips */}
+      {/* Filter chips — big bold minimalist */}
       {categoryCounts.length > 1 && (
-        <div className="flex flex-wrap gap-1.5 mb-4">
+        <div
+          role="group"
+          aria-label="Filter posts"
+          className="flex flex-wrap gap-2 mb-8"
+        >
           <button
-            onClick={() => setCategoryFilter(null)}
-            className={`text-xs font-600 px-2.5 py-1 rounded-full cursor-pointer transition-colors ${
-              categoryFilter == null
-                ? "bg-neutral-900 text-white"
-                : "bg-neutral-100 text-neutral-500 hover:bg-neutral-200"
+            type="button"
+            onClick={() => {
+              setCategoryFilter(null);
+              setNotableOnly(false);
+            }}
+            aria-pressed={categoryFilter == null && !notableOnly}
+            className={`text-sm font-800 uppercase tracking-wider px-4 py-2 border-2 cursor-pointer transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-900 ${
+              categoryFilter == null && !notableOnly
+                ? "bg-neutral-900 text-white border-neutral-900"
+                : "border-neutral-200 text-neutral-500 hover:border-neutral-900 hover:text-neutral-900"
             }`}
           >
-            All <span className="opacity-60 ml-0.5">{posts.length}</span>
+            All <span className="opacity-60 ml-1 font-mono">{posts.length}</span>
           </button>
           {notableCount > 0 && (
             <button
+              type="button"
               onClick={() => setNotableOnly(!notableOnly)}
-              className={`text-xs font-700 px-2.5 py-1 rounded-full cursor-pointer transition-colors ${
+              aria-pressed={notableOnly}
+              aria-label={`Filter to ${notableCount} notable posts`}
+              className={`text-sm font-800 uppercase tracking-wider px-4 py-2 border-2 cursor-pointer transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 ${
                 notableOnly
-                  ? "bg-amber-500 text-white"
-                  : "bg-amber-100 text-amber-700 hover:bg-amber-200"
+                  ? "bg-amber-500 text-white border-amber-500"
+                  : "border-amber-300 text-amber-700 hover:border-amber-500 hover:bg-amber-50"
               }`}
             >
-              ⭐ Notable <span className="opacity-70 ml-0.5">{notableCount}</span>
+              <span aria-hidden>⭐</span> Notable <span className="opacity-70 ml-1 font-mono">{notableCount}</span>
             </button>
           )}
-          {categoryCounts.map(([cat, count]) => {
-            const style = categoryStyle(cat);
-            const active = categoryFilter === cat;
+          {(() => {
+            const visible = showAllCategories ? categoryCounts : categoryCounts.slice(0, 5);
+            const hidden = categoryCounts.length - visible.length;
+            const activeIsHidden =
+              categoryFilter != null &&
+              !visible.some(([c]) => c === categoryFilter);
+            const renderChip = (cat: string, count: number, active: boolean) => {
+              const style = categoryStyle(cat);
+              return (
+                <button
+                  key={cat}
+                  type="button"
+                  onClick={() => setCategoryFilter(active ? null : cat)}
+                  aria-pressed={active}
+                  aria-label={`Filter to category ${style?.label ?? cat} (${count} posts)`}
+                  className={`text-sm font-800 uppercase tracking-wider px-4 py-2 border-2 cursor-pointer transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-900 ${
+                    active
+                      ? "bg-neutral-900 text-white border-neutral-900"
+                      : "border-neutral-200 text-neutral-500 hover:border-neutral-900 hover:text-neutral-900"
+                  }`}
+                >
+                  {style?.label ?? cat} <span className="opacity-60 ml-1 font-mono">{count}</span>
+                </button>
+              );
+            };
             return (
-              <button
-                key={cat}
-                onClick={() => setCategoryFilter(active ? null : cat)}
-                className={`text-xs font-600 px-2.5 py-1 rounded-full cursor-pointer transition-colors ${
-                  active ? "bg-neutral-900 text-white" : `${style?.color ?? "bg-neutral-100 text-neutral-500"} hover:opacity-80`
-                }`}
-              >
-                {style?.label ?? cat} <span className="opacity-60 ml-0.5">{count}</span>
-              </button>
+              <>
+                {visible.map(([cat, count]) =>
+                  renderChip(cat, count, categoryFilter === cat),
+                )}
+                {activeIsHidden &&
+                  (() => {
+                    const count =
+                      categoryCounts.find(([c]) => c === categoryFilter)?.[1] ?? 0;
+                    return renderChip(categoryFilter!, count, true);
+                  })()}
+                {hidden > 0 && !showAllCategories && (
+                  <button
+                    type="button"
+                    onClick={() => setShowAllCategories(true)}
+                    className="text-sm font-800 uppercase tracking-wider px-4 py-2 cursor-pointer text-neutral-400 hover:text-neutral-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-900"
+                  >
+                    + {hidden} more
+                  </button>
+                )}
+                {showAllCategories && categoryCounts.length > 5 && (
+                  <button
+                    type="button"
+                    onClick={() => setShowAllCategories(false)}
+                    className="text-sm font-800 uppercase tracking-wider px-4 py-2 cursor-pointer text-neutral-400 hover:text-neutral-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-900"
+                  >
+                    less
+                  </button>
+                )}
+              </>
             );
-          })}
+          })()}
         </div>
       )}
 
@@ -284,7 +347,7 @@ export default function PostsTable({
         <div className="text-center">{sortBtn("aiScore", "Score")}</div>
         <div>Title</div>
         <div className="text-right">
-          {sortBtn("upvotes", "▲")} · {sortBtn("numComments", "◇")}
+          {sortBtn("upvotes", "Upvotes")} · {sortBtn("numComments", "Comments")}
         </div>
         <div className="text-center hidden md:block">Rate</div>
       </div>
@@ -337,8 +400,18 @@ export default function PostsTable({
                     >
                       {/* Single-line row */}
                       <div
+                        role="button"
+                        tabIndex={0}
+                        aria-expanded={isExpanded}
+                        aria-label={`${post.title}${post.notable ? ", notable" : ""}${post.aiScore != null ? `, score ${post.aiScore}` : ""}`}
                         onClick={() => setExpandedPost(isExpanded ? null : post.id)}
-                        className="grid grid-cols-[3rem_1fr_auto_auto] md:grid-cols-[3rem_1fr_8rem_6rem] gap-3 items-center px-2 py-2 cursor-pointer"
+                        onKeyDown={(e) => {
+                          if (e.key === "Enter" || e.key === " ") {
+                            e.preventDefault();
+                            setExpandedPost(isExpanded ? null : post.id);
+                          }
+                        }}
+                        className="grid grid-cols-[3rem_1fr_auto_auto] md:grid-cols-[3rem_1fr_8rem_6rem] gap-3 items-center px-2 py-2 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-900 focus-visible:ring-inset"
                       >
                         {/* Score badge */}
                         <div className="flex items-center justify-center">
@@ -401,28 +474,34 @@ export default function PostsTable({
                         </div>
 
                         {/* Thumbs */}
-                        <div className="hidden md:flex items-center justify-center gap-0.5">
+                        <div className="hidden md:flex items-center justify-center gap-0.5" role="group" aria-label="Rate this post">
                           <button
+                            type="button"
                             onClick={(e) => toggleThumb(e, post.id, 1)}
-                            title={rating?.value === 1 ? "Rated good" : "Rate good"}
-                            className={`w-7 h-7 rounded cursor-pointer text-sm transition-all ${
+                            aria-pressed={rating?.value === 1}
+                            aria-label={rating?.value === 1 ? "Remove good rating" : "Rate as good"}
+                            title={rating?.value === 1 ? "Rated good (g)" : "Rate good (g)"}
+                            className={`w-7 h-7 rounded cursor-pointer text-sm transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-fresh ${
                               rating?.value === 1
                                 ? "bg-fresh/15 text-fresh"
                                 : "text-neutral-300 hover:text-neutral-700 hover:bg-neutral-100"
                             }`}
                           >
-                            👍
+                            <span aria-hidden>👍</span>
                           </button>
                           <button
+                            type="button"
                             onClick={(e) => toggleThumb(e, post.id, -1)}
-                            title={rating?.value === -1 ? "Rated bad" : "Rate bad"}
-                            className={`w-7 h-7 rounded cursor-pointer text-sm transition-all ${
+                            aria-pressed={rating?.value === -1}
+                            aria-label={rating?.value === -1 ? "Remove bad rating" : "Rate as bad"}
+                            title={rating?.value === -1 ? "Rated bad (b)" : "Rate bad (b)"}
+                            className={`w-7 h-7 rounded cursor-pointer text-sm transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-rotten ${
                               rating?.value === -1
                                 ? "bg-rotten/15 text-rotten"
                                 : "text-neutral-300 hover:text-neutral-700 hover:bg-neutral-100"
                             }`}
                           >
-                            👎
+                            <span aria-hidden>👎</span>
                           </button>
                         </div>
                       </div>

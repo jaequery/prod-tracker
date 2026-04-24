@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev -p 3107",
     "inngest": "npx inngest-cli@latest dev -u http://localhost:3107/api/inngest --port 8288",
-    "build": "next build",
+    "build": "prisma migrate deploy && next build",
     "start": "next start -p 3107",
     "lint": "eslint",
     "review:status": "npx tsx src/scripts/review-status.ts",
