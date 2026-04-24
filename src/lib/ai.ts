@@ -79,6 +79,15 @@ Evaluate through a Paul Graham / YC lens. Reward projects that show:
 - Non-obvious or counterintuitive ideas that sound almost-bad-but-actually-good ("a frighteningly ambitious idea").
 
 Penalize: derivative SaaS clones, thin LLM wrappers with no moat, "solution in search of a problem" demos, vague vision with no user, tarpit ideas (social networks for X, marketplaces with no liquidity story).
+
+AUDIENCE BREADTH — heavily weight how many people would actually care:
+- BOOST projects with broad/mass appeal — tools or products a large population of developers, creators, consumers, or businesses could genuinely use.
+- PENALIZE narrow-interest curiosities that only a tiny niche would care about. Examples of things to score LOW (cap around 35-50 unless extraordinary):
+  * Archival / historical compilations with no practical use (e.g. "Historical Python source documentation from 1.0.1 through 2.0c1") — interesting to a handful of historians, meaningless to most.
+  * Hyper-specific personal scripts, single-use data dumps, one-off visualizations of obscure data.
+  * "I scraped/mirrored/archived X" posts where the artifact has no ongoing utility.
+  * Tools built for a problem only the author has.
+- A project doesn't need to be for literally everyone, but ask: "Would a meaningful slice of the HN audience actually use or revisit this, or just nod and scroll past?" If the honest answer is the latter, score it low regardless of craft.
 ${renderExemplars(exemplars)}
 Project title: ${title}
 Project URL: ${url}
