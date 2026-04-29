@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { prisma } from "@/lib/prisma";
 import PostsTable from "@/components/PostsTable";
+import SearchBox from "@/components/SearchBox";
 
 const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
 const DOW = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -92,13 +93,18 @@ export default async function DayPage({
   return (
     <div className="max-w-[1100px] mx-auto px-6 py-6 md:py-8">
       {/* All days link */}
-      <Link
-        href="/"
-        className="inline-flex items-center gap-2 mb-10 text-sm font-700 uppercase tracking-widest text-neutral-400 hover:text-neutral-900 transition-colors"
-      >
-        <span aria-hidden>⌂</span>
-        <span>All days</span>
-      </Link>
+      <div className="flex items-center gap-6 mb-10">
+        <Link
+          href="/"
+          className="inline-flex items-center gap-2 text-sm font-700 uppercase tracking-widest text-neutral-400 hover:text-neutral-900 transition-colors whitespace-nowrap"
+        >
+          <span aria-hidden>⌂</span>
+          <span>All days</span>
+        </Link>
+        <div className="flex-1">
+          <SearchBox />
+        </div>
+      </div>
 
       {/* Hero: huge count + date with big arrows flanking */}
       <header className="mb-10">
