@@ -1,5 +1,6 @@
 import { prisma } from "@/lib/prisma";
 import Calendar, { type DayCount } from "@/components/Calendar";
+import SearchBox from "@/components/SearchBox";
 
 const MONTH_RE = /^\d{4}-\d{2}$/;
 
@@ -97,5 +98,12 @@ export default async function Home({
     };
   });
 
-  return <Calendar dayCounts={dayCounts} monthKey={monthKey} />;
+  return (
+    <>
+      <div className="max-w-[1100px] mx-auto px-6 pt-6 md:pt-8">
+        <SearchBox />
+      </div>
+      <Calendar dayCounts={dayCounts} monthKey={monthKey} />
+    </>
+  );
 }
