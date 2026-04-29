@@ -119,11 +119,13 @@ function dowColor(dow: string): string {
 export default function PostsTable({
   posts,
   initialRatings = [],
+  initialSortField = "aiScore",
 }: {
   posts: Post[];
   initialRatings?: Rating[];
+  initialSortField?: SortField;
 }) {
-  const [sortField, setSortField] = useState<SortField>("aiScore");
+  const [sortField, setSortField] = useState<SortField>(initialSortField);
   const [sortDir, setSortDir] = useState<SortDir>("desc");
   const [expandedPost, setExpandedPost] = useState<number | null>(null);
   const [categoryFilter, setCategoryFilter] = useState<string | null>(null);

@@ -21,7 +21,7 @@ export default async function SearchPage({
             { summary: { contains: query, mode: "insensitive" } },
           ],
         },
-        orderBy: { postedAt: "desc" },
+        orderBy: [{ upvotes: "desc" }, { postedAt: "desc" }],
         take: 200,
         include: { rating: { select: { value: true } } },
       })
@@ -90,7 +90,7 @@ export default async function SearchPage({
           </p>
         </div>
       ) : (
-        <PostsTable posts={serialized} initialRatings={ratings} />
+        <PostsTable posts={serialized} initialRatings={ratings} initialSortField="upvotes" />
       )}
     </div>
   );
