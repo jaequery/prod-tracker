@@ -188,7 +188,7 @@ export default async function DayPage({
           </Link>
         </div>
       ) : (
-        <PostsTable posts={serialized} initialRatings={ratings} />
+        <PostsTable posts={serialized} initialRatings={ratings} initialSortField="upvotes" />
       )}
     </div>
   );
