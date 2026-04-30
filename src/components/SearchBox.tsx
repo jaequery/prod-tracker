@@ -1,20 +1,6 @@
 "use client";
 
-const CATEGORY_LABELS: Record<string, string> = {
-  startup: "Startup",
-  "open-source": "OSS",
-  "dev-tool": "Dev Tool",
-  "ai-ml": "AI/ML",
-  "video-game": "Game",
-  hardware: "Hardware",
-  educational: "Educational",
-  informational: "Info",
-  research: "Research",
-  content: "Content",
-  demo: "Demo",
-  hobby: "Hobby",
-  other: "Other",
-};
+import { categoryLabel } from "@/lib/categories";
 
 export type SearchFilters = {
   from?: string;
@@ -143,7 +129,7 @@ export default function SearchBox({
               <option value="">Any</option>
               {categories.map((c) => (
                 <option key={c} value={c}>
-                  {CATEGORY_LABELS[c] ?? c}
+                  {categoryLabel(c)}
                 </option>
               ))}
             </select>

@@ -89,7 +89,7 @@ export default async function SearchPage({
     };
   }
   if (minUpvotes != null) where.upvotes = { gte: minUpvotes };
-  if (minScore != null) where.aiScore = { gte: minScore, not: null };
+  if (minScore != null) where.aiScore = { gte: minScore };
   if (category) where.category = category;
 
   const [posts, ratings, categoryRows] = await Promise.all([
