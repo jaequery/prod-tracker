@@ -1,5 +1,7 @@
 "use client";
 
+import { useEffect, useRef, useState, useTransition } from "react";
+import { usePathname, useRouter } from "next/navigation";
 import { categoryLabel } from "@/lib/categories";
 
 export type SearchFilters = {
@@ -15,16 +17,14 @@ const FIELD_CLASS =
   "px-3 py-2 border-2 border-neutral-200 rounded-xl text-sm font-500 placeholder:text-neutral-400 focus:outline-none focus:border-neutral-900 transition-colors";
 const LABEL_CLASS = "text-[11px] font-700 uppercase tracking-widest text-neutral-500";
 
-function pruneEmpties(form: HTMLFormElement) {
-  for (const el of Array.from(form.elements)) {
-    if (
-      (el instanceof HTMLInputElement || el instanceof HTMLSelectElement) &&
-      el.name &&
-      el.value === ""
-    ) {
-      el.disabled = true;
-    }
+const DEBOUNCE_MS = 250;
+
+function buildQueryString(values: Record<string, string | undefined>): string {
+  const sp = new URLSearchParams();
+  for (const [k, v] of Object.entries(values)) {
+    if (v && v.length > 0) sp.set(k, v);
   }
+  return sp.toString();
 }
 
 export default function SearchBox({
@@ -38,31 +38,79 @@ export default function SearchBox({
   categories?: string[];
   autoFocus?: boolean;
 }) {
+  const router = useRouter();
+  const pathname = usePathname();
+  const [, startTransition] = useTransition();
+
+  const [query, setQuery] = useState(initialQuery);
+  const [from, setFrom] = useState(initialFilters.from ?? "");
+  const [to, setTo] = useState(initialFilters.to ?? "");
+  const [minUpvotes, setMinUpvotes] = useState(initialFilters.minUpvotes ?? "");
+  const [minScore, setMinScore] = useState(initialFilters.minScore ?? "");
+  const [category, setCategory] = useState(initialFilters.category ?? "");
+  const [sort, setSort] = useState<"upvotes" | "newest" | "score">(
+    initialFilters.sort ?? "upvotes",
+  );
+
+  const navTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const isFirstRender = useRef(true);
+
+  function navigate() {
+    const qs = buildQueryString({
+      q: query.trim(),
+      from,
+      to,
+      minUpvotes,
+      minScore,
+      category,
+      sort: sort === "upvotes" ? undefined : sort,
+    });
+    const target = `/search${qs ? `?${qs}` : ""}`;
+    startTransition(() => {
+      if (pathname === "/search") {
+        router.replace(target);
+      } else {
+        router.push(target);
+      }
+    });
+  }
+
+  useEffect(() => {
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
+      return;
+    }
+    if (navTimer.current) clearTimeout(navTimer.current);
+    navTimer.current = setTimeout(navigate, DEBOUNCE_MS);
+    return () => {
+      if (navTimer.current) clearTimeout(navTimer.current);
+    };
+    // navigate closes over current state; deps cover every driving field
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [query, from, to, minUpvotes, minScore, category, sort, pathname]);
+
+  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    if (navTimer.current) clearTimeout(navTimer.current);
+    navigate();
+  }
+
   return (
     <form
-      action="/search"
-      method="GET"
       role="search"
-      onSubmit={(e) => pruneEmpties(e.currentTarget)}
+      onSubmit={handleSubmit}
       className="flex flex-col gap-3 w-full"
     >
-      <div className="flex items-stretch gap-2 w-full">
-        <input
-          type="search"
-          name="q"
-          defaultValue={initialQuery}
-          autoFocus={autoFocus}
-          placeholder="Search products by title, summary, or description…"
-          aria-label="Search products"
-          className="flex-1 px-4 py-3 border-2 border-neutral-200 rounded-xl text-base font-500 placeholder:text-neutral-400 focus:outline-none focus:border-neutral-900 transition-colors"
-        />
-        <button
-          type="submit"
-          className="px-5 py-3 border-2 border-neutral-900 bg-neutral-900 text-white rounded-xl text-sm font-700 uppercase tracking-widest hover:bg-white hover:text-neutral-900 transition-colors"
-        >
-          Search
-        </button>
-      </div>
+      <input
+        type="search"
+        name="q"
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+        autoFocus={autoFocus}
+        placeholder="Search products by title, summary, or description…"
+        aria-label="Search products"
+        className="w-full px-4 py-3 border-2 border-neutral-200 rounded-xl text-base font-500 placeholder:text-neutral-400 focus:outline-none focus:border-neutral-900 transition-colors"
+      />
 
       <details open className="group">
         <summary className="md:hidden cursor-pointer list-none text-xs font-700 uppercase tracking-widest text-neutral-500 hover:text-neutral-900 select-none">
@@ -79,7 +127,8 @@ export default function SearchBox({
             <input
               type="date"
               name="from"
-              defaultValue={initialFilters.from ?? ""}
+              value={from}
+              onChange={(e) => setFrom(e.target.value)}
               className={FIELD_CLASS}
             />
           </label>
@@ -88,7 +137,8 @@ export default function SearchBox({
             <input
               type="date"
               name="to"
-              defaultValue={initialFilters.to ?? ""}
+              value={to}
+              onChange={(e) => setTo(e.target.value)}
               className={FIELD_CLASS}
             />
           </label>
@@ -100,7 +150,8 @@ export default function SearchBox({
               min={0}
               step={1}
               inputMode="numeric"
-              defaultValue={initialFilters.minUpvotes ?? ""}
+              value={minUpvotes}
+              onChange={(e) => setMinUpvotes(e.target.value)}
               placeholder="0"
               className={FIELD_CLASS}
             />
@@ -114,7 +165,8 @@ export default function SearchBox({
               max={100}
               step={1}
               inputMode="numeric"
-              defaultValue={initialFilters.minScore ?? ""}
+              value={minScore}
+              onChange={(e) => setMinScore(e.target.value)}
               placeholder="0–100"
               className={FIELD_CLASS}
             />
@@ -123,7 +175,8 @@ export default function SearchBox({
             <span className={LABEL_CLASS}>Category</span>
             <select
               name="category"
-              defaultValue={initialFilters.category ?? ""}
+              value={category}
+              onChange={(e) => setCategory(e.target.value)}
               className={FIELD_CLASS}
             >
               <option value="">Any</option>
@@ -138,7 +191,10 @@ export default function SearchBox({
             <span className={LABEL_CLASS}>Sort</span>
             <select
               name="sort"
-              defaultValue={initialFilters.sort ?? "upvotes"}
+              value={sort}
+              onChange={(e) =>
+                setSort(e.target.value as "upvotes" | "newest" | "score")
+              }
               className={FIELD_CLASS}
             >
               <option value="upvotes">Upvotes</option>
