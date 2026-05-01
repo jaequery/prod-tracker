@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { prisma } from "@/lib/prisma";
 import PostsTable from "@/components/PostsTable";
 import SearchBox from "@/components/SearchBox";
+import DayKeyNav from "@/components/DayKeyNav";
 
 const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
 const DOW = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -92,6 +93,7 @@ export default async function DayPage({
 
   return (
     <div className="max-w-[1100px] mx-auto px-6 py-6 md:py-8">
+      <DayKeyNav prevHref={`/day/${prevKey}`} nextHref={nextKey ? `/day/${nextKey}` : null} />
       {/* All days link */}
       <div className="flex items-center gap-6 mb-10">
         <Link
