@@ -1,37 +1,122 @@
 import Link from "next/link";
 import { prisma } from "@/lib/prisma";
 import PostsTable from "@/components/PostsTable";
-import SearchBox from "@/components/SearchBox";
+import SearchBox, { type SearchFilters } from "@/components/SearchBox";
+import { Prisma } from "@/generated/prisma/client";
+
+type RawSearchParams = {
+  q?: string;
+  from?: string;
+  to?: string;
+  minUpvotes?: string;
+  minScore?: string;
+  category?: string;
+  sort?: string;
+};
+
+type SortKey = "upvotes" | "newest" | "score";
+const SORT_KEYS: readonly SortKey[] = ["upvotes", "newest", "score"];
+
+function parseInt0(value: string | undefined): number | null {
+  if (!value) return null;
+  const n = Number(value);
+  return Number.isFinite(n) && n >= 0 ? Math.trunc(n) : null;
+}
+
+function parseDate(value: string | undefined): Date | null {
+  if (!value) return null;
+  const d = new Date(value);
+  return Number.isFinite(d.getTime()) ? d : null;
+}
+
+function endOfDay(d: Date): Date {
+  const out = new Date(d);
+  out.setUTCHours(23, 59, 59, 999);
+  return out;
+}
+
+function buildOrderBy(sort: SortKey): Prisma.ShowHnPostOrderByWithRelationInput[] {
+  if (sort === "newest") return [{ postedAt: "desc" }];
+  if (sort === "score")
+    return [{ aiScore: { sort: "desc", nulls: "last" } }, { upvotes: "desc" }];
+  return [{ upvotes: "desc" }, { postedAt: "desc" }];
+}
+
+const POSTS_TABLE_SORT: Record<SortKey, "upvotes" | "postedAt" | "aiScore"> = {
+  upvotes: "upvotes",
+  newest: "postedAt",
+  score: "aiScore",
+};
 
 export default async function SearchPage({
   searchParams,
 }: {
-  searchParams: Promise<{ q?: string }>;
+  searchParams: Promise<RawSearchParams>;
 }) {
-  const { q } = await searchParams;
-  const query = (q ?? "").trim();
+  const sp = await searchParams;
+  const query = (sp.q ?? "").trim();
+  const from = parseDate(sp.from);
+  const to = parseDate(sp.to);
+  const minUpvotes = parseInt0(sp.minUpvotes);
+  const minScoreRaw = parseInt0(sp.minScore);
+  const minScore = minScoreRaw != null ? Math.min(minScoreRaw, 100) : null;
+  const category = sp.category?.trim() || null;
+  const sort: SortKey = SORT_KEYS.includes(sp.sort as SortKey)
+    ? (sp.sort as SortKey)
+    : "upvotes";
 
-  const posts = query
-    ? await prisma.showHnPost.findMany({
-        where: {
-          OR: [
-            { title: { contains: query, mode: "insensitive" } },
-            { aiSummary: { contains: query, mode: "insensitive" } },
-            { siteDescription: { contains: query, mode: "insensitive" } },
-            { summary: { contains: query, mode: "insensitive" } },
-          ],
-        },
-        orderBy: [{ upvotes: "desc" }, { postedAt: "desc" }],
-        take: 200,
-        include: { rating: { select: { value: true } } },
-      })
-    : [];
+  const hasFilter =
+    query.length > 0 ||
+    from !== null ||
+    to !== null ||
+    minUpvotes !== null ||
+    minScore !== null ||
+    category !== null;
 
-  const ratings = query
-    ? await prisma.userRating.findMany({
-        select: { postId: true, value: true, reason: true },
-      })
-    : [];
+  const where: Prisma.ShowHnPostWhereInput = {};
+  if (query) {
+    where.OR = [
+      { title: { contains: query, mode: "insensitive" } },
+      { aiSummary: { contains: query, mode: "insensitive" } },
+      { siteDescription: { contains: query, mode: "insensitive" } },
+      { summary: { contains: query, mode: "insensitive" } },
+    ];
+  }
+  if (from || to) {
+    where.postedAt = {
+      ...(from ? { gte: from } : {}),
+      ...(to ? { lte: endOfDay(to) } : {}),
+    };
+  }
+  if (minUpvotes != null) where.upvotes = { gte: minUpvotes };
+  if (minScore != null) where.aiScore = { gte: minScore };
+  if (category) where.category = category;
+
+  const [posts, ratings, categoryRows] = await Promise.all([
+    hasFilter
+      ? prisma.showHnPost.findMany({
+          where,
+          orderBy: buildOrderBy(sort),
+          take: 200,
+          include: { rating: { select: { value: true } } },
+        })
+      : Promise.resolve([]),
+    hasFilter
+      ? prisma.userRating.findMany({
+          select: { postId: true, value: true, reason: true },
+        })
+      : Promise.resolve([]),
+    prisma.showHnPost.findMany({
+      where: { category: { not: null } },
+      distinct: ["category"],
+      select: { category: true },
+      orderBy: { category: "asc" },
+    }),
+  ]);
+
+  const categories = categoryRows
+    .map((r) => r.category)
+    .filter((c): c is string => c !== null);
 
   const serialized = posts.map((p) => {
     const liked = p.rating?.value === 1;
@@ -48,6 +133,27 @@ export default async function SearchPage({
       notable,
     };
   });
+
+  const initialFilters: SearchFilters = {
+    from: sp.from,
+    to: sp.to,
+    minUpvotes: sp.minUpvotes,
+    minScore: sp.minScore,
+    category: category ?? undefined,
+    sort,
+  };
+
+  const extraFiltersActive =
+    from !== null ||
+    to !== null ||
+    minUpvotes !== null ||
+    minScore !== null ||
+    category !== null ||
+    sort !== "upvotes";
+
+  const clearHref = query
+    ? `/search?q=${encodeURIComponent(query)}`
+    : "/search";
 
   return (
     <div className="max-w-[1100px] mx-auto px-6 py-6 md:py-8">
@@ -75,22 +181,41 @@ export default async function SearchPage({
           </div>
         </div>
         <div className="mt-6">
-          <SearchBox initialQuery={query} autoFocus />
+          <SearchBox
+            initialQuery={query}
+            initialFilters={initialFilters}
+            categories={categories}
+            autoFocus
+          />
         </div>
+        {extraFiltersActive && (
+          <div className="mt-3">
+            <Link
+              href={clearHref}
+              className="text-xs font-700 uppercase tracking-widest text-neutral-400 hover:text-neutral-900 transition-colors"
+            >
+              ✕ Clear filters
+            </Link>
+          </div>
+        )}
       </header>
 
-      {!query ? (
+      {!hasFilter ? (
         <div className="text-center py-20 text-neutral-400 text-lg">
-          Type a query to search titles, summaries, and descriptions.
+          Type a query or set a filter to search titles, summaries, and descriptions.
         </div>
       ) : serialized.length === 0 ? (
         <div className="text-center py-20">
           <p className="text-neutral-400 text-lg mb-4">
-            No posts match “{query}”.
+            No posts match your filters.
           </p>
         </div>
       ) : (
-        <PostsTable posts={serialized} initialRatings={ratings} initialSortField="upvotes" />
+        <PostsTable
+          posts={serialized}
+          initialRatings={ratings}
+          initialSortField={POSTS_TABLE_SORT[sort]}
+        />
       )}
     </div>
   );
