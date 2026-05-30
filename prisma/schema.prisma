@@ -10,6 +10,7 @@ datasource db {
 model ShowHnPost {
   id             Int      @id @default(autoincrement())
   hnId           String   @unique
+  source         String   @default("show_hn")
   title          String
   summary        String
   url            String
@@ -27,6 +28,7 @@ model ShowHnPost {
   rating         UserRating?
 
   @@index([category])
+  @@index([source])
 }
 
 model UserRating {

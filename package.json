@@ -12,6 +12,8 @@
     "scrape": "npx tsx src/scripts/scrape.ts",
     "scrape:prod": "npx tsx --env-file=.env.prod src/scripts/scrape.ts",
     "scrape:year": "npx tsx src/scripts/scrape.ts --days 365",
+    "scrape:ph": "npx tsx src/scripts/scrape-ph.ts",
+    "scrape:ph:prod": "npx tsx --env-file=.env.prod src/scripts/scrape-ph.ts",
     "rescore": "npx tsx src/scripts/rescore.ts",
     "rescore:prod": "npx tsx --env-file=.env.prod src/scripts/rescore.ts",
     "db:migrate": "npx prisma migrate dev && npx prisma generate",
