@@ -1,6 +1,7 @@
 import { inngest } from "@/lib/inngest";
 import { prisma } from "@/lib/prisma";
 import { buildDayEntries, scrapeDay } from "@/lib/scraper";
+import { isProductHuntEnabled, scrapePhDay } from "@/lib/producthunt";
 
 const DEFAULT_DAYS = 7;
 const MAX_DAYS = 400;
@@ -30,6 +31,16 @@ export const scheduledScrape = inngest.createFunction(
       total += count;
     }
 
+    let phTotal = 0;
+    if (isProductHuntEnabled()) {
+      for (const entry of entries) {
+        const count = await step.run(`scrape-ph-${entry.dayLabel}`, () =>
+          scrapePhDay(prisma, entry),
+        );
+        phTotal += count;
+      }
+    }
+
     const [unscored, missingPreviews] = await step.run("count-pending", async () => {
       return Promise.all([
         prisma.showHnPost.count({ where: { aiScore: null } }),
@@ -50,6 +61,6 @@ export const scheduledScrape = inngest.createFunction(
       });
     }
 
-    return { days: entries.length, total, unscored, missingPreviews };
+    return { days: entries.length, total, phTotal, unscored, missingPreviews };
   },
 );

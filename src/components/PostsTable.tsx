@@ -14,6 +14,7 @@ type AiDetails = {
 type Post = {
   id: number;
   hnId: string;
+  source: string;
   title: string;
   summary: string;
   url: string;
@@ -362,7 +363,10 @@ export default function PostsTable({
               <ul>
                 {sorted.map((post) => {
                   const hostname = getHostname(post.url);
-                  const hnLink = `https://news.ycombinator.com/item?id=${post.hnId}`;
+                  const isPh = post.source === "product_hunt";
+                  const hnLink = isPh
+                    ? post.url
+                    : `https://news.ycombinator.com/item?id=${post.hnId}`;
                   const details = post.aiScoreDetails as AiDetails | null;
                   const det =
                     details && typeof details === "object" && !Array.isArray(details) ? details : null;
@@ -407,6 +411,16 @@ export default function PostsTable({
                         {/* Title + host */}
                         <div className="min-w-0 flex items-baseline gap-2">
                           <span className="text-[10px]">{scoreIcon(post.aiScore)}</span>
+                          <span
+                            title={isPh ? "Product Hunt" : "Hacker News"}
+                            className={`shrink-0 text-[9px] font-800 px-1 rounded leading-none ${
+                              isPh
+                                ? "bg-orange-500/10 text-orange-600"
+                                : "bg-neutral-100 text-neutral-400"
+                            }`}
+                          >
+                            {isPh ? "PH" : "HN"}
+                          </span>
                           {post.notable && (
                             <span
                               title="Notable"
