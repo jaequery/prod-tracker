@@ -5,9 +5,14 @@
   "scripts": {
     "dev": "next dev -p 3107",
     "inngest": "npx inngest-cli@latest dev -u http://localhost:3107/api/inngest --port 8288",
-    "build": "prisma migrate deploy && next build",
+    "build": "next build",
     "start": "next start -p 3107",
     "lint": "eslint",
+    "db:deploy": "prisma migrate deploy",
+    "cf:build": "opennextjs-cloudflare build",
+    "cf:deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "cf:preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "cf:typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts",
     "review:status": "npx tsx src/scripts/review-status.ts",
     "scrape": "npx tsx src/scripts/scrape.ts",
     "scrape:prod": "npx tsx --env-file=.env.prod src/scripts/scrape.ts",
@@ -20,6 +25,7 @@
     "postinstall": "npx prisma generate"
   },
   "dependencies": {
+    "@opennextjs/cloudflare": "^1.19.11",
     "@prisma/adapter-pg": "^7.7.0",
     "@prisma/client": "^7.7.0",
     "dotenv": "^17.4.2",
@@ -40,6 +46,7 @@
     "prisma": "^7.7.0",
     "tailwindcss": "^4",
     "tsx": "^4.21.0",
-    "typescript": "^5"
+    "typescript": "^5",
+    "wrangler": "^4.98.0"
   }
 }
