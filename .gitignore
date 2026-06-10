@@ -61,3 +61,6 @@ scrape.log
 /.wrangler/
 cloudflare-env.d.ts
 .dev.vars
+
+# pnpm 11 build-approval file (local only; CF uses pnpm 10 which errors on it)
+pnpm-workspace.yaml
