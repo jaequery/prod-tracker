@@ -1,5 +1,7 @@
 # Show HN Dashboard
 
+Product Hunt coming soon.
+
 A dashboard that tracks and analyzes Show HN posts from Hacker News. Each project is scored by AI across usefulness, competition, and revenue potential with a Rotten Tomatoes-style rating.
 
 ## Features
