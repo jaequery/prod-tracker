@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { prisma } from "@/lib/prisma";
+import { getPrisma } from "@/lib/prisma";
 import PostsTable from "@/components/PostsTable";
 import SearchBox from "@/components/SearchBox";
 import DayKeyNav from "@/components/DayKeyNav";
@@ -25,6 +25,7 @@ export default async function DayPage({
 }: {
   params: Promise<{ date: string }>;
 }) {
+  const prisma = getPrisma();
   const { date } = await params;
   if (!DATE_RE.test(date)) notFound();
 

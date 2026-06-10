@@ -1,6 +1,7 @@
-import { prisma } from "@/lib/prisma";
+import { getPrisma } from "@/lib/prisma";
 
 export async function GET() {
+  const prisma = getPrisma();
   const ratings = await prisma.userRating.findMany({
     orderBy: { updatedAt: "desc" },
     select: { postId: true, value: true, reason: true },
@@ -9,6 +10,7 @@ export async function GET() {
 }
 
 export async function POST(request: Request) {
+  const prisma = getPrisma();
   const body = await request.json().catch(() => null);
   const postId = Number(body?.postId);
   const value = Number(body?.value);
@@ -32,6 +34,7 @@ export async function POST(request: Request) {
 }
 
 export async function DELETE(request: Request) {
+  const prisma = getPrisma();
   const { searchParams } = new URL(request.url);
   const postId = Number(searchParams.get("postId"));
 

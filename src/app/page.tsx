@@ -1,4 +1,4 @@
-import { prisma } from "@/lib/prisma";
+import { getPrisma } from "@/lib/prisma";
 import Calendar, { type DayCount } from "@/components/Calendar";
 import SearchBox from "@/components/SearchBox";
 
@@ -25,6 +25,7 @@ export default async function Home({
 }: {
   searchParams: Promise<{ month?: string }>;
 }) {
+  const prisma = getPrisma();
   const { month } = await searchParams;
   const now = new Date();
   const monthKey =

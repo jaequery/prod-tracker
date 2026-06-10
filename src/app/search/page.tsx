@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { prisma } from "@/lib/prisma";
+import { getPrisma } from "@/lib/prisma";
 import PostsTable from "@/components/PostsTable";
 import SearchBox, { type SearchFilters } from "@/components/SearchBox";
 import { Prisma } from "@/generated/prisma/client";
@@ -53,6 +53,7 @@ export default async function SearchPage({
 }: {
   searchParams: Promise<RawSearchParams>;
 }) {
+  const prisma = getPrisma();
   const sp = await searchParams;
   const query = (sp.q ?? "").trim();
   const from = parseDate(sp.from);

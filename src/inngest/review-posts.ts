@@ -1,5 +1,5 @@
 import { inngest } from "@/lib/inngest";
-import { prisma } from "@/lib/prisma";
+import { getPrisma } from "@/lib/prisma";
 import { reviewPost, type Exemplar } from "@/lib/ai";
 
 export const reviewUnscored = inngest.createFunction(
@@ -10,6 +10,7 @@ export const reviewUnscored = inngest.createFunction(
     triggers: [{ event: "posts/review.requested" }],
   },
   async ({ step }) => {
+    const prisma = getPrisma();
     const posts = await step.run("fetch-unscored", async () => {
       const rows = await prisma.showHnPost.findMany({
         where: { aiScore: null },

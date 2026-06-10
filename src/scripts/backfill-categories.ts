@@ -5,8 +5,10 @@
  * Run: npx tsx src/scripts/backfill-categories.ts
  */
 import "dotenv/config";
-import { prisma } from "../lib/prisma";
+import { getPrisma } from "../lib/prisma";
 import { CATEGORIES, type Category } from "../lib/ai";
+
+const prisma = getPrisma();
 
 const BATCH = 10;
 

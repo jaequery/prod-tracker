@@ -8,8 +8,10 @@
  *        pnpm rescore:prod                          # against .env.prod
  */
 import "dotenv/config";
-import { prisma } from "../lib/prisma";
+import { getPrisma } from "../lib/prisma";
 import { reviewPost, type Exemplar } from "../lib/ai";
+
+const prisma = getPrisma();
 
 const BATCH = 10;
 

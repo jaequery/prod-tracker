@@ -1,5 +1,5 @@
 import { inngest } from "@/lib/inngest";
-import { prisma } from "@/lib/prisma";
+import { getPrisma } from "@/lib/prisma";
 import { buildDayEntries, scrapeDay } from "@/lib/scraper";
 import { isProductHuntEnabled, scrapePhDay } from "@/lib/producthunt";
 
@@ -16,6 +16,7 @@ export const scheduledScrape = inngest.createFunction(
     ],
   },
   async ({ event, step }) => {
+    const prisma = getPrisma();
     const raw = (event?.data as { days?: number } | undefined)?.days;
     const days =
       typeof raw === "number" && raw > 0

@@ -1,5 +1,5 @@
 import { inngest } from "@/lib/inngest";
-import { prisma } from "@/lib/prisma";
+import { getPrisma } from "@/lib/prisma";
 import { fetchSiteMeta } from "@/lib/og-image";
 
 export const fetchMissingPreviews = inngest.createFunction(
@@ -10,6 +10,7 @@ export const fetchMissingPreviews = inngest.createFunction(
     triggers: [{ event: "posts/preview.requested" }],
   },
   async ({ step }) => {
+    const prisma = getPrisma();
     const posts = await step.run("fetch-missing", async () => {
       return prisma.showHnPost.findMany({
         where: { previewFetchedAt: null },
