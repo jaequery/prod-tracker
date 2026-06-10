@@ -1,0 +1,22 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "main": ".open-next/worker.js",
+  "name": "prod-tracker",
+  "compatibility_date": "2025-05-05",
+  "compatibility_flags": [
+    // Node.js APIs (required by pg / Prisma adapter, etc.)
+    "nodejs_compat",
+    // fetch() only reaches public URLs, not the worker itself
+    "global_fetch_strictly_public"
+  ],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "services": [
+    {
+      "binding": "WORKER_SELF_REFERENCE",
+      "service": "prod-tracker"
+    }
+  ]
+}
